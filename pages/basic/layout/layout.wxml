@@ -1,0 +1,262 @@
+<free-tabs tabs="{{tabs}}"   currentTab="{{currentTab}}" bold='true'  bind:change="change" itemWidth="50%"></free-tabs>
+<!-- tabs固定定位，元素上浮，所以需要占位块， -->
+<view class="positionView"></view>
+<block wx:if="{{currentTab == 0}}">
+  <view class="free-bar  bg-white solid-bottom">
+    <view class="free-title ">
+      <free-icon name='filter' color='#0081ff' size='18'></free-icon>
+      <text>固定尺寸</text>
+    </view>
+  </view>
+  <view class="padding bg-white">
+    <!-- felx固定尺寸 -->
+    <view class="flex flex-wrap">
+      <view class="basis-xs bg-blue margin-xs padding-sm radius-xs" bindtap="copy" data-name="basis-xs">xs(20%)</view>
+      <view class="basis-df"></view>
+      <view class="basis-sm bg-blue margin-xs padding-sm radius-xs" bindtap="copy" data-name="basis-sm">sm(40%)</view>
+      <view class="basis-df"></view>
+      <view class="basis-df bg-blue margin-xs padding-sm radius-xs" bindtap="copy" data-name="basis-sub">sub(50%)</view>
+      <view class="basis-lg bg-blue margin-xs padding-sm radius-xs" bindtap="copy" data-name="basis-lg">lg(60%)</view>
+      <view class="basis-xl bg-blue margin-xs padding-sm radius-xs" bindtap="copy" data-name="basis-xl">xl(80%)</view>
+    </view>
+  </view>
+
+  <view class="free-bar  bg-white solid-bottom margin-top-sm">
+    <view class="free-title ">
+      <free-icon name='filter' color='#0081ff' size='18'></free-icon>
+      <text>比例尺寸</text>
+    </view>
+  </view>
+  <view class="padding bg-white">
+    <!-- 比列尺寸 -->
+    <view class="flex margin-bottom">
+      <view class="flex-sub bg-blue padding-sm margin-right radius-xs" bindtap="copy" data-name="flex-sub">flex-sub</view>
+      <view class="flex-sub bg-blue padding-sm  radius-xs" bindtap="copy" data-name="flex-sub">flex-sub</view>
+    </view>
+    <view class="flex margin-bottom">
+      <view class="flex-sub bg-blue padding-sm margin-right radius-xs " bindtap="copy" data-name="flex-sub">flex-sub</view>
+      <view class="flex-twice bg-blue padding-sm  radius-xs" bindtap="copy" data-name="flex-twice">flex-twice</view>
+    </view>
+    <view class="flex margin-bottom">
+      <view class="flex-sub bg-blue padding-sm margin-right radius-xs " bindtap="copy" data-name="flex-sub">flex-sub</view>
+      <view class="flex-treble bg-blue padding-sm  radius-xs" bindtap="copy" data-name="flex-treble">flex-treble</view>
+    </view>
+  </view>
+
+  <view class="free-bar  bg-white solid-bottom margin-top-sm">
+    <view class="free-title ">
+      <free-icon name='filter' color='#0081ff' size='18'></free-icon>
+      <text>水平布局</text>
+    </view>
+  </view>
+  <view class=" bg-white">
+    <view class="flex solid-bottom padding justify-start" bindtap="copy" data-name="justify-start">
+      <view class="bg-blue padding-sm margin-right radius-xs">justify-start</view>
+      <view class="bg-blue padding-sm  radius-xs">justify-start</view>
+    </view>
+    <view class="flex solid-bottom padding justify-end"bindtap="copy" data-name="justify-end">
+      <view class="bg-blue padding-sm margin-right radius-xs">justify-end</view>
+      <view class="bg-blue padding-sm  radius-xs">justify-end</view>
+    </view>
+    <view class="flex solid-bottom padding justify-center"bindtap="copy" data-name="justify-center">
+      <view class="bg-blue padding-sm margin-right radius-xs">justify-center</view>
+      <view class="bg-blue padding-sm  radius-xs">justify-center</view>
+    </view>
+    <view class="flex solid-bottom padding justify-between"bindtap="copy" data-name="justify-between">
+      <view class="bg-blue padding-sm margin-right radius-xs">justify-between</view>
+      <view class="bg-blue padding-sm  radius-xs">justify-between</view>
+    </view>
+    <view class="flex solid-bottom padding justify-around"bindtap="copy" data-name="justify-around">
+      <view class="bg-blue padding-sm margin-right radius-xs">justify-around</view>
+      <view class="bg-blue padding-sm  radius-xs">justify-around</view>
+    </view>
+  </view>
+
+  <view class="free-bar  bg-white solid-bottom margin-top-sm">
+    <view class="free-title ">
+      <free-icon name='filter' color='#0081ff' size='18'></free-icon>
+      <text>垂直布局</text>
+    </view>
+  </view>
+  <view class=" bg-white">
+    <view class="flex solid-bottom padding align-start" bindtap="copy" data-name="align-start">
+      <view class="bg-blue padding-lg margin-right radius-xs">align-start</view>
+      <view class="bg-blue padding-xs  radius-xs">align-start</view>
+    </view>
+    <view class="flex solid-bottom padding align-center" bindtap="copy" data-name="align-center">
+      <view class="bg-blue padding-lg margin-right radius-xs">align-center</view>
+      <view class="bg-blue padding-xs  radius-xs">align-center</view>
+    </view>
+    <view class="flex solid-bottom padding align-end" bindtap="copy" data-name="align-end">
+      <view class="bg-blue padding-lg margin-right radius-xs">align-end</view>
+      <view class="bg-blue padding-xs  radius-xs">align-end</view>
+    </view>
+  </view>
+</block> 
+<!-- Gird布局 -->
+<block wx:if="{{currentTab == 1}}">
+  <view class="free-bar  bg-white solid-bottom ">
+    <view class="free-title ">
+      <free-icon name='filter' color='#0081ff' size='18'></free-icon>
+      <text>等分</text>
+    </view> 
+  </view>
+  <view class="padding bg-white">
+    <view class="margin-bottom text-lg text-bold">Grid-2列</view>
+    <view class="grid col-2 margin-bottom text-center"  >
+      <view class="padding {{index%2 == 0?'bg-blue':'bg-orange'}} light" wx:for="{{2}}" wx:key>1</view>
+    </view>
+    <view class="margin-bottom text-lg text-bold">Grid-3列</view>
+    <view class="grid col-3 margin-bottom text-center"  >
+      <view class="padding {{index%2 == 0?'bg-blue':'bg-orange'}} light" wx:for="{{3}}" wx:key>1</view>
+    </view>
+    <view class="margin-bottom text-lg text-bold">Grid-4列</view>
+    <view class="grid col-4 margin-bottom text-center"  >
+      <view class="padding {{index%2 == 0?'bg-blue':'bg-orange'}} light" wx:for="{{4}}" wx:key>1</view>
+    </view>
+    <view class="margin-bottom text-lg text-bold">Grid-5列</view>
+    <view class="grid col-5 margin-bottom text-center"  >
+      <view class="padding {{index%2 == 0?'bg-blue':'bg-orange'}} light" wx:for="{{5}}" wx:key>1</view>
+    </view>
+  </view>
+  <view class="free-bar  bg-white solid-bottom solid-top">
+    <view class="free-title ">
+      <free-icon name='filter' color='#0081ff' size='18'></free-icon>
+      <text>等高</text>
+    </view> 
+  </view>
+  <view class="bg-white padding">
+    <view class="grid col-4 grid-square">
+      <view class="bg-blue" wx:for="{{9}}" wx:key='index'></view>
+    </view>
+  </view>
+</block>
+<block wx:if="{{currentTab == 2}}">
+  <view class="free-bar  bg-white solid-bottom solid-top">
+    <view class="free-title ">
+      <text class="text-bold">{size}的尺寸有xs/sm/df/lg/xl</text>
+    </view> 
+  </view>
+  <view class="bg-white">
+    <view class="flex flex-wrap padding solid-top">
+      <view class="basis-df padding-bottom-xs">外边距</view>
+      <view class="basis-df padding-bottom-xs">内边距</view>
+      <view class="basis-df">.margin-{size}</view>
+      <view class="basis-df">.padding-{size}</view>
+    </view>
+    <view class="flex flex-wrap padding solid-top">
+      <view class="basis-df padding-bottom-xs">水平方向外边距</view>
+      <view class="basis-df padding-bottom-xs">水平方向内边距</view>
+      <view class="basis-df">.margin-lr-{size}</view>
+      <view class="basis-df">.padding-lr-{size}</view>
+    </view>
+    <view class="flex flex-wrap padding solid-top">
+      <view class="basis-df padding-bottom-xs">垂直方向外边距</view>
+      <view class="basis-df padding-bottom-xs">垂直方向内边距</view>
+      <view class="basis-df">.margin-tb-{size}</view>
+      <view class="basis-df">.padding-tb-{size}</view>
+    </view>
+    <view class="flex flex-wrap padding solid-top">
+      <view class="basis-df padding-bottom-xs">上外边距</view>
+      <view class="basis-df padding-bottom-xs">上内边距</view>
+      <view class="basis-df">.margin-top-{size}</view>
+      <view class="basis-df">.padding-top-{size}</view>
+    </view>
+    <view class="flex flex-wrap padding solid-top">
+      <view class="basis-df padding-bottom-xs">右外边距</view>
+      <view class="basis-df padding-bottom-xs">右内边距</view>
+      <view class="basis-df">.margin-right-{size}</view>
+      <view class="basis-df">.padding-right-{size}</view>
+    </view>
+    <view class="flex flex-wrap padding solid-top">
+      <view class="basis-df padding-bottom-xs">下外边距</view>
+      <view class="basis-df padding-bottom-xs">下内边距</view>
+      <view class="basis-df">margin-bottom-{size}</view>
+      <view class="basis-df">.padding-bottom-{size}</view>
+    </view>
+    <view class="flex flex-wrap padding solid-top">
+      <view class="basis-df padding-bottom-xs">左外边距</view>
+      <view class="basis-df padding-bottom-xs">左内边距</view>
+      <view class="basis-df">.margin-left-{size}</view>
+      <view class="basis-df">.padding-left-{size}</view>
+    </view>
+  </view>
+  <view class="free-bar  bg-white solid-bottom solid-top">
+    <view class="free-title ">
+      <free-icon name='filter' color='#0081ff' size='18'></free-icon>
+      <text>外边距</text>
+    </view> 
+  </view>
+  <view class="padding bg-white flex fle-wrap">
+    <view class="bg-blue light flex margin-right"  wx:for="{{size}}" wx:key='index'>
+      <view class="bg-orange light flex align-center {{item.name=='df'?'margin':'margin-'+item.name}}">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="free-bar  bg-white solid-bottom solid-top">
+    <view class="free-title ">
+      <free-icon name='filter' color='#0081ff' size='18'></free-icon>
+      <text>左右外边距</text>
+    </view> 
+  </view>
+  <view class="padding bg-white flex fle-wrap">
+    <view class="bg-blue light flex margin-right"  wx:for="{{size}}" wx:key='index'>
+      <view class="bg-orange light flex align-center {{item.name=='df'?'margin-lr':'margin-lr-'+item.name}}">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="free-bar  bg-white solid-bottom solid-top">
+    <view class="free-title ">
+      <free-icon name='filter' color='#0081ff' size='18'></free-icon>
+      <text>上下外边距</text>
+    </view> 
+  </view>
+  <view class="padding bg-white flex fle-wrap">
+    <view class="bg-blue light flex margin-right"  wx:for="{{size}}" wx:key='index'>
+      <view class="bg-orange light flex align-center {{item.name=='df'?'margin-tb':'margin-tb-'+item.name}}">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="free-bar  bg-white solid-bottom solid-top">
+    <view class="free-title ">
+      <free-icon name='filter' color='#0081ff' size='18'></free-icon>
+      <text>内边距</text>
+    </view> 
+  </view>
+  <view class="padding bg-white flex fle-wrap">
+    <view class="bg-blue {{item.name=='df'?'padding':'padding-'+item.name}} light flex margin-right"  wx:for="{{size}}" wx:key='index'>
+      <view class="bg-orange light flex align-center ">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="free-bar  bg-white solid-bottom solid-top">
+    <view class="free-title ">
+      <free-icon name='filter' color='#0081ff' size='18'></free-icon>
+      <text>左右内边距</text>
+    </view> 
+  </view>
+  <view class="padding bg-white flex fle-wrap">
+    <view class="bg-blue light flex margin-right {{item.name=='df'?'padding-lr':'padding-lr-'+item.name}}"  wx:for="{{size}}" wx:key='index'>
+      <view class="bg-orange light flex align-center ">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="free-bar  bg-white solid-bottom solid-top">
+    <view class="free-title ">
+      <free-icon name='filter' color='#0081ff' size='18'></free-icon>
+      <text>上下内边距</text>
+    </view> 
+  </view>
+  <view class="padding bg-white flex fle-wrap">
+    <view class="bg-blue light flex margin-right {{item.name=='df'?'padding-tb':'padding-tb-'+item.name}}"  wx:for="{{size}}" wx:key='index'>
+      <view class="bg-orange light flex align-center ">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</block>

@@ -1,0 +1,8 @@
+<view class="container bg-white">
+  <view class="free-list grid col-3 text-center"  >
+    <view class="free-item " wx:for="{{iconList}}" wx:key="index" bindtap="copy" data-name="{{item.name}}">
+      <free-icon name="{{item.name}}" class="padding-tb-sm"></free-icon>
+      <text class="text-gray">{{item.name}}</text>
+    </view>
+  </view>
+</view> 

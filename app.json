@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/basic/index/index",
+    "pages/basic/layout/layout",
+    "pages/basic/icon/icon",
+    "pages/module/index/index",
+    "pages/extend/index/index",
+    "pages/doing/index/index",
+    "pages/basic/color/color",
+    "pages/basic/border/border"
+  ],
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#0081ff",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/basic/index/index",
+        "text": "基础",
+        "iconPath": "static/image/tabbarIcon/basics.png",
+        "selectedIconPath": "static/image/tabbarIcon/basic.png"
+      },
+      {
+        "pagePath": "pages/module/index/index",
+        "text": "组件",
+        "iconPath": "static/image/tabbarIcon/mores.png",
+        "selectedIconPath": "static/image/tabbarIcon/more.png"
+      },
+      {
+        "pagePath": "pages/basic/index/index",
+        "text": "扩展",
+        "iconPath": "static/image/tabbarIcon/extends.png",
+        "selectedIconPath": "static/image/tabbarIcon/extend.png"
+      },
+      {
+        "pagePath": "pages/basic/index/index",
+        "text": "关于",
+        "iconPath": "static/image/tabbarIcon/mys.png",
+        "selectedIconPath": "static/image/tabbarIcon/my.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "free-tabs": "/components/module/free-tabs/free-tabs",
+    "free-icon": "/components/basic/free-icon/free-icon"
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#0081ff",
+    "navigationBarTitleText": "Free UI",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

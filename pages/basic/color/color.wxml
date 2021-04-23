@@ -1,0 +1,26 @@
+<free-tabs tabs="{{tabs}}"   currentTab="{{currentTab}}" bold='true'  bind:change="change" itemWidth="50%"></free-tabs>
+<view class="positionView"></view>
+<view class="grid col-3 padding-sm bg-white" wx:if="{{currentTab == 0}}">
+  <view class="padding-sm" wx:for="{{ColorList}}" wx:key='index'>
+    <view class="bg-{{item.name}} padding radius-xs text-center shadow-main" bindtap="copy" data-name="{{item.name}}">
+      <view class="text-lg">{{item.title}}</view>
+      <view class="margin-top-sm text-Abc">{{item.name}}</view>
+    </view>
+  </view>
+</view>
+<view class="grid col-3 padding-sm bg-white" wx:if="{{currentTab == 1}}">
+  <view class="padding-sm" wx:for="{{ColorList}}" wx:key='index'>
+    <view class="bg-{{item.name}} light padding radius-xs text-center shadow-main" bindtap="copy" data-name="{{item.name+ ' light'}}">
+      <view class="text-lg">{{item.title}}</view>
+      <view class="margin-top-sm text-Abc">{{item.name}}</view>
+    </view>
+  </view>
+</view>
+<view class="grid col-2 padding-sm" wx:if="{{currentTab == 2}}">
+  <view class="padding-sm" wx:for="{{gradualList}}" wx:key="index" bindtap="copy" data-name="{{'gradual-'+item.style}}">
+    <view class="{{'bg-gradual-'+item.style}} padding radius-xs  text-center shadow-blur" >
+      <view class="text-lg">{{item.name}}</view>
+      <view class="margin-top-sm text-Abc">{{item.str}}</view>
+    </view>
+  </view>
+</view>
