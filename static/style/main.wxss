@@ -68,7 +68,6 @@ page{
 view,
 scroll-view,
 swiper,
-button,
 input,
 textarea,
 label,
@@ -76,10 +75,12 @@ navigator,
 image {
 	box-sizing: border-box;
 }
-
+button::after {
+  border: none;
+}
 /* 圆角 */
 .round{
-  border-radius: 50%;
+  border-radius: 2000rpx;
 }
 .radius-xs{
   border-radius: 6rpx;
@@ -244,7 +245,7 @@ image {
 .shadow-main{
 	box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
 }
-.shadow-warp {
+.shadow-warp {	
 	position: relative;
 	box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
 }
@@ -410,107 +411,333 @@ image {
 	background-position: center;
 	background-repeat: no-repeat;
 }
-/* flex 布局 */
+/* ==================
+          按钮
+ ==================== */
+	
+ .free-button {
+	position: relative;
+	border: 0rpx;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 0 30rpx;
+	font-size: 28rpx;
+	height: 60rpx;
+	line-height: 1;
+	text-align: center;
+	text-decoration: none;
+	overflow: visible;
+	margin-left: initial;
+	transform: translate(0rpx, 0rpx);
+	margin-right: initial;
+}
 
-.flex {
+.free-button::after {
+	display: none;
+}
+
+.free-button:not([class*="bg-"]) {
+	background-color: #f0f0f0;
+}
+
+.free-button[class*="line"] {
+	background-color: transparent;
+}
+
+.free-button[class*="line"]::after {
+	content: " ";
+	display: block;
+	width: 200%;
+	height: 200%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1rpx solid currentColor;
+	transform: scale(0.5);
+	transform-origin: 0 0;
+	box-sizing: border-box;
+	border-radius: 12rpx;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.free-button.round[class*="line"]::after {
+	border-radius: 1000rpx;
+}
+
+.free-button[class*="lines"]::after {
+	border: 6rpx solid currentColor;
+}
+
+.free-button[class*="bg-"]::after {
+	display: none;
+}
+
+.free-button.sm {
+	padding: 0 20rpx;
+	font-size: 20rpx;
+	height: 50rpx;
+}
+
+.free-button.lg {
+	padding: 0 40rpx;
+	font-size: 32rpx;
+	height: 70rpx;
+}
+
+.free-button.icon.sm {
+	width: 50rpx;
+	height: 50rpx;
+}
+
+.free-button.icon {
+	width: 64rpx;
+	height: 64rpx;
+	border-radius: 500rpx;
+	padding: 0;
+}
+
+button.icon.lg {
+	width: 70rpx;
+	height: 70rpx;
+}
+
+.free-button.shadow-blur::before {
+	top: 4rpx;
+	left: 4rpx;
+	filter: blur(6rpx);
+	opacity: 0.6;
+}
+
+.free-button.button-hover {
+	transform: translate(1rpx, 1rpx);
+}
+
+.block {
+	display: block;
+}
+
+.free-button.block {
 	display: flex;
 }
 
-.basis-xs {
-	flex-basis: 20%;
+.free-button[disabled] {
+	opacity: 0.6;
+	color: var(--white);
 }
+/* ==================
+         表单
+ ==================== */
 
-.basis-sm {
-	flex-basis: 40%;
-}
-
-.basis-df {
-	flex-basis: 50%;
-}
-
-.basis-lg {
-	flex-basis: 60%;
-}
-
-.basis-xl {
-	flex-basis: 80%;
-}
-
-.flex-sub {
-	flex: 1;
-}
-
-.flex-twice {
-	flex: 2;
-}
-
-.flex-treble {
-	flex: 3;
-}
-
-.flex-direction {
-	flex-direction: column;
-}
-
-.flex-wrap {
-	flex-wrap: wrap;
-}
-
-.align-start {
-	align-items: flex-start;
-}
-
-.align-end {
-	align-items: flex-end;
-}
-
-.align-center {
+ .free-form-group {
+	background-color: var(--white);
+	padding: 1rpx 30rpx;
+	display: flex;
 	align-items: center;
-}
-
-.align-stretch {
-	align-items: stretch;
-}
-
-.self-start {
-	align-self: flex-start;
-}
-
-.self-center {
-	align-self: flex-center;
-}
-
-.self-end {
-	align-self: flex-end;
-}
-
-.self-stretch {
-	align-self: stretch;
-}
-
-.align-stretch {
-	align-items: stretch;
-}
-
-.justify-start {
-	justify-content: flex-start;
-}
-
-.justify-end {
-	justify-content: flex-end;
-}
-
-.justify-center {
-	justify-content: center;
-}
-
-.justify-between {
+	min-height: 100rpx;
 	justify-content: space-between;
 }
 
-.justify-around {
-	justify-content: space-around;
+.free-form-group+.free-form-group {
+	border-top: 1rpx solid #eee;
 }
+
+.free-form-group .title {
+	text-align: justify;
+	padding-right: 30rpx;
+	font-size: 30rpx;
+	position: relative;
+	height: 60rpx;
+	line-height: 60rpx;
+}
+
+.free-form-group input {
+	flex: 1;
+	font-size: 30rpx;
+	color: #555;
+	padding-right: 20rpx;
+}
+
+.free-form-group>text[class*="cuIcon-"] {
+	font-size: 36rpx;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.free-form-group textarea {
+	margin: 32rpx 0 30rpx;
+	height: 4.6em;
+	width: 100%;
+	line-height: 1.2em;
+	flex: 1;
+	font-size: 28rpx;
+	padding: 0;
+}
+
+.free-form-group.align-start .title {
+	height: 1em;
+	margin-top: 32rpx;
+	line-height: 1em;
+}
+
+.free-form-group picker {
+	flex: 1;
+	padding-right: 40rpx;
+	overflow: hidden;
+	position: relative;
+}
+
+.free-form-group picker .picker {
+	line-height: 100rpx;
+	font-size: 28rpx;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+	text-align: right;
+}
+
+.free-form-group picker::after {
+	font-family: "cuIcon";
+	display: block;
+	content: "\e6a3";
+	position: absolute;
+	font-size: 34rpx;
+	color: var(--grey);
+	line-height: 100rpx;
+	width: 60rpx;
+	text-align: center;
+	top: 0;
+	bottom: 0;
+	right: -20rpx;
+	margin: auto;
+}
+
+.free-form-group textarea[disabled],
+.free-form-group textarea[disabled] .placeholder {
+	color: transparent;
+}
+
+/* ==================
+         模态窗口
+ ==================== */
+
+ .free-modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1110;
+	opacity: 0;
+	outline: 0;
+	text-align: center;
+	-ms-transform: scale(1.185);
+	transform: scale(1.185);
+	backface-visibility: hidden;
+	perspective: 2000rpx;
+	background: rgba(0, 0, 0, 0.6);
+	transition: all 0.3s ease-in-out 0s;
+	pointer-events: none;
+}
+
+.free-modal::before {
+	content: "\200B";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.free-modal.show {
+	opacity: 1;
+	transition-duration: 0.3s;
+	-ms-transform: scale(1);
+	transform: scale(1);
+	overflow-x: hidden;
+	overflow-y: auto;
+	pointer-events: auto;
+}
+
+.free-dialog {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	width: 680rpx;
+	max-width: 100%;
+	background-color: #f8f8f8;
+	border-radius: 10rpx;
+	overflow: hidden;
+}
+
+.free-modal.bottom-modal::before {
+	vertical-align: bottom;
+}
+
+.free-modal.bottom-modal .free-dialog {
+	width: 100%;
+	border-radius: 0;
+}
+
+.free-modal.bottom-modal {
+	margin-bottom: -1000rpx;
+}
+
+.free-modal.bottom-modal.show {
+	margin-bottom: 0;
+}
+
+.free-modal.drawer-modal {
+	transform: scale(1);
+	display: flex;
+}
+
+.free-modal.drawer-modal .free-dialog {
+	height: 100%;
+	min-width: 200rpx;
+	border-radius: 0;
+	margin: initial;
+	transition-duration: 0.3s;
+}
+
+.free-modal.drawer-modal.justify-start .free-dialog {
+	transform: translateX(-100%);
+}
+
+.free-modal.drawer-modal.justify-end .free-dialog {
+	transform: translateX(100%);
+}
+
+.free-modal.drawer-modal.show .free-dialog {
+	transform: translateX(0%);
+}
+.free-modal .free-dialog>.free-bar:first-child .action{
+  min-width: 100rpx;
+  margin-right: 0;
+  min-height: 100rpx;
+}
+.free-bar .content {
+	position: absolute;
+	text-align: center;
+	width: calc(100% - 340rpx);
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	height: 60rpx;
+	font-size: 32rpx;
+	line-height: 60rpx;
+	cursor: none;
+	pointer-events: none;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
 
 /* 内外边距 */
 
@@ -1281,6 +1508,107 @@ image {
 .positionView{
 	height: 100rpx;
 }
+/* flex 布局 */
+
+.flex {
+	display: flex;
+}
+
+.basis-xs {
+	flex-basis: 20%;
+}
+
+.basis-sm {
+	flex-basis: 40%;
+}
+
+.basis-df {
+	flex-basis: 50%;
+}
+
+.basis-lg {
+	flex-basis: 60%;
+}
+
+.basis-xl {
+	flex-basis: 80%;
+}
+
+.flex-sub {
+	flex: 1;
+}
+
+.flex-twice {
+	flex: 2;
+}
+
+.flex-treble {
+	flex: 3;
+}
+
+.flex-direction {
+	flex-direction: column;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.align-start {
+	align-items: flex-start;
+}
+
+.align-end {
+	align-items: flex-end;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.align-stretch {
+	align-items: stretch;
+}
+
+.self-start {
+	align-self: flex-start;
+}
+
+.self-center {
+	align-self: flex-center;
+}
+
+.self-end {
+	align-self: flex-end;
+}
+
+.self-stretch {
+	align-self: stretch;
+}
+
+.align-stretch {
+	align-items: stretch;
+}
+
+.justify-start {
+	justify-content: flex-start;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.justify-around {
+	justify-content: space-around;
+}
 /* 文本颜色 */
 .text-red,
 .line-red,
@@ -1373,6 +1701,7 @@ image {
 }
 
 /* switch开关 */
+
 switch,
 checkbox,
 radio {
@@ -1382,7 +1711,7 @@ radio {
 switch::after,
 switch::before {
 	font-family: "icomoon";
-	content: "\e900";
+	content: "\e93f";
 	position: absolute;
 	color: var(--white) !important;
 	top: 0%;
@@ -1401,7 +1730,7 @@ switch::before {
 }
 
 switch::before {
-	content: "\e646";
+	content: "\e91a";
 	right: 0;
 	transform: scale(1, 1);
 	left: auto;
@@ -1419,4 +1748,319 @@ switch.checked::before {
 
 switch[checked]::before {
 	transform: scale(0, 0);
+}
+
+radio::before,
+checkbox::before {
+	font-family: "cuIcon";
+	content: "\e645";
+	position: absolute;
+	color: var(--white) !important;
+	top: 50%;
+	margin-top: -8px;
+	right: 5px;
+	font-size: 32rpx;
+	line-height: 16px;
+	pointer-events: none;
+	transform: scale(1, 1);
+	transition: all 0.3s ease-in-out 0s;
+	z-index: 9;
+}
+
+radio .wx-radio-input,
+checkbox .wx-checkbox-input {
+	margin: 0;
+	width: 24px;
+	height: 24px;
+}
+
+checkbox.round .wx-checkbox-input {
+	border-radius: 100rpx;
+}
+
+switch .wx-switch-input {
+	border: none;
+	padding: 0 24px;
+	width: 48px;
+	height: 26px;
+	margin: 0;
+	border-radius: 100rpx;
+}
+
+switch .wx-switch-input:not([class*="bg-"]) {
+	background: var(--grey) !important;
+}
+
+switch .wx-switch-input::after {
+	margin: auto;
+	width: 26px;
+	height: 26px;
+	border-radius: 100rpx;
+	left: 0rpx;
+	top: 0rpx;
+	bottom: 0rpx;
+	position: absolute;
+	transform: scale(0.9, 0.9);
+	transition: all 0.1s ease-in-out 0s;
+}
+
+switch .wx-switch-input.wx-switch-input-checked::after {
+	margin: auto;
+	left: 22px;
+	box-shadow: none;
+	transform: scale(0.9, 0.9);
+}
+
+radio-group {
+	display: inline-block;
+}
+
+
+
+switch.radius .wx-switch-input::after,
+switch.radius .wx-switch-input,
+switch.radius .wx-switch-input::before {
+	border-radius: 10rpx;
+}
+
+switch .wx-switch-input::before,
+radio.radio::before,
+checkbox .wx-checkbox-input::before,
+radio .wx-radio-input::before,
+radio.radio::before {
+	display: none;
+}
+
+radio.radio[checked]::after {
+	content: "";
+	background-color: transparent;
+	display: block;
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	z-index: 999;
+	top: 0rpx;
+	left: 0rpx;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border-radius: 200rpx;
+	border: 8px solid var(--white) !important;
+}
+
+.switch-sex::after {
+	content: "\e71c";
+}
+
+.switch-sex::before {
+	content: "\e71a";
+}
+
+.switch-sex .wx-switch-input {
+	background: var(--red) !important;
+	border-color: var(--red) !important;
+}
+
+.switch-sex[checked] .wx-switch-input {
+	background: var(--blue) !important;
+	border-color: var(--blue) !important;
+}
+
+switch.red[checked] .wx-switch-input,
+checkbox.red[checked] .wx-checkbox-input,
+radio.red[checked] .wx-radio-input {
+	border-color: var(--red) !important;
+}
+
+switch.orange[checked] .wx-switch-input,
+checkbox.orange[checked] .wx-checkbox-input,
+radio.orange[checked] .wx-radio-input {
+	border-color: var(--orange) !important;
+}
+
+switch.yellow[checked] .wx-switch-input,
+checkbox.yellow[checked] .wx-checkbox-input,
+radio.yellow[checked] .wx-radio-input {
+	border-color: var(--yellow) !important;
+}
+
+switch.olive[checked] .wx-switch-input,
+checkbox.olive[checked] .wx-checkbox-input,
+radio.olive[checked] .wx-radio-input {
+	border-color: var(--olive) !important;
+}
+
+switch.green[checked] .wx-switch-input,
+checkbox.green[checked] .wx-checkbox-input,
+checkbox[checked] .wx-checkbox-input,
+radio.green[checked] .wx-radio-input {
+	border-color: var(--green) !important;
+}
+
+switch.cyan[checked] .wx-switch-input,
+checkbox.cyan[checked] .wx-checkbox-input,
+radio.cyan[checked] .wx-radio-input {
+	border-color: var(--cyan) !important;
+}
+
+switch.blue[checked] .wx-switch-input,
+checkbox.blue[checked] .wx-checkbox-input,
+radio.blue[checked] .wx-radio-input {
+	border-color: var(--blue) !important;
+}
+
+switch.purple[checked] .wx-switch-input,
+checkbox.purple[checked] .wx-checkbox-input,
+radio.purple[checked] .wx-radio-input {
+	border-color: var(--purple) !important;
+}
+
+switch.mauve[checked] .wx-switch-input,
+checkbox.mauve[checked] .wx-checkbox-input,
+radio.mauve[checked] .wx-radio-input {
+	border-color: var(--mauve) !important;
+}
+
+switch.pink[checked] .wx-switch-input,
+checkbox.pink[checked] .wx-checkbox-input,
+radio.pink[checked] .wx-radio-input {
+	border-color: var(--pink) !important;
+}
+
+switch.brown[checked] .wx-switch-input,
+checkbox.brown[checked] .wx-checkbox-input,
+radio.brown[checked] .wx-radio-input {
+	border-color: var(--brown) !important;
+}
+
+switch.grey[checked] .wx-switch-input,
+checkbox.grey[checked] .wx-checkbox-input,
+radio.grey[checked] .wx-radio-input {
+	border-color: var(--grey) !important;
+}
+
+switch.gray[checked] .wx-switch-input,
+checkbox.gray[checked] .wx-checkbox-input,
+radio.gray[checked] .wx-radio-input {
+	border-color: var(--grey) !important;
+}
+
+switch.black[checked] .wx-switch-input,
+checkbox.black[checked] .wx-checkbox-input,
+radio.black[checked] .wx-radio-input {
+	border-color: var(--black) !important;
+}
+
+switch.white[checked] .wx-switch-input,
+checkbox.white[checked] .wx-checkbox-input,
+radio.white[checked] .wx-radio-input {
+	border-color: var(--white) !important;
+}
+
+switch.red[checked] .wx-switch-input.wx-switch-input-checked,
+checkbox.red[checked] .wx-checkbox-input,
+radio.red[checked] .wx-radio-input {
+	background-color: var(--red) !important;
+	color: var(--white) !important;
+}
+
+switch.orange[checked] .wx-switch-input,
+checkbox.orange[checked] .wx-checkbox-input,
+radio.orange[checked] .wx-radio-input {
+	background-color: var(--orange) !important;
+	color: var(--white) !important;
+}
+
+switch.yellow[checked] .wx-switch-input,
+checkbox.yellow[checked] .wx-checkbox-input,
+radio.yellow[checked] .wx-radio-input {
+	background-color: var(--yellow) !important;
+	color: var(--black) !important;
+}
+
+switch.olive[checked] .wx-switch-input,
+checkbox.olive[checked] .wx-checkbox-input,
+radio.olive[checked] .wx-radio-input {
+	background-color: var(--olive) !important;
+	color: var(--white) !important;
+}
+
+switch.green[checked] .wx-switch-input,
+switch[checked] .wx-switch-input,
+checkbox.green[checked] .wx-checkbox-input,
+checkbox[checked] .wx-checkbox-input,
+radio.green[checked] .wx-radio-input,
+radio[checked] .wx-radio-input {
+	background-color: var(--green) !important;
+	color: var(--white) !important;
+}
+
+switch.cyan[checked] .wx-switch-input,
+checkbox.cyan[checked] .wx-checkbox-input,
+radio.cyan[checked] .wx-radio-input {
+	background-color: var(--cyan) !important;
+	color: var(--white) !important;
+}
+
+switch.blue[checked] .wx-switch-input,
+checkbox.blue[checked] .wx-checkbox-input,
+radio.blue[checked] .wx-radio-input {
+	background-color: var(--blue) !important;
+	color: var(--white) !important;
+}
+
+switch.purple[checked] .wx-switch-input,
+checkbox.purple[checked] .wx-checkbox-input,
+radio.purple[checked] .wx-radio-input {
+	background-color: var(--purple) !important;
+	color: var(--white) !important;
+}
+
+switch.mauve[checked] .wx-switch-input,
+checkbox.mauve[checked] .wx-checkbox-input,
+radio.mauve[checked] .wx-radio-input {
+	background-color: var(--mauve) !important;
+	color: var(--white) !important;
+}
+
+switch.pink[checked] .wx-switch-input,
+checkbox.pink[checked] .wx-checkbox-input,
+radio.pink[checked] .wx-radio-input {
+	background-color: var(--pink) !important;
+	color: var(--white) !important;
+}
+
+switch.brown[checked] .wx-switch-input,
+checkbox.brown[checked] .wx-checkbox-input,
+radio.brown[checked] .wx-radio-input {
+	background-color: var(--brown) !important;
+	color: var(--white) !important;
+}
+
+switch.grey[checked] .wx-switch-input,
+checkbox.grey[checked] .wx-checkbox-input,
+radio.grey[checked] .wx-radio-input {
+	background-color: var(--grey) !important;
+	color: var(--white) !important;
+}
+
+switch.gray[checked] .wx-switch-input,
+checkbox.gray[checked] .wx-checkbox-input,
+radio.gray[checked] .wx-radio-input {
+	background-color: #f0f0f0 !important;
+	color: var(--black) !important;
+}
+
+switch.black[checked] .wx-switch-input,
+checkbox.black[checked] .wx-checkbox-input,
+radio.black[checked] .wx-radio-input {
+	background-color: var(--black) !important;
+	color: var(--white) !important;
+}
+
+switch.white[checked] .wx-switch-input,
+checkbox.white[checked] .wx-checkbox-input,
+radio.white[checked] .wx-radio-input {
+	background-color: var(--white) !important;
+	color: var(--black) !important;
 }

@@ -1,9 +1,13 @@
-<view class="introduce ">
-  <navigator wx:for="{{list}}" wx:key class="bg-white padding solid-bottom flex align-center justify-between" url="/pages/basic/{{item.title}}/{{item.title}}">
+<view class="header padding solid-bottom flex flex-direction bg-blue">
+  <text class="tile ">Free UI</text>
+  <text>一款轻量、开箱即用的原生微信小程序UI组件库</text>
+</view>
+<view class="introduce  bg-white">
+  <navigator wx:for="{{list}}" wx:key class="padding solid-bottom flex align-center justify-between" url="/pages/basic/{{item.title}}/{{item.title}}">
     <view class="flex flex-direction" >
       <text class="text-lg text-bold">{{item.name}}</text>
       <text class="free-sub text-grey">{{item.title}}</text>
     </view>
-    <free-icon name='add' color='#0081ff'></free-icon>
+    <free-icon name='{{item.icon}}' color='#0081ff'></free-icon>
   </navigator>
-</view>
+</view> 

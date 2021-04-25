@@ -1,0 +1,90 @@
+<view class="free-bar  bg-white solid-bottom flex justify-between">
+  <view class="free-title ">
+    <free-icon name='arrow-right-filling' color='#0081ff' size='18'></free-icon>
+    <text>按钮大小</text>
+  </view>
+  <navigator class="free-title" url="design" hover-class="none">
+    <free-icon name='setting'  size='18'></free-icon>
+    <text class="text-df">设计</text>
+  </navigator>
+</view>
+<view class="padding flex justify-between align-center">
+  <button class="free-button round sm bg-blue">小尺寸</button>
+  <button class="free-button round bg-blue">默认</button>
+  <button class="free-button round lg bg-blue">大尺寸</button>
+</view>
+<view class="free-bar  bg-white solid-bottom solid-top">
+  <view class="free-title ">
+    <free-icon name='arrow-right-filling' color='#0081ff' size='18'></free-icon>
+    <text>按钮形状</text>
+  </view>
+</view>
+<view class="padding flex justify-between align-center">
+  <button class="free-button bg-blue">默认</button>
+  <button class="free-button round bg-blue">圆角</button>
+  <button class="free-button icon">
+    <free-icon name='user' color='#0081ff' ></free-icon>
+  </button>
+</view>
+<view class="free-bar  bg-white solid-bottom solid-top">
+  <view class="free-title ">
+    <free-icon name='arrow-right-filling' color='#0081ff' size='18'></free-icon>
+    <text>按钮颜色</text>
+  </view>
+  <view class="free-title">
+    <text class="text-df margin-right-sm">阴影</text>
+    <switch class="sm" bindchange="changeShadow"></switch>
+  </view>
+  <view class="free-title">
+    <text class="text-df margin-right-sm">高亮</text>
+    <switch class="sm" bindchange="changePlain"></switch>
+  </view>
+</view>
+<view class="grid col-5 padding-sm">
+  <view class="margin-tb-sm text-center" wx:for="{{ColorList}}" wx:key="index">
+    <button class="free-button round bg-{{item.name}} {{changePlainShow?'light':''}} {{shadow?'shadow':''}}">{{item.title}}</button>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom solid-top">
+  <view class="free-title ">
+    <free-icon name='arrow-right-filling' color='#0081ff' size='18'></free-icon>
+    <text>按钮镂空</text>
+  </view>
+</view>
+<view class="grid col-5 padding-sm">
+  <view class="margin-tb-sm text-center" wx:for="{{ColorList}}" wx:key="index">
+    <button class="free-button round line-{{item.name}} {{changePlainShow?'light':''}} {{shadow?'shadow':''}}">{{item.title}}</button>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom solid-top">
+  <view class="free-title ">
+    <free-icon name='arrow-right-filling' color='#0081ff' size='18'></free-icon>
+    <text>块状按钮</text>
+  </view>
+</view>
+<view class="padding flex flex-direction">
+  <button class="free-button bg-blue lg margin-bottom">玄灰</button>
+  <button class="free-button bg-red lg margin-bottom round">玄灰</button>
+</view>
+<view class="free-bar  bg-white solid-bottom solid-top">
+  <view class="free-title ">
+    <free-icon name='arrow-right-filling' color='#0081ff' size='18'></free-icon>
+    <text>禁用按钮</text>
+  </view>
+</view>
+<view class="padding ">
+  <button class="free-button block bg-blue margin-bottom lg" disabled type="">无效状态</button>
+  <button class="free-button block line-red lg" disabled >无效状态</button>
+</view>
+<view class="free-bar  bg-white solid-bottom solid-top">
+  <view class="free-title ">
+    <free-icon name='arrow-right-filling' color='#0081ff' size='18'></free-icon>
+    <text>图标按钮</text>
+  </view>
+</view>
+<view class="padding">
+  <button class="free-button block bg-blue lg margin-bottom">
+    <free-icon name='arrow-right-filling' color='#fff' size='18'></free-icon> 图标
+  </button>
+  <button class="free-button block bg-red margin-tb-sm lg" loading> 微信加载</button>
+</view>

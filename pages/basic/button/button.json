@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"按钮",
+  "usingComponents": {
+    "free-button":"/components/basic/free-button/free-button"
+  }
+}

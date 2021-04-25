@@ -8,7 +8,7 @@ Page({
     tabs:[
       {name:'Flex布局'},{name:'Grid布局'},{name:'内外边距'}
     ],
-    currentTab:2,
+    currentTab:0,
     size:[
       {name:'xs'},{name:'sm'},{name:'df'},{name:'lg'},{name:'xl'},
     ]

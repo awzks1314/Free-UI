@@ -9,37 +9,37 @@ Page({
       {
         name:'布局',
         title:'layout',
-        icon:'add'
+        icon:'electronics'
       },
       {
         name:'背景',
         title:'color',
-        icon:'add'
+        icon:'picture-filling'
       },
       {
         name:'边框',
         title:'border',
-        icon:'add'
+        icon:'scanning'
       },
       {
         name:'图标',
         title:'icon',
-        icon:'add'
+        icon:'notification-filling'
       },
       {
         name:'按钮',
         title:'button',
-        icon:'add'
+        icon:'arrow-up-circle'
       },
       {
         name:'标签',
         title:'tag',
-        icon:'add'
+        icon:'good'
       },
       {
         name:'文本',
         title:'text',
-        icon:'add'
+        icon:'edit'
       },
     ]
   },

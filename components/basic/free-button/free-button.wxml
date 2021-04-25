@@ -1,0 +1,3 @@
+<button class="cu-btn {{size}} {{'bg-'+type}} {{shadow?'shadow-main':''}}  {{plain?'light':''}} " style="border-radius:{{radius}}rpx;" disabled='{{disabled}}'>
+  <slot></slot> 
+</button>

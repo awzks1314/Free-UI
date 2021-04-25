@@ -1,1 +1,9 @@
-/* pages/basic/index/index.wxss */
+page{
+  background: #fff;
+}
+.header{
+  padding-top:200rpx;
+}
+.tile{
+  font-size: 60rpx;
+}

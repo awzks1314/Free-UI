@@ -7,7 +7,10 @@
     "pages/extend/index/index",
     "pages/doing/index/index",
     "pages/basic/color/color",
-    "pages/basic/border/border"
+    "pages/basic/border/border",
+    "pages/my/index/index",
+    "pages/basic/button/button",
+    "pages/basic/button/design"
   ],
   "tabBar": {
     "color": "#aaaaaa",
@@ -27,13 +30,13 @@
         "selectedIconPath": "static/image/tabbarIcon/more.png"
       },
       {
-        "pagePath": "pages/basic/index/index",
+        "pagePath": "pages/extend/index/index",
         "text": "扩展",
         "iconPath": "static/image/tabbarIcon/extends.png",
         "selectedIconPath": "static/image/tabbarIcon/extend.png"
       },
       {
-        "pagePath": "pages/basic/index/index",
+        "pagePath": "pages/my/index/index",
         "text": "关于",
         "iconPath": "static/image/tabbarIcon/mys.png",
         "selectedIconPath": "static/image/tabbarIcon/my.png"
@@ -49,6 +52,5 @@
     "navigationBarTitleText": "Free UI",
     "navigationBarTextStyle": "white"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
