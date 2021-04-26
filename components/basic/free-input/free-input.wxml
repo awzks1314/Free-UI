@@ -1,0 +1,36 @@
+<view class='box' style="background:{{bg}};position:{{position}}">
+  <view wx:if="{{type=='textarea'}}">
+    <textarea>
+
+    </textarea>
+  </view>
+  <view wx:else class="inputStyle" style="border-radius:{{radius}};background:{{inputBg}}">
+    <!-- 前置图标 -->
+    <view style="padding: 0 20rpx;" wx:if="{{prefixIcon}}">
+      <!-- <view style="background:{{slotBg}};color:{{color}};padding:0 20rpx;">
+      <slot name='prefix' ></slot>
+    </view> -->
+      <free-icon name="{{prefixIcon}}"  size="18"></free-icon>
+    </view>
+    <input type="text" 
+    placeholder="{{placeholder}}" 
+    value="{{textValue}}" 
+    bindinput="getInput"  
+    bindfocus="getFocus"
+    bindblur="getBlur"
+    bindconfirm="getConfirm"
+    class="input"/>
+    <!-- 删除 -->
+    <view class="deleStyle" wx:if="{{textValue.length>0 && close}}">
+      <free-icon name="close" color='#999' size="16" bindtap="close"></free-icon>
+    </view>
+    <!-- 后置图标 -->
+    <view style="padding: 0 20rpx;" wx:if="{{suffixIcon}}" >
+      <free-icon name="{{suffixIcon}}" size="18"></free-icon>
+      <!-- <slot name='suffix' ></slot> -->
+    </view>    
+  </view>
+  <view class="extreaBtn" wx:if='{{extreaWord}}' style="color:{{extreaColor}}" bindtap="extreaBtn">
+    <text>{{extreaWord}}</text>
+  </view>
+</view>

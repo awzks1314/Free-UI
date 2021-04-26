@@ -10,7 +10,9 @@
     "pages/basic/border/border",
     "pages/my/index/index",
     "pages/basic/button/button",
-    "pages/basic/button/design"
+    "pages/basic/button/design",
+    "pages/basic/tag/tag",
+    "pages/basic/text/text"
   ],
   "tabBar": {
     "color": "#aaaaaa",

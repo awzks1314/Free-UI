@@ -17,6 +17,24 @@
           "pathName": "pages/basic/layout/layout",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/basic/icon/icon",
+          "pathName": "pages/basic/icon/icon",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/basic/tag/tag",
+          "pathName": "pages/basic/tag/tag",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/basic/text/text",
+          "pathName": "pages/basic/text/text",
+          "query": "",
+          "scene": null
         }
       ]
     }

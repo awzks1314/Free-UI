@@ -1,0 +1,56 @@
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <free-icon name='electronics' color='#0081ff' size='18'></free-icon>
+    <text>基础用法</text>
+  </view>
+</view>
+<view class=" padding-lr bg-white flex flex-wrap padding-bottom">
+  <view wx:for="{{ColorList}}" :key='index'  class="margin-right margin-top-sm">
+    <free-tag type="{{item.name}}">{{item.title}}</free-tag>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom solid-top">
+  <view class="free-title ">
+    <free-icon name='electronics' color='#0081ff' size='18'></free-icon>
+    <text>不同尺寸</text>
+  </view>
+</view>
+<view class=" padding bg-white flex align-end justify-between">
+  <free-tag size='xs'>超小尺寸</free-tag>
+  <free-tag size='sm'>小型尺寸</free-tag>
+  <free-tag >默认尺寸</free-tag>
+  <free-tag size='lg'>超大标签</free-tag>
+</view>
+<view class="free-bar  bg-white solid-bottom solid-top">
+  <view class="free-title ">
+    <free-icon name='electronics' color='#0081ff' size='18'></free-icon>
+    <text>不同形状</text>
+  </view>
+</view>
+<view class=" padding bg-white flex align-end justify-between">
+  <free-tag >默认形状</free-tag>
+  <free-tag radius="10rpx">圆角形状</free-tag>  
+  <free-tag radius="50rpx">椭圆角状</free-tag>
+</view>
+<view class="free-bar  bg-white solid-bottom solid-top">
+  <view class="free-title ">
+    <free-icon name='electronics' color='#0081ff' size='18'></free-icon>
+    <text>不同主题</text>
+  </view>
+</view>
+<view class=" padding bg-white flex align-end justify-between">
+  <free-tag >纯色主题</free-tag>
+  <free-tag effect='light'>高亮主题</free-tag>
+  <free-tag effect='plain'>镂空主题</free-tag>
+</view>
+<view class="free-bar  bg-white solid-bottom solid-top">
+  <view class="free-title ">
+    <free-icon name='electronics' color='#0081ff' size='18'></free-icon>
+    <text>图标样式</text>
+  </view>
+</view>
+<view class=" padding bg-white flex align-end justify-between">
+  <free-tag icon='electronics'>纯色主题</free-tag>
+  <free-tag icon='electronics' effect='light' radius="50rpx">高亮主题</free-tag>
+  <free-tag icon='electronics' effect='plain' type='red' iconColor="red">镂空主题</free-tag>
+</view>

@@ -1,0 +1,325 @@
+/* 背景 */
+page{
+  /* 标准色 */
+  --red: #e54d42;
+	--orange: #f37b1d;
+	--yellow: #fbbd08;
+	--olive: #8dc63f;
+	--green: #39b54a;
+	--cyan: #1cbbb4;
+	--blue: #0081ff;
+	--purple: #6739b6;
+	--mauve: #9c26b0;
+	--pink: #e03997;
+	--brown: #a5673f;
+	--grey: #8799a3;
+	--black: #333333;
+	--darkGray: #666666;
+	--gray: #aaaaaa;
+	--ghostWhite: #f1f1f1;
+  --white: #ffffff;
+  /* 浅色 */
+	--redLight: #fadbd9;
+	--orangeLight: #fde6d2;
+	--yellowLight: #fef2ce;
+	--oliveLight: #e8f4d9;
+	--greenLight: #d7f0db;
+	--cyanLight: #d2f1f0;
+	--blueLight: #cce6ff;
+	--purpleLight: #e1d7f0;
+	--mauveLight: #ebd4ef;
+	--pinkLight: #f9d7ea;
+	--brownLight: #ede1d9;
+	--greyLight: #e7ebed;
+	/* 渐变色 */
+	--gradualRed: linear-gradient(45deg, #f43f3b, #ec008c);
+	--gradualOrange: linear-gradient(45deg, #ff9700, #ed1c24);
+	--gradualGreen: linear-gradient(45deg, #39b54a, #8dc63f);
+	--gradualPurple: linear-gradient(45deg, #9000ff, #5e00ff);
+	--gradualPink: linear-gradient(45deg, #ec008c, #6739b6);
+	--gradualBlue: linear-gradient(45deg, #0081ff, #1cbbb4);
+	--gradualHeart:linear-gradient(45deg, #ffa593, #ff1c4e);
+	--gradualYan:linear-gradient(45deg, #eec6a2, #ef6a9f);
+	--gradualGold:linear-gradient(45deg, #ba9961, #edde95);
+	--gradualOrder:linear-gradient(45deg, #182830, #385c6e);
+}
+/* 文本颜色 */
+.text-red,
+.line-red,
+.lines-red {
+	color: var(--red);
+}
+
+.text-orange,
+.line-orange,
+.lines-orange {
+	color: var(--orange);
+}
+
+.text-yellow,
+.line-yellow,
+.lines-yellow {
+	color: var(--yellow);
+}
+
+.text-olive,
+.line-olive,
+.lines-olive {
+	color: var(--olive);
+}
+
+.text-green,
+.line-green,
+.lines-green {
+	color: var(--green);
+}
+
+.text-cyan,
+.line-cyan,
+.lines-cyan {
+	color: var(--cyan);
+}
+
+.text-blue,
+.line-blue,
+.lines-blue {
+	color: var(--blue);
+}
+
+.text-purple,
+.line-purple,
+.lines-purple {
+	color: var(--purple);
+}
+
+.text-mauve,
+.line-mauve,
+.lines-mauve {
+	color: var(--mauve);
+}
+
+.text-pink,
+.line-pink,
+.lines-pink {
+	color: var(--pink);
+}
+
+.text-brown,
+.line-brown,
+.lines-brown {
+	color: var(--brown);
+}
+
+.text-grey,
+.line-grey,
+.lines-grey {
+	color: var(--grey);
+}
+
+.text-gray,
+.line-gray,
+.lines-gray {
+	color: var(--gray);
+}
+
+.text-black,
+.line-black,
+.lines-black {
+	color: var(--black);
+}
+
+.text-white,
+.line-white,
+.lines-white {
+	color: var(--white);
+}
+.bg-red {
+	background-color: var(--red);
+	color: var(--white);
+}
+
+.bg-orange {
+	background-color: var(--orange);
+	color: var(--white);
+}
+
+.bg-yellow {
+	background-color: var(--yellow);
+	color: var(--black);
+}
+
+.bg-olive {
+	background-color: var(--olive);
+	color: var(--white);
+}
+
+.bg-green {
+	background-color: var(--green);
+	color: var(--white);
+}
+
+.bg-cyan {
+	background-color: var(--cyan);
+	color: var(--white);
+}
+
+.bg-blue {
+	background-color: var(--blue);
+	color: var(--white);
+}
+
+.bg-purple {
+	background-color: var(--purple);
+	color: var(--white);
+}
+
+.bg-mauve {
+	background-color: var(--mauve);
+	color: var(--white);
+}
+
+.bg-pink {
+	background-color: var(--pink);
+	color: var(--white);
+}
+
+.bg-brown {
+	background-color: var(--brown);
+	color: var(--white);
+}
+
+.bg-grey {
+	background-color: var(--grey);
+	color: var(--white);
+}
+
+.bg-gray {
+	background-color: #f0f0f0;
+	color: var(--black);
+}
+
+.bg-black {
+	background-color: var(--black);
+	color: var(--white);
+}
+
+.bg-white {
+	background-color: var(--white);
+	color: var(--darkGray);
+}
+
+.bg-shadeTop {
+	background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.01));
+	color: var(--white);
+}
+
+.bg-shadeBottom {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1));
+	color: var(--white);
+}
+
+.bg-red.light {
+	color: var(--red);
+	background-color: var(--redLight);
+}
+
+.bg-orange.light {
+	color: var(--orange);
+	background-color: var(--orangeLight);
+}
+
+.bg-yellow.light {
+	color: var(--yellow);
+	background-color: var(--yellowLight);
+}
+
+.bg-olive.light {
+	color: var(--olive);
+	background-color: var(--oliveLight);
+}
+
+.bg-green.light {
+	color: var(--green);
+	background-color: var(--greenLight);
+}
+
+.bg-cyan.light {
+	color: var(--cyan);
+	background-color: var(--cyanLight);
+}
+
+.bg-blue.light {
+	color: var(--blue);
+	background-color: var(--blueLight);
+}
+
+.bg-purple.light {
+	color: var(--purple);
+	background-color: var(--purpleLight);
+}
+
+.bg-mauve.light {
+	color: var(--mauve);
+	background-color: var(--mauveLight);
+}
+
+.bg-pink.light {
+	color: var(--pink);
+	background-color: var(--pinkLight);
+}
+
+.bg-brown.light {
+	color: var(--brown);
+	background-color: var(--brownLight);
+}
+
+.bg-grey.light {
+	color: var(--grey);
+	background-color: var(--greyLight);
+}
+
+.bg-gradual-red {
+	background-image: var(--gradualRed);
+	color: var(--white);
+}
+
+.bg-gradual-orange {
+	background-image: var(--gradualOrange);
+	color: var(--white);
+}
+
+.bg-gradual-green {
+	background-image: var(--gradualGreen);
+	color: var(--white);
+}
+
+.bg-gradual-purple {
+	background-image: var(--gradualPurple);
+	color: var(--white);
+}
+
+.bg-gradual-pink {
+	background-image: var(--gradualPink);
+	color: var(--white);
+}
+
+.bg-gradual-blue {
+	background-image: var(--gradualBlue);
+	color: var(--white);
+}
+.bg-gradual-heart {
+	background-image: var(--gradualHeart);
+	color: var(--white);
+}
+.bg-gradual-yan {
+	background-image: var(--gradualYan);
+	color: var(--white);
+}
+.bg-gradual-gold {
+	background-image: var(--gradualGold);
+	color: var(--white);
+}
+.bg-gradual-other {
+	background-image: var(--gradualOrder);
+	color: var(--white);
+}

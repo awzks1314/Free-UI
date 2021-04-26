@@ -1,0 +1,12 @@
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <free-icon name='electronics' color='#0081ff' size='18'></free-icon>
+    <text>基础用法</text>
+  </view>
+</view>
+<view class="padding bg-white">
+  <view wx:for="{{list}}" :key='index' class="flex align-cend justify-between padding-tb flex align-end solid-bottom">
+    <text>{{item.name}}</text>
+    <text class="{{item.name}}">测试文字</text>
+  </view>
+</view>

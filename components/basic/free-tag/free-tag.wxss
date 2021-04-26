@@ -1,0 +1,54 @@
+@import '/static/style/background.wxss';
+
+.shadow-main{
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+}
+.tag-lg{
+  padding: 18rpx 26rpx;
+}
+.tag-df{
+  padding: 8rpx 18rpx;
+}
+.tag-sm{
+  padding: 5rpx 8rpx;
+}
+.tag-xs{
+  padding: 0;
+}
+.tag {
+	font-size: 24rpx;
+	vertical-align: middle;
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	font-family: Helvetica Neue, Helvetica, sans-serif;
+	white-space: nowrap;
+}
+.tag[class*="line"] {
+	background-color: transparent;
+}
+
+.tag:not([class*="bg"]):not([class*="line"]) {
+	background-color: var(--ghostWhite);
+}
+
+.tag[class*="line-"]::after {
+	content: " ";
+	width: 200%;
+	height: 200%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1rpx solid currentColor;
+	transform: scale(0.5);
+	transform-origin: 0 0;
+	box-sizing: border-box;
+	border-radius: inherit;
+	z-index: 1;
+	pointer-events: none;
+}
+.iconStyle{
+  padding-right: 10rpx;
+}

@@ -22,9 +22,6 @@
 <view class="padding flex justify-between align-center">
   <button class="free-button bg-blue">默认</button>
   <button class="free-button round bg-blue">圆角</button>
-  <button class="free-button icon">
-    <free-icon name='user' color='#0081ff' ></free-icon>
-  </button>
 </view>
 <view class="free-bar  bg-white solid-bottom solid-top">
   <view class="free-title ">

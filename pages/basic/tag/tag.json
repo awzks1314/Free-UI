@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"Tag",
+  "usingComponents": {
+    "free-tag":"/components/basic/free-tag/free-tag"
+  }
+}

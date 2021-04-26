@@ -1,0 +1,9 @@
+<view class="tag tag-{{size?size:'df'}} {{shadow?'shadow-main':''}} {{effect=='dark'?'bg-'+type:effect=='plain'?'line-'+type:'light bg-'+type}}" 
+style="border-radius:{{radius}};padding:{{padding}};"
+>
+  <view wx:if="{{icon}}" class="iconStyle">
+    <free-icon name="{{icon}}" size='18' color="{{iconColor?iconColor:effect=='dark'?'#fff':'text-'+type}}"></free-icon>
+  </view>
+  <slot></slot>
+</view>
+<!-- {{type?'bg-'+type:'bg-blue'}}  -->
