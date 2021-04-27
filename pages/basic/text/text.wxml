@@ -1,12 +1,79 @@
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <free-icon name='electronics' color='#0081ff' size='18'></free-icon>
-    <text>基础用法</text>
+<free-tabs tabs="{{tabs}}"   currentTab="{{currentTab}}" bold='true'  bind:change="change" itemWidth="50%"></free-tabs>
+<!-- tabs固定定位，元素上浮，所以需要占位块， -->
+<view class="positionView"></view>
+<view class="padding" wx:if="{{currentTab == 0}}">
+  <view class="padding bg-white radius-xs  margin-bottom text-center" wx:for="{{list}}" :key='index'>
+    <view class="padding-bottom  solid-bottom">{{item.name}}</view>
+    <view class="text-cut padding-top text-blue {{item.name}}">测试文字</view>
   </view>
 </view>
-<view class="padding bg-white">
-  <view wx:for="{{list}}" :key='index' class="flex align-cend justify-between padding-tb flex align-end solid-bottom">
-    <text>{{item.name}}</text>
-    <text class="{{item.name}}">测试文字</text>
+<view class="padding " wx:if="{{currentTab == 1}}">
+  <view class="grid col-5 bg-white radius-xs  margin-bottom text-center ">
+    <view wx:for="{{ColorList}}" :key='index' class="text-{{item.name}} padding"> 
+      {{item.title}}
+    </view>
+  </view>
+  <view class="grid col-5 margin-bottom text-center bg-white"  >
+    <view wx:for="{{ColorList}}" :key='index' class="padding "> 
+      <text class="text-{{item.name}}  shadow">{{item.title}}</text>
+    </view>
+  </view>
+</view>
+<view class="padding " wx:if="{{currentTab == 2}}">
+  <view class="padding bg-white radius-xs  margin-bottom text-center">
+    <view class="padding-bottom  solid-bottom">text-cut：省略1行</view>
+    <view class="text-cut padding-top text-blue">三月的春风，拂过大地，吐出了嫩芽，长出了新绿。 三月的春意，葱茏又美丽。各色小花研开满地。百鸟啼鸣， 蜂恋花蜜。 深情的三月，春意欢腾，勃勃生机。 摇一串时光的风铃，揺响了三月的深情，揺响在三月的诗画里。 青青的湖畔，春的波涛早已把湖水泛滥。</view>
+  </view>
+  <view class="padding bg-white radius-xs  margin-bottom text-center">
+    <view class="padding-bottom solid-bottom">text-cut-2：省略2行</view>
+    <view class="text-cut-2 padding-top text-blue">三月的春风，拂过大地，吐出了嫩芽，长出了新绿。 三月的春意，葱茏又美丽。各色小花研开满地。百鸟啼鸣， 蜂恋花蜜。 深情的三月，春意欢腾，勃勃生机。 摇一串时光的风铃，揺响了三月的深情，揺响在三月的诗画里。 青青的湖畔，春的波涛早已把湖水泛滥。</view>
+  </view>
+  <view class="padding bg-white radius-xs  margin-bottom text-center">
+    <view class="padding-bottom  solid-bottom">text-cut-3：省略3行</view>
+    <view class="text-cut-3 padding-top text-blue">三月的春风，拂过大地，吐出了嫩芽，长出了新绿。 三月的春意，葱茏又美丽。各色小花研开满地。百鸟啼鸣， 蜂恋花蜜。 深情的三月，春意欢腾，勃勃生机。 摇一串时光的风铃，揺响了三月的深情，揺响在三月的诗画里。 青青的湖畔，春的波涛早已把湖水泛滥。</view>
+  </view>
+</view>
+<view class="padding " wx:if="{{currentTab == 3}}">
+  <view class="padding bg-white radius-xs  margin-bottom text-center">
+    <view class="padding-bottom text-grey solid-bottom">text-price：价格文本，伪元素￥</view>
+    <view class="text-price padding-top   text-blue">8888.00</view>
+  </view>
+  <view class="padding bg-white radius-xs  margin-bottom text-center">
+    <view class="padding-bottom text-grey solid-bottom">text-Abc：英文单词首字母大写</view>
+    <view class=" padding-top  text-Abc text-blue">free ui</view>
+  </view>
+  <view class="padding bg-white radius-xs  margin-bottom text-center">
+    <view class="padding-bottom text-grey solid-bottom">text-ABC：英文单词全部大写</view>
+    <view class=" padding-top   text-ABC text-blue">free ui</view>
+  </view>
+  <view class="padding bg-white radius-xs  margin-bottom text-center">
+    <view class="padding-bottom text-grey solid-bottom">text-abc：英文单词全部小写</view>
+    <view class=" padding-top   text-abc text-blue">FREE UI</view>
+  </view>
+  <view class="padding bg-white radius-xs  margin-bottom text-center">
+    <view class="padding-bottom text-grey solid-bottom">text-abc：英文单词全部小写</view>
+    <view class=" padding-top   text-abc text-blue">FREE UI</view>
+  </view>
+</view>
+<view class="padding " wx:if="{{currentTab == 4}}">
+  <view class="padding bg-white radius-xs  margin-bottom text-center">
+    <view class="padding-bottom text-grey solid-bottom">text-lineThrough：穿过文本</view>
+    <view class=" padding-top   text-blue text-lineThrough">春的波涛早已把湖水泛滥</view>
+  </view>
+  <view class="padding bg-white radius-xs  margin-bottom text-center">
+    <view class="padding-bottom text-grey solid-bottom">text-overline：文本上方穿过</view>
+    <view class=" padding-top   text-blue text-overline">春的波涛早已把湖水泛滥</view>
+  </view>
+  <view class="padding bg-white radius-xs  margin-bottom text-center">
+    <view class="padding-bottom text-grey solid-bottom">text-underline：文本下方穿过</view>
+    <view class=" padding-top   text-blue text-underline">春的波涛早已把湖水泛滥</view>
+  </view>
+  <view class="padding bg-white radius-xs  margin-bottom text-center">
+    <view class="padding-bottom text-grey solid-bottom">text-italic：文字斜体</view>
+    <view class=" padding-top   text-blue text-italic">春的波涛早已把湖水泛滥</view>
+  </view>
+  <view class="padding bg-white radius-xs  margin-bottom text-center">
+    <view class="padding-bottom text-grey solid-bottom">text-bold：文字加粗</view>
+    <view class=" padding-top   text-blue text-bold">春的波涛早已把湖水泛滥</view>
   </view>
 </view>

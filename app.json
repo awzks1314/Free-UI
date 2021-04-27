@@ -12,7 +12,9 @@
     "pages/basic/button/button",
     "pages/basic/button/design",
     "pages/basic/tag/tag",
-    "pages/basic/text/text"
+    "pages/basic/text/text",
+    "pages/module/input/input",
+    "pages/module/inputNumber/inputNumber"
   ],
   "tabBar": {
     "color": "#aaaaaa",

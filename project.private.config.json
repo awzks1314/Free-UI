@@ -31,8 +31,14 @@
           "scene": null
         },
         {
-          "name": "pages/basic/text/text",
-          "pathName": "pages/basic/text/text",
+          "name": "pages/module/index/index",
+          "pathName": "pages/module/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/module/inputNumber/inputNumber",
+          "pathName": "pages/module/inputNumber/inputNumber",
           "query": "",
           "scene": null
         }

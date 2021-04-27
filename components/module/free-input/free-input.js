@@ -7,6 +7,11 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    // 输入框样式
+    inputStyle:{
+      type:String,
+      value:'0'
+    },
     // 背景颜色
     bg:{
       type:String,
@@ -15,17 +20,21 @@ Component({
     // 输入框背景颜色
     inputBg:{
       type:String,
-      value:'#f5f5f5'
+      value:''
     },
     // 输入框圆角
     radius:{
       type:String,
       value:'8000rpx'
     },
-    // input还是textarea
+    password:{
+      type:Boolean,
+      value:false
+    },
+    // text、number、idcard、digit
     type:{
       type:String,
-      value:'input'
+      value:'text'
     },
     // 头部icon
     prefixIcon:{
@@ -40,22 +49,33 @@ Component({
     // 输入框定位
     position:{
       type:String,
-      value:'fixed'
+      value:''
+    },
+    // 键盘右下角文本
+    // send、search、next、go、done
+    confirmType:{
+      type:String,
+      value:'done'
     },
     // 提示词
     placeholder:{
       type:String,
-      value:'请输入您要查询的参数'
+      value:'请输入内容'
     },
     // 是否显示关闭按钮
     close:{
       type:Boolean,
-      value:true
+      value:false
+    },
+    // 是否禁用
+    disabled:{
+      type:Boolean,
+      value:false
     },
     // 额外按钮
     extreaWord:{
       type:String,
-      value:'确定'
+      value:''
     },
     // 额外按钮颜色
     extreaColor:{
@@ -87,7 +107,6 @@ Component({
     },
     // 聚焦输入框变化
     getFocus(e){
-      console.log(e)
       this.data.textValue = e.detail.value
       this.setData({
         textValue:e.detail.value
@@ -98,18 +117,16 @@ Component({
     },
     // 失焦
     getBlur(e){
-      console.log(e)
       this.data.textValue = e.detail.value
       this.setData({
         textValue:e.detail.value
       })
       this.triggerEvent("blur", {
         value: e.detail.value
-      })
+      },{})
     },
     // 聚焦输入框变化
     getConfirm(e){
-      console.log(e)
       this.data.textValue = e.detail.value
       this.setData({
         textValue:e.detail.value
@@ -122,7 +139,7 @@ Component({
     extreaBtn(){
       this.triggerEvent("extrea", {
         value: this.data.textValue
-      })
+      },{})
     },
     close(){
       this.data.textValue =''

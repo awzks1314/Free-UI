@@ -6,7 +6,7 @@
   <navigator wx:for="{{list}}" wx:key class="padding solid-bottom flex align-center justify-between" url="/pages/basic/{{item.title}}/{{item.title}}">
     <view class="flex flex-direction" >
       <text class="text-lg text-bold">{{item.name}}</text>
-      <text class="free-sub text-grey">{{item.title}}</text>
+      <text class="free-sub text-grey">{{item.desc}}</text>
     </view>
     <free-icon name='{{item.icon}}' color='#0081ff'></free-icon>
   </navigator>

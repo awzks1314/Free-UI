@@ -1,2 +1,12 @@
-<!--pages/module/index/index.wxml-->
-<text>pages/module/index/index.wxml</text>
+<view class="header padding solid-bottom flex flex-direction bg-blue">
+  <text class="tile ">Free UI</text>
+  <text>一款轻量、开箱即用的原生微信小程序UI组件库</text>
+</view>
+<view class="">
+  <view class="free-list grid col-3 border">
+    <view wx:for="{{list}}" :key="index" class="free-item padding bg-white flex flex-direction justify-center align-center" bindtap="gotoDetail" data-url="{{item.title}}">
+      <free-icon name='filter' color='#0081ff' size='18'></free-icon>
+      <text class="padding-top-xs">{{item.name}}</text>
+    </view>
+  </view>
+</view> 

@@ -1,4 +1,4 @@
-<free-input  bind:input='getValue' bind:colse='getClose'>
+<free-input  bind:input='getValue' bind:colse='getClose' position='Fixed'>
 </free-input>
 <view class="container bg-white" style="margin-top:{{CustomBar}}px">
   <view class="free-list grid col-3 text-center"  >

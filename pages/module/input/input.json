@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText":"Icon",
+  "navigationBarTitleText":"input",
   "usingComponents": {
     "free-input":"/components/module/free-input/free-input"
   }

@@ -1,28 +1,26 @@
 <view class='box' style="background:{{bg}};position:{{position}}">
-  <view wx:if="{{type=='textarea'}}">
-    <textarea>
-
-    </textarea>
-  </view>
-  <view wx:else class="inputStyle" style="border-radius:{{radius}};background:{{inputBg}}">
+  <view  class="{{inputStyle == 0?'inputStyle':'inputStyles'}} {{inputStyle == 1 &&disabled?'disabled':''}}" style="border-radius:{{radius}};background:{{inputBg}}">
     <!-- 前置图标 -->
-    <view style="padding: 0 20rpx;" wx:if="{{prefixIcon}}">
+    <view style="padding-left:30rpx;" wx:if="{{prefixIcon}}">
       <!-- <view style="background:{{slotBg}};color:{{color}};padding:0 20rpx;">
       <slot name='prefix' ></slot>
     </view> -->
       <free-icon name="{{prefixIcon}}"  size="18"></free-icon>
     </view>
-    <input type="text" 
+    <input type="{{type}}" 
+    confirm-type="{{confirmType}}"
     placeholder="{{placeholder}}" 
     value="{{textValue}}" 
     bindinput="getInput"  
     bindfocus="getFocus"
     bindblur="getBlur"
     bindconfirm="getConfirm"
+    password="{{password}}"
+    disabled="{{disabled}}"
     class="input"/>
     <!-- 删除 -->
     <view class="deleStyle" wx:if="{{textValue.length>0 && close}}">
-      <free-icon name="close" color='#999' size="16" bindtap="close"></free-icon>
+      <free-icon name="close" color='#dcdfe6' size="12" bindtap="close"></free-icon>
     </view>
     <!-- 后置图标 -->
     <view style="padding: 0 20rpx;" wx:if="{{suffixIcon}}" >

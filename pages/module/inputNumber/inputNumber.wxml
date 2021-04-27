@@ -1,0 +1,24 @@
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>基础用法</text>
+  </view>
+  <view class="free-title">
+    <free-inputNumber value="{{value}}" bind:change='getValue'></free-inputNumber> 
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>最大值最小值</text>
+  </view>
+  <view class="free-title">
+    <free-inputNumber value="{{value1}}" min='5'  max='11' bind:change='getValue1'></free-inputNumber> 
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>步数加减</text>
+  </view>
+  <view class="free-title">
+    <free-inputNumber value="{{value2}}" step="3" bind:change='getValue2'></free-inputNumber> 
+  </view>
+</view>

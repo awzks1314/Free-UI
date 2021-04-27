@@ -1,0 +1,30 @@
+.box{
+  display: flex;
+  align-items: center; 
+  
+}
+.bas{
+  height: 100%;
+  background: #f2f3f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx;
+  font-size: 36rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.color-grey{
+  color: #ddd;
+}
+input,.input{
+  width: 100rpx;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10rpx;
+  margin: 0 6rpx;
+  background: #f2f3f5;
+}

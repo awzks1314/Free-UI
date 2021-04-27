@@ -79,6 +79,7 @@ image {
 button::after {
   border: none;
 }
+
 /* 圆角 */
 .round{
   border-radius: 2000rpx;
@@ -1213,13 +1214,44 @@ button.icon.lg {
 	font-size: 80%;
 	margin-right: 4rpx;
 }
-
+.text-lineThrough{
+	text-decoration: line-through;
+}
+.text-overline{
+	text-decoration: overline;
+}
+.text-underline{
+	text-decoration: underline;
+}
+.text-blink{
+	text-decoration: blink;
+}
+.text-italic{
+	font-style: italic;
+}
 .text-cut {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
 }
-
+.text-cut-2{
+	text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.text-cut-3{
+	text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
 .text-bold {
 	font-weight: bold;
 }

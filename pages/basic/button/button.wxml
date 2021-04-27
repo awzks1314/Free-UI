@@ -60,8 +60,8 @@
   </view>
 </view>
 <view class="padding flex flex-direction">
-  <button class="free-button bg-blue lg margin-bottom">玄灰</button>
-  <button class="free-button bg-red lg margin-bottom round">玄灰</button>
+  <button class="free-button bg-blue lg margin-bottom">海蓝</button>
+  <button class="free-button bg-red lg margin-bottom round">嫣红</button>
 </view>
 <view class="free-bar  bg-white solid-bottom solid-top">
   <view class="free-title ">
