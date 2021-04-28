@@ -1,6 +1,6 @@
 <view class="box">
-  <view class="bas {{inputValue == min?'color-grey':''}}" bindtap="reduce">-</view>
-  <input type="number" value="{{inputValue}}"  disabled="{{disabled}}" bindblur="blur"/>
+  <view class="bas {{disabled || inputValue <= min?'color-grey':''}}" bindtap="reduce">-</view>
+  <input type="number" value="{{inputValue}}"  disabled="{{disabled}}" bindblur="blur" class="{{disabled ?'color-grey':''}}"/>
   <!-- <view class="input"> {{value}}</view> -->
-  <view class="bas {{inputValue == max?'color-grey':''}}" bindtap="add">+</view>
+  <view class="bas {{disabled || inputValue >= max?'color-grey':''}}" bindtap="add">+</view>
 </view>
