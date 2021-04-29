@@ -1,0 +1,10 @@
+<view class="free-drawer-class free-drawer {{ visible ? 'free-drawer-show' : '' }} {{ 'free-drawer-' + mode }}">
+    <view wx:if="{{ mask }}" class="free-drawer-mask" bindtap="handleMaskClick"></view>
+    <view class="{{mode=='top'||mode=='bottom' ?'free-drawer-containers':'free-drawer-container'}}" 
+    
+    >
+        <slot></slot>
+    </view>
+</view>
+
+ 

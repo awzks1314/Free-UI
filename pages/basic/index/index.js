@@ -45,7 +45,7 @@ Page({
       {
         name:'文本',
         title:'text',
-        desc:'文本样式、多行省略、特俗文字',
+        desc:'文本样式、多行省略、特殊文字',
         icon:'edit'
       }
     ]

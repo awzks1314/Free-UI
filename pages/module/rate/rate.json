@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"rate评分",
+  "usingComponents": {
+    "free-rate":"/components/module/free-rate/free-rate"
+  }
+}

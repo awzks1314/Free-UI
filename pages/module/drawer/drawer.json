@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"drawer抽屉",
+  "usingComponents": {
+    "free-drawer":"/components/module/free-drawer/free-drawer"
+  }
+}

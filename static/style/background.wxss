@@ -4,7 +4,7 @@ page{
   --red: #e54d42;
 	--orange: #f37b1d;
 	--yellow: #fbbd08;
-	--olive: #8dc63f;
+	--olive: #1c1d1a;
 	--green: #39b54a;
 	--cyan: #1cbbb4;
 	--blue: #0081ff;
@@ -16,7 +16,7 @@ page{
 	--black: #333333;
 	--darkGray: #666666;
 	--gray: #aaaaaa;
-	--ghostWhite: #f1f1f1;
+	--ghostWhite: #fafafa;
   --white: #ffffff;
   /* 浅色 */
 	--redLight: #fadbd9;

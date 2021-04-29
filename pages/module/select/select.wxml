@@ -1,0 +1,38 @@
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>基础用法</text>
+  </view>
+  <view class="free-title">
+    <free-down-select show="{{dropdownShow}}" top="94" height="400">
+      <button class="free-button bg-blue" slot="selectionbox" bindtap="openDownListShow">
+        下拉选择
+        <free-icon name="arrow-down-filling" color='#fff' size='18' free-icon-class="free-animation {{dropdownShow?'free-animation-show':''}} margin-left"></free-icon>
+      </button>
+      <view slot="dropdownbox" class="free-selected-list">
+        <scroll-view scroll-y class="free-dropdown-scroll">
+          <block wx:for="{{9}}" wx:key="index">
+            <view class="padding-tb-sm padding-lr solid-bottom" catchtap="selectIndex" data-index="{{index}}" >微信支付{{item}}</view>
+          </block>
+        </scroll-view>
+      </view>
+    </free-down-select>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>输入选择</text>
+  </view>
+  <view class="free-title">
+    <free-down-select show="{{dropdownShow1}}" top="94" height="400">
+      <free-input slot="selectionbox"  inputStyle='1' bindtap="openDownListShow1" suffixIcon="{{dropdownShow1?'arrow-down-filling':'arrow-up-filling'}}" value='{{dropdownShowValue}}' prefixIcon='' placeholder="后置图标可更换">
+      </free-input>
+      <view slot="dropdownbox" class="free-selected-list">
+        <scroll-view scroll-y class="free-dropdown-scroll">
+          <block wx:for="{{9}}" wx:key="index">
+            <view class="padding-tb-sm padding-lr solid-bottom" catchtap="selectIndex" data-index="{{index}}" >微信支付{{item}}</view>
+          </block>
+        </scroll-view>
+      </view>
+    </free-down-select>
+  </view>
+</view>

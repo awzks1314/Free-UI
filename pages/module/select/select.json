@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText":"select",
+  "usingComponents": {
+    "free-down-select":"/components/module/free-down-select/free-down-select",
+    "free-input":"/components/module/free-input/free-input"
+  }
+}

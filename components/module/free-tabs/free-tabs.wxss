@@ -1,4 +1,4 @@
-.tui-tabs-view {
+.free-tabs-view {
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -7,17 +7,17 @@
   z-index: 996;
 }
 
-.tui-tabs-relative {
+.free-tabs-relative {
   position: relative;
 }
 
-.tui-tabs-fixed {
+.free-tabs-fixed {
   position: fixed;
   left: 0;
 }
 
-.tui-tabs-fixed::before,
-.tui-tabs-relative::before {
+.free-tabs-fixed::before,
+.free-tabs-relative::before {
   content: '';
   position: absolute;
   border-bottom: 1rpx solid #eaeef1;
@@ -29,21 +29,21 @@
   left: 0;
 }
 
-.tui-unlined::before {
+.free-unlined::before {
   border-bottom: 0 !important
 }
 
-.tui-tabs-item {
+.free-tabs-item {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.tui-tabs-disabled {
+.free-tabs-disabled {
   opacity: .6;
 }
 
-.tui-tabs-title {
+.free-tabs-title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,11 +51,11 @@
   z-index: 2;
 }
 
-.tui-tabs-active {
+.free-tabs-active {
   transition: all 0.15s ease-in-out;
 }
 
-.tui-tabs-slider {
+.free-tabs-slider {
   position: absolute;
   left: 0;
   transition: all 0.15s ease-in-out;

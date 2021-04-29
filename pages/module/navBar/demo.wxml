@@ -1,0 +1,42 @@
+
+<free-navBar title='自定义导航栏'  back="{{true}}" home="{{true}}" bindback="handlerGobackClick" bindhome="handlerGohomeClick" wx:if='{{index == 1}}'>
+</free-navBar>
+
+<free-navBar title='' background='#fff' back="{{true}}" home="{{true}}" bindback="handlerGobackClick" bindhome="handlerGohomeClick" wx:if='{{index == 2}}'>
+    <view class='' slot="center">
+      <free-input inputStyle='1' placeholder='带边框的输入框'></free-input>
+    </view>
+</free-navBar>
+
+<free-navBar title='只有返回图标' background='#fff' back="{{true}}"  bindback="handlerGobackClick"  wx:if='{{index == 3}}'>
+</free-navBar>
+
+<free-navBar title='深色背景白色图标' background='#f37b1d' color="#fff" iconTheme="white" back="{{true}}"  bindback="handlerGobackClick"  wx:if='{{index == 4}}'>
+</free-navBar>
+
+<free-navBar title='深色背景带返回' background='#f37b1d' color="#fff" iconTheme="white" back="{{true}}"  home="{{true}}" bindback="handlerGobackClick"  bindhome="handlerGohomeClick"  wx:if='{{index == 5}}'>
+</free-navBar>
+
+<free-navBar title='' background='#f37b1d' color="#fff" iconTheme="white"  wx:if='{{index == 6}}'>
+  <view class='padding-lr' slot="left">
+      <view class='con'>左侧</view>
+  </view>
+  <view class='' slot="center">
+      <free-input inputStyle='1' placeholder='带边框的输入框' color='#fff'></free-input>
+    </view>
+</free-navBar>
+
+<free-navBar title='自定义样式' background='#fff'  back="{{true}}" backIcon="arrow-left-filling" home="{{true}}" homeIcon="good" bindback="handlerGobackClick"  bindhome="handlerGohomeClick"  wx:if='{{index == 7}}'>
+</free-navBar>
+
+<view style='height:0;'>
+  <free-navBar title='自定义样式' background='rgba(0,0,0,0)'  back="{{true}}"  home="{{true}}" bindback="handlerGobackClick"  bindhome="handlerGohomeClick"   wx:if='{{index == 8}}'>
+</free-navBar>
+</view>
+
+<free-navBar title='下滑查看效果' background='{{background}}' backgroundColorTop='rgba(0,0,0,0)' back="{{true}}"  home="{{true}}" bindback="handlerGobackClick"  bindhome="handlerGohomeClick"   wx:if='{{index == 9}}'>
+</free-navBar>
+
+<view class="padding flex justify-center align-center bg-cyan" style="height:2800rpx;">
+  内容
+</view>

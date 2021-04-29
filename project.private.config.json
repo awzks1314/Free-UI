@@ -37,8 +37,14 @@
           "scene": null
         },
         {
-          "name": "pages/module/inputNumber/inputNumber",
-          "pathName": "pages/module/inputNumber/inputNumber",
+          "name": "pages/module/navBar/navBar",
+          "pathName": "pages/module/navBar/navBar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/module/tabs/tabs",
+          "pathName": "pages/module/tabs/tabs",
           "query": "",
           "scene": null
         }

@@ -1,0 +1,80 @@
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>默认</text>
+  </view>
+  <view class="free-title ">
+    <button class="free-button bg-blue" bindtap="show">打开弹窗</button>
+  </view>
+</view>
+<free-modal show="{{modal}}" bind:click="handleClick" bind:cancel="hide" title="提示" content="填写说明内容文字"></free-modal>
+
+
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>内容变色</text>
+  </view>
+  <view class="free-title ">
+    <button class="free-button bg-red" bindtap="show1">打开弹窗</button>
+  </view>
+</view>
+<free-modal show="{{modal1}}" bind:click="handleClick1" bind:cancel="hide1" color="red" content="填写说明内容文字"></free-modal>
+
+
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>圆角按钮</text>
+  </view>
+  <view class="free-title ">
+    <button class="free-button bg-orange" bindtap="show2" shape="circle">打开弹窗</button>
+  </view>
+</view>
+<free-modal show="{{modal2}}" bind:click="handleClick2" shape='circle' bind:cancel="hide2" content="填写说明内容文字"></free-modal>
+
+
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>单个按钮</text>
+  </view>
+  <view class="free-title ">
+    <button class="free-button bg-yellow" bindtap="show3">打开弹窗</button>
+  </view>
+</view>
+<free-modal show="{{modal3}}" bind:click="handleClick3" bind:cancel="hide3" button="{{button4}}" content="填写说明内容文字"></free-modal>
+
+
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>多个按钮</text>
+  </view>
+  <view class="free-title ">
+    <button class="free-button bg-green" bindtap="show4">打开弹窗</button>
+  </view>
+</view>
+<free-modal show="{{modal4}}" bind:click="handleClick4" bind:cancel="hide4" button="{{button5}}" content="填写说明内容文字"></free-modal>
+
+
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>不可点击</text>
+  </view>
+  <view class="free-title ">
+    <button class="free-button bg-olive" bindtap="show5">打开弹窗</button>
+  </view>
+</view>
+<free-modal show="{{modal5}}" bind:click="handleClick5" bind:cancel="hide5"maskClosable="{{false}}" content="填写说明内容文字"></free-modal>
+
+
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>自定义弹窗</text>
+  </view>
+  <view class="free-title ">
+    <button class="free-button bg-purple" bindtap="show6">打开弹窗</button>
+  </view>
+</view>
+<free-modal show="{{modal6}}" custom="{{true}}" bind:cancel="hide6" >
+  <view class="flex flex-direction align-center">
+      <view class="padding">我是自定内容</view>
+      <button class="free-button bg-blue">确定</button>
+    </view>
+</free-modal>

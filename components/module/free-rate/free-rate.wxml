@@ -1,0 +1,7 @@
+<view class="free-rate-class free-rate-box" bindtouchmove="touchMove">
+  <block wx:for="{{number}}" wx:key="index">
+    <view class="free-icon free-relative free-icon-collection{{hollow && (current<=index || (disabled && current<=index+1))?'':'-fill'}}" data-index="{{index}}" bindtap="handleTap" style="font-size:{{size}}px;color:{{(current>index+1 || (!disabled && current>index))?active:normal}};">
+      <view class="free-icon free-icon-main free-icon-collection-fill" wx:if="{{disabled && current==index+1}}" style="font-size:{{size+'px'}};color:{{active}};width:{{percent+'%'}}"></view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,41 @@
+<view class="free-nav-bar " style="background: {{backgroundColorTop}};height: {{navBarHeight+ navBarExtendHeight}}px;">
+    <view class="free-nav-bar__placeholder {{ios ? 'ios' : 'android'}}" style="padding-top: {{navBarHeight+ navBarExtendHeight}}px;visibility: hidden;"></view>
+    <view class="free-nav-bar__inner {{ios ? 'ios' : 'android'}}" style="{{navigationbarinnerStyle}}{{displayStyle}}">
+        <view class='free-nav-bar__left' style="{{navBarLeft}}">
+            <block wx:if="{{back&&!home}}">
+                <view bindtap="back" class="free-nav-bar__button ">
+                    <free-icon name='{{backIcon}}' size='18' color="{{iconTheme}}"></free-icon>
+                </view>
+            </block>
+            <block wx:if="{{!back&&home}}">
+                <view bindtap="home" class="free-nav-bar__button ">
+                    <free-icon name='{{homeIcon}}' size='18' color="{{iconTheme}}"></free-icon>
+                </view>
+            </block>
+            <block wx:elif="{{back&&home}}">
+                <view class="free-nav-bar__buttons {{ios ? 'ios' : 'android'}}" wx:if="{{home}}">
+                    <view bindtap="back" class="free-nav-bar__button" wx:if="{{back}}">
+                        <free-icon name='{{backIcon}}' size='18' color="{{iconTheme}}"></free-icon>
+                    </view>
+                    <view bindtap="home" class="free-nav-bar__button ">
+                        <free-icon name='{{homeIcon}}' size='20' color="{{iconTheme}}"></free-icon>
+                    </view>
+                </view>
+            </block>
+            <block wx:else>
+                <slot name="left"></slot>
+            </block>
+        </view>
+        <view class='free-nav-bar__center'>
+            <block wx:if="{{title}}">
+                <text class='free-nav-bar__center-title'>{{title}}</text>
+            </block>
+            <block wx:else>
+                <slot name="center"></slot> 
+            </block>
+        </view>
+        <view class='free-nav-bar__right'>
+            <slot name="right"></slot>
+        </view>
+    </view>
+</view>

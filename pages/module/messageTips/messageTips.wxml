@@ -1,0 +1,36 @@
+<!-- 顶部提示 -->
+<free-message-tips id="free-tips-position" wx:if="{{type=='top'}}"></free-message-tips>
+<!-- 顶部提示 -->
+<free-message-tips position="center" id="free-tips-position" wx:if="{{type=='center'}}"></free-message-tips>
+<!-- 顶部提示 -->
+<free-message-tips position="bottom" id="free-tips-position" wx:if="{{type=='bottom'}}"></free-message-tips>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>顶部提示</text>
+  </view>
+</view>
+<view class="grid col-3 margin-bottom text-center"  >
+  <view class="padding" wx:for="{{list}}" wx:key="index" bindtap="showTips" data-index="{{index}}" data-type="top">
+    <button class="free-button bg-{{item.str}}">{{item.name}}</button>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>居中提示</text>
+  </view>
+</view>
+<view class="grid col-3 margin-bottom text-center"  >
+  <view class="padding" wx:for="{{list}}" wx:key="index" bindtap="showTips" data-index="{{index}}" data-type="center">
+    <button class="free-button bg-{{item.str}}">{{item.name}}</button>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>底部提示</text>
+  </view>
+</view>
+<view class="grid col-3 margin-bottom text-center"  >
+  <view class="padding" wx:for="{{list}}" wx:key="index" bindtap="showTips" data-index="{{index}}" data-type="bottom">
+    <button class="free-button bg-{{item.str}}">{{item.name}}</button>
+  </view>
+</view>

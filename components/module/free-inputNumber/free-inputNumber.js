@@ -17,7 +17,7 @@ Component({
     },
     max:{
       type:String,
-      value:'999999'
+      value:'9999'
     },
     step: {
       type: Number,
@@ -40,12 +40,12 @@ Component({
     //input 高度
     height: {
       type: Number,
-      value: 50
+      value: 60
     },
     //input 宽度
     width: {
       type: Number,
-      value: 90
+      value: 100
     },
     //索引值，列表中使用
     index: {
@@ -56,7 +56,17 @@ Component({
     custom: {
       type: Number,
       value: 0
-    }
+    },
+    // 其他样式
+    style:{
+      type:String,
+      value:''
+    },
+    // 样式颜色
+    styleColor:{
+      type:String,
+      value:''
+    },
   },
 
   /**

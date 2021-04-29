@@ -23,7 +23,7 @@ Component({
     //是否固定
     isFixed: {
       type: Boolean,
-      value: true
+      value: false
     },
     //px
     top: {

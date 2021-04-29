@@ -1,0 +1,10 @@
+<view class="free-bar  bg-white solid-bottom" wx:for="{{list}}" wx:key='index'>
+  <view class="free-title ">
+    <text>{{item.name}}</text>
+  </view>
+  <view class="free-title ">
+    <button class="free-button bg-blue" bindtap="gotoDemo" data-index="{{item.id}}">查看实例</button>
+  </view>
+</view>
+
+

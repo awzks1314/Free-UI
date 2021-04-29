@@ -1,0 +1,7 @@
+{
+  "navigationStyle":"custom",
+  "usingComponents": {
+    "free-navBar":"/components/module/free-navBar/free-navBar",
+    "free-input":"/components/module/free-input/free-input"
+  }
+}

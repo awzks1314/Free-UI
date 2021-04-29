@@ -1,4 +1,5 @@
 Component({
+  externalClasses: ['free-icon-class'],
   properties: {
     name: {
       type: String,

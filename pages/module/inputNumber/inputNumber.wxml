@@ -38,3 +38,35 @@
     <free-inputNumber disabled></free-inputNumber> 
   </view>
 </view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>尺寸设置</text>
+  </view>
+  <view class="free-title">
+    <free-inputNumber  height='60' width='180'></free-inputNumber> 
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>自定义样式</text>
+  </view>
+  <view class="free-title">
+    <free-inputNumber style="1" styleColor="red"></free-inputNumber> 
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>自定义样式</text>
+  </view>
+  <view class="free-title">
+    <free-inputNumber style="1" styleColor="blue" width='200'></free-inputNumber> 
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>当前输入框的值是{{value4}}</text>
+  </view>
+  <view class="free-title">
+    <free-inputNumber style="1" value='{{value4}}' styleColor="orange" bind:change='getValue4'></free-inputNumber> 
+  </view>
+</view>

@@ -1,16 +1,18 @@
-<view class='box' style="background:{{bg}};position:{{position}}">
+<view class='box' style="position:{{position}}">
   <view  class="{{inputStyle == 0?'inputStyle':'inputStyles'}} {{inputStyle == 1 &&disabled?'disabled':''}}" style="border-radius:{{radius}};background:{{inputBg}}">
     <!-- 前置图标 -->
     <view style="padding-left:30rpx;" wx:if="{{prefixIcon}}">
       <!-- <view style="background:{{slotBg}};color:{{color}};padding:0 20rpx;">
       <slot name='prefix' ></slot>
     </view> -->
-      <free-icon name="{{prefixIcon}}"  size="18"></free-icon>
+      <free-icon name="{{prefixIcon}}" color="{{color}}" size="18"></free-icon>
     </view>
     <input type="{{type}}" 
+    style="color:{{color}}"
+    placeholder-style="color:{{color}}"
     confirm-type="{{confirmType}}"
     placeholder="{{placeholder}}" 
-    value="{{textValue}}" 
+    value="{{value}}" 
     bindinput="getInput"  
     bindfocus="getFocus"
     bindblur="getBlur"
@@ -20,11 +22,11 @@
     class="input"/>
     <!-- 删除 -->
     <view class="deleStyle" wx:if="{{textValue.length>0 && close}}">
-      <free-icon name="close" color='#dcdfe6' size="12" bindtap="close"></free-icon>
+      <free-icon name="close" color="{{color?color:'#dcdfe6'}}"  size="12" bindtap="close"></free-icon>
     </view>
     <!-- 后置图标 -->
     <view style="padding: 0 20rpx;" wx:if="{{suffixIcon}}" >
-      <free-icon name="{{suffixIcon}}" size="18"></free-icon>
+      <free-icon name="{{suffixIcon}}" color="{{color}}" size="18"></free-icon>
       <!-- <slot name='suffix' ></slot> -->
     </view>    
   </view>

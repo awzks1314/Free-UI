@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"消息提示",
+  "usingComponents": {
+    "free-message-tips":"/components/module/free-message-tips/free-message-tips"
+  }
+}

@@ -1,0 +1,17 @@
+<view class="margin-bottom">
+  <free-tabs tabs="{{tabs}}"   currentTab="{{currentTab}}" bold='true'  bind:change="change" itemWidth="50%"></free-tabs>
+</view>
+
+<view class="margin-bottom">
+<free-tabs tabs="{{tabs2}}"   currentTab="{{currentTab}}" bold='true'  bind:change="change" itemWidth="50%"></free-tabs>
+</view>
+
+<view class="margin-bottom">
+<free-tabs tabs="{{tabs2}}"   currentTab="{{currentTab}}" bold='true'  bind:change="change" sliderBgColor="orange"  selectedColor='orange' color="#fff" backgroundColor ="#0081ff" itemWidth="50%"></free-tabs> 
+</view>
+
+<view class="margin-bottom">
+<free-tabs tabs="{{tabs1}}"   currentTab="{{currentTab}}" bold='true'  bind:change="change"   itemWidth="50%"></free-tabs> 
+</view>
+
+<free-tabs tabs="{{tabs}}"   currentTab="{{currentTab}}" sliderWidth="{{150}}" sliderHeight="{{60}}" bottom="50%" color="#888" selectedColor="#11CDFC" sliderBgColor="#E5FAFF"  bold='true'  bind:change="change" ></free-tabs> 

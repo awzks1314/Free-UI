@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"弹框",
+  "usingComponents": {
+    "free-modal":"/components/module/free-modal/free-modal"
+  }
+}

@@ -14,7 +14,15 @@
     "pages/basic/tag/tag",
     "pages/basic/text/text",
     "pages/module/input/input",
-    "pages/module/inputNumber/inputNumber"
+    "pages/module/inputNumber/inputNumber",
+    "pages/module/select/select",
+    "pages/module/rate/rate",
+    "pages/module/messageTips/messageTips",
+    "pages/module/modal/modal",
+    "pages/module/drawer/drawer",
+    "pages/module/navBar/navBar",
+    "pages/module/navBar/demo",
+    "pages/module/tabs/tabs"
   ],
   "tabBar": {
     "color": "#aaaaaa",

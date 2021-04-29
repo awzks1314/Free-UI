@@ -8,7 +8,8 @@ Page({
     value:1,
     value1:10,
     value2:3,
-    value3:2.1
+    value3:2.1,
+    value4:1,
   },
 
   /**
@@ -35,6 +36,11 @@ Page({
   getValue3(e){
     this.setData({
       value3:e.detail.value
+    })
+  },
+  getValue4(e){
+    this.setData({
+      value4:e.detail.value
     })
   },
   /**

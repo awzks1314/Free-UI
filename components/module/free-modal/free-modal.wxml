@@ -1,0 +1,18 @@
+<view >
+  <view class="free-modal-class free-modal-box {{show?'free-modal-show':''}} {{(fadein || show)?'free-modal-normal':'free-modal-scale'}}" style="width:{{width}};padding:{{padding}};border-radius:{{radius}}">
+    <view wx:if="{{!custom}}">
+      <view class="free-modal-title" v-if="title">{{title}}</view>
+      <view class="free-modal-content {{title?'':'free-mtop'}}" style="color:{{color}};font-size:{{size}}rpx">{{content}}</view>
+      <view class="free-modalBtn-box {{button.length>2?'free-flex-column':''}}">
+        <block wx:for="{{button}}" wx:key="index">
+          <button class="free-modal-btn {{'free-'+(item.type || 'primary')+(item.plain?'-outline':'')}} {{button.length!=2?'free-btn-width':''}} {{button.length>2?'free-mbtm':''}} {{shape=='circle'?'free-circle-btn':''}}" hover-class="{{'free-'+(item.plain?'outline':(item.type || 'primary'))+'-hover'}}"
+            data-index="{{index}}" bindtap="handleClick">{{item.text || "确定"}}</button>
+        </block>
+      </view>
+    </view>
+    <view wx:else>
+      <slot></slot>
+    </view>
+  </view>
+  <view class="free-modal-mask {{show?'free-mask-show':''}}" bindtap="handleClickCancel"></view>
+</view>

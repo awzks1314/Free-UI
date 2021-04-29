@@ -17,14 +17,22 @@
 .color-grey{
   color: #ddd;
 }
-input,.input{
+.input{
   width: 100rpx;
   height: auto;
   display: flex;
-  align-items: center;
   justify-content: center;
   text-align: center;
   padding: 10rpx;
   margin: 0 6rpx;
   background: #f2f3f5;
+}
+.styleOne{
+  color: #fff;
+  border-radius: 50%;
+}
+.styleOneBox{
+  border: 2rpx solid #f2f3f5;
+  border-radius: 200rpx;
+  padding: 4rpx;
 }

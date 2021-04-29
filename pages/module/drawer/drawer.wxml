@@ -1,0 +1,62 @@
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>基础用法</text>
+  </view>
+  <view class="free-title">
+    <button class="free-button bg-blue lg" bindtap="openDrawer" data-type="top">顶部抽屉</button>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>基础用法</text>
+  </view>
+  <view class="free-title">
+    <button class="free-button  bg-orange lg" bindtap="openDrawer" data-type="left">左侧抽屉</button>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>基础用法</text>
+  </view>
+  <view class="free-title">
+    <button class="free-button  bg-green lg" bindtap="openDrawer" data-type="right">右侧抽屉</button>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>基础用法</text>
+  </view>
+  <view class="free-title">
+    <button class="free-button  bg-yellow lg" bindtap="openDrawer" data-type="bottom">底部抽屉</button>
+  </view>
+</view>
+
+
+<!-- 顶部抽屉 -->
+<free-drawer mode="top" visible="{{top}}"  bind:close="closeDrawer" data-type="top" >
+  <view class="padding">
+    <button class="free-button bg-blue lg"  bindtap="closeDrawer" data-type="top">关闭抽屉</button>
+  </view>
+</free-drawer >
+
+<!-- 左侧 -->
+ <free-drawer mode="left" visible="{{left}}"  bind:close="closeDrawer" data-type="left">
+    <view class="padding">
+      <button class="free-button bg-blue lg"  bindtap="closeDrawer" data-type="left">关闭抽屉</button>
+      
+    </view>
+  </free-drawer >
+
+<!-- 右侧 -->
+<free-drawer mode="right" visible="{{right}}"  bind:close="closeDrawer" data-type="right">
+    <view class="padding">
+      <button class="free-button bg-blue lg"  bindtap="closeDrawer" data-type="right">关闭抽屉</button>
+    </view>
+  </free-drawer >
+
+<!-- 底部抽屉 -->
+<free-drawer mode="bottom" visible="{{bottom}}"  bind:close="closeDrawer" data-type="bottom">
+  <view class="padding">
+    <button class="free-button bg-blue lg"  bindtap="closeDrawer" data-type="bottom">关闭抽屉</button>
+  </view>
+</free-drawer >

@@ -17,43 +17,38 @@ Page({
         icon:'picture-filling',
       },
       {
-        name:'选择器',
+        name:'下拉',
         title:'select',
         icon:'picture-filling',
       },
       {
         name:'评分',
-        title:'Rate',
-        icon:'picture-filling',
-      },
-      {
-        name:'表单',
-        title:'Rate',
-        icon:'picture-filling',
-      },
-      {
-        name:'表单',
-        title:'form',
-        icon:'picture-filling',
-      },
-      {
-        name:'进度条',
-        title:'progress',
-        icon:'picture-filling',
-      },
-      {
-        name:'警告消息',
-        title:'alert',
-        icon:'picture-filling',
-      },
-      {
-        name:'加载状态',
-        title:'loading',
+        title:'rate',
         icon:'picture-filling',
       },
       {
         name:'消息提示',
-        title:'message',
+        title:'messageTips',
+        icon:'picture-filling',
+      },
+      {
+        name:'弹窗',
+        title:'modal',
+        icon:'picture-filling',
+      },
+      {
+        name:'抽屉',
+        title:'drawer',
+        icon:'picture-filling',
+      },
+      {
+        name:'导航栏',
+        title:'navBar',
+        icon:'picture-filling',
+      },
+      {
+        name:'标签页',
+        title:'tabs',
         icon:'picture-filling',
       }
     ]

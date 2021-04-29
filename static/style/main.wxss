@@ -1284,6 +1284,7 @@ button.icon.lg {
 	position: relative;
 	align-items: center;
 	min-height: 100rpx;
+	margin: 20rpx 0;
 	justify-content: space-between;
 }
 

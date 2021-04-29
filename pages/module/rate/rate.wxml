@@ -1,0 +1,64 @@
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>基础用法</text>
+  </view>
+  <view class="free-title">
+    <free-rate current="{{current}}" bind:change="change"></free-rate>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>不同颜色</text>
+  </view>
+  <view class="free-title">
+    <free-rate current="{{current}}" active='orange' bind:change="change"></free-rate>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>设置数量</text>
+  </view>
+  <view class="free-title">
+    <free-rate current="{{current}}" number="10"  bind:change="change"></free-rate>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>小尺寸</text>
+  </view>
+  <view class="free-title">
+    <free-rate current="{{current}}" size='16'  bind:change="change"></free-rate>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>大尺寸</text>
+  </view>
+  <view class="free-title">
+    <free-rate current="{{current}}" size='24'  bind:change="change"></free-rate>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>初始空心</text>
+  </view>
+  <view class="free-title">
+    <free-rate current="{{current}}" hollow="true"  bind:change="change"></free-rate>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>不可点击</text>
+  </view>
+  <view class="free-title">
+    <free-rate current="{{current}}" disabled  bind:change="change"></free-rate>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>不可点击3.5星</text>
+  </view>
+  <view class="free-title">
+    <free-rate current="{{3}}" score="{{0.5}}" disabled  bind:change="change"></free-rate>
+  </view>
+</view>

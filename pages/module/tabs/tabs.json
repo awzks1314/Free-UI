@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"tabs标签页",
+  "usingComponents": {
+    "free-tabs": "/components/module/free-tabs/free-tabs"
+  }
+}

@@ -7,15 +7,18 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    value:{
+      type:String,
+      value:''
+    },
     // 输入框样式
     inputStyle:{
       type:String,
       value:'0'
     },
-    // 背景颜色
-    bg:{
+    color:{
       type:String,
-      value:'#fff'
+      value:''
     },
     // 输入框背景颜色
     inputBg:{
@@ -88,7 +91,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    textValue:''
+    
   },
 
   /**
@@ -97,9 +100,9 @@ Component({
   methods: {
     // 输入变化
     getInput(e){
-      this.data.textValue = e.detail.value
+      this.data.value = e.detail.value
       this.setData({
-        textValue:e.detail.value
+        value:e.detail.value
       })
       this.triggerEvent("input", {
         value: e.detail.value
@@ -107,9 +110,9 @@ Component({
     },
     // 聚焦输入框变化
     getFocus(e){
-      this.data.textValue = e.detail.value
+      this.data.value = e.detail.value
       this.setData({
-        textValue:e.detail.value
+        value:e.detail.value
       })
       this.triggerEvent("focus", {
         value: e.detail.value
@@ -117,9 +120,9 @@ Component({
     },
     // 失焦
     getBlur(e){
-      this.data.textValue = e.detail.value
+      this.data.value = e.detail.value
       this.setData({
-        textValue:e.detail.value
+        value:e.detail.value
       })
       this.triggerEvent("blur", {
         value: e.detail.value
@@ -127,9 +130,9 @@ Component({
     },
     // 聚焦输入框变化
     getConfirm(e){
-      this.data.textValue = e.detail.value
+      this.data.value = e.detail.value
       this.setData({
-        textValue:e.detail.value
+        value:e.detail.value
       })
       this.triggerEvent("confirm", {
         value: e.detail.value
@@ -138,13 +141,13 @@ Component({
     // 额外按钮
     extreaBtn(){
       this.triggerEvent("extrea", {
-        value: this.data.textValue
+        value: this.data.value
       },{})
     },
     close(){
-      this.data.textValue =''
+      this.data.value =''
       this.setData({
-        textValue:this.data.textValue
+        value:this.data.value
       })
       this.triggerEvent("colse", {
         value: ''

@@ -1,0 +1,122 @@
+view,
+text,
+scroll-view,
+input,
+button,
+image,
+cover-view {
+  box-sizing: border-box;
+}
+page {
+  --height: 44px; /* 4*2+32 */
+  --right: 97px; /* 10+87 */
+  --navBarExtendHeight: 4px;
+  box-sizing: border-box;
+}
+.free-nav-bar .ios {
+  --height: 44px; /* 4*2+32 */
+  --right: 97px; /* 10+87 */
+  --navBarExtendHeight: 4px;
+  box-sizing: border-box;
+}
+.free-nav-bar .android {
+  --height: 48px; /* 8*2+32 */
+  --right: 96px; /* 10+87 */
+  --navBarExtendHeight: 4px;
+  box-sizing: border-box;
+}
+.free-nav-bar .devtools {
+  --height: 42px; /* 5*2+32 */
+  --right: 88px; /* 10+87 */
+  --navBarExtendHeight: 4px;
+  box-sizing: border-box;
+}
+.free-nav-bar__inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5001;
+  height: var(--height);
+  display: flex;
+  align-items: center;
+  padding-right: var(--right);
+  width: 100%;
+  padding-bottom: var(--navBarExtendHeight);
+}
+.free-nav-bar__inner .free-nav-bar__left {
+  position: relative;
+  width: var(--right);
+  height: 32px;
+  /*  padding-left: 10px; */
+  display: flex;
+  align-items: center;
+}
+.free-nav-bar__buttons {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  border: 1rpx solid rgba(204, 204, 204, 0.6);
+  position: relative;
+}
+.free-nav-bar__buttons.android {
+  border: 1rpx solid rgba(234, 234, 234, 0.6);
+}
+.free-nav-bar__buttons::after {
+  position: absolute;
+  content: '';
+  width: 1rpx;
+  height: 18.4px;
+  background: rgba(204, 204, 204, 0.6);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.free-nav-bar__buttons.android::after {
+  background: rgba(234, 234, 234, 0.6);
+}
+.free-nav-bar__button {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.free-nav-bar__inner .free-nav-bar__left .free-nav-bar__btn_goback:active,
+.free-nav-bar__inner .free-nav-bar__left .free-nav-bar__btn_gohome:active {
+  opacity: 0.5;
+}
+.free-nav-bar__inner .free-nav-bar__center {
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  position: relative;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+.free-nav-bar__inner .free-nav-bar__center .free-nav-bar__center-title {
+  margin-top: -2px;
+}
+.free-nav-bar__inner .free-nav-bar__loading {
+  font-size: 0;
+}
+.free-nav-bar__inner .free-nav-bar__loading .free-loading {
+  margin-left: 0;
+}
+.free-nav-bar__inner .free-nav-bar__right {
+  margin-right: 10px;
+}
+.free-nav-bar__placeholder {
+  height: var(--height);
+  background: #f8f8f8;
+  position: relative;
+  z-index: 50;
+}

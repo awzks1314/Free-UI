@@ -5,13 +5,13 @@
   </view>
 </view>
 <view class="">
-  <free-input placeholder='有背景的输入框'></free-input>
-  <free-input inputStyle='1' placeholder='带边框的输入框'></free-input>
-  <free-input extreaWord='取消' bind:input="getInput" bind:extrea="cancel" radius="4rpx" placeholder="带操作的输入框"></free-input>
-  <free-input prefixIcon="electronics" placeholder="前置图标可更换"></free-input>
-  <free-input suffixIcon="electronics" prefixIcon='' placeholder="后置图标可更换"></free-input>
-  <free-input radius='10rpx' bg='#0081ff' inputStyle='0' extreaWord='搜索' extreaColor='#fff' placeholder="背景色为蓝"></free-input>
-  <free-input radius='10rpx' inputBg='#fff' placeholder='无背景的输入框'></free-input>
-  <free-input password placeholder='密码输入'></free-input>
-  <free-input disabled inputStyle='1' placeholder='禁止输入'></free-input>
+  <view class="padding"><free-input placeholder='有背景的输入框'></free-input></view>
+  <view class="padding"><free-input inputStyle='1' placeholder='带边框的输入框'></free-input></view>
+  <view class="padding"><free-input extreaWord='取消' bind:input="getInput" bind:extrea="cancel" radius="4rpx" placeholder="带操作的输入框"></free-input></view>
+  <view class="padding"><free-input prefixIcon="electronics" placeholder="前置图标可更换"></free-input></view>
+  <view class="padding"><free-input suffixIcon="electronics" prefixIcon='' placeholder="后置图标可更换"></free-input></view>
+  <view class="padding bg-blue"><free-input radius='10rpx'  inputStyle='0' extreaWord='搜索' extreaColor='#fff' placeholder="背景色为蓝"></free-input></view>
+  <view class="padding"><free-input radius='10rpx' inputBg='#fff' placeholder='无背景的输入框'></free-input></view>
+  <view class="padding"><free-input password placeholder='密码输入'></free-input></view>
+  <view class="padding"><free-input disabled inputStyle='1' placeholder='禁止输入'></free-input></view>
 </view>
