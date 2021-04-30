@@ -16,6 +16,12 @@ Page({
         name:'背景',
         title:'color',
         desc:'深色、浅色、渐变背景',
+        icon:'home'
+      },
+      {
+        name:'图片',
+        title:'image',
+        desc:'图片大小、懒加载以及预览等',
         icon:'picture-filling'
       },
       {

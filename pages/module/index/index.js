@@ -9,47 +9,117 @@ Page({
       {
         name:'输入框',
         title:'input',
-        icon:'picture-filling',
+        icon:'home',
       },
       {
         name:'计数器',
         title:'inputNumber',
-        icon:'picture-filling',
+        icon:'home',
       },
       {
         name:'下拉',
         title:'select',
-        icon:'picture-filling',
+        icon:'home',
       },
       {
         name:'评分',
         title:'rate',
-        icon:'picture-filling',
+        icon:'home',
       },
       {
         name:'消息提示',
         title:'messageTips',
-        icon:'picture-filling',
+        icon:'home',
       },
       {
         name:'弹窗',
         title:'modal',
-        icon:'picture-filling',
+        icon:'home',
       },
       {
         name:'抽屉',
         title:'drawer',
-        icon:'picture-filling',
+        icon:'home',
       },
       {
         name:'导航栏',
         title:'navBar',
-        icon:'picture-filling',
+        icon:'home',
       },
       {
         name:'标签页',
         title:'tabs',
-        icon:'picture-filling',
+        icon:'home',
+      },
+      {
+        name:'列表',
+        title:'list',
+        icon:'home',
+      },
+      {
+        name:'标签栏',
+        title:'tabbar',
+        icon:'home',
+      },
+      {
+        name:'表单',
+        title:'form',
+        icon:'home',
+      },
+      {
+        name:'选择器',
+        title:'picker',
+        icon:'home',
+      },
+      {
+        name:'手风琴',
+        title:'accordion',
+        icon:'home',
+      },
+      {
+        name:'轮播',
+        title:'swiper',
+        icon:'home',
+      },
+      {
+        name:'通告栏',
+        title:'noticeBar',
+        icon:'home',
+      },
+      {
+        name:'步骤条',
+        title:'steps',
+        icon:'home',
+      },
+      {
+        name:'动作面板',
+        title:'actionSheet',
+        icon:'home',
+      },
+      {
+        name:'加载',
+        title:'loading',
+        icon:'home',
+      },
+      {
+        name:'进度条',
+        title:'progress',
+        icon:'home',
+      },
+      {
+        name:'滑动操作',
+        title:'swiperAction',
+        icon:'home',
+      },
+      {
+        name:'长列表',
+        title:'listView',
+        icon:'home',
+      },
+      {
+        name:'结果页',
+        title:'result',
+        icon:'home',
       }
     ]
   },

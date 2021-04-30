@@ -1067,7 +1067,7 @@ button.icon.lg {
 	overflow: hidden;
 }
 
-.grid.grid-square .cu-tag {
+.grid.grid-square .free-tag {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -1162,7 +1162,31 @@ button.icon.lg {
 .grid.col-5>view {
 	width: 20%;
 }
-
+.free-tag {
+	font-size: 24rpx;
+	vertical-align: middle;
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 0rpx 16rpx;
+	height: 48rpx;
+	font-family: Helvetica Neue, Helvetica, sans-serif;
+	white-space: nowrap;
+}
+.badge {
+	border-radius: 200rpx;
+	position: absolute;
+	top: -10rpx;
+	right: -30rpx;
+	font-size: 20rpx;
+	padding: 0rpx 10rpx;
+	color: var(--white);
+}
+.free-list.grid.no-border>.free-item:after {
+	border: none
+}
 /* 字体文本 */
 
 .text-xs {
@@ -1318,9 +1342,10 @@ button.icon.lg {
 .free-list.grid>.free-item {
 	position: relative;
 	display: flex;
-	padding: 20rpx 0 30rpx;
+	padding: 20rpx 0;
 	transition-duration: 0s;
-	flex-direction: column
+	flex-direction: column;
+	align-items: center;
 }
 
 .free-list.grid>.free-item:after {
@@ -1339,12 +1364,36 @@ button.icon.lg {
 	pointer-events: none
 }
 
-.free-list.grid>.cu-item text {
+.free-list.grid>.free-item text {
 	display: block;
 	margin-top: 10rpx;
 	color: #888;
 	font-size: 26rpx;
 	line-height: 40rpx
+}
+
+/* ==================
+         导航栏
+ ==================== */
+
+ .nav {
+	white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.nav .free-item {
+	height: 90rpx;
+	display: inline-block;
+	line-height: 90rpx;
+	margin: 0 10rpx;
+	padding: 0 20rpx;
+}
+
+.nav .free-item.cur {
+	border-bottom: 4rpx solid;
 }
 
 /* 站位块 */

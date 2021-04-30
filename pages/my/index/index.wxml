@@ -1,2 +1,16 @@
-<!--pages/my/index/index.wxml-->
-<text>pages/my/index/index.wxml</text>
+<view class="header padding solid-bottom flex flex-direction bg-blue">
+  <text class="tile ">Free UI</text>
+  <text>一款轻量、开箱即用的原生微信小程序UI组件库</text>
+</view>
+<view class="free-list grid col-3 border shadow-main">
+  <view wx:for="{{dataList}}" wx:key="index" class="free-item padding bg-white flex flex-direction justify-center align-center" >
+    <text class=" text-{{item.color}} text-lg">{{item.number}}</text>
+    <text class="padding-top-xs text-gray">{{item.name}}</text>
+  </view>
+</view>
+
+<view class=" margin-top ">
+  <view class=" bg-white padding">
+    11
+  </view>
+</view>

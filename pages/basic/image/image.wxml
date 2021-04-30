@@ -1,0 +1,37 @@
+<free-tabs tabs="{{tabs}}"  isFixed="true" currentTab="{{currentTab}}" bold='true'  bind:change="change"   itemWidth="50%"></free-tabs> 
+
+<view class="positionView"></view>
+<view wx:if='{{currentTab == 0}}' >
+  <view class="grid col-3  text-center margin-top" >
+    <view wx:for="{{imageList}}" wx:key="index" class=" margin-bottom">
+      <free-image src='/static/image/my/dog.jpg' mode='{{item.name}}' preview="{{true}}"></free-image>
+      <!-- <text>{{item.msg}}</text> -->
+    </view>
+  </view>
+</view>
+
+<view wx:if='{{currentTab == 1}}' >
+  <view class="grid col-3  text-center margin-top" >
+    <view wx:for="{{9}}" wx:key="index" class=" margin-bottom">
+      <free-image src='/static/image/my/dog.jpg'  width="{{100+index*8 +'rpx'}}" height="{{100+index*8 +'rpx'}}" ></free-image>
+    </view>
+  </view>
+  <view class="grid col-3  text-center margin-top" >
+    <view wx:for="{{3}}" wx:key="index" class=" margin-bottom">
+      <free-image src='/static/image/my/dog.jpg'  radius="{{30*index}}"></free-image>
+    </view>
+  </view>
+</view>
+
+<view wx:if='{{currentTab == 2}}' >
+  <view class="flex align-center justify-center padding flex-direction">
+    <free-image src='/static/image/my/dog.jpg' width="500rpx" height="500rpx" menu="true"></free-image>
+    <text class="margin-top-sm">长按识别保存</text>
+  </view>
+</view>
+
+<view wx:if='{{currentTab == 3}}' >
+  <view class="flex align-center justify-center padding flex-direction">
+    <free-image src='/static/image/my/dog.jpg'  menu="true" wx:for="{{30}}" wx:key="index" lazy='true'></free-image>
+  </view>
+</view>

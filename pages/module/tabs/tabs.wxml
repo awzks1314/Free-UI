@@ -3,7 +3,7 @@
 </view>
 
 <view class="margin-bottom">
-<free-tabs tabs="{{tabs2}}"   currentTab="{{currentTab}}" bold='true'  bind:change="change" itemWidth="50%"></free-tabs>
+<free-tabs tabs="{{tabs2}}"   currentTab="{{currentTab}}" bold='true'  selectedColor='red'  bind:change="change" itemWidth="50%"></free-tabs>
 </view>
 
 <view class="margin-bottom">
@@ -14,4 +14,18 @@
 <free-tabs tabs="{{tabs1}}"   currentTab="{{currentTab}}" bold='true'  bind:change="change"   itemWidth="50%"></free-tabs> 
 </view>
 
+<view class="margin-bottom">
 <free-tabs tabs="{{tabs}}"   currentTab="{{currentTab}}" sliderWidth="{{150}}" sliderHeight="{{60}}" bottom="50%" color="#888" selectedColor="#11CDFC" sliderBgColor="#E5FAFF"  bold='true'  bind:change="change" ></free-tabs> 
+</view>
+
+<scroll-view scroll-x class="bg-white nav margin-bottom" scroll-with-animation scroll-left="{{scrollLeft}}">
+  <view class="free-item {{index==TabCur?'text-green cur':''}}" wx:for="{{10}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+    Tab{{index}}
+  </view>
+</scroll-view>
+
+<scroll-view scroll-x class="bg-white nav text-center margin-bottom">
+  <view class="free-item {{index==TabCur?'text-blue cur':''}}" wx:for="{{4}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+    Tab{{index}}
+  </view>
+</scroll-view>

@@ -1,0 +1,44 @@
+
+<free-tabs tabs="{{tabs}}" isFixed="true"  currentTab="{{currentTab}}" bold='true'    bind:change="change" itemWidth="50%"></free-tabs>
+<view class="positionView"></view>
+
+<view wx:if="{{currentTab == 0}}" class="bg-white">
+  <view class="free-list grid col-3 no-border padding-top padding-lr-sm">
+    <view class="free-item " wx:for="{{gridList}}" wx:key >
+      <view class="free-tag">
+        <!-- <free-icon name="home-filling" color="{{item.color}}"> </free-icon> -->
+        <free-image src="/static/image/superman/{{index+1}}.jpg" width="50rpx" height='50rpx'></free-image>
+        <view class="badge bg-red">
+          <block wx:if="{{item.number!=1}}">{{item.number>99?"99+":item.number}}</block>
+        </view>
+      </view >
+        <text>{{item.name}}</text>
+    </view>
+  </view>
+
+  <view class="free-list grid col-4 no-border padding-tb padding-lr-sm">
+    <view class="free-item " wx:for="{{gridList}}" wx:key >
+      <view class="free-tag">
+        <!-- <free-icon name="home-filling" color="{{item.color}}"> </free-icon> -->
+        <free-image src="/static/image/superman/{{index+1}}.jpg" width="50rpx" height='50rpx'></free-image>
+        <view class="badge bg-red">
+          <block wx:if="{{item.number!=1}}">{{item.number>99?"99+":item.number}}</block>
+        </view>
+      </view >
+        <text>{{item.name}}</text>
+    </view>
+  </view>
+
+  <view class="free-list grid col-5  padding-tb padding-lr-sm">
+    <view class="free-item " wx:for="{{gridList}}" wx:key >
+      <view class="free-tag">
+        <!-- <free-icon name="home-filling" color="{{item.color}}"> </free-icon> -->
+        <free-image src="/static/image/superman/{{index+1}}.jpg" width="50rpx" height='50rpx'></free-image>
+        <view class="badge bg-red">
+          <block wx:if="{{item.number!=1}}">{{item.number>99?"99+":item.number}}</block>
+        </view>
+      </view >
+        <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<image 
+  src="{{src}}"
+  mode="{{mode}}"
+  style="width:{{width}};height:{{height}};border-radius:{{radius}};"
+  show-menu-by-longpress="{{showMenu}}"
+  lazy-load="{{lazy}}"
+  show-menu-by-longpress="{{menu}}"
+  wx:if="{{src}}"
+  bindtap="onPriview"
+></image>
+<view
+wx:else
+class="fle"
+style="width:{{width}};height:{{height}};background:#f4f5f7;border-radius:{{radius}}rpx;"
+>
+<free-icon name='picture-filling'></free-icon>
+</view>

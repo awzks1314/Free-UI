@@ -1,5 +1,7 @@
-<free-input  bind:input='getValue' bind:colse='getClose' position='Fixed'>
-</free-input>
+<view class="bg-blue padding " style="position:fixed;top:0;width:100%;z-index:9;">
+  <free-input  bind:input='getValue' bind:colse='getClose' >
+  </free-input>
+</view>
 <view class="container bg-white" style="margin-top:{{CustomBar}}px">
   <view class="free-list grid col-3 text-center"  >
     <view class="free-item " wx:for="{{iconList}}" wx:key="index" bindtap="copy" data-name="{{item.name}}" wx:if='{{item.show}}'>

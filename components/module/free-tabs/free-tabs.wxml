@@ -1,6 +1,9 @@
 <view class="free-tabs-view {{isFixed?'free-tabs-fixed':'free-tabs-relative'}} {{unlined?'free-unlined':''}}" style="height:{{height+'rpx'}};padding:0 {{padding}}rpx;background:{{backgroundColor}};top:{{isFixed?top+'px':'auto'}}">
   <view wx:for="{{tabs}}" wx:key="index" class="free-tabs-item" style="width:{{itemWidth}}" catchtap="swichTabs" data-index="{{index}}">
-    <view class="free-tabs-title {{currentTab==index?'free-tabs-active':''}} {{item.disabled?'free-tabs-disabled':''}}" style="color:{{currentTab==index?selectedColor:color}};font-size:{{size+'rpx'}};line-height:{{size+'rpx'}};font-weight:{{bold && currentTab==index?'bold':'normal'}}">{{item.name}}</view>
+    <view class="free-tabs-title {{currentTab==index?'free-tabs-active':''}} {{item.disabled?'free-tabs-disabled':''}}" style="color:{{currentTab==index?selectedColor:color}};font-size:{{size+'rpx'}};line-height:{{size+'rpx'}};font-weight:{{bold && currentTab==index?'bold':'normal'}}">
+      <free-icon name="{{item.icon}}" size='18' color="{{currentTab==index?selectedColor:color}}"></free-icon>
+      {{item.name}}
+    </view>
   </view>
   <view class="free-tabs-slider" style="transform:translateX({{scrollLeft}}px);width:{{sliderWidth}}rpx;height:{{sliderHeight}}rpx;border-radius:{{sliderRadius}};bottom:{{bottom}};background:{{sliderBgColor}};margin-bottom:{{bottom=='50%'?('-'+sliderHeight/2+'rpx'):0}}"></view>
 </view>

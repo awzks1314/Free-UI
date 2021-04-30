@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"图片image",
+  "usingComponents": {
+    "free-image":"/components/basic/free-image/free-image"
+  }
+}

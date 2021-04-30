@@ -5,7 +5,7 @@
 <view class="">
   <view class="free-list grid col-3 border">
     <view wx:for="{{list}}" wx:key="index" class="free-item padding bg-white flex flex-direction justify-center align-center" bindtap="gotoDetail" data-url="{{item.title}}">
-      <free-icon name='filter' color='#0081ff' size='18'></free-icon>
+      <free-icon name='{{item.icon}}' color='#0081ff' size='18'></free-icon>
       <text class="padding-top-xs">{{item.name}}</text>
     </view>
   </view>

@@ -22,7 +22,9 @@
     "pages/module/drawer/drawer",
     "pages/module/navBar/navBar",
     "pages/module/navBar/demo",
-    "pages/module/tabs/tabs"
+    "pages/module/tabs/tabs",
+    "pages/basic/image/image",
+    "pages/module/list/list"
   ],
   "tabBar": {
     "color": "#aaaaaa",
@@ -57,7 +59,8 @@
   },
   "usingComponents": {
     "free-tabs": "/components/module/free-tabs/free-tabs",
-    "free-icon": "/components/basic/free-icon/free-icon"
+    "free-icon": "/components/basic/free-icon/free-icon",
+    "free-image": "/components/basic/free-image/free-image"
   },
   "window": {
     "navigationBarBackgroundColor": "#0081ff",

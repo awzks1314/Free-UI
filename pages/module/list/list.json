@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"inputNumber",
+  "usingComponents": {
+    "free-list":"/components/module/free-list/free-list"
+  }
+}

@@ -31,7 +31,7 @@ Page({
       type: this.data.list[index].str
     };
     this.setData({
-      type:e.currentTarget.dataset.str
+      type:e.currentTarget.dataset.type
     })
     console.log(this.data.type)
     utils.toast(options);
