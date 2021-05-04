@@ -2,8 +2,8 @@
 <free-tabs tabs="{{tabs}}" isFixed="true"  currentTab="{{currentTab}}" bold='true'    bind:change="change" itemWidth="50%"></free-tabs>
 <view class="positionView"></view>
 
-<view wx:if="{{currentTab == 0}}" class="bg-white">
-  <view class="free-list grid col-3 no-border padding-top padding-lr-sm">
+<view wx:if="{{currentTab == 0}}" >
+  <view class="free-list grid col-3 no-border padding-top padding-lr-sm bg-white">
     <view class="free-item " wx:for="{{gridList}}" wx:key >
       <view class="free-tag">
         <!-- <free-icon name="home-filling" color="{{item.color}}"> </free-icon> -->
@@ -16,7 +16,7 @@
     </view>
   </view>
 
-  <view class="free-list grid col-4 no-border padding-tb padding-lr-sm">
+  <view class="free-list grid col-4 no-border padding-top padding-lr-sm margin-top bg-white">
     <view class="free-item " wx:for="{{gridList}}" wx:key >
       <view class="free-tag">
         <!-- <free-icon name="home-filling" color="{{item.color}}"> </free-icon> -->
@@ -29,8 +29,8 @@
     </view>
   </view>
 
-  <view class="free-list grid col-5  padding-tb padding-lr-sm">
-    <view class="free-item " wx:for="{{gridList}}" wx:key >
+  <view class="free-list grid col-5 no-border  padding-top padding-lr-sm margin-top bg-white">
+    <view class="free-item" wx:for="{{gridList}}" wx:key='index' >
       <view class="free-tag">
         <!-- <free-icon name="home-filling" color="{{item.color}}"> </free-icon> -->
         <free-image src="/static/image/superman/{{index+1}}.jpg" width="50rpx" height='50rpx'></free-image>
@@ -41,4 +41,114 @@
         <text>{{item.name}}</text>
     </view>
   </view>
+</view> 
+
+<view wx:if="{{currentTab == 1}}">
+  <free-list arrow="{{true}}">
+    <free-icon name='home' size='24' color='orange'></free-icon>
+    <view class="free-list-name">基础用法有箭头</view>
+  </free-list>
+  <free-list >
+    <free-icon name='home' size='24' color='orange'></free-icon>
+    <view class="free-list-name">基础用法无箭头</view>
+  </free-list>
+  <free-list arrow="true" bind:click="detail" color="#0081ff">
+    <free-icon name='home-filling' size='24' color='#0081ff'></free-icon>
+    <view class="free-list-name">更换字体颜色</view>
+    <free-tag  radius="30rpx" class="free-list-right">标签显示</free-tag>
+  </free-list>
+  <free-list arrow="true" color="orange">
+    <free-icon name='home' size='24' color='orange'></free-icon>
+    <view class="free-list-name">图标+标题+注释</view>
+    <view class="free-list-right">注释文字</view>
+  </free-list>
+  <free-list arrow="true" color="orange">
+    <!-- <free-icon name='home' size='24' color='orange'></free-icon> -->
+    <free-image src="/static/image/superman/1.jpg" width="50rpx" height="50rpx" mode="center"></free-image>
+    <view class="free-list-name">图片+标题</view>
+    <view class="free-list-right">右边注释文字</view>
+  </free-list>
+  <free-list arrow="true" >
+    <free-icon name='home' size='24' ></free-icon>
+    <view class="free-list-name flex flex-direction">
+      <text>右侧注释文字</text>
+      <text class="text-sm text-grey margin-top-xs">我是第二行注释文字</text>
+    </view>
+    <view class="free-list-right">注释文字</view>
+  </free-list>
+  <free-list arrow="true" color="orange" size="40">
+    <!-- <free-icon name='home' size='24' color='orange'></free-icon> -->
+    <free-image src="/static/image/superman/1.jpg" width="50rpx" height="50rpx" mode="center"></free-image>
+    <view class="free-list-name">大文字显示</view>
+  </free-list>
+
+  <view class="margin-top  padding-sm ">
+    <view class="radius">
+      <free-list arrow="true" color="orange">
+        <free-icon name='home' size='24' color='orange'></free-icon>
+        <view class="free-list-name">沙卡拉卡</view>
+        <view class="free-list-right">右边注释文字</view>
+      </free-list>
+      <free-list arrow="true" color="orange">
+        <free-icon name='home' size='24' color='orange'></free-icon>
+        <view class="free-list-name">沙卡拉卡</view>
+        <view class="free-list-right">右边注释文字</view>
+      </free-list>
+      <free-list arrow="true" color="orange">
+        <free-icon name='home' size='24' color='orange'></free-icon>
+        <view class="free-list-name">沙卡拉卡</view>
+        <view class="free-list-right">右边注释文字</view>
+      </free-list>
+    </view>
+  </view>
+</view>
+
+<!-- 消息列表 -->
+<view wx:if="{{currentTab == 2}}" class="bg-white">
+  <view class="free-meaage-list">
+    <free-image src="/static/image/my/dog.jpg" radius="50%" width="120rpx" height="120rpx"></free-image>
+    <view class="free-meaage-content">
+      <view class="text-grey">消息列表标题</view>
+      <view class="text-grey text-sm text-cut">
+        消息列表副标题消息列表副标题消息列表副标题消息列表副标题消息列表副标题消息列表副标题
+      </view>
+    </view>
+    <view class="free-meaage-right">
+      <view class="text-grey">22:00</view>
+    </view>
+  </view>
+
+  <view class="free-meaage-list">
+    <free-image src="/static/image/my/dog.jpg" radius="10rpx" width="120rpx" height="120rpx"></free-image>
+    <view class="free-meaage-content">
+      <view class="text-grey ">
+        消息列表标题
+        <free-tag size="sm" radius="30rpx">99+</free-tag>
+      </view>
+      <view class="text-grey text-sm text-cut">
+        消息列表副标题消息列表副标题消息列表副标题消息列表副标题消息列表副标题消息列表副标题
+      </view>
+    </view>
+    <view class="free-meaage-right">
+      <view class="text-grey">22:00</view>
+      <free-tag size="sm" type="red">5</free-tag>
+    </view>
+  </view>
+
+  <view class="free-meaage-list">
+    <free-image src="/static/image/my/dog.jpg" radius="10rpx" width="120rpx" height="120rpx"></free-image>
+    <view class="free-meaage-content">
+      <view class=" text-red">
+        消息列表标题
+        <free-tag size="sm" radius="30rpx" type="orange">99+</free-tag>
+      </view>
+      <view class="text-red text-sm text-cut">
+        消息列表副标题消息列表副标题消息
+      </view>
+    </view>
+    <view class="free-meaage-right">
+      <free-tag size="sm" type="grey" >99+</free-tag>
+    </view>
+  </view>
+
 </view>

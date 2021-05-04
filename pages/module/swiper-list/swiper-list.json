@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"滑动菜单",
+  "usingComponents": {
+    "free-swiper-list":"/components/module/free-swiper-list/free-swiper-list"
+  }
+}

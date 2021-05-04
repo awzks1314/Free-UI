@@ -8,8 +8,7 @@ Page({
     tabs:[
       {name:"Grid列表"},
       {name:"菜单列表"},
-      {name:"消息列表"},
-      {name:"滑动菜单"},
+      {name:"消息列表"}
     ],
     currentTab:0,
     gridList:[ 
@@ -27,6 +26,13 @@ Page({
   change(e){
     this.setData({
       currentTab:e.detail.index
+    })
+  },
+  detail(e){
+    wx.showToast({
+      title: '你点击了该选项',
+      icon:'none',
+      duration: 1000
     })
   }
 })

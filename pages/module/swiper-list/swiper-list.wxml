@@ -1,0 +1,15 @@
+<free-swiper-list actions="{{actions}}" toggle="{{toggle}}" unclosable="{{true}}" bindchange="handlerCloseButton" wx:for="{{list}}" wx:key="index" params="{{item}}">
+    <view slot="content">
+      <view class="padding flex">
+        <free-image src="/static/image/my/dog.jpg" width="120rpx" height="120rpx" class="margin-right"></free-image>
+         <view class="flex-sub flex flex-direction justify-between w70">
+           <view class="text-cut">{{item.title}}</view>
+           <view class="text-sm text-grey">2021-5-4 14:48</view>
+         </view>
+      </view>
+    </view>
+  </free-swiper-list>
+  <!--
+   注: 1、设置uncloseable为true时点击按钮不能关闭,必须联合toggle来实现
+       2、如果传递action的话必须传递width来设置每个按钮的宽度
+ -->

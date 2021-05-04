@@ -16,10 +16,8 @@
   </view>
 </view>
 <view class=" padding bg-white flex align-end justify-between">
-  <free-tag size='xs'>超小尺寸</free-tag>
   <free-tag size='sm'>小型尺寸</free-tag>
   <free-tag >默认尺寸</free-tag>
-  <free-tag size='lg'>超大标签</free-tag>
 </view>
 <view class="free-bar  bg-white solid-bottom solid-top">
   <view class="free-title ">

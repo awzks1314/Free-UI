@@ -85,16 +85,23 @@ button::after {
   border-radius: 2000rpx;
 }
 .radius-xs{
-  border-radius: 6rpx;
+	border-radius: 6rpx;
+	overflow: hidden;
 }
 .radius-sm{
-  border-radius: 10rpx;
+	border-radius: 10rpx;
+	overflow: hidden;
 }
 .radius{
-  border-radius: 20rpx;
+	border-radius: 20rpx;
+	overflow: hidden;
 }
 .radius-lg{
-  border-radius: 30rpx;
+	border-radius: 30rpx;
+	overflow: hidden;
+}
+.w70{
+	width:70%;
 }
 /* 边框 */
 /* 实线 */
@@ -555,7 +562,9 @@ button.icon.lg {
 	height: 60rpx;
 	line-height: 60rpx;
 }
-
+.free-form-group .title {
+  min-width: calc(4em + 30rpx);
+}
 .free-form-group input {
 	flex: 1;
 	font-size: 30rpx;
@@ -563,7 +572,7 @@ button.icon.lg {
 	padding-right: 20rpx;
 }
 
-.free-form-group>text[class*="cuIcon-"] {
+.free-form-group>text[class*="free-"] {
 	font-size: 36rpx;
 	padding: 0;
 	box-sizing: border-box;
@@ -603,9 +612,9 @@ button.icon.lg {
 }
 
 .free-form-group picker::after {
-	font-family: "cuIcon";
+	font-family: "icomoon";
 	display: block;
-	content: "\e6a3";
+	content: "\e909";
 	position: absolute;
 	font-size: 34rpx;
 	color: var(--grey);
@@ -1056,7 +1065,32 @@ button.icon.lg {
 	padding-bottom: 50rpx;
 }
 
-
+/* tag */
+.free-tag {
+	font-size: 24rpx;
+	vertical-align: middle;
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 0rpx 16rpx;
+	height: 48rpx;
+	font-family: Helvetica Neue, Helvetica, sans-serif;
+	white-space: nowrap;
+}
+.badge {
+	border-radius: 200rpx;
+	position: absolute;
+	top: -10rpx;
+	right: -30rpx;
+	font-size: 20rpx;
+	padding: 0rpx 10rpx;
+	color: var(--white);
+}
+.free-list.grid.no-border>.free-item:after {
+	border: none
+}
 /* grid布局 */
 .grid {
 	display: flex;
@@ -1077,7 +1111,7 @@ button.icon.lg {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-.grid.grid-square>view>text[class*="cuIcon-"] {
+.free-upicon {
 	font-size: 52rpx;
 	position: absolute;
 	color: var(--grey);
@@ -1162,31 +1196,7 @@ button.icon.lg {
 .grid.col-5>view {
 	width: 20%;
 }
-.free-tag {
-	font-size: 24rpx;
-	vertical-align: middle;
-	position: relative;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	box-sizing: border-box;
-	padding: 0rpx 16rpx;
-	height: 48rpx;
-	font-family: Helvetica Neue, Helvetica, sans-serif;
-	white-space: nowrap;
-}
-.badge {
-	border-radius: 200rpx;
-	position: absolute;
-	top: -10rpx;
-	right: -30rpx;
-	font-size: 20rpx;
-	padding: 0rpx 10rpx;
-	color: var(--white);
-}
-.free-list.grid.no-border>.free-item:after {
-	border: none
-}
+
 /* 字体文本 */
 
 .text-xs {
@@ -1372,6 +1382,34 @@ button.icon.lg {
 	line-height: 40rpx
 }
 
+/* 菜单列表 */
+.free-list-name{
+	padding-left: 20rpx;
+  vertical-align: middle;
+  line-height: 30rpx;
+}
+.free-list-right{
+	margin-left: auto;
+  margin-right: 34rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+.free-meaage-list{
+    display: flex;
+    padding-right: 10rpx;
+    height: 140rpx;
+    background-color: var(--white);
+    justify-content: space-around;
+    align-items: center;
+}
+.free-meaage-content{
+	width: calc(100% - 96rpx - 60rpx - 120rpx - 20rpx);
+	line-height: 1.6em;
+}
+.free-meaage-right{
+	width: 100rpx;
+  text-align: center;
+}
 /* ==================
          导航栏
  ==================== */
@@ -1501,8 +1539,32 @@ button.icon.lg {
 .justify-around {
 	justify-content: space-around;
 }
+/* 卡片 */
 
-
+.free-card>.free-item{
+	margin: 30rpx;
+	background: var(--white);
+	border-radius: 10rpx;
+	overflow: hidden;
+}
+.free-card.no-margin>.free-item{
+	margin: 0;
+	border-radius: 0rpx;
+}
+.free-image{
+	position: relative;
+}
+.free-image-sub{
+	display: flex;
+	align-items: center;
+	min-height: 100rpx;
+	justify-content: space-between;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: transparent;
+	padding: 0rpx 30rpx;
+}
 /* switch开关 */
 
 switch,
@@ -1555,8 +1617,8 @@ switch[checked]::before {
 
 radio::before,
 checkbox::before {
-	font-family: "cuIcon";
-	content: "\e645";
+	font-family: "icomoon";
+	content: "\e93f";
 	position: absolute;
 	color: var(--white) !important;
 	top: 50%;
@@ -1651,20 +1713,20 @@ radio.radio[checked]::after {
 	border: 8px solid var(--white) !important;
 }
 
-.switch-sex::after {
-	content: "\e71c";
+.switch-home::after {
+	content: "\e92e";
 }
 
-.switch-sex::before {
-	content: "\e71a";
+.switch-home::before { 
+	content: "\e91e";
 }
 
-.switch-sex .wx-switch-input {
+.switch-home .wx-switch-input {
 	background: var(--red) !important;
 	border-color: var(--red) !important;
 }
 
-.switch-sex[checked] .wx-switch-input {
+.switch-home[checked] .wx-switch-input {
 	background: var(--blue) !important;
 	border-color: var(--blue) !important;
 }

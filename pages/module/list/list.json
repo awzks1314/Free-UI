@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText":"inputNumber",
+  "navigationBarTitleText":"list列表",
   "usingComponents": {
     "free-list":"/components/module/free-list/free-list"
   }

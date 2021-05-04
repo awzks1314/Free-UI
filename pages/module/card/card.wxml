@@ -1,0 +1,99 @@
+<view class="free-card {{true?'no-margin':''}}">
+  <view class="free-item">
+    <view class="free-image">
+      <free-image src="/static/image/my/logoBig.png" width="100%" height="300rpx"></free-image>
+      <view class="free-image-sub">
+        <text class="text-cut text-white">我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。</text>
+      </view>
+    </view>
+    <view class="padding-lr padding-tb-xs flex align-center">
+      <free-image src="/static/image/my/dog.jpg" width="100rpx" height="100rpx" radius="50%"></free-image>
+      <view class="margin-left">
+        <view>Free UI</view>
+        <view class="text-grey text-sm margin-top-xs">10年前</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- false -->
+<view class="free-card {{false?'no-margin':''}}">
+  <view class="free-item">
+    <view class="free-image">
+      <free-image src="/static/image/my/logoBig.png" width="100%" height="300rpx"></free-image>
+      <view class="free-image-sub">
+        <text class="text-cut text-white">人无德不立，品德是为人之本。青年要不断修身立德，打牢道德根基，在人生道路上走得更正、走得更远。“苟利国家生死以，岂因祸福避趋之。</text>
+      </view>
+    </view>
+    <view class="padding-lr padding-tb-xs flex align-center">
+      <free-image src="/static/image/my/dog.jpg" width="100rpx" height="100rpx" radius="50%"></free-image>
+      <view class="margin-left">
+        <view>Free UI</view>
+        <view class="text-grey text-sm margin-top-xs">10年前</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="free-card {{false?'no-margin':''}}">
+  <view class="free-item">
+    <view class="padding flex align-center">
+      <free-image src="/static/image/my/dog.jpg" width="100rpx" height="100rpx" radius="50%"></free-image>
+      <view class="margin-left">
+        <view>Free UI</view>
+        <view class="text-grey text-sm margin-top-xs">2021年5月4日 19:70:10</view>
+      </view>
+    </view>
+    <view class="padding-lr text-cut-2 margin-bottom">
+      人无德不立，品德是为人之本。青年要不断修身立德，打牢道德根基，在人生道路上走得更正、走得更远。“苟利国家生死以，岂因祸福避趋之。
+    </view>
+    <view class="padding-lr padding-bottom">
+      <view class="free-image">
+        <free-image src="/static/image/my/logoBig.png" width="100%" height="300rpx"></free-image>
+        <view class="free-image-sub">
+          <text class="text-cut text-white">人无德不立，品德是为人之本。青年要不断修身立德，打牢道德根基，在人生道路上走得更正、走得更远。“苟利国家生死以，岂因祸福避趋之。</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="free-card {{false?'no-margin':''}}">
+  <view class="free-item">
+    <view class="padding flex align-center">
+      <free-image src="/static/image/my/dog.jpg" width="100rpx" height="100rpx" radius="50%"></free-image>
+      <view class="margin-left">
+        <view>Free UI</view>
+        <view class="text-grey text-sm margin-top-xs">2021年5月4日 19:70:10</view>
+      </view>
+    </view>
+    <view class="padding-lr text-cut-2 margin-bottom">
+      人无德不立，品德是为人之本。青年要不断修身立德，打牢道德根基，在人生道路上走得更正、走得更远。“苟利国家生死以，岂因祸福避趋之。
+    </view>
+    <view class="padding-lr">
+      <view class="grid col-3">
+        <view wx:for="{{9}}" wx:key="index" class="margin-bottom-xs">
+          <free-image src="/static/image/my/dog.jpg" ></free-image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="free-card {{false?'no-margin':''}}">
+  <view class="free-item  ">
+    <view class="padding text-cut">
+      人无德不立，品德是为人之本。青年要不断修身立德，打牢道德根基，在人生道路上走得更正、走得更远。“苟利国家生死以，岂因祸福避趋之。
+    </view>
+    <view class="flex padding-lr padding-bottom">
+      <free-image src="/static/image/my/logoBig.png"></free-image>
+      <view class=" padding-left">
+        <view class="flex-sub text-cut-3 ">人无德不立，品德是为人之本。青年要不断修身立德，打牢道德根基，在人生道路上走得更正、走得更远。“苟利国家生死以，岂因祸福避趋之。</view>
+        <view class="padding-top-lg">
+          <free-tag>德行</free-tag>
+          <free-tag type="orange" class="margin-left-sm">青年</free-tag>
+          <free-tag type="red" class="margin-left-sm">人生</free-tag>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

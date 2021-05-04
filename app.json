@@ -24,7 +24,10 @@
     "pages/module/navBar/demo",
     "pages/module/tabs/tabs",
     "pages/basic/image/image",
-    "pages/module/list/list"
+    "pages/module/list/list",
+    "pages/module/swiper-list/swiper-list",
+    "pages/module/card/card",
+    "pages/module/form/form"
   ],
   "tabBar": {
     "color": "#aaaaaa",
@@ -59,6 +62,7 @@
   },
   "usingComponents": {
     "free-tabs": "/components/module/free-tabs/free-tabs",
+    "free-tag": "/components/basic/free-tag/free-tag",
     "free-icon": "/components/basic/free-icon/free-icon",
     "free-image": "/components/basic/free-image/free-image"
   },

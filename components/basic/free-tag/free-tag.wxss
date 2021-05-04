@@ -1,20 +1,6 @@
 @import '/static/style/background.wxss';
 
-.shadow-main{
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
-}
-.tag-lg{
-  padding: 18rpx 26rpx;
-}
-.tag-df{
-  padding: 8rpx 18rpx;
-}
-.tag-sm{
-  padding: 5rpx 8rpx;
-}
-.tag-xs{
-  padding: 0;
-}
+
 .tag {
 	font-size: 24rpx;
 	vertical-align: middle;
@@ -23,8 +9,19 @@
 	align-items: center;
 	justify-content: center;
 	box-sizing: border-box;
+	padding: 4rpx 16rpx;
+	height: 48rpxx;
 	font-family: Helvetica Neue, Helvetica, sans-serif;
 	white-space: nowrap;
+}
+.shadow-main{
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+}
+.tag-sm{
+	/* padding: 5rpx 8rpx; */
+	font-size: 20rpx;
+	padding: 0rpx 12rpx;
+	height: 32rpx;
 }
 .tag[class*="line"] {
 	background-color: transparent;

@@ -1,2 +1,7 @@
-<!--components/module/free-list/free-list.wxml-->
-<text>components/module/free-list/free-list.wxml</text>
+<view>
+  <view class="free-list-cell {{arrow?'free-cell-arrow':''}} {{last?'free-cell-last':''}} {{lineLeft?'free-line-left':''}} {{lineRight?'free-line-right':''}}"
+  style="padding:{{padding}};background:{{bgcolor}};font-size: {{ size }}rpx; {{ color ? 'color:' + color : '' }};"
+  bindtap="handleClick">
+  <slot ></slot> 
+  </view>
+</view>

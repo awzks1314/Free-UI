@@ -1,5 +1,6 @@
 // components/basic/free-tag/free-tag.js
 Component({
+  externalClasses: ['free-tag-class'], //自定义样式
   /**
    * 组件的属性列表
    */
@@ -12,7 +13,7 @@ Component({
     // 圆角
     radius:{
       type:String,
-      value:'4rpx'
+      value:'5000rpx'
     },
     // 内边距
     padding:{
@@ -27,7 +28,7 @@ Component({
     // 大小
     size:{
       type:String,
-      value:'df'
+      value:''
     },
     // dark light plain
     effect:{

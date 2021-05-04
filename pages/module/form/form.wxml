@@ -1,0 +1,122 @@
+<view class="free-form-group ">
+  <view class="title">邮件</view>
+  <input placeholder="两字短标题"></input>
+</view>
+<view class="free-form-group ">
+  <view class="title">三个字</view>
+  <input placeholder="三短标题"></input>
+</view>
+
+<view class="free-form-group ">
+  <view class="title">收货地址</view>
+  <input placeholder="请输入内容"></input>
+  <free-icon name="home-filling" size='20' color="orange"></free-icon>
+</view>
+<view class="free-form-group ">
+  <view class="title">手机号</view>
+  <input placeholder="输入手机号码"></input>
+  <view class="radius-xs">
+    <view class="free-tag bg-blue">
+      +86
+    </view>
+    <view class="free-tag line-blue solid">
+      中国大陆
+    </view>
+  </view>
+</view>
+<view class="free-form-group ">
+  <view class="title">验证码</view>
+  <input placeholder="按钮获取验证码"></input>
+  <button class="free-button round  bg-blue">获取验证码</button>
+</view>
+<view class="free-form-group ">
+  <view class="title">头像</view>
+  <free-image src="/static/image/my/dog.jpg" width="60rpx" height="60rpx"></free-image>
+</view>
+<view class="free-form-group ">
+  <textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaAInput" placeholder="多行文本输入框"></textarea>
+</view>
+<view class="free-form-group align-start">
+  <view class="title">文本框</view>
+  <textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaAInput" placeholder="多行文本输入框"></textarea>
+</view>
+
+<view class="free-form-group margin-top">
+  <view class="title">单个选择</view>
+  <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+    <view class="picker">
+      {{index?picker[index]:'单选，请选择'}}
+    </view>
+  </picker> 
+</view>
+<view class="free-form-group ">
+  <view class="title">多级选择</view>
+  <picker mode="multiSelector" bindchange="MultiChange" bindcolumnchange="MultiColumnChange" value="{{multiIndex}}"
+		 range="{{multiArray}}">
+			<view class="picker">
+				{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+			</view>
+		</picker>
+</view>
+<view class="free-form-group ">
+  <view class="title">时间选择</view>
+  <picker mode="time" value="{{time}}" start="08:30" end="23:00" bindchange="TimeChange">
+    <view class="picker">
+      {{time}}
+    </view>
+  </picker>
+</view>
+<view class="free-form-group ">
+  <view class="title">日期选择</view>
+  <picker mode="date" value="{{date}}" start="1975-09-01" end="2022-09-01" bindchange="DateChange">
+    <view class="picker">
+      {{date}}
+    </view>
+  </picker>
+</view>
+<view class="free-form-group ">
+  <view class="title">地址选择</view>
+  <picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+			<view class="picker">
+				{{region[0]}}，{{region[1]}}，{{region[2]}}
+			</view>
+		</picker>
+</view>
+
+<view class="free-form-group margin-top">
+  <view class="title">开关选择</view>
+  <switch></switch>
+</view>
+<view class="free-form-group"> 
+  <view class="title">自定义颜色</view>
+  <switch class="blue" checked></switch>
+</view>
+<view class="free-form-group">
+  <view class="title">自定义图标</view>
+  <switch class="switch-home blue radius-xs" checked></switch>
+</view>
+<view class="free-form-group margin-top">
+  <view class="title">默认颜色(radio)</view>
+  <radio checked></radio>
+</view>
+<view class="free-form-group ">
+  <view class="title">定义颜色(radio)</view>
+  <radio class="red" checked></radio>
+</view>
+<view class="flex padding bg-white align-center justify-between text-lg">
+  <view class="title">图片上传</view>
+  <view class="text-right">{{imgList.length}}/4</view>
+</view>
+<view class="free-form-group">
+		<view class="grid col-4 grid-square flex-sub">
+			<view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+				<image src='{{imgList[index]}}' mode='aspectFill'></image>
+				<view class="free-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+					<free-icon name="close" size='16' color='#fff'></free-icon>
+				</view>
+			</view>
+			<view class="solid " bindtap="ChooseImage" wx:if="{{imgList.length<4}}">
+        <free-icon name="add" class="free-upicon"></free-icon>
+			</view>
+		</view>
+	</view>

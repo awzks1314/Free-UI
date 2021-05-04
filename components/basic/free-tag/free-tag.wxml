@@ -1,4 +1,4 @@
-<view class="tag tag-{{size?size:'df'}} {{shadow?'shadow-main':''}} {{effect=='dark'?'bg-'+type:effect=='plain'?'line-'+type:'light bg-'+type}}" 
+<view class="free-tag-class tag tag-{{size?size:'none'}} {{shadow?'shadow-main':''}} {{effect=='dark'?'bg-'+type:effect=='plain'?'line-'+type:'light bg-'+type}}" 
 style="border-radius:{{radius}};padding:{{padding}};"
 >
   <view wx:if="{{icon}}" class="iconStyle">

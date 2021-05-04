@@ -57,14 +57,24 @@ Page({
         icon:'home',
       },
       {
+        name:'滑动菜单',
+        title:'swiper-list',
+        icon:'home',
+      },
+      {
+        name:'卡片',
+        title:'card',
+        icon:'home',
+      },
+      {
         name:'标签栏',
         title:'tabbar',
         icon:'home',
       },
       {
-        name:'表单',
+        name:'表单',  
         title:'form',
-        icon:'home',
+        icon:'home-filling',
       },
       {
         name:'选择器',

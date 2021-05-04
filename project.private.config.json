@@ -25,8 +25,8 @@
           "scene": null
         },
         {
-          "name": "pages/module/list/list",
-          "pathName": "pages/module/list/list",
+          "name": "pages/module/form/form",
+          "pathName": "pages/module/form/form",
           "query": "",
           "scene": null
         }
