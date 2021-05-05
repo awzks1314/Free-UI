@@ -1,5 +1,6 @@
 /* 样式初始化 */
 @import '/static/style/background.wxss';
+@import '/static/style/swiper.wxss';
 page{
   /* 标准色 */
   /* --red: #e54d42;
@@ -1090,6 +1091,13 @@ button.icon.lg {
 }
 .free-list.grid.no-border>.free-item:after {
 	border: none
+}
+/* 折叠面板 */
+.free-content{
+	padding: 20rpx 30rpx;
+  background: #fff;
+  color: #555;
+  font-size: 26rpx;
 }
 /* grid布局 */
 .grid {

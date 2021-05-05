@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"steps步骤条",
+  "usingComponents": {
+    "free-steps":"/components/module/free-steps/free-steps"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"通告栏",
+  "usingComponents": {
+    "free-noticeBar":"/components/module/free-noticeBar/free-noticeBar"
+  }
+}

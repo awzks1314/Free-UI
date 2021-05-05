@@ -1,0 +1,19 @@
+<view class="free-notice" style="background:{{backgroundColor}};position:{{isFixed?'fixed':''}};" wx:if="{{type == '1' && show}}">
+  <free-icon name="{{leftIcon}}" size='20' color="{{iconColor}}" class="free-notice-icon" wx:if="{{isLeft}}"></free-icon>
+  <view class="free-scorll-view" bindtap='details' data-url="{{notice.url}}" data-type="{{notice.type}}" >
+    <view class=" {{animation?'free-animation free-content':''}}" style="color:{{iconColor}};">{{notice.text}}</view>
+  </view>
+  <free-icon name="{{rightIcon}}" size='18' color="{{iconColor}}" wx:if="{{isRight}}" catchtap="closeNotice"></free-icon>
+</view>
+<!-- type == 2 -->
+<view class="free-notices" style="background:{{backgroundColor}};position:{{isFixed?'fixed':''}};" wx:if="{{type == '2'&& show}}">
+  <free-icon name="{{leftIcon}}" size='20' color="{{iconColor}}" class="free-notice-icon" wx:if="{{isLeft}}"></free-icon>
+  <swiper vertical="{{vertical}}" autoplay="{{true}}" circular="{{true}}" interval="3000" class="free-swiper">
+      <swiper-item wx:for="{{notice}}" wx:key="index" class="free-swiper-item">
+        <view class="free-news-item" bindtap='details' data-url="{{item.url}}" data-type="{{item.type}}" style="color:{{iconColor}};">{{item.text}}</view>
+      </swiper-item>
+    </swiper> 
+    <free-icon name="{{rightIcon}}" size='18' color="{{iconColor}}" wx:if="{{isRight}}" catchtap="closeNotice"></free-icon>
+</view>
+
+

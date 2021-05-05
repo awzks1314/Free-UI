@@ -1,0 +1,109 @@
+.free-tabbar{
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-height: 100rpx;
+  justify-content: space-between;
+}
+.free-tabbar .tabbar{
+  padding: 0;
+  height: calc(100rpx + env(safe-area-inset-bottom) / 2);
+  padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+}
+.free-tabbar .free-tabbar-item{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  max-width: 100%;
+}
+.free-tabbar .free-tabbar-item:first-child {
+  margin-left: 30rpx;
+  font-size: 30rpx;
+}
+.free-tabbar.tabbar .free-tabbar-item{
+  font-size: 22rpx;
+  position: relative;
+  flex: 1;
+  text-align: center;
+  padding: 0;
+  display: block;
+  height: auto;
+  line-height: 1;
+  margin: 0;
+  overflow: initial;
+}
+
+.free-tabbar.tabbar .free-tabbar-item.free-action .free-icon{
+  position: absolute;
+  width: 70rpx;
+  z-index: 2;
+  height: 70rpx;
+  border-radius: 50%;
+  line-height: 70rpx;
+  font-size: 50rpx;
+  top: -35rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0;
+}
+.free-tabbar.tabbar .free-tabbar-item .free-icon{
+  width: 100rpx;
+  position: relative;
+  display: block;
+  height: auto;
+  margin: 0 auto 10rpx;
+  text-align: center;  
+}
+.free-tabbar-tag{
+  position: absolute;
+  top: 0rpx;
+  right: 10rpx;
+  background: #dd514c;
+  border-radius: 200rpx;
+  color: #fff;
+  font-size: 20rpx;
+  padding: 0 10rpx;
+  height: 28rpx;
+  display: inline-flex;
+  align-items: center;
+}
+/* 凸起 */
+.free-tabbar.tabbar .free-tabbar-item.free-action{
+  position: relative;
+  z-index: 2;
+  padding-top: 52rpx;
+  background-color: inherit;
+}
+.free-tabbar.tabbar .free-tabbar-item.free-action::before{
+  content: "";
+  position: absolute;
+  width: 100rpx;
+  height: 30rpx;
+  bottom: 30rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: inherit;
+  z-index: 1;
+}
+.free-tabbar.tabbar .free-tabbar-item.free-action::after{
+  content: "";
+  position: absolute;
+  width: 100rpx;
+  height: 100rpx;
+  top: -50rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0 -3rpx 8rpx rgba(0, 0, 0, 0.08);
+  border-radius: 50rpx;
+  background-color: inherit;
+  z-index: 0;
+}
+.free-fixed{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

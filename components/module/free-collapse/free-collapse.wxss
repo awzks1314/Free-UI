@@ -1,0 +1,45 @@
+.free-header {
+  position: relative;
+  z-index: 2;
+}
+.free-icon {
+  font-size: 32rpx;
+  transform: rotate(0);
+  transform-origin: center center;
+  transition: all 0.3s;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  right: 30rpx;
+}
+.free-opacity {
+  opacity: 0.6;
+}
+.free-icon-active {
+  transform: rotate(180deg);
+  transform-origin: center center;
+}
+.free-collapse-body_box{
+  transition: all 0.25s;
+  overflow: hidden;
+}
+.free-collapse-body {
+ transition: all 0.25s;
+ overflow: hidden;
+ position: relative;
+ z-index: 1;
+}
+
+.free-collapse-transform {
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transform: translateY(-40%);
+ transform: translateY(-40%);
+}
+
+.free-collapse-body_show {
+ opacity: 1;
+ visibility: visible;
+ -webkit-transform: translateY(0);
+ transform: translateY(0);
+}

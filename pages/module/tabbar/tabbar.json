@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"自定义tabbar",
+  "usingComponents": {
+    "free-tabbar":"/components/module/free-tabbar/free-tabbar"
+  }
+}

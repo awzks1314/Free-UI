@@ -1,0 +1,37 @@
+<view class="padding-tb padding-lr-lg">基本使用</view>
+<view>
+  <block wx:for="{{listOne}}" wx:key="index">
+    <free-collapse index="{{index}}" disabled="{{item.disabled}}" current="{{item.current}}" arrow="{{item.arrow}}" bind:click="change">
+      <free-list slot="title">
+        <view class="free-list-name" slot="title">{{item.title}}</view>
+      </free-list>
+      <view slot="content" class="free-content">{{item.intro}}</view>
+    </free-collapse>
+  </block>
+</view>
+
+
+<view class="padding-tb padding-lr-lg">手风琴效果</view>
+<view>
+  <block wx:for="{{listOne}}" wx:key="index">
+    <free-collapse index="{{index}}" disabled="{{item.disabled}}" current="{{current}}" arrow="{{true}}" bind:click="change1">
+      <free-list slot="title">
+        <view class="free-list-name" slot="title">{{item.title}}</view>
+      </free-list>
+      <view slot="content" class="free-content">{{item.intro}}</view>
+    </free-collapse>
+  </block>
+</view>
+
+
+<view class="padding-tb padding-lr-lg">手风琴效果,固定高度</view>
+<view>
+  <block wx:for="{{listOne}}" wx:key="index">
+    <free-collapse index="{{index}}" current="{{current2}}" arrow="{{true}}" bind:click="change2" height="120rpx" bdBgColor="red">
+      <free-list slot="title">
+        <view class="free-list-name" slot="title">{{item.title}}</view>
+      </free-list>
+      <view slot="content" class="free-content">{{item.intro}}</view>
+    </free-collapse>
+  </block>
+</view>

@@ -1,0 +1,13 @@
+<free-tabbar list="{{list}}" isFixed="{{false}}" current="{{current}}" bind:click="change"></free-tabbar>
+
+<view class="margin-top padding-bottom">
+  <free-tabbar list="{{list}}" isFixed="{{false}}" current="{{current}}"  backgroundColor="#000" bind:click="change"></free-tabbar>
+</view>
+
+<view class="margin-top padding-bottom">
+  <free-tabbar list="{{listOne}}" isFixed="{{false}}"current="{{current}}"  bind:click="change"></free-tabbar>
+</view>
+
+<view class="margin-top">
+  <free-tabbar list="{{listOne}}" isFixed="{{true}}"backgroundColor="#000" current="{{current}}"  bind:click="change"></free-tabbar>
+</view>

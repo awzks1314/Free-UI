@@ -1,0 +1,106 @@
+// pages/module/tabbar/tabbar.js
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    // 你也可以在组件写死
+    list:[
+      {
+        title:"首页",
+        icon:"/static/image/tabbarIcon/basics.png",
+        selectIcon:"/static/image/tabbarIcon/basic.png",
+        number:0,
+        url:"/pages/basic/index/index",
+        center:false
+      },
+      {
+        title:"扩展",
+        icon:"/static/image/tabbarIcon/extends.png",
+        selectIcon:"/static/image/tabbarIcon/extend.png",
+        number:0,
+        url:"/pages/basic/index/index",
+        center:false
+      },
+      {
+        title:"进行",
+        icon:"/static/image/tabbarIcon/ings.png",
+        selectIcon:"/static/image/tabbarIcon/ing.png",
+        number:0,
+        url:"/pages/basic/index/index",
+        center:false
+      },
+      {
+        title:"扩展",
+        icon:"/static/image/tabbarIcon/mores.png",
+        selectIcon:"/static/image/tabbarIcon/more.png",
+        number:0,
+        url:"/pages/basic/index/index",
+        center:false
+      },
+      {
+        title:"我的",
+        icon:"/static/image/tabbarIcon/mys.png",
+        selectIcon:"/static/image/tabbarIcon/my.png",
+        number:99,
+        url:"/pages/basic/index/index",
+        center:false
+      }
+    ],
+    listOne:[
+      {
+        title:"首页",
+        icon:"/static/image/tabbarIcon/basics.png",
+        selectIcon:"/static/image/tabbarIcon/basic.png",
+        number:0,
+        url:"/pages/basic/index/index",
+        center:false
+      },
+      {
+        title:"扩展",
+        icon:"/static/image/tabbarIcon/extends.png",
+        selectIcon:"/static/image/tabbarIcon/extend.png",
+        number:0,
+        url:"/pages/extend/index/index",
+        center:false
+      },
+      {
+        title:"进行",
+        icon:"/static/image/my/dog.jpg",
+        selectIcon:"/static/image/my/header.png",
+        number:0,
+        url:"/pages/doing/index/index",
+        center:true
+      },
+      {
+        title:"扩展",
+        icon:"/static/image/tabbarIcon/mores.png",
+        selectIcon:"/static/image/tabbarIcon/more.png",
+        number:0,
+        url:"/pages/module/index/index",
+        center:false
+      },
+      {
+        title:"我的",
+        icon:"/static/image/tabbarIcon/mys.png",
+        selectIcon:"/static/image/tabbarIcon/my.png",
+        number:99,
+        url:"/pages/my/index/index",
+        center:false
+      }
+    ],
+    current:1
+  },
+  change(e){
+    this.setData({
+      current:e.detail.index
+    })
+  },
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
+})

@@ -1,0 +1,145 @@
+.free-steps-box{
+  padding: 20rpx;
+  background: #fff;
+}
+
+.free-steps {
+	display: flex;
+}
+
+scroll-view.free-steps {
+	display: block;
+	white-space: nowrap;
+}
+
+scroll-view.free-steps .free-item {
+	display: inline-block;
+}
+
+.free-steps .free-item {
+	flex: 1;
+	text-align: center;
+	position: relative;
+	min-width: 100rpx;
+}
+
+.free-steps .free-item:not([class*="text-"]) {
+	color: var(--grey);
+}
+
+.free-steps .free-item .free-icon,
+.free-steps .free-item .num {
+	display: block;
+  font-size: 40rpx;
+  margin: 20rpx auto;
+} 
+
+.free-steps .free-item::before,
+.free-steps .free-item::after,
+.free-steps.steps-arrow .free-item::before,
+.free-steps.steps-arrow .free-item::after {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 0px;
+	width: calc(100% - 80rpx);
+	border-bottom: 1px solid #ccc;
+	left: calc(0px - (100% - 80rpx) / 2);
+	top: 40rpx;
+  z-index: 0;
+  
+}
+
+.free-steps.steps-arrow .free-item::before,
+.free-steps.steps-arrow .free-item::after {
+	content: "\e900";
+	font-family: "icomoon";
+	height: 30rpx;
+	border-bottom-width: 0px;
+	line-height: 30rpx;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	color: #ccc;
+}
+.scroll{
+  background: #fff;
+  padding: 20rpx;
+  width: 100%;
+}
+.free-steps.steps-bottom .free-item::before,
+.free-steps.steps-bottom .free-item::after {
+	bottom: 40rpx;
+	/* top: initial; */
+}
+
+.free-steps .free-item::after {
+	border-bottom: 1px solid currentColor;
+	width: 0px;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.free-steps .free-item[class*="text-"]::after {
+	width: calc(100% - 80rpx);
+	color: currentColor;
+}
+
+.free-steps .free-item:first-child::before,
+.free-steps .free-item:first-child::after {
+	display: none;
+}
+
+.free-steps .free-item .num {
+	width: 40rpx;
+	height: 40rpx;
+	border-radius: 50%;
+	line-height: 40rpx;
+	margin: 20rpx auto;
+	font-size: 24rpx;
+	border: 1px solid currentColor;
+	position: relative;
+	overflow: hidden;
+}
+
+.free-steps .free-item[class*="text-"] .num {
+	background-color: currentColor;
+}
+
+.free-steps .free-item .num::before,
+.free-steps .free-item .num::after {
+	content: attr(data-index);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	transition: all 0.3s ease-in-out 0s;
+	transform: translateY(0rpx);
+}
+
+.free-steps .free-item[class*="text-"] .num::before {
+	transform: translateY(-40rpx);
+	color: #fff;
+}
+
+.free-steps .free-item .num::after {
+	transform: translateY(40rpx);
+	color: #fff;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.free-steps .free-item[class*="text-"] .num::after {
+	content: "\e900";
+	font-family: "icomoon";
+	color: #fff;
+	transform: translateY(0rpx);
+}
+
+.free-steps .free-item[class*="text-"] .num.err::after {
+	content: "\e900";
+}
+.padd-lr{
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+}

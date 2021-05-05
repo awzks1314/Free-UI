@@ -1,0 +1,28 @@
+<free-noticeBar notice="{{notice1}}" isFixed="{{true}}" isRight="{{true}}"></free-noticeBar>
+
+<view class="positionView"></view>
+
+<view class="padding-tb">
+  <free-noticeBar notice="{{notice1}}" animation="{{false}}" backgroundColor="#fff8d5" iconColor="red"></free-noticeBar>
+</view>
+
+<view class="padding-tb">
+  <free-noticeBar notice="{{notice1}}" animation="{{false}}" backgroundColor="olive" iconColor="#fff" isLeft="{{false}}"></free-noticeBar>
+</view>
+
+<view class="padding-tb">
+  <free-noticeBar notice="{{notice1}}" animation="{{true}}" backgroundColor="orange" iconColor="#fff" leftIcon="home"></free-noticeBar>
+</view>
+
+<view class="padding-tb">
+  <free-noticeBar notice="{{notice1}}" animation="{{false}}" backgroundColor="cyan" iconColor="#000" isLeft="{{false}}" isRight="{{true}}"></free-noticeBar>
+</view>
+
+<view class="padding-tb">
+  <free-noticeBar notice="{{notice}}" isRight="{{true}}" rightIcon="home-filling"></free-noticeBar>
+</view>
+
+
+<view class="padding-tb">
+  <free-noticeBar notice="{{notice}}" vertical="{{false}}" isRight="{{true}}" rightIcon="close"></free-noticeBar>
+</view>

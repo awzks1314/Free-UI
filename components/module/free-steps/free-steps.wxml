@@ -1,0 +1,14 @@
+<view class="free-steps-box" wx:if="{{type != 'more'}}">
+  <view class="free-steps">
+    <view class="free-item {{index>current?'':'text-'}}" style="color:{{index>current?'':color}}" wx:for="{{list}}" wx:key="index">
+      <free-icon name="{{item.icon}}" size='24' color="{{index>current?'':color}}" class="free-icon" wx:if="{{type=='icon'}}"></free-icon>
+      <text class="num {{index==2?'err':''}}" data-index="{{index + 1}}" wx:if="{{type=='number'}}"></text> 
+      {{item.name}}
+    </view>
+  </view>
+</view>
+<scroll-view scroll-x class="scroll free-steps steps-bottom" scroll-into-view="scroll-{{current}}" scroll-with-animation wx:if="{{type == 'more'}}">
+  <view class="free-item {{index>current?'':'text-blue'}} padd-lr" wx:for="{{list}}" style="color:{{index>current?'':color}}" wx:key id="scroll-{{index}}">
+  <text class="num" data-index="{{index + 1}}"></text> {{item.name}}
+  </view>
+</scroll-view>

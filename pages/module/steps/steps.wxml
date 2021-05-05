@@ -1,0 +1,46 @@
+
+<view class="bg-white flex align-center justify-between padding-lr padding-tb-sm">
+  基本用法
+  <view>
+    <button class="free-button bg-blue sm" bindtap="clickStepBefore">上一步</button>
+    <button class="free-button bg-blue sm margin-left" bindtap="clickStepNext">下一步</button>
+  </view>
+</view>
+
+<view class="solid-top">
+  <free-steps list="{{stepsList}}" current="{{current}}"></free-steps>
+</view>
+
+<view class="solid-top">
+  <free-steps list="{{stepsList}}" current="{{current}}" color="blue"></free-steps>
+</view>
+
+<view class="solid-top">
+  <free-steps list="{{stepsList}}" current="{{current}}" color="orange"></free-steps>
+</view>
+
+<view class="bg-white flex align-center justify-between padding-lr padding-tb-sm margin-top">
+  数字完成
+  <view>
+    <button class="free-button bg-blue" bindtap="clickStepsBefore">上一步</button>
+    <button class="free-button bg-blue margin-left" bindtap="clickStepsNext">下一步</button>
+  </view>
+</view>
+
+<view class="solid-top">
+  <free-steps list="{{numList}}" current="{{num}}" type="number"></free-steps>
+</view>
+
+<view class="bg-white flex align-center justify-between padding-lr padding-tb-sm margin-top">
+  多级显示
+  <view>
+    <button class="free-button bg-blue" bindtap="clickStepMoreBefore">上一步</button>
+    <button class="free-button bg-blue margin-left" bindtap="clickStepMoreNext">下一步</button>
+  </view>
+</view>
+
+<view class="solid-top">
+  <free-steps list="{{moreList}}" current="{{scroll}}" type="more"></free-steps>
+</view>
+
+

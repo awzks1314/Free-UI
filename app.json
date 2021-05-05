@@ -27,7 +27,12 @@
     "pages/module/list/list",
     "pages/module/swiper-list/swiper-list",
     "pages/module/card/card",
-    "pages/module/form/form"
+    "pages/module/form/form",
+    "pages/module/collapse/collapse",
+    "pages/module/tabbar/tabbar",
+    "pages/module/swiper/swiper",
+    "pages/module/noticeBar/noticeBar",
+    "pages/module/steps/steps"
   ],
   "tabBar": {
     "color": "#aaaaaa",

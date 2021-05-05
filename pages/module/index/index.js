@@ -74,16 +74,11 @@ Page({
       {
         name:'表单',  
         title:'form',
-        icon:'home-filling',
-      },
-      {
-        name:'选择器',
-        title:'picker',
         icon:'home',
       },
       {
-        name:'手风琴',
-        title:'accordion',
+        name:'折叠面板',
+        title:'collapse',
         icon:'home',
       },
       {
@@ -99,7 +94,7 @@ Page({
       {
         name:'步骤条',
         title:'steps',
-        icon:'home',
+        icon:'home-filling',
       },
       {
         name:'动作面板',
