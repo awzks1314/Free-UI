@@ -1,0 +1,33 @@
+<free-title title="默认标题"></free-title>
+
+<free-title title="默认标题不加粗" weight="0"></free-title>
+
+<free-title title="标题背景为蓝" bgColor="#0081ff" titlecolor="#fff" bottomColor="#fff"></free-title>
+
+<view class="solid-top">
+  <free-title title="默认标题" titlecolor="#e54d42"  bottomColor="linear-gradient(45deg, #f43f3b, #ec008c)" width="3"></free-title>
+</view>
+
+<view class="solid-top">
+  <free-title title="默认标题" type="2" titlecolor="#0081ff" bottomColor="#0081ff" ></free-title>
+</view>
+
+<view class="solid-top">
+  <free-title title="默认标题" type="3" sub="default" titlecolor="#39b54a" bottomColor="#39b54a" ></free-title>
+</view>
+
+<view class="solid-top">
+  <free-title title="默认标题" type="2" sub="default" titlecolor="#8dc63f" bottomColor="#8dc63f" ></free-title>
+</view>
+
+<view class="solid-top">
+  <free-title title="带图标标题" type="3" icon="home" titlecolor="#1cbbb4" bottomColor="#1cbbb4" ></free-title>
+</view>
+
+<view class="solid-top">
+  <free-title title="小圆点标题" type="3" icon="dot" titlecolor="#e54d42" bottomColor="#e54d42" weight="0"></free-title>
+</view>
+
+<view class="solid-top">
+  <free-title title="默认标题" type="3" icon="line" titlecolor="#f37b1d" bottomColor="#f37b1d" ></free-title>
+</view>

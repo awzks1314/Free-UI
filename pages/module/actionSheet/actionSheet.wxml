@@ -1,0 +1,10 @@
+<view class="free-bar  bg-white solid-bottom" wx:for="{{list}}" wx:key='index'>
+  <view class="free-title ">
+    <text>{{item.name}}</text>
+  </view>
+  <view class="free-title ">
+    <button class="free-button bg-blue" bindtap="openActionSheet" data-type="{{index}}" >查看实例</button>
+  </view>
+</view>
+
+<free-actionSheet show="{{showActionSheet}}" tips="{{tips}}" item-list="{{itemList}}" mask-closable="{{maskClosable}}" color="{{color}}" size="{{size}}" is-cancel="{{isCancel}}" bind:click="itemClick" bind:cancel="closeActionSheet"></free-actionSheet>

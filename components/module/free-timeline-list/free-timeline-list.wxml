@@ -1,0 +1,3 @@
+<view class="free-timeline-list-class free-timeline-list">
+  <slot></slot>
+</view>

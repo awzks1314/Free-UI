@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"页脚",
+  "usingComponents": {
+    "free-footer":"/components/module/free-footer/free-footer"
+  }
+}

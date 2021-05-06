@@ -1,0 +1,27 @@
+<free-loading visible="{{true}}"></free-loading>
+
+<free-loading visible="{{true}}" bgcolor="blue"></free-loading>
+
+<free-loading visible="{{true}}" index="2"></free-loading>
+
+<free-loading visible="{{true}}" index="3" ></free-loading>
+
+<free-loading visible="{{true}}" index="3" type="primary"></free-loading>
+
+<free-loading visible="{{true}}" index="3" type="red"></free-loading>
+
+<free-loading visible="{{true}}" index="3" type="orange"></free-loading>
+
+<free-loading visible="{{true}}" index="3" type="green"></free-loading>
+
+<free-loading visible="{{true}}" index="3" status="loading"></free-loading>
+
+<free-loading visible="{{true}}" index="3" status="loadmore"></free-loading>
+
+<free-loading visible="{{true}}" index="3" status="nomore"></free-loading>
+
+<free-loading visible="{{true}}"  status="loading" text="{{text}}"></free-loading>
+
+<free-loading visible="{{true}}"  status="loadmore" text="{{text}}"></free-loading>
+
+<free-loading visible="{{true}}"  status="nomore" text="{{text}}"></free-loading>

@@ -1,0 +1,61 @@
+<view class="padding bg-white">
+  <view class="margin-bottom">
+    <free-progress width="40%"></free-progress>
+  </view>
+  <view class="">
+    <free-progress radius="30rpx" width="80%"></free-progress>
+  </view>
+</view>
+
+<view class="padding bg-white margin-top">
+  <view class="margin-bottom">
+    <free-progress width="40%"></free-progress>
+  </view>
+  <view class="margin-bottom">
+    <free-progress radius="40rpx" width="80%" height="40rpx"></free-progress>
+  </view>
+</view> 
+
+<view class="padding bg-white margin-top">
+  <view class="margin-bottom">
+    <free-progress progressBg="#f37b1d" width="28%"></free-progress>
+  </view>
+  <view class="margin-bottom">
+    <free-progress radius="10rpx" width="48%" widthBg="red" progressBg="#1cbbb4"></free-progress>
+  </view>
+  <view class="">
+    <free-progress radius="30rpx" width="80%" widthBg="orange" progressBg="#e03997"></free-progress>
+  </view>
+</view>
+
+<view class="padding bg-white margin-top">
+  <view class="margin-bottom">
+    <free-progress radius="30rpx" width="48%" striped="{{true}}" widthBg="green"></free-progress>
+  </view>
+  <view class="">
+    <free-progress radius="30rpx" width="80%" striped="{{true}}" widthBg="orange"></free-progress>
+  </view>
+</view>
+
+<view class="padding bg-white margin-top">
+  <view class="margin-bottom">
+    <free-progress radius="30rpx" width="48%" striped="{{true}}" active="{{true}}" widthBg="green"></free-progress>
+  </view>
+  <view class="">
+    <free-progress radius="30rpx" width="80%" striped="{{true}}" active="{{true}}" widthBg="orange"></free-progress>
+  </view>
+</view>
+
+<view class="padding bg-white margin-top flex">
+  <view class="flex-sub">
+    <free-progress  width="40%" notext="true"  radius="30rpx" striped="{{true}}" active="{{true}}" widthBg="orange"></free-progress>
+  </view>
+  <text class="padding-lr-sm text-sm">40%</text>
+</view>
+
+<view class="padding bg-white margin-top flex">
+  <view class="flex-sub">
+    <free-progress  width="80%" notext="true"  radius="30rpx" striped="{{true}}" active="{{true}}" widthBg="#0081ff"></free-progress>
+  </view>
+  <text class="padding-lr-sm text-sm">80%</text>
+</view>

@@ -32,7 +32,13 @@
     "pages/module/tabbar/tabbar",
     "pages/module/swiper/swiper",
     "pages/module/noticeBar/noticeBar",
-    "pages/module/steps/steps"
+    "pages/module/steps/steps",
+    "pages/module/actionSheet/actionSheet",
+    "pages/module/loading/loading",
+    "pages/module/progress/progress",
+    "pages/module/timeline/timeline",
+    "pages/basic/title/title",
+    "pages/module/footer/footer"
   ],
   "tabBar": {
     "color": "#aaaaaa",
@@ -69,6 +75,8 @@
     "free-tabs": "/components/module/free-tabs/free-tabs",
     "free-tag": "/components/basic/free-tag/free-tag",
     "free-icon": "/components/basic/free-icon/free-icon",
+    "free-title": "/components/basic/free-title/free-title",
+    "free-list":"/components/module/free-list/free-list",
     "free-image": "/components/basic/free-image/free-image"
   },
   "window": {

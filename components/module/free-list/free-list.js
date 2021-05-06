@@ -18,11 +18,11 @@ Component({
     },
     size:{
       type: Number,
-      value: 32//字体大小
+      value: 28//字体大小
     },
     color: {
       type: String,
-      value: "#333" //字体颜色
+      value: "#8799a3" //字体颜色
     },
     last: {
       type: Boolean,

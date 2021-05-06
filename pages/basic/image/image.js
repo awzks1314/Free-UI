@@ -11,7 +11,7 @@ Page({
       {name:'长按预览'},
       {name:'懒加载'},
     ],
-    currentTab:3,
+    currentTab:0,
     imageList:[
       {name:'scaleToFill',msg:'缩放模式，不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素'},
       {name:'aspectFit',msg:'缩放模式，保持纵横比缩放图片，使图片的长边能完全显示出来。也就是说，可以完整地将图片显示出来。'},

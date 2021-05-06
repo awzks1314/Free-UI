@@ -1326,7 +1326,7 @@ button.icon.lg {
 	position: relative;
 	align-items: center;
 	min-height: 100rpx;
-	margin: 20rpx 0;
+	/* margin: 20rpx 0; */
 	justify-content: space-between;
 }
 
@@ -1394,11 +1394,11 @@ button.icon.lg {
 .free-list-name{
 	padding-left: 20rpx;
   vertical-align: middle;
-  line-height: 30rpx;
 }
 .free-list-right{
 	margin-left: auto;
-  margin-right: 34rpx;
+	margin-right: 34rpx;
+	padding: 0 14px;
   font-size: 26rpx;
   color: #999;
 }
@@ -1936,4 +1936,21 @@ checkbox.white[checked] .wx-checkbox-input,
 radio.white[checked] .wx-radio-input {
 	background-color: var(--white) !important;
 	color: var(--black) !important;
+}
+
+/* 时间轴 */
+.free-timeline-icon{
+	background: #ddd;
+  height: 44rpx;
+  width: 44rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding-top:0; 
+}
+.free-timeline-icon-sm{
+  height: 16rpx !important;
+  width: 16rpx !important;
 }

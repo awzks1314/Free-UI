@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"title标题",
+  "usingComponents": {
+    "free-title":"/components/basic/free-title/free-title"
+  }
+}

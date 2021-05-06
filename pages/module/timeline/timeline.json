@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText":"timeline时间轴",
+  "usingComponents": {
+    "free-timeline-list": "/components/module/free-timeline-list/free-timeline-list",
+    "free-timeline-item": "/components/module/free-timeline-item/free-timeline-item"
+  }
+}

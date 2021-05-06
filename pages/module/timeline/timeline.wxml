@@ -1,0 +1,67 @@
+<view class=" bg-white padding">
+  <free-timeline-list>
+    <free-timeline-item>
+      <view slot="icon" class="free-timeline-icon">
+        <free-icon name="home" size="18"></free-icon>
+      </view>
+      <view slot="content" class="padding-lr-xs">
+          <view class="text-bold ">已签收</view>
+          <view class="padding-tb-xs">您的订单已由本人签收。感谢您在商城购物，欢迎再次光临。</view>
+          <view class="text-sm text-gray">2019-05-01 18:48:26</view>
+        </view>
+    </free-timeline-item>
+    <free-timeline-item>
+      <view slot="icon" class="free-timeline-icon">
+        <free-icon name="setting" size="18"></free-icon>
+      </view>
+      <view slot="content" class="padding-lr-xs">
+          <view class="text-bold ">运输中</view>
+          <view class="padding-tb-xs">您的订单已由本人签收。感谢您在商城购物，欢迎再次光临。</view>
+          <view class="text-sm text-gray">2019-05-01 18:48:26</view>
+        </view>
+    </free-timeline-item>
+    <free-timeline-item>
+      <view slot="icon" class="free-timeline-icon free-timeline-icon-sm"></view>
+      <view slot="content" class="padding-lr-xs">        
+          <view class="padding-bottom-xs ">您的订单已由本人签收。感谢您在商城购物，欢迎再次光临。</view>
+          <view class="text-sm text-gray">2019-05-01 18:48:26</view>
+        </view>
+    </free-timeline-item>
+    <free-timeline-item>
+      <view slot="icon" class="">
+        <free-icon name="setting" size="18" color="#0081ff"></free-icon>
+      </view>
+      <view slot="content" class="bg-blue padding-xs">
+          <view class="">您的订单已由本人签收。感谢您在商城购物，欢迎再次光临已由本人签收。感谢您在商城购物，欢迎再次光临</view>
+          
+      </view>
+    </free-timeline-item>
+    <free-timeline-item>
+      <view slot="icon" class="">
+        <free-icon name="setting" size="18" color="#f37b1d"></free-icon>
+      </view>
+      <view slot="content" class="bg-orange padding-xs light">
+          <view class="">您的订单已由本人签收。感谢您在商城购物，欢迎再次光临已由本人签收。感谢您在商城购物，欢迎再次光临</view>
+          
+      </view>
+    </free-timeline-item>
+    <free-timeline-item>
+      <view slot="icon" class="bg-white">
+        <free-icon name="setting" size="18" color="#39b54a"></free-icon>
+      </view>
+      <view slot="content" class="bg-green padding-xs lines-green">
+          <view class="">您的订单已由本人签收。感谢您在商城购物，欢迎再次光临已由本人签收。感谢您在商城购物，欢迎再次光临</view>
+          
+      </view>
+    </free-timeline-item>
+    <free-timeline-item>
+      <view slot="icon" class="bg-white">
+        <free-icon name="setting" size="18" color="#39b54a"></free-icon>
+      </view>
+      <view slot="content" class="bg-green padding-xs lines-green">
+          <view class="">您的订单已由本人签收。感谢您在商城购物，欢迎再次光临已由本人签收。感谢您在商城购物，欢迎再次光临</view>
+          
+      </view>
+    </free-timeline-item>
+  </free-timeline-list>
+</view>

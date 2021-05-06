@@ -1,17 +1,35 @@
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <free-icon name='electronics' color='#0081ff' size='18'></free-icon>
-    <text>基础用法</text>
-  </view>
-</view>
-<view class="">
-  <view class="padding"><free-input placeholder='有背景的输入框'></free-input></view>
-  <view class="padding"><free-input inputStyle='1' placeholder='带边框的输入框'></free-input></view>
-  <view class="padding"><free-input extreaWord='取消' bind:input="getInput" bind:extrea="cancel" radius="4rpx" placeholder="带操作的输入框"></free-input></view>
-  <view class="padding"><free-input prefixIcon="electronics" placeholder="前置图标可更换"></free-input></view>
-  <view class="padding"><free-input suffixIcon="electronics" prefixIcon='' placeholder="后置图标可更换"></free-input></view>
-  <view class="padding bg-blue"><free-input radius='10rpx'  inputStyle='0' extreaWord='搜索' extreaColor='#fff' placeholder="背景色为蓝"></free-input></view>
-  <view class="padding"><free-input radius='10rpx' inputBg='#fff' placeholder='无背景的输入框'></free-input></view>
-  <view class="padding"><free-input password placeholder='密码输入'></free-input></view>
-  <view class="padding"><free-input disabled inputStyle='1' placeholder='禁止输入'></free-input></view>
+
+<free-title title="基础用法" type="2"  ></free-title>
+<!-- 
+  bgColor:整个input所在块背景色
+  value:input输入框的值
+  inputStyle: input样式 0是默认输入框，无边框；1有边框
+  color: 图标字体颜色
+  inputBg: 输入框背景颜色
+  radius: 输入框的圆角，默认椭圆
+  password：Boolean类型，是否是密码输入
+  type: 输入框文本类型，text、number、idcard、digit
+  prefixIcon: 输入框头部图标替换，默认搜索图标
+  suffixIcon: 输入框尾部图标替换
+  position: 输入框定位
+  confirmType: 真机唤起键盘时，右下角文本文字。值有：send、search、next、go、done
+  placeholder: 提示词，string类型
+  close: 是否显示关闭按钮，true/false
+  disabled:是否禁用，true/false
+  extreaWord:右侧额外按钮
+  extreaColor: 右侧额外按钮颜色
+ -->
+<view class="solid-top">
+  <free-input placeholder='有背景的输入框'></free-input>
+  <free-input inputStyle='1' placeholder='带边框的输入框'></free-input>
+  <free-input inputStyle='1' placeholder='更改字体图标颜色' color="red"></free-input>
+  <free-input extreaWord='取消' bind:input="getInput" bind:extrea="cancel" radius="4rpx" placeholder="带操作的输入框"></free-input>
+  <free-input extreaWord='确定' bind:input="getInput" bind:extrea="cancel" radius="4rpx" placeholder="更改输入框的背景色" inputBg="orange" color="#fff"></free-input>
+  <free-input prefixIcon="electronics" placeholder="前置图标可更换"></free-input>
+  <free-input suffixIcon="electronics" prefixIcon='' placeholder="后置图标可更换"></free-input>
+  <free-input radius='10rpx'  inputStyle='0' extreaWord='搜索' extreaColor='#fff' placeholder="背景色为蓝" bgColor="#0081ff"></free-input>
+  <free-input radius='10rpx'  inputStyle='0' extreaWord='搜索' extreaColor='#fff' placeholder="背景色为蓝"></free-input>
+  <free-input radius='10rpx' inputBg='#fff' placeholder='无背景的输入框'></free-input>
+  <free-input password placeholder='密码输入'></free-input>
+  <free-input disabled inputStyle='1' placeholder='禁止输入'></free-input>
 </view>

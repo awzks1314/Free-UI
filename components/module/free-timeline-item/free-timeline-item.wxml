@@ -1,0 +1,6 @@
+<view class="free-timeline-item-class free-timeline-item">
+  <view class="free-timeline-icon">
+    <slot name="icon"></slot>
+  </view>
+  <slot name="content" ></slot>
+</view> 

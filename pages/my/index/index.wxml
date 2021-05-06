@@ -8,9 +8,31 @@
     <text class="padding-top-xs text-gray">{{item.name}}</text>
   </view>
 </view>
-
+ 
 <view class=" margin-top ">
-  <view class=" bg-white padding">
-    11
-  </view>
+  <free-list arrow="true" bind:click="detail" >
+    <free-icon name='home-filling' size='20' color='#0081ff'></free-icon>
+    <view class="free-list-name">Github源码地址</view>
+  </free-list>
+  <free-list arrow="true" bind:click="detail" >
+    <free-icon name='home' size='20' color='#0081ff'></free-icon>
+    <view class="free-list-name">Gitee源码地址</view>
+  </free-list>
+  <free-list arrow="true" bind:click="detail" >
+    <free-icon name='home-filling' size='20' color='#0081ff'></free-icon>
+    <view class="free-list-name">更新日志</view>
+  </free-list>
+  <free-list arrow="true" bind:click="detail" >
+    <free-icon name='home-filling' size='20' color='#0081ff'></free-icon>
+    <view class="free-list-name">赞赏支持</view>
+  </free-list>
+  <free-list arrow="true" bind:click="detail" >
+    <free-icon name='home-filling' size='20' color='#0081ff'></free-icon>
+    <view class="free-list-name">意见反馈</view>
+    <button class="free-button free-list-right bg-white">给点建议</button>
+  </free-list>
+  <free-list arrow="true" bind:click="detail" >
+    <free-icon name='home-filling' size='20' color='#0081ff'></free-icon>
+    <view class="free-list-name">关于Free UI</view>
+  </free-list>
 </view>

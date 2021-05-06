@@ -1,0 +1,12 @@
+<free-footer></free-footer>
+<free-footer item="{{list1}}"></free-footer>
+
+<free-footer item="{{list2}}"></free-footer>
+
+<free-footer item="{{list3}}"></free-footer>
+
+<free-footer item="{{list2}}" bgcolor="#fff" text="自定义页脚内容自定义页脚内容自定义页脚内容"></free-footer>
+
+<free-footer item="{{list2}}" size="40" text="40rpx大小的字体"></free-footer>
+
+<free-footer item="{{list3}}" fixed="true" bgcolor="#fff" ></free-footer>

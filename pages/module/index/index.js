@@ -94,7 +94,7 @@ Page({
       {
         name:'步骤条',
         title:'steps',
-        icon:'home-filling',
+        icon:'home',
       },
       {
         name:'动作面板',
@@ -112,14 +112,14 @@ Page({
         icon:'home',
       },
       {
-        name:'滑动操作',
-        title:'swiperAction',
+        name:'时间轴',
+        title:'timeline',
         icon:'home',
       },
       {
-        name:'长列表',
-        title:'listView',
-        icon:'home',
+        name:'页脚',
+        title:'footer',
+        icon:'home-filling',
       },
       {
         name:'结果页',

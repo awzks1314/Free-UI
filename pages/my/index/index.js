@@ -12,7 +12,13 @@ Page({
     ]
   },
 
-
+  detail(e){
+    wx.showToast({
+      title: '你点击了该选项',
+      icon:'none',
+      duration: 1000
+    })
+  },
   /**
    * 用户点击右上角分享
    */

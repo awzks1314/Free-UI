@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"动作面板",
+  "usingComponents": {
+    "free-actionSheet":"/components/module/free-actionSheet/free-actionSheet"
+  }
+}

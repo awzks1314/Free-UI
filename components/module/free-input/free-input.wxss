@@ -1,8 +1,8 @@
 .box{
   display: flex;
   align-items: center;
-  justify-items: center;
-  /* height: 100rpx; */
+  justify-content: space-between;
+  min-height: 100rpx;
   width: 100%;
   top: 0;
   left: 0;
@@ -21,6 +21,7 @@
   color: #333333;
   flex: 1;
   overflow: hidden;
+  margin: 0 30rpx;
 }
 .inputStyles{
   position: relative;
@@ -35,6 +36,7 @@
   color: #333333;
   flex: 1;
   overflow: hidden;
+  margin: 0 30rpx;
 }
 .disabled{
   background-color: #f5f7fa;
@@ -53,7 +55,7 @@
 }
 .input{
   flex: 1;
-  padding:0 20rpx;
+  padding:0 30rpx 0 0.5em;
   height: 64rpx;
   line-height: 64rpx;
   font-size: 26rpx;
@@ -72,5 +74,5 @@
 }
 .extreaBtn{
   text-align: center;
-  padding-left:20rpx ;
+  margin-right: 30rpx;
 }

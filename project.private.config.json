@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/my/index/index",
-          "pathName": "pages/my/index/index",
+          "name": "pages/extend/index/index",
+          "pathName": "pages/extend/index/index",
           "query": "",
           "scene": null
         },
@@ -25,8 +25,8 @@
           "scene": null
         },
         {
-          "name": "pages/module/steps/steps",
-          "pathName": "pages/module/steps/steps",
+          "name": "pages/module/footer/footer",
+          "pathName": "pages/module/footer/footer",
           "query": "",
           "scene": null
         }

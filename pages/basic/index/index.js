@@ -23,18 +23,18 @@ Page({
         title:'image',
         desc:'图片大小、懒加载以及预览等',
         icon:'picture-filling'
-      },
-      {
-        name:'边框',
-        title:'border',
-        desc:'虚实边框、圆角以及阴影',
-        icon:'scanning'
-      },
+      },      
       {
         name:'图标',
         title:'icon',
         desc:'一些内置的图标，直接食用',
         icon:'notification-filling'
+      },
+      {
+        name:'标题',
+        title:'title',
+        desc:'一些标题样式',
+        icon:'fabulous'
       },
       {
         name:'按钮',
@@ -49,9 +49,15 @@ Page({
         icon:'good'
       },
       {
+        name:'边框',
+        title:'border',
+        desc:'虚实边框、圆角以及阴影',
+        icon:'scanning'
+      },
+      {
         name:'文本',
         title:'text',
-        desc:'文本样式、多行省略、特殊文字',
+        desc:'文本样式、文本颜色、多行省略、特殊文字',
         icon:'edit'
       }
     ]

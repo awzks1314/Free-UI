@@ -1,0 +1,11 @@
+<view class="free-footer-class free-footer {{fixed?'free-fiexed':''}}" style='background:{{bgcolor}}'>
+  <view wx:if="{{item.length>0}}" class="free-footer-item">
+    <block wx:for="{{item}}" wx:key='index' >
+    <navigator class="free-footer-link" hover-class="tui-link-hover" hover-stop-propagation="{{true}}" style="color:{{item.color || '#596d96'}};font-size:{{item.size || 28}}rpx" open-type="{{item.type}}" url="{{item.url}}" target="{{item.target}}" delta="{{item.delta}}"
+        app-id="{{item.appid}}" path="{{item.path}}" extra-data="{{item.extradata}}" bindsuccess="item.bindsuccess" bindfail="item.bindfail">{{item.text}}</navigator>
+    </block>
+  </view>
+  <view class="free-footer-text" style="color:{{color}};font-size:{{size}}rpx" >
+    {{text}}
+  </view>
+</view>

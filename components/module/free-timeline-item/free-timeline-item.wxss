@@ -1,0 +1,26 @@
+.free-timeline-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.free-timeline-icon {
+  position: absolute;
+  top: 10rpx;
+  left: -20px;
+  /* padding: 3px 0; */
+  transform-origin: 0;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  background: #fafafa;
+  font-size: 24rpx;
+}
+.free-timeline-content{
+  padding: 10rpx;
+}

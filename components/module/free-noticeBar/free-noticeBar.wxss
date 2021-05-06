@@ -67,3 +67,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.fixed{
+  position: fixed;
+}

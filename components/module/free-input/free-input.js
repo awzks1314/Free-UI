@@ -7,6 +7,11 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    // 整个背景颜色
+    bgColor:{
+      type:String,
+      value:''
+    },
     value:{
       type:String,
       value:''
@@ -144,6 +149,7 @@ Component({
         value: this.data.value
       },{})
     },
+    // 关闭
     close(){
       this.data.value =''
       this.setData({
