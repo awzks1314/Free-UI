@@ -1,0 +1,61 @@
+<view class="bg-white ">
+  <free-input value="{{value}}" placeholder="请输入城市首字母或者城市名称" extreaWord="搜索" bind:input="getInputValue" bind:close="closeInput" close="{{true}}"></free-input>
+</view>
+<scroll-view class="scrollList" scroll-y scroll-into-view="{{scrollViewId}}" style="height:{{winHeight}}px">
+  <!-- 查询城市 -->
+  <view wx:if="{{value}}">
+    <view class="padding-lr bg-white"
+      wx:for="{{searchResult}}"  wx:key="index">
+      <view class="padding-tb-sm solid-bottom" bindtap="detail" data-name="{{item}}">
+        {{item}}
+      </view>
+    </view>
+  </view>
+  <!-- 默认 -->
+  <view wx:if="{{!value}}">
+    <view class="padding-lr bg-white">
+      <view class="text-gray text-sm">定位城市</view>
+      <view class="flex align-center padding-tb-xs">
+        <free-icon name="map-filling" size="20" color="#0081ff"></free-icon>
+        <text>{{localCity}}</text>
+      </view>
+    </view>
+    <!-- 热门城市 -->
+    <view class="">
+      <view class="padding-lr text-sm padding-tb-xs  text-gray">热门城市</view>
+      <view class="city-names bg-white">
+        <view class="city-name-item" wx:for="{{hotCity}}" wx:key="index"
+        bindtap="detail" data-name="{{item}}">
+          {{item}}
+        </view>
+      </view>
+    </view>
+    <!-- 列表 -->
+    <view>
+      <block wx:for="{{lists}}" wx:key="index" wx:if="{{item.data[0]}}">
+        <view class="padding-left padding-tb-xs text-gray" id="{{item.letter}}">{{item.letter}}</view>
+        <view class="padding-lr bg-white"
+         wx:for="{{item.data}}" wx:for-item="cityData" wx:key="index">
+          <view class="padding-tb-sm solid-bottom" bindtap="detail" data-name="{{cityData.cityName}}">
+            {{cityData.cityName}}
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</scroll-view>
+
+<!-- 右侧定位 -->
+<view wx:if="{{!value}}" 
+  class="free-city-list-bar" 
+  style="height:{{indexBarHeight}}px;top:{{titleHeight}}px"
+  catchtouchstart="touchStart" catchtouchmove="touchMove" catchtouchend="touchEnd" catchtouchcancel="touchCancel"
+  >
+  <text wx:for="{{lists}}" wx:key="index" 
+  class="free-city-list-text" 
+  style="height:{{indexBarItemHeight}}px"
+  >{{item.letter}}</text>
+</view>
+<view class="free-city-list-alert" wx:if="{{touchmove && lists[touchmoveIndex].letter}}">
+    {{lists[touchmoveIndex].letter}}
+  </view>

@@ -1,4 +1,4 @@
-<view class="bg-blue padding " style="position:fixed;top:0;width:100%;z-index:9;">
+<view class="bg-blue  " style="position:fixed;top:0;width:100%;z-index:9;">
   <free-input  bind:input='getValue' bind:colse='getClose' >
   </free-input>
 </view>

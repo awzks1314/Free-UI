@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText":"通讯录吸顶",
+  "usingComponents": {
+    "free-input":"/components/module/free-input/free-input",
+    "free-sticky":"/components/extend/free-sticky/free-sticky"
+  }
+}

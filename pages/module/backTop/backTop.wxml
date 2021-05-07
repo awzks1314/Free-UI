@@ -1,0 +1,120 @@
+<view>
+  <free-title title="基础用法" type="2"  sub="backTop"></free-title>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>组件形状</text>
+  </view>
+  <view class="free-title">
+    <radio-group bindchange="SetSize" class="flex" style="width:300rpx;">
+      <label class=" flex-sub" >
+        <radio class="blue sm radio" value="circle" checked></radio>
+        <text> 圆形</text>
+      </label>
+      <label class=" flex-sub">
+        <radio class="blue sm radio" value="square"></radio>
+        <text> 方形</text>
+      </label>
+    </radio-group>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>组件距离底部的距离</text>
+  </view>
+  <view class="free-title" >
+    <radio-group bindchange="getBottom" class="flex" style="width:300rpx;">
+      <label class=" flex-sub">
+        <radio class="blue sm radio" value="200" checked></radio>
+        <text> 200</text>
+      </label>
+      <label class=" flex-sub">
+        <radio class="blue sm radio" value="400"></radio>
+        <text> 400</text>
+      </label>
+    </radio-group>
+  </view>
+</view>
+
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>组件距离右侧的距离</text>
+  </view>
+  <view class="free-title" >
+    <radio-group bindchange="getRight" class="flex" style="width:300rpx;">
+      <label class=" flex-sub">
+        <radio class="blue sm radio" value="24" checked></radio>
+        <text> 24</text>
+      </label>
+      <label class=" flex-sub">
+        <radio class="blue sm radio" value="60"></radio>
+        <text> 60</text>
+      </label>
+    </radio-group>
+  </view>
+</view>
+
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>显示组件的滚动条距离</text>
+  </view>
+  <view class="free-title" >
+    <radio-group bindchange="getTop" class="flex" style="width:300rpx;">
+      <label class=" flex-sub">
+        <radio class="blue sm radio" value="40" checked></radio>
+        <text> 40</text>
+      </label>
+      <label class=" flex-sub">
+        <radio class="blue sm radio" value="300"></radio>
+        <text> 300</text>
+      </label>
+    </radio-group>
+  </view>
+</view>
+
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>自定义图标</text>
+  </view>
+  <view class="free-title" >
+    <radio-group bindchange="getIcon" class="flex" style="width:300rpx;">
+      <label class=" flex-sub">
+        <radio class="blue sm radio" value="top" checked></radio>
+        <text> 图标1</text>
+      </label>
+      <label class=" flex-sub">
+        <radio class="blue sm radio" value="arrow-up-bold"></radio>
+        <text> 图标2</text>
+      </label>
+    </radio-group>
+  </view>
+</view>
+
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>自定义颜色</text>
+  </view>
+  <view class="free-title" >
+    <radio-group bindchange="getBgColor" class="flex" style="width:300rpx;">
+      <label class=" flex-sub">
+        <radio class="blue sm radio" value="" checked></radio>
+        <text> 默认</text>
+      </label>
+      <label class=" flex-sub">
+        <radio class="blue sm radio" value="green"></radio>
+        <text> 绿色</text>
+      </label>
+    </radio-group>
+  </view>
+</view>
+</view>
+
+<free-backTop 
+  scrollTop="{{scrollTop}}" 
+  top="{{top}}"
+  bottom="{{bottom}}"
+  mode="{{mode}}"
+  right="{{right}}"
+  color="{{color}}"
+  bgColor="{{bgColor}}"
+  icon="{{icon}}"
+  ></free-backTop>

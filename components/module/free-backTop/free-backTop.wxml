@@ -1,0 +1,3 @@
+<view class="tui-scroll-top" style="bottom:{{bottom}}rpx;right:{{right}}rpx;background-color:{{bgColor?bgColor:'#e1e1e1'}};border-radius: {{mode=='circle'?'50%':''}};" hidden="{{!visible || !toggle}}" catchtap="goTop">
+		<free-icon name="{{icon?icon:'top'}}" size="20" color="{{color?color:'#606266'}}"></free-icon>
+	</view>

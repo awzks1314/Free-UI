@@ -1,0 +1,32 @@
+
+/* 右侧定位 */
+.free-city-list-bar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 9999;
+  position: absolute;
+  right: 0;
+  padding-right: 10rpx;
+  width: 60rpx;
+}
+.free-city-list-text{
+  font-size: 22rpx;
+}
+.free-city-list-alert{
+  position: absolute;
+  z-index: 20;
+  width: 160rpx;
+  height: 160rpx;
+  left: 50%;
+  top: 50%;
+  margin-left: -80rpx;
+  margin-top: -80rpx;
+  border-radius: 80rpx;
+  text-align: center;
+  line-height: 160rpx;
+  font-size: 70rpx;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,51 @@
+
+<free-input value="{{value}}" position="Fixed" placeholder="请输入名字或者电话号码" extreaWord="搜索" bind:input="getInputValue" bind:close="closeInput" close="{{true}}" bgColor="#fff"></free-input>
+<view style="height:100rpx;"></view>
+<view wx:if="{{value}}">
+    <view class="padding-lr bg-white"
+      wx:for="{{searchResult}}"  wx:key="index">
+      <view class="padding-tb-sm solid-bottom flex align-center" bindtap="detail" data-name="{{item.name}}" data-mobile="{{item.mobile}}" >
+            <free-image src="https://game.gtimg.cn/images/lol/act/img/tft/champions/27{{index%10}}.png" width='80rpx' height='80rpx' radius="50%"></free-image>
+            <view class="padding-left flex flex-direction">
+              <text>{{item.name}}</text>
+              <text class="text-sm text-grey padding-top-xs">{{item.mobile|| '该好友未留下电话~'}}</text>
+            </view>
+          </view>
+    </view>
+</view>
+<block wx:if="{{!value}}">
+  <free-sticky 
+wx:for-items="{{lists}}" wx:for-item="list"
+scrollTop="{{scrollTop}}" stickyTop="50" stickyHeight="58rpx" index="{{index}}"
+bind:change="stickyChange"
+>
+  <view class="padding-left padding-tb-xs  bg-gray" slot="header">
+    {{list.letter=="other"?'#':list.letter}}
+  </view> 
+  <view slot="content" class="padding-lr bg-white"
+    wx:for="{{list.data}}" wx:for-item="user" wx:key="index">
+    <view class="padding-tb-sm solid-bottom flex align-center" bindtap="detail" data-name="{{user.name}}" data-mobile="{{user.mobile}}">
+      <free-image src="https://game.gtimg.cn/images/lol/act/img/tft/champions/27{{index%10}}.png" width='80rpx' height='80rpx' radius="50%"></free-image>
+      <view class="padding-left flex flex-direction">
+        <text>{{user.name}}</text>
+        <text class="text-sm text-grey padding-top-xs">{{user.mobile|| '该好友未留下电话~'}}</text>
+      </view>
+    </view>
+  </view>
+</free-sticky>
+</block>
+
+<!-- 右侧定位 -->
+<view wx:if="{{!value}}" 
+  class="free-city-list-bar" 
+  style="height:{{indexBarHeight}}px;top:{{titleHeight}}px"
+  catchtouchstart="touchStart" catchtouchmove="touchMove" catchtouchend="touchEnd" catchtouchcancel="touchCancel"
+  >
+  <text wx:for="{{lists}}" wx:key="index" 
+  class="free-city-list-text"
+  style="height:{{indexBarItemHeight}}px"
+  >{{index == lists.length-1?'#':item.letter}}</text>
+</view>
+<view class="free-city-list-alert" wx:if="{{touchmove && lists[touchmoveIndex].letter}}">
+    {{touchmoveIndex == lists.length -1 ?'#':lists[touchmoveIndex].letter}}
+  </view>

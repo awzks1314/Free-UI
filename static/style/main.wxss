@@ -1400,7 +1400,7 @@ button.icon.lg {
 	margin-right: 34rpx;
 	padding: 0 14px;
   font-size: 26rpx;
-  color: #999;
+  /* color: #999; */
 }
 .free-meaage-list{
     display: flex;

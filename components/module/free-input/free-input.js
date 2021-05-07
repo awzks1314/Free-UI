@@ -1,4 +1,4 @@
-// components/basic/free-input/free-input.js
+
 Component({
   options: {
     multipleSlots: true
@@ -72,7 +72,7 @@ Component({
     },
     // 是否显示关闭按钮
     close:{
-      type:Boolean,
+      type:Boolean, 
       value:false
     },
     // 是否禁用
@@ -151,11 +151,10 @@ Component({
     },
     // 关闭
     close(){
-      this.data.value =''
       this.setData({
-        value:this.data.value
+        value:''
       })
-      this.triggerEvent("colse", {
+      this.triggerEvent("close", {
         value: ''
       })
     }

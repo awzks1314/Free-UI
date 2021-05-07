@@ -119,12 +119,12 @@ Page({
       {
         name:'页脚',
         title:'footer',
-        icon:'home-filling',
+        icon:'home',
       },
       {
-        name:'结果页',
-        title:'result',
-        icon:'home',
+        name:'返回顶部',
+        title:'backTop',
+        icon:'home-filling',
       }
     ]
   },

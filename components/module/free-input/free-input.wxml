@@ -18,8 +18,8 @@
     disabled="{{disabled}}" 
     class="input"/>
     <!-- 删除 -->
-    <view class="deleStyle" wx:if="{{textValue.length>0 && close}}">
-      <free-icon name="close" color="{{color?color:'#dcdfe6'}}"  size="12" bindtap="close"></free-icon>
+    <view class="deleStyle" wx:if="{{value && close}}">
+      <free-icon name="close" color="{{color?color:'rgb(139, 138, 138)'}}"  size="18" bindtap="close"></free-icon>
     </view>
     <!-- 后置图标 -->
     <view style="padding: 0 20rpx;" wx:if="{{suffixIcon}}" >

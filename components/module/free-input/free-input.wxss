@@ -69,7 +69,7 @@
   width: 26rpx;
   height: 26rpx;
   margin: 0 20rpx;
-  border: 2rpx solid #dcdfe6;
+  /* border: 2rpx solid rgb(139, 138, 138); */
   border-radius: 50%;
 }
 .extreaBtn{

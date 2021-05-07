@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"城市选择",
+  "usingComponents": {
+    "free-input":"/components/module/free-input/free-input"
+  }
+}

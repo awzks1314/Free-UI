@@ -25,8 +25,14 @@
           "scene": null
         },
         {
-          "name": "pages/module/footer/footer",
-          "pathName": "pages/module/footer/footer",
+          "name": "pages/extend/index/index",
+          "pathName": "pages/extend/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/module/backTop/backTop",
+          "pathName": "pages/module/backTop/backTop",
           "query": "",
           "scene": null
         }

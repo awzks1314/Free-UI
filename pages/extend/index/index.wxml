@@ -2,9 +2,12 @@
   <text class="tile ">Free UI</text>
   <text>一款轻量、开箱即用的原生微信小程序UI组件库</text>
 </view>
-<view>
-  <free-list arrow="true" bind:click="detail" >
-    <free-icon name='home-filling' size='20' color='#0081ff'></free-icon>
-    <view class="free-list-name">城市选择</view>
-  </free-list>
-</view>
+<view class="introduce  bg-white">
+  <navigator wx:for="{{list}}" wx:key class="padding solid-bottom flex align-center justify-between" url="/pages/extend/{{item.title}}/{{item.title}}">
+    <view class="flex flex-direction" >
+      <text class="text-lg text-bold">{{item.name}}</text>
+      <text class="free-sub text-grey">{{item.desc}}</text>
+    </view>
+    <free-icon name='{{item.icon}}' color='#0081ff'></free-icon>
+  </navigator>
+</view> 

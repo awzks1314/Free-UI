@@ -7,20 +7,20 @@
     <view class="free-item " wx:for="{{gridList}}" wx:key >
       <view class="free-tag">
         <!-- <free-icon name="home-filling" color="{{item.color}}"> </free-icon> -->
-        <free-image src="/static/image/superman/{{index+1}}.jpg" width="50rpx" height='50rpx'></free-image>
+        <free-image src="https://game.gtimg.cn/images/lol/act/img/tft/champions/27{{index+1}}.png" width="50rpx" height='50rpx'></free-image>
         <view class="badge bg-red">
           <block wx:if="{{item.number!=1}}">{{item.number>99?"99+":item.number}}</block>
-        </view>
+        </view> 
       </view >
         <text>{{item.name}}</text>
-    </view>
+    </view> 
   </view>
 
   <view class="free-list grid col-4 no-border padding-top padding-lr-sm margin-top bg-white">
     <view class="free-item " wx:for="{{gridList}}" wx:key >
       <view class="free-tag">
         <!-- <free-icon name="home-filling" color="{{item.color}}"> </free-icon> -->
-        <free-image src="/static/image/superman/{{index+1}}.jpg" width="50rpx" height='50rpx'></free-image>
+        <free-image src="https://game.gtimg.cn/images/lol/act/img/tft/champions/27{{index+1}}.png" width="50rpx" height='50rpx'></free-image>
         <view class="badge bg-red">
           <block wx:if="{{item.number!=1}}">{{item.number>99?"99+":item.number}}</block>
         </view>
@@ -33,7 +33,7 @@
     <view class="free-item" wx:for="{{gridList}}" wx:key='index' >
       <view class="free-tag">
         <!-- <free-icon name="home-filling" color="{{item.color}}"> </free-icon> -->
-        <free-image src="/static/image/superman/{{index+1}}.jpg" width="50rpx" height='50rpx'></free-image>
+        <free-image src="https://game.gtimg.cn/images/lol/act/img/tft/champions/27{{index+1}}.png" width="50rpx" height='50rpx'></free-image>
         <view class="badge bg-red">
           <block wx:if="{{item.number!=1}}">{{item.number>99?"99+":item.number}}</block>
         </view>
@@ -64,7 +64,7 @@
   </free-list>
   <free-list arrow="true" color="orange">
     <!-- <free-icon name='home' size='24' color='orange'></free-icon> -->
-    <free-image src="/static/image/superman/1.jpg" width="50rpx" height="50rpx" mode="center"></free-image>
+    <free-image src="https://game.gtimg.cn/images/lol/act/img/tft/champions/271.png" width="50rpx" height="50rpx" mode="center"></free-image>
     <view class="free-list-name">图片+标题</view>
     <view class="free-list-right">右边注释文字</view>
   </free-list>
@@ -78,7 +78,7 @@
   </free-list>
   <free-list arrow="true" color="orange" size="40">
     <!-- <free-icon name='home' size='24' color='orange'></free-icon> -->
-    <free-image src="/static/image/superman/1.jpg" width="50rpx" height="50rpx" mode="center"></free-image>
+    <free-image src="https://game.gtimg.cn/images/lol/act/img/tft/champions/271.png" width="50rpx" height="50rpx" mode="center"></free-image>
     <view class="free-list-name">大文字显示</view>
   </free-list>
 

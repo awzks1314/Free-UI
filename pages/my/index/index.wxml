@@ -29,7 +29,7 @@
   <free-list arrow="true" bind:click="detail" >
     <free-icon name='home-filling' size='20' color='#0081ff'></free-icon>
     <view class="free-list-name">意见反馈</view>
-    <button class="free-button free-list-right bg-white">给点建议</button>
+    <button class="free-button free-list-right bg-white text-grey">给点建议</button>
   </free-list>
   <free-list arrow="true" bind:click="detail" >
     <free-icon name='home-filling' size='20' color='#0081ff'></free-icon>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"通讯录",
+  "usingComponents": {
+    "free-input":"/components/module/free-input/free-input"
+  }
+}

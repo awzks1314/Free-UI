@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"返回顶部",
+  "usingComponents": {
+    "free-backTop":"/components/module/free-backTop/free-backTop"
+  }
+}
