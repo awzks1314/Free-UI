@@ -124,6 +124,11 @@ Page({
       {
         name:'返回顶部',
         title:'backTop',
+        icon:'home',
+      },
+      {
+        name:'分段器',
+        title:'subsection',
         icon:'home-filling',
       }
     ]

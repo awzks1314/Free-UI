@@ -1,0 +1,19 @@
+<free-title type="2" title="效果演示"></free-title>
+
+<view class="padding ">
+  <free-subsection 
+    list="{{['西瓜', '苹果','芒果','香蕉']}}" 
+    mode="{{mode}}" 
+    activeColor="#ff995c" 
+    inactiveColor="#303133" 
+    buttonColor="#fff" 
+    ></free-subsection>
+</view>
+
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="有两种模式供选择" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['button', 'subsection']}}" bind:click='getMode' data-name="mode"></free-subsection>
+</view>
+
+

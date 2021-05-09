@@ -1418,29 +1418,6 @@ button.icon.lg {
 	width: 100rpx;
   text-align: center;
 }
-/* ==================
-         导航栏
- ==================== */
-
- .nav {
-	white-space: nowrap;
-}
-
-::-webkit-scrollbar {
-	display: none;
-}
-
-.nav .free-item {
-	height: 90rpx;
-	display: inline-block;
-	line-height: 90rpx;
-	margin: 0 10rpx;
-	padding: 0 20rpx;
-}
-
-.nav .free-item.cur {
-	border-bottom: 4rpx solid;
-}
 
 /* 站位块 */
 .positionView{

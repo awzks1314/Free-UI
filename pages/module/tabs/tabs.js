@@ -7,7 +7,7 @@ Page({
   data: {
     tabs1:[
       {name:'标签页1'},
-      {name:'标签页2'},
+      {name:'标签页2',num:99},
       {name:'标签页5',disabled: true},
       {name:'标签页3'},
     ],
@@ -18,16 +18,19 @@ Page({
       {name:'标签页3'},
     ],
     tabs:[
-      {name:'标签页1',icon:"home"},
+      {name:'标签页1',icon:"home",num:99},
       {name:'标签页2',icon:"home"},
-      {name:'标签页3',icon:"home"},
-      {name:'标签页3',icon:"home"},
+      {name:'标签页3',icon:""},
+      {name:'标签页4',icon:"home"},
+      {name:'标签页5',icon:"home"},
+      {name:'标签页6',icon:"home"},
+      {name:'标签页7',icon:"home"},
     ],
     currentTab:0,
     TabCur: 0,
     scrollLeft:0
   },
-  change(e){
+  change(e){    
     this.setData({
       currentTab:e.detail.index
     })

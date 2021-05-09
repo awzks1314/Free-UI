@@ -13,7 +13,11 @@ Component({
     //rpx 只对左右padding起作用，上下为0
     padding: {
       type: Number,
-      value: 30
+      value: 16
+    },
+    isScroll:{
+      type:Boolean,
+      value:true
     },
     //背景色
     backgroundColor: {
@@ -40,12 +44,12 @@ Component({
       type: Number,
       value: 0
     },
-    //滑块宽度
+    //滑块宽度 px
     sliderWidth: {
       type: Number,
-      value: 68
+      value: 34
     },
-    //滑块高度
+    //滑块高度 rpx
     sliderHeight: {
       type: Number,
       value: 6
@@ -65,9 +69,9 @@ Component({
       value: "0"
     },
     //标签页宽度
-    itemWidth: {
+    tabWidth: {
       type: String,
-      value: "25%"
+      value: "100"
     },
     //字体颜色
     color: {
@@ -103,7 +107,8 @@ Component({
             this.setData({
               winWidth: res.windowWidth
             }, () => {
-              this.checkCor()
+              console.log(res.windowWidth)
+              this.getTabRect()
             })
           }
         });
@@ -112,21 +117,55 @@ Component({
   },
   data: {
     winWidth: 0,
-    scrollLeft: 0
+    scrollLeft: 0,
+    scrollSliderLeft:0,
+    tabQueryInfo:[],
+    barFirstTimeMove: true, // 滑块第一次移动时(页面刚生成时)，无需动画，否则给人怪异的感觉
   },
   methods: {
-    checkCor: function() {
-      let tabsNum = this.data.tabs.length
-      let padding = this.data.winWidth / 750 * this.data.padding
-      let width = this.data.winWidth - padding * 2
-      let left = (width / tabsNum - (this.data.winWidth / 750 * this.data.sliderWidth)) / 2 + padding
-      let scrollLeft = left
-      if (this.data.currentTab > 0) {
-        scrollLeft = scrollLeft + (width / tabsNum) * this.data.currentTab
+    getTabRect() {
+      // 创建节点查询
+      let query = wx.createSelectorQuery().in(this);
+      // 历遍所有tab，这里是执行了查询，最终使用exec()会一次性返回查询的数组结果
+      for (let i = 0; i < this.data.tabs.length; i++) {
+        // 只要size和rect两个参数
+        query.select(`#free-tab-item-${i}`).fields({
+          size: true,
+          rect: true
+        });
       }
+      // 执行查询，一次性获取多个结果
+      query.exec(
+        function(res) {
+          console.log(res)
+          this.setData({
+            tabQueryInfo:res
+          })
+          // 初始化滚动条和移动bar的位置
+          this.checkCor();
+        }.bind(this)
+      );
+    },
+    checkCor: function() {
+      
+      let tabInfo = this.data.tabQueryInfo[this.data.currentTab];
+      if (!tabInfo) return;
+      let tabWidth = tabInfo.width
+      // 讲tabbar-item移动到最中间
+      let scrollLeft = tabInfo.left - (this.data.winWidth - tabWidth)/2
+      // tab-item重点距离左边的距离，滑块用的
+      let left = tabInfo.left + tabWidth/2
       this.setData({
-        scrollLeft: scrollLeft
+        scrollLeft:scrollLeft<0?0:scrollLeft,
+        scrollSliderLeft:left - this.data.sliderWidth/2
       })
+      if(this.data.barFirstTimeMove == true) {
+        setTimeout(() => {
+          this.setData({
+            barFirstTimeMove:false
+          })
+        }, 100)
+      }
     },
     // 点击标题切换当前页时改变样式
     swichTabs: function(e) {

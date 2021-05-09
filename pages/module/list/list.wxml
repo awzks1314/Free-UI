@@ -1,5 +1,5 @@
 
-<free-tabs tabs="{{tabs}}" isFixed="true"  currentTab="{{currentTab}}" bold='true'    bind:change="change" itemWidth="50%"></free-tabs>
+<free-tabs tabs="{{tabs}}" isFixed="true"  currentTab="{{currentTab}}" bold='true'    bind:change="change" ></free-tabs>
 <view class="positionView"></view>
 
 <view wx:if="{{currentTab == 0}}" >
@@ -45,11 +45,11 @@
 
 <view wx:if="{{currentTab == 1}}">
   <free-list arrow="{{true}}">
-    <free-icon name='home' size='24' color='orange'></free-icon>
+    <free-icon name='home' size='24' color='blue'></free-icon>
     <view class="free-list-name">基础用法有箭头</view>
   </free-list>
   <free-list >
-    <free-icon name='home' size='24' color='orange'></free-icon>
+    <free-icon name='home' size='24' color='blue'></free-icon>
     <view class="free-list-name">基础用法无箭头</view>
   </free-list>
   <free-list arrow="true" bind:click="detail" color="#0081ff">
@@ -57,13 +57,13 @@
     <view class="free-list-name">更换字体颜色</view>
     <free-tag  radius="30rpx" class="free-list-right">标签显示</free-tag>
   </free-list>
-  <free-list arrow="true" color="orange">
-    <free-icon name='home' size='24' color='orange'></free-icon>
+  <free-list arrow="true" color="blue">
+    <free-icon name='home' size='24' color='blue'></free-icon>
     <view class="free-list-name">图标+标题+注释</view>
     <view class="free-list-right">注释文字</view>
   </free-list>
-  <free-list arrow="true" color="orange">
-    <!-- <free-icon name='home' size='24' color='orange'></free-icon> -->
+  <free-list arrow="true" color="blue">
+    <!-- <free-icon name='home' size='24' color='blue'></free-icon> -->
     <free-image src="https://game.gtimg.cn/images/lol/act/img/tft/champions/271.png" width="50rpx" height="50rpx" mode="center"></free-image>
     <view class="free-list-name">图片+标题</view>
     <view class="free-list-right">右边注释文字</view>
@@ -76,26 +76,26 @@
     </view>
     <view class="free-list-right">注释文字</view>
   </free-list>
-  <free-list arrow="true" color="orange" size="40">
-    <!-- <free-icon name='home' size='24' color='orange'></free-icon> -->
+  <free-list arrow="true" color="blue" size="40">
+    <!-- <free-icon name='home' size='24' color='blue'></free-icon> -->
     <free-image src="https://game.gtimg.cn/images/lol/act/img/tft/champions/271.png" width="50rpx" height="50rpx" mode="center"></free-image>
     <view class="free-list-name">大文字显示</view>
   </free-list>
 
   <view class="margin-top  padding-sm ">
     <view class="radius">
-      <free-list arrow="true" color="orange">
-        <free-icon name='home' size='24' color='orange'></free-icon>
+      <free-list arrow="true" color="blue">
+        <free-icon name='home' size='24' color='blue'></free-icon>
         <view class="free-list-name">沙卡拉卡</view>
         <view class="free-list-right">右边注释文字</view>
       </free-list>
-      <free-list arrow="true" color="orange">
-        <free-icon name='home' size='24' color='orange'></free-icon>
+      <free-list arrow="true" color="blue">
+        <free-icon name='home' size='24' color='blue'></free-icon>
         <view class="free-list-name">沙卡拉卡</view>
         <view class="free-list-right">右边注释文字</view>
       </free-list>
-      <free-list arrow="true" color="orange">
-        <free-icon name='home' size='24' color='orange'></free-icon>
+      <free-list arrow="true" color="blue">
+        <free-icon name='home' size='24' color='blue'></free-icon>
         <view class="free-list-name">沙卡拉卡</view>
         <view class="free-list-right">右边注释文字</view>
       </free-list>
@@ -140,7 +140,7 @@
     <view class="free-meaage-content">
       <view class=" text-red">
         消息列表标题
-        <free-tag size="sm" radius="30rpx" type="orange">99+</free-tag>
+        <free-tag size="sm" radius="30rpx" type="blue">99+</free-tag>
       </view>
       <view class="text-red text-sm text-cut">
         消息列表副标题消息列表副标题消息

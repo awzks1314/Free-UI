@@ -13,6 +13,10 @@ Component({
       type:String,
       value:'#0081ff'
     },
+    height:{
+      type:String,
+      value:100
+    },
     // 底部颜色
     bottomColor:{
       type:String,

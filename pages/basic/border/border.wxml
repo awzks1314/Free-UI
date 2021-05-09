@@ -1,4 +1,4 @@
-<free-tabs tabs="{{tabs}}" isFixed="{{true}}"  currentTab="{{currentTab}}" bold='true'  bind:change="change" itemWidth="50%"></free-tabs>
+<free-tabs tabs="{{tabs}}" isFixed="{{true}}"  currentTab="{{currentTab}}" bold='true'  bind:change="change" ></free-tabs>
 <view class="positionView"></view>
 <view class="" wx:if="{{currentTab == 0}}">
   <view class="padding bg-white text-center" >

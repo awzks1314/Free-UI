@@ -1,0 +1,16 @@
+<view class="free-subsection"
+style="height:{{height}}rpx;background:{{mode=='button'?bgColor:''}};padding:{{mode=='button'?buttonPadding+'px':''}};border-radius:{{mode == 'button'?borderRadius+'px':''}}"
+>
+  <view wx:for="{{listInfo}}" wx:key='index'
+  bindtap="click"
+  data-index="{{index}}"
+  class="free-subsection-item free-item-{{index}} text-cut {{index<list.length -1 ?'free-none-border-right':''}} "
+  style="border-width:{{mode !='button'?'2rpx':''}};border-style:{{mode !='button'?'solid':''}};border-color:{{mode !='button'?activeColor:''}};"
+  >
+      <view class="free-subsection-item-text text-cut"
+      style="color:{{index == current && mode=='button'?activeColor:index!= current && mode=='button'?inactiveColor:index == current?'#ffffff':activeColor}};font-weight:{{index == current && bold?'bold':''}}">{{item.name}}</view>
+  </view>
+  <view class="free-subsection-bg"
+  style="height:100%;background-color:{{mode=='button'?buttonColor:activeColor}};width:{{itemBgStyle.width}};transition:{{itemBgStyle.transition}};left:{{itemBgStyle.left}};z-index:{{mode=='button'?1:0}};bottom:{{mode=='button'?buttonPadding+'px':''}};height:{{itemBgStyle.height}};"
+  ></view>
+</view>

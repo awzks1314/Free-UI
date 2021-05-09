@@ -1,0 +1,42 @@
+.free-subsection{
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.free-subsection-item{
+  display: flex;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.text-cut{
+  overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.free-subsection-item-text{
+  display: flex;
+  align-content: center;
+  position: relative;
+  z-index: 3;
+  transition: all 0.35s;
+}
+.free-subsection-bg{
+  background-color: #0081EF;
+  position: absolute;
+  z-index: -1;
+}
+.free-none-border-right{
+  border-right: none !important;
+}
+.free-item-first{
+  border-top-left-radius: 8rpx;
+	border-bottom-left-radius: 8rpx;
+}
+.free-item-last{
+  border-top-right-radius: 8rpx;
+	border-bottom-right-radius: 8rpx;
+}

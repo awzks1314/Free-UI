@@ -43,7 +43,8 @@
     "pages/extend/indexes/city/city",
     "pages/extend/indexes/friend/friend",
     "pages/extend/indexes/ceiling/ceiling",
-    "pages/module/backTop/backTop"
+    "pages/module/backTop/backTop",
+    "pages/module/subsection/subsection"
   ],
   "tabBar": {
     "color": "#aaaaaa",
