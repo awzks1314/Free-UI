@@ -1,3 +1,3 @@
 <view class="free-progress {{striped?'free-progress-striped':''}} {{active?'free-progress-active':''}}" style="background:{{progressBg}};border-radius:{{radius}};height:{{height}};">
-  <view style="background-color:{{widthBg}};color:{{color}};width:{{loading?width:''}};" >{{notext?'':width}}</view>
+  <view style="background-color:{{widthBg}};color:{{color}};width:{{loading?width:''}};" >{{notext?width:' '}}</view>
 </view>

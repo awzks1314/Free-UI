@@ -1,0 +1,48 @@
+
+
+
+  <free-title type="2" title="效果演示"></free-title>
+  <!-- grid组件 -->
+  <free-list-grid 
+    list="{{gridList}}" 
+    col="{{col}}" 
+    isSwiper="{{isSwiper}}"
+    swiperHeight="{{swiperHeight}}"
+    row="{{row}}"
+    border="{{border}}"
+    radius="{{radius}}"
+    bind:click='onClick'
+    ></free-list-grid>
+  <!-- grid组件 -->
+
+  <free-title type="2" title="参数配置"></free-title>
+  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="列数" height="40"></free-title>
+  <view class="padding">
+    <free-subsection list="{{[3,4,5,2]}}" bind:click='getMode' data-name="col" bold="true"></free-subsection>
+  </view>
+
+  <free-title icon='line' type='3' titlecolor="#0081ef" bold="{{false}}" size='28' title="是否可滑动(首页金刚区)" height="40"></free-title>
+  <view class="padding">
+    <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="isSwiper" bold="true"></free-subsection>
+  </view>
+
+  <free-title icon='line' type='3' titlecolor="#0081ef" bold="{{false}}" size='28' title="行数-滑动模式有效-需配合调整滑动容器的高度" height="40"></free-title>
+  <view class="padding">
+    <free-subsection list="{{[2,3,4]}}" bind:click='getMode' data-name="row" bold="true"></free-subsection>
+  </view>
+
+  <free-title icon='line' type='3' titlecolor="#0081ef" bold="{{false}}" size='28' title="滑动容器高度-仅在滑动模式有效" height="40"></free-title>
+  <view class="padding">
+    <free-subsection list="{{[400,500,600]}}" bind:click='getMode' data-name="swiperHeight" bold="true"></free-subsection>
+  </view>
+
+  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="修改图像圆角" height="40"></free-title>
+  <view class="padding">
+    <free-subsection list="{{[10,20,30,40]}}" bind:click='getMode' data-name="radius" bold="true"></free-subsection>
+  </view>
+
+  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="是否显示边框" height="40"></free-title>
+  <view class="padding">
+    <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="border" bold="true"></free-subsection>
+  </view>
+

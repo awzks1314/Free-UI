@@ -11,26 +11,22 @@ Page({
       {name:"消息列表"}
     ],
     currentTab:0,
-    gridList:[ 
-      {name:'西瓜',number:999,color:'blue'},
-      {name:'西瓜',number:999,color:'orange'},
-      {name:'西瓜',number:999,color:'olive'},
-      {name:'西瓜',number:999,color:'red'},
-      {name:'西瓜',number:999,color:'green'},
-      {name:'西瓜',number:999,color:'cyan'},
-      {name:'西瓜',number:999,color:'yellow'},
-      {name:'西瓜',number:999,color:'blue'},
-      {name:'西瓜',number:999,color:'yellow'}
-    ]
+    icon:true,//图标图片
+    arrow:true,//箭头
+  },
+  getMode(e){
+    this.setData({
+      [e.currentTarget.dataset.name]:e.detail.value
+    })
   },
   change(e){
     this.setData({
       currentTab:e.detail.index
     })
   },
-  detail(e){
+  onClick(e){
     wx.showToast({
-      title: '你点击了该选项',
+      title: `点击索引${e.detail.index}`,
       icon:'none',
       duration: 1000
     })

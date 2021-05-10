@@ -1,37 +1,44 @@
-<view class="padding-tb padding-lr-lg">基本使用</view>
+<free-title type="2" title="效果演示"></free-title>
+
 <view>
-  <block wx:for="{{listOne}}" wx:key="index">
-    <free-collapse index="{{index}}" disabled="{{item.disabled}}" current="{{item.current}}" arrow="{{item.arrow}}" bind:click="change">
-      <free-list slot="title">
-        <view class="free-list-name" slot="title">{{item.title}}</view>
-      </free-list>
-      <view slot="content" class="free-content">{{item.intro}}</view>
-    </free-collapse>
-  </block>
+  <free-collapse 
+  list="{{list}}"
+  accordion="{{accordion}}"
+  arrow="{{arrow}}"
+  height="{{height}}"
+  hdBgColor="{{hdBgColor}}"
+  bdBgColor="{{bdBgColor}}"
+  bind:click="change"
+  >
+  </free-collapse>
+</view>
+
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="手风琴模式" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true, false]}}" bind:click='getMode' data-name="accordion" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="右侧箭头图标" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true, false]}}" bind:click='getMode' data-name="arrow" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="折叠内容高度大小" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['auto', '200rpx','400rpx']}}" bind:click='getMode' data-name="height" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="标题背景颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#fff', '#0081ef','orange']}}" bind:click='getMode' data-name="hdBgColor" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="内容背景颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#fff', '#0081ef','orange']}}" bind:click='getMode' data-name="bdBgColor" bold="true"></free-subsection>
 </view>
 
 
-<view class="padding-tb padding-lr-lg">手风琴效果</view>
-<view>
-  <block wx:for="{{listOne}}" wx:key="index">
-    <free-collapse index="{{index}}" disabled="{{item.disabled}}" current="{{current}}" arrow="{{true}}" bind:click="change1">
-      <free-list slot="title">
-        <view class="free-list-name" slot="title">{{item.title}}</view>
-      </free-list>
-      <view slot="content" class="free-content">{{item.intro}}</view>
-    </free-collapse>
-  </block>
-</view>
 
 
-<view class="padding-tb padding-lr-lg">手风琴效果,固定高度</view>
-<view>
-  <block wx:for="{{listOne}}" wx:key="index">
-    <free-collapse index="{{index}}" current="{{current2}}" arrow="{{true}}" bind:click="change2" height="120rpx" bdBgColor="red">
-      <free-list slot="title">
-        <view class="free-list-name" slot="title">{{item.title}}</view>
-      </free-list>
-      <view slot="content" class="free-content">{{item.intro}}</view>
-    </free-collapse>
-  </block>
-</view>

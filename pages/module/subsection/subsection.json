@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText":"subsection分段器",
   "usingComponents": {
-    "free-subsection":"/components/module/free-subsection/free-subsection"
+    
   }
 }

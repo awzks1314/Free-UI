@@ -44,12 +44,7 @@ Component({
       type:Boolean,
       value:false
     },
-    // 有图标
-    rightIcon:{
-      type:String,
-      value:'close'
-    },
-    // 
+    //  
     // 是否有左侧图标
     isIcon:{
       type:Boolean,

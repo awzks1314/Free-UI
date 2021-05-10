@@ -1,3 +1,4 @@
 page{
   height: 160%;
+  background: #fff;
 }

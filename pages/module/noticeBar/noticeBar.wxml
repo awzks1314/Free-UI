@@ -1,28 +1,49 @@
-<free-noticeBar notice="{{notice1}}" isFixed="{{true}}" isRight="{{true}}"></free-noticeBar>
+<free-title type="2" title="效果演示"></free-title>
+<!-- 组件 -->
+<free-noticeBar 
+  notice="{{notice}}" 
+  animation="{{animation}}"
+  isFixed="{{isFixed}}"
+  isLeft="{{isLeft}}"  
+  isRight="{{isRight}}"
+  vertical="{{vertical}}"
+  backgroundColor="{{backgroundColor}}"
+  iconColor="{{iconColor}}"
+></free-noticeBar>
+<!-- 组件 -->
 
-<view class="positionView"></view>
-
-<view class="padding-tb">
-  <free-noticeBar notice="{{notice1}}" animation="{{false}}" backgroundColor="#fff8d5" iconColor="red"></free-noticeBar>
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="组件是否固定在头部" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[false, true]}}" bind:click='getMode' data-name="isFixed" bold="true"></free-subsection>
 </view>
 
-<view class="padding-tb">
-  <free-noticeBar notice="{{notice1}}" animation="{{false}}" backgroundColor="olive" iconColor="#fff" isLeft="{{false}}"></free-noticeBar>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="是否开启动画" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[false, true]}}" bind:click='getMode' data-name="animation" bold="bold"></free-subsection>
 </view>
 
-<view class="padding-tb">
-  <free-noticeBar notice="{{notice1}}" animation="{{true}}" backgroundColor="orange" iconColor="#fff" leftIcon="home"></free-noticeBar>
-</view>
-
-<view class="padding-tb">
-  <free-noticeBar notice="{{notice1}}" animation="{{false}}" backgroundColor="cyan" iconColor="#000" isLeft="{{false}}" isRight="{{true}}"></free-noticeBar>
-</view>
-
-<view class="padding-tb">
-  <free-noticeBar notice="{{notice}}" isRight="{{true}}" rightIcon="home-filling"></free-noticeBar>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="自定义背景色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#0081ef', 'red','green']}}" bind:click='getMode' data-name="backgroundColor" bold="bold"></free-subsection>
 </view>
 
 
-<view class="padding-tb">
-  <free-noticeBar notice="{{notice}}" vertical="{{false}}" isRight="{{true}}" rightIcon="close"></free-noticeBar>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="滚动模式，true竖向，false横向" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="vertical" bold="bold"></free-subsection>
 </view>
+
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="左侧是否有图标" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true, false]}}" bind:click='getMode' data-name="isLeft" bold="bold"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="右侧展示关闭按钮" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="isRight" bold="bold"></free-subsection>
+</view>
+
+
+

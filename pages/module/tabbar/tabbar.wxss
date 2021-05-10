@@ -1,1 +1,4 @@
-/* pages/module/tabbar/tabbar.wxss */
+page{
+  background: #fff;
+  padding-bottom: 120rpx;
+}

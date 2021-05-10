@@ -64,9 +64,11 @@ Component({
   },
   observers: {
     'current': function(current) {
-      console.log(current)
       this.checkCor();
-    }
+    },
+    'mode': function(current) {
+      this.getTabsInfo();
+    },
   },
   /**
    * 组件的初始数据
@@ -104,7 +106,7 @@ Component({
         res.map((val, index) => {
           this.data.listInfo[index].width = val.width;
         });
-        console.log(this.data.mode)
+        // console.log(this.data.mode)
         this.data.itemBgStyle.width = this.data.listInfo[0].width + 'px'
         this.data.itemBgStyle.height =this.data.mode == 'button'?this.data.height/2 - this.data.buttonPadding * 2 +'px' :100%
         this.setData({

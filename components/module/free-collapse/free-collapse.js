@@ -7,43 +7,30 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    // 是否禁用
-    disabled: {
+    list:{
+      type:Array,
+      value:[],
+      observer:function(){
+        this.changeList()
+      }
+    },
+    // 手风琴模式
+    accordion:{
       type: [Boolean, String],
-      value: false
+      value: true,
+      observer:function(){
+        this.changeList()
+      }
     },
     //是否带箭头
     arrow: {
       type: [Boolean, String],
       value: true
     },
-    //箭头颜色
-    arrowColor: {
-      type: String,
-      value: "#333"
-    },
-    //collapse-body实际高度 open时使用
+    //collapse-body实际高度
     height: {
       type: String,
       value: 'auto'
-    },
-    //索引
-    index: {
-      type: Number,
-      value: 0
-    },
-    //当前索引，index==current时展开
-    current: {
-      type: Number,
-      value: -1,
-      observer(val){
-        this.updateCurrentChange()
-      }
-    },
-    //collapse背景颜色
-    bgColor: {
-      type: String,
-      value: 'transparent'
     },
     //collapse-head 背景颜色
     hdBgColor: {
@@ -56,33 +43,40 @@ Component({
       value: 'transparent'
     },
   },
-  lifetimes:{
-    attached:function(){
-      this.updateCurrentChange()
-    }
-  },
   /**
    * 组件的初始数据
    */
   data: {
-    isOpen: false
+    listInfo:[]
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    // 判断打开关闭
-    updateCurrentChange() {
+    // 构造list
+    changeList(){
+      this.data.list.forEach(i => i.open = false)
       this.setData({
-        isOpen: this.data.index == this.data.current
+        listInfo:this.data.list
       })
     },
     // 点击展开关闭
-    handleClick() {
-      if (this.data.disabled) return;
+    handleClick(e) {
+      let index = e.currentTarget.dataset.index
+      let show = this.data.listInfo[index].open
+      if(this.data.accordion){
+        // 手风琴模式
+        this.data.listInfo.forEach(o => {
+          o.open = false
+        })
+      }
+      this.data.listInfo[index].open = !show
+      this.setData({
+        listInfo:this.data.listInfo
+      })
       this.triggerEvent("click", {
-        index: Number(this.data.index)
+        index: Number(index)
       })
     }
   }

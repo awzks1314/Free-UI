@@ -22,7 +22,7 @@ Component({
     },
     color: {
       type: String,
-      value: "#8799a3" //字体颜色
+      value: "#333" //字体颜色
     },
     last: {
       type: Boolean,

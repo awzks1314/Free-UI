@@ -6,7 +6,7 @@
   font-size: 32rpx;
   transform: rotate(0);
   transform-origin: center center;
-  transition: all 0.3s;
+  transition: all 0.5s;
   position: absolute;
   top: 50%;
   margin-top: -8px;
@@ -20,11 +20,11 @@
   transform-origin: center center;
 }
 .free-collapse-body_box{
-  transition: all 0.25s;
+  transition: all 0.5s;
   overflow: hidden;
 }
 .free-collapse-body {
- transition: all 0.25s;
+ transition: all 0.5s;
  overflow: hidden;
  position: relative;
  z-index: 1;
@@ -42,4 +42,10 @@
  visibility: visible;
  -webkit-transform: translateY(0);
  transform: translateY(0);
+}
+/* 折叠面板 */
+.free-content{
+	padding: 20rpx 30rpx;
+  color: #555;
+  font-size: 26rpx;
 }

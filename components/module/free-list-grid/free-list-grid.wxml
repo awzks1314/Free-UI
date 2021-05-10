@@ -1,0 +1,37 @@
+<view class="free-list grid col-{{col}}  {{border?'':'no-border'}}"
+style="background:{{bgColor}};"
+wx:if="{{!isSwiper}}"
+>
+    <view class="free-item " wx:for="{{list}}" wx:key="index" bindtap="onClick" data-index="{{index}}">
+      <view class="free-tag">
+        <image src="{{item.image?item.image:'https://game.gtimg.cn/images/lol/act/img/tft/champions/27'+index+'.png'}}" style="width:{{item.width?item.width:width}}rpx;height:{{item.height?item.height:height}}rpx;border-radius:{{radius}}rpx;"></image>
+        <view class="badge" style="background:{{item.color?item.color:'red'}};" wx:if="{{item.number>0}}">
+          <block >{{item.number>99?"99+":item.number}}</block>
+        </view> 
+      </view >
+        <text>{{item.name}}</text> 
+    </view>
+</view> 
+<view  class="free-grid-swiper-style" wx:else>
+  <swiper style="height:{{swiperHeight}}rpx;"  bindchange="onSwiper">
+    <swiper-item wx:for="{{listInfo}}" wx:for-item="itemData" wx:key="index" style="height:200rpx;">
+      <view class="free-list grid col-{{col}}  {{border?'':'no-border'}}"
+        style="background:{{bgColor}};">
+        <view class="free-item" style="height:{{swiperHeight/row}}rpx" wx:for="{{itemData}}" wx:key="index" bindtap="onClick" data-index="{{item.id}}">
+          <view class="free-tag">
+            <image src="{{item.image?item.image:'https://game.gtimg.cn/images/lol/act/img/tft/champions/27'+index+'.png'}}" style="width:{{item.width?item.width:width}}rpx;height:{{item.height?item.height:height}}rpx;border-radius:{{radius}}rpx;"></image>
+            <view class="badge" style="background:{{item.color?item.color:'red'}};" wx:if="{{item.number>0}}">
+              <block >{{item.number>99?"99+":item.number}}</block>
+            </view> 
+          </view >
+          <text>{{item.name}}</text> 
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class="swiper-slider-style" wx:if="{{listInfo.length>1}}">
+    <view wx:for="{{listInfo.length}}" wx:key="index"
+    class="{{categoryCurrent == index?'category-dot-active':''}}{{categoryCurrent != index?'category-dot':''}}"
+    ></view>
+  </view>
+</view>

@@ -1,45 +1,50 @@
 
-<free-tabs tabs="{{tabs}}" isFixed="true"  currentTab="{{currentTab}}" bold='true'    bind:change="change" ></free-tabs>
-<view class="positionView"></view>
+
+<!-- <free-tabs tabs="{{tabs}}" isFixed="true"  currentTab="{{currentTab}}" bold='true'    bind:change="change" ></free-tabs>
+<view class="positionView"></view> -->
 
 <view wx:if="{{currentTab == 0}}" >
-  <view class="free-list grid col-3 no-border padding-top padding-lr-sm bg-white">
-    <view class="free-item " wx:for="{{gridList}}" wx:key >
-      <view class="free-tag">
-        <!-- <free-icon name="home-filling" color="{{item.color}}"> </free-icon> -->
-        <free-image src="https://game.gtimg.cn/images/lol/act/img/tft/champions/27{{index+1}}.png" width="50rpx" height='50rpx'></free-image>
-        <view class="badge bg-red">
-          <block wx:if="{{item.number!=1}}">{{item.number>99?"99+":item.number}}</block>
-        </view> 
-      </view >
-        <text>{{item.name}}</text>
-    </view> 
+  <free-title type="2" title="效果演示"></free-title>
+  <!-- grid组件 -->
+  <free-list arrow="{{arrow}}">
+    <free-icon name='home' size='24' color='blue' wx:if="{{icon}}"></free-icon>
+    <view class="free-list-name flex flex-direction">
+      <text>右侧注释文字</text>
+      <text class="text-sm text-grey">我是第二行注释文字</text>
+    </view>
+    <view class="free-list-right">注释文字</view>
+  </free-list>
+  <!-- grid组件 -->
+
+  <free-title type="2" title="参数配置"></free-title>
+  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="有无图标" height="40"></free-title>
+  <view class="padding">
+    <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="icon" bold="true"></free-subsection>
   </view>
 
-  <view class="free-list grid col-4 no-border padding-top padding-lr-sm margin-top bg-white">
-    <view class="free-item " wx:for="{{gridList}}" wx:key >
-      <view class="free-tag">
-        <!-- <free-icon name="home-filling" color="{{item.color}}"> </free-icon> -->
-        <free-image src="https://game.gtimg.cn/images/lol/act/img/tft/champions/27{{index+1}}.png" width="50rpx" height='50rpx'></free-image>
-        <view class="badge bg-red">
-          <block wx:if="{{item.number!=1}}">{{item.number>99?"99+":item.number}}</block>
-        </view>
-      </view >
-        <text>{{item.name}}</text>
-    </view>
+  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="有无箭头" height="40"></free-title>
+  <view class="padding">
+    <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="arrow" bold="true"></free-subsection>
   </view>
 
-  <view class="free-list grid col-5 no-border  padding-top padding-lr-sm margin-top bg-white">
-    <view class="free-item" wx:for="{{gridList}}" wx:key='index' >
-      <view class="free-tag">
-        <!-- <free-icon name="home-filling" color="{{item.color}}"> </free-icon> -->
-        <free-image src="https://game.gtimg.cn/images/lol/act/img/tft/champions/27{{index+1}}.png" width="50rpx" height='50rpx'></free-image>
-        <view class="badge bg-red">
-          <block wx:if="{{item.number!=1}}">{{item.number>99?"99+":item.number}}</block>
-        </view>
-      </view >
-        <text>{{item.name}}</text>
-    </view>
+  <free-title icon='line' type='3' titlecolor="#0081ef" bold="{{false}}" size='28' title="行数-滑动模式有效-需配合调整滑动容器的高度" height="40"></free-title>
+  <view class="padding">
+    <free-subsection list="{{[2,3,4]}}" bind:click='getMode' data-name="row" bold="true"></free-subsection>
+  </view>
+
+  <free-title icon='line' type='3' titlecolor="#0081ef" bold="{{false}}" size='28' title="滑动容器高度-仅在滑动模式有效" height="40"></free-title>
+  <view class="padding">
+    <free-subsection list="{{[400,500,600]}}" bind:click='getMode' data-name="swiperHeight" bold="true"></free-subsection>
+  </view>
+
+  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="修改图像圆角" height="40"></free-title>
+  <view class="padding">
+    <free-subsection list="{{[10,20,30,40]}}" bind:click='getMode' data-name="radius" bold="true"></free-subsection>
+  </view>
+
+  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="是否显示边框" height="40"></free-title>
+  <view class="padding">
+    <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="border" bold="true"></free-subsection>
   </view>
 </view> 
 

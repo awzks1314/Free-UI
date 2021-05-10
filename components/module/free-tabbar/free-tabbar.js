@@ -8,6 +8,16 @@ Component({
       type:Array,
       value:[]
     },
+    // 距离底部的距离
+    bottom:{
+      type:String,
+      value:'0'
+    },
+    // 凸起下标
+    humpIndex:{
+      type:[Number,String],
+      value:null
+    },
     // 默认字体颜色
     color:{
       type:String,
@@ -23,12 +33,18 @@ Component({
       type:String,
       value:'#FFFFFF'
     },
+    // 当前选中下标
     current:{
       type:[String,Number],
       value:0
     },
     // 是否固定在底部
     isFixed:{
+      type:Boolean,
+      value:true
+    },
+    // 底部阴影凸显
+    shadow:{
       type:Boolean,
       value:true
     }
@@ -50,11 +66,10 @@ Component({
       this.triggerEvent("click", {
         index: e.currentTarget.dataset.index
       })
-
-      // 2
-      // wx.switchTab({
-      //   url: e.currentTarget.dataset.url,
-      // })
+      // 可以进行跳转
+      wx.reLaunch({
+        url: e.currentTarget.dataset.url
+      })
     }
   }
 })

@@ -1,61 +1,66 @@
-<view class="padding bg-white">
-  <view class="margin-bottom">
-    <free-progress width="40%"></free-progress>
-  </view>
-  <view class="">
-    <free-progress radius="30rpx" width="80%"></free-progress>
-  </view>
-</view>
-
-<view class="padding bg-white margin-top">
-  <view class="margin-bottom">
-    <free-progress width="40%"></free-progress>
-  </view>
-  <view class="margin-bottom">
-    <free-progress radius="40rpx" width="80%" height="40rpx"></free-progress>
-  </view>
-</view> 
-
-<view class="padding bg-white margin-top">
-  <view class="margin-bottom">
-    <free-progress progressBg="#f37b1d" width="28%"></free-progress>
-  </view>
-  <view class="margin-bottom">
-    <free-progress radius="10rpx" width="48%" widthBg="red" progressBg="#1cbbb4"></free-progress>
-  </view>
-  <view class="">
-    <free-progress radius="30rpx" width="80%" widthBg="orange" progressBg="#e03997"></free-progress>
+<view class="bg-white" style="position:fixed;top:0;width:100%;height:200rpx;z-index:999;">
+  <free-title type="2" title="效果演示"></free-title>
+  <view class="padding">
+    <free-progress 
+    width="{{width}}"
+    radius="{{radius}}"
+    height="{{height}}"
+    progressBg="{{progressBg}}"
+    widthBg="{{widthBg}}"
+    striped="{{striped}}"
+    active="{{active}}"
+    notext="{{notext}}" 
+    color="{{color}}"
+    ></free-progress>
   </view>
 </view>
-
-<view class="padding bg-white margin-top">
-  <view class="margin-bottom">
-    <free-progress radius="30rpx" width="48%" striped="{{true}}" widthBg="green"></free-progress>
-  </view>
-  <view class="">
-    <free-progress radius="30rpx" width="80%" striped="{{true}}" widthBg="orange"></free-progress>
-  </view>
+<view style="height:200rpx;"></view>
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="是否开启条纹" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="striped" bold="true"></free-subsection>
 </view>
 
-<view class="padding bg-white margin-top">
-  <view class="margin-bottom">
-    <free-progress radius="30rpx" width="48%" striped="{{true}}" active="{{true}}" widthBg="green"></free-progress>
-  </view>
-  <view class="">
-    <free-progress radius="30rpx" width="80%" striped="{{true}}" active="{{true}}" widthBg="orange"></free-progress>
-  </view>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="是否开启条纹动画,需配合条纹使用" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="active" bold="true"></free-subsection>
 </view>
 
-<view class="padding bg-white margin-top flex">
-  <view class="flex-sub">
-    <free-progress  width="40%" notext="true"  radius="30rpx" striped="{{true}}" active="{{true}}" widthBg="orange"></free-progress>
-  </view>
-  <text class="padding-lr-sm text-sm">40%</text>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="进度条的圆角" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['4rpx', '10rpx', '30rpx']}}" bind:click='getMode' data-name="radius" bold="true"></free-subsection>
 </view>
 
-<view class="padding bg-white margin-top flex">
-  <view class="flex-sub">
-    <free-progress  width="80%" notext="true"  radius="30rpx" striped="{{true}}" active="{{true}}" widthBg="#0081ff"></free-progress>
-  </view>
-  <text class="padding-lr-sm text-sm">80%</text>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="进度条的背景色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#ebeef5', 'red', 'yellow']}}" bind:click='getMode' data-name="progressBg" bold="true"></free-subsection>
 </view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="进度条颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#0081ef', 'olive', 'green']}}" bind:click='getMode' data-name="widthBg" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="进度条文字颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#fff', '#000']}}" bind:click='getMode' data-name="color" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="进度条的长度" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['20%', '40%', '60%', '80%']}}" bind:click='getMode' data-name="width" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="进度条的高度" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['30rpx', '40rpx', '50rpx']}}" bind:click='getMode' data-name="height" bold="true"></free-subsection>
+</view>
+
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="进度条内是否显示数值" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="notext" bold="true"></free-subsection>
+</view>
+
+
+

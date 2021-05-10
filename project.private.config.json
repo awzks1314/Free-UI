@@ -25,20 +25,14 @@
           "scene": null
         },
         {
-          "name": "pages/extend/index/index",
-          "pathName": "pages/extend/index/index",
+          "name": "pages/module/list/list",
+          "pathName": "pages/module/list/list",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/module/subsection/subsection",
-          "pathName": "pages/module/subsection/subsection",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/module/index/index",
-          "pathName": "pages/module/index/index",
+          "name": "pages/module/list/list",
+          "pathName": "pages/module/list/list",
           "query": "",
           "scene": null
         }

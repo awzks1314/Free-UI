@@ -52,8 +52,13 @@ Page({
         icon:'home',
       },
       {
-        name:'列表',
+        name:'list列表',
         title:'list',
+        icon:'home',
+      },
+      {
+        name:'Grid列表',
+        title:'grid-list',
         icon:'home',
       },
       {
@@ -67,7 +72,7 @@ Page({
         icon:'home',
       },
       {
-        name:'标签栏',
+        name:'自定义tabbar',
         title:'tabbar',
         icon:'home',
       },

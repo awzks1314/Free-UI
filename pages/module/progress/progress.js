@@ -5,7 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    width:'20%',
+    height:'30rpx',
+    radius:'4rpx',
+    progressBg:'#ebeef5',
+    widthBg:'#0081ef',
+    color:'#fff',
+    striped:true,
+    active:true,
+    notext:true
   },
 
   /**
@@ -18,6 +26,11 @@ Page({
         loading: true
       })
     }, 500)
+  },
+  getMode(e){
+    this.setData({
+      [e.currentTarget.dataset.name]:e.detail.value
+    })
   },
   /**
    * 用户点击右上角分享

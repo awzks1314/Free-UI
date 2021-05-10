@@ -1,1 +1,3 @@
-/* pages/module/progress/progress.wxss */
+page{
+  background: #fff;
+}

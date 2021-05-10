@@ -107,7 +107,7 @@ Component({
             this.setData({
               winWidth: res.windowWidth
             }, () => {
-              console.log(res.windowWidth)
+              // console.log(res.windowWidth)
               this.getTabRect()
             })
           }
@@ -137,7 +137,7 @@ Component({
       // 执行查询，一次性获取多个结果
       query.exec(
         function(res) {
-          console.log(res)
+          // console.log(res)
           this.setData({
             tabQueryInfo:res
           })

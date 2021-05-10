@@ -1,46 +1,29 @@
 
-<view class="bg-white flex align-center justify-between padding-lr padding-tb-sm">
-  基本用法
-  <view>
-    <button class="free-button bg-blue sm" bindtap="clickStepBefore">上一步</button>
-    <button class="free-button bg-blue sm margin-left" bindtap="clickStepNext">下一步</button>
-  </view>
+<free-title type="2" title="效果演示"></free-title>
+<!-- 组件 -->
+<free-steps 
+  list="{{list}}" 
+  current="{{current}}"
+  color="{{color}}"
+  type="{{type}}"
+  ></free-steps>
+<!-- 组件 -->
+
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="自定义颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#0081ef', 'red','green']}}" bind:click='getMode' data-name="color" bold="true"></free-subsection>
 </view>
 
-<view class="solid-top">
-  <free-steps list="{{stepsList}}" current="{{current}}"></free-steps>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="当前current，步数" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[0,1,2,3]}}" bind:click='getMode' data-name="current" bold="true"></free-subsection>
 </view>
 
-<view class="solid-top">
-  <free-steps list="{{stepsList}}" current="{{current}}" color="blue"></free-steps>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="自定义样式：图标样式、数字样式、多级样式" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['icon','number','more']}}" bind:click='getMode' data-name="type" bold="true"></free-subsection>
 </view>
 
-<view class="solid-top">
-  <free-steps list="{{stepsList}}" current="{{current}}" color="orange"></free-steps>
-</view>
-
-<view class="bg-white flex align-center justify-between padding-lr padding-tb-sm margin-top">
-  数字完成
-  <view>
-    <button class="free-button bg-blue" bindtap="clickStepsBefore">上一步</button>
-    <button class="free-button bg-blue margin-left" bindtap="clickStepsNext">下一步</button>
-  </view>
-</view>
-
-<view class="solid-top">
-  <free-steps list="{{numList}}" current="{{num}}" type="number"></free-steps>
-</view>
-
-<view class="bg-white flex align-center justify-between padding-lr padding-tb-sm margin-top">
-  多级显示
-  <view>
-    <button class="free-button bg-blue" bindtap="clickStepMoreBefore">上一步</button>
-    <button class="free-button bg-blue margin-left" bindtap="clickStepMoreNext">下一步</button>
-  </view>
-</view>
-
-<view class="solid-top">
-  <free-steps list="{{moreList}}" current="{{scroll}}" type="more"></free-steps>
-</view>
 
 

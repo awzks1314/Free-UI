@@ -1,7 +1,6 @@
 {
-  "navigationBarTitleText":"list列表",
+  "navigationBarTitleText":"Grid列表",
   "usingComponents": {
-    "free-list":"/components/module/free-list/free-list",
     "free-list-grid":"/components/module/free-list-grid/free-list-grid"
   }
 }

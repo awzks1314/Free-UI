@@ -1,1 +1,3 @@
-/* pages/module/noticeBar/noticeBar.wxss */
+page{
+  background: #fff;
+}

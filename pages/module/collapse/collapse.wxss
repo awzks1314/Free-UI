@@ -1,1 +1,3 @@
-/* pages/module/collapse/collapse.wxss */
+page{
+  background: #fff;
+}

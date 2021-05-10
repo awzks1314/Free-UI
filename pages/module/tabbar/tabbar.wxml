@@ -1,13 +1,44 @@
-<free-tabbar list="{{list}}" isFixed="{{false}}" current="{{current}}" bind:click="change"></free-tabbar>
+<!-- 组件 -->
+<free-tabbar 
+  list="{{list}}" 
+  isFixed="{{isFixed}}" 
+  bottom="{{bottom}}"
+  current="{{current}}" 
+  humpIndex="{{humpIndex}}"
+  backgroundColor="{{backgroundColor}}" 
+  selectColor="{{selectColor}}" 
+  color="{{color}}" 
+  shadow="{{shadow}}"
+  bind:click="change"></free-tabbar>
+<!-- 组件 -->
 
-<view class="margin-top padding-bottom">
-  <free-tabbar list="{{list}}" isFixed="{{false}}" current="{{current}}"  backgroundColor="#000" bind:click="change"></free-tabbar>
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="背景颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#fff', '#1f1f1d','yellow']}}" bind:click='getMode' data-name="backgroundColor" bold="true"></free-subsection>
 </view>
 
-<view class="margin-top padding-bottom">
-  <free-tabbar list="{{listOne}}" isFixed="{{false}}"current="{{current}}"  bind:click="change"></free-tabbar>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="当前选中" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[0, 1,2,3,4]}}" bind:click='getMode' data-name="current" bold="true"></free-subsection>
 </view>
 
-<view class="margin-top">
-  <free-tabbar list="{{listOne}}" isFixed="{{true}}"backgroundColor="#000" current="{{current}}"  bind:click="change"></free-tabbar>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="顶部阴影凸显" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="shadow" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="凸起按钮index" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[0, 1,2,3,4]}}" bind:click='getMode' data-name="humpIndex" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="未选中字体颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#aaaaaa','red','green']}}" bind:click='getMode' data-name="color" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="选中字体颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#0081ff','orange','olive']}}" bind:click='getMode' data-name="selectColor" bold="true"></free-subsection>
 </view>

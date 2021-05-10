@@ -1,13 +1,16 @@
-<view class="free-collapse" style="background-color:{{bgColor}}">
-  <view catchtap="handleClick" style="background-color:{{hdBgColor}}">
-    <view class="free-header {{disabled?'free-opacity':''}}" >
-      <slot name="title"></slot>
-      <free-icon name="arrow-up-bold" size="18" class="free-icon {{isOpen?'free-icon-active':''}}" wx:if="{{arrow}}" color="{{arrowColor}}"></free-icon>
+
+  <view class="free-collapse" wx:for="{{listInfo}}" wx:key='inedx' >
+    <view catchtap="handleClick" data-index="{{index}}">
+      <view class="free-header {{item.disabled?'free-opacity':''}}" >
+        <free-list bgcolor="{{hdBgColor}}" >
+          <view class="free-list-name" slot="title">{{item.title}}</view>
+        </free-list>
+        <free-icon name="arrow-up-bold" size="18" class="free-icon {{item.open?'free-icon-active':''}}" wx:if="{{arrow}}" color="{{arrowColor}}"></free-icon>
+      </view>
     </view>
-  </view>
-  <view class="free-collapse-body_box" style="height:{{isOpen?height:'0rpx'}};">
-    <view class="free-collapse-body {{height=='auto'?'free-collapse-transform':''}} {{isOpen && height=='auto'?'free-collapse-body_show':''}}">
-      <slot name="content"></slot>
+    <view class="free-collapse-body_box" style="height:{{item.open?height:'0rpx'}};">
+      <view class="free-collapse-body {{height=='auto'?'free-collapse-transform':''}} {{item.open && height=='auto'?'free-collapse-body_show':''}}">
+        <view  class="free-content" style="background:{{bdBgColor}};">{{item.intro}}</view>
+      </view>
     </view>
-  </view>
-</view>
+  </view> 

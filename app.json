@@ -44,7 +44,8 @@
     "pages/extend/indexes/friend/friend",
     "pages/extend/indexes/ceiling/ceiling",
     "pages/module/backTop/backTop",
-    "pages/module/subsection/subsection"
+    "pages/module/subsection/subsection",
+    "pages/module/grid-list/grid-list"
   ],
   "tabBar": {
     "color": "#aaaaaa",
@@ -83,6 +84,7 @@
     "free-navBar": "/components/module/free-navBar/free-navBar",
     "free-icon": "/components/basic/free-icon/free-icon",
     "free-title": "/components/basic/free-title/free-title",
+    "free-subsection": "/components/module/free-subsection/free-subsection",
     "free-list": "/components/module/free-list/free-list",
     "free-image": "/components/basic/free-image/free-image"
   },

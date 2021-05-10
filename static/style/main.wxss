@@ -1,6 +1,7 @@
 /* 样式初始化 */
 @import '/static/style/background.wxss';
 @import '/static/style/swiper.wxss';
+@import '/components/module/free-list-grid/free-list-grid.wxss';
 page{
   /* 标准色 */
   /* --red: #e54d42;
@@ -1066,144 +1067,9 @@ button.icon.lg {
 	padding-bottom: 50rpx;
 }
 
-/* tag */
-.free-tag {
-	font-size: 24rpx;
-	vertical-align: middle;
-	position: relative;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	box-sizing: border-box;
-	padding: 0rpx 16rpx;
-	height: 48rpx;
-	font-family: Helvetica Neue, Helvetica, sans-serif;
-	white-space: nowrap;
-}
-.badge {
-	border-radius: 200rpx;
-	position: absolute;
-	top: -10rpx;
-	right: -30rpx;
-	font-size: 20rpx;
-	padding: 0rpx 10rpx;
-	color: var(--white);
-}
-.free-list.grid.no-border>.free-item:after {
-	border: none
-}
-/* 折叠面板 */
-.free-content{
-	padding: 20rpx 30rpx;
-  background: #fff;
-  color: #555;
-  font-size: 26rpx;
-}
-/* grid布局 */
-.grid {
-	display: flex;
-	flex-wrap: wrap;
-}
 
-.grid.grid-square {
-	overflow: hidden;
-}
 
-.grid.grid-square .free-tag {
-	position: absolute;
-	right: 0;
-	top: 0;
-	border-bottom-left-radius: 6rpx;
-	padding: 6rpx 12rpx;
-	height: auto;
-	background-color: rgba(0, 0, 0, 0.5);
-}
 
-.free-upicon {
-	font-size: 52rpx;
-	position: absolute;
-	color: var(--grey);
-	margin: auto;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-.grid.grid-square>view {
-	margin-right: 20rpx;
-	margin-bottom: 20rpx;
-	border-radius: 6rpx;
-	position: relative;
-	overflow: hidden;
-}
-
-.grid.grid-square>view.bg-img image {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-}
-
-.grid.col-1.grid-square>view {
-	padding-bottom: 100%;
-	height: 0;
-	margin-right: 0;
-}
-
-.grid.col-2.grid-square>view {
-	padding-bottom: calc((100% - 20rpx)/2);
-	height: 0;
-	width: calc((100% - 20rpx)/2);
-}
-
-.grid.col-3.grid-square>view {
-	padding-bottom: calc((100% - 40rpx)/3);
-	height: 0;
-	width: calc((100% - 40rpx)/3);
-}
-
-.grid.col-4.grid-square>view {
-	padding-bottom: calc((100% - 60rpx)/4);
-	height: 0;
-	width: calc((100% - 60rpx)/4);
-}
-
-.grid.col-5.grid-square>view {
-	padding-bottom: calc((100% - 80rpx)/5);
-	height: 0;
-	width: calc((100% - 80rpx)/5);
-}
-
-.grid.col-2.grid-square>view:nth-child(2n),
-.grid.col-3.grid-square>view:nth-child(3n),
-.grid.col-4.grid-square>view:nth-child(4n),
-.grid.col-5.grid-square>view:nth-child(5n){
-	margin-right: 0;
-}
-
-.grid.col-1>view {
-	width: 100%;
-}
-
-.grid.col-2>view {
-	width: 50%;
-}
-
-.grid.col-3>view {
-	width: 33.33%;
-}
-
-.grid.col-4>view {
-	width: 25%;
-}
-
-.grid.col-5>view {
-	width: 20%;
-}
 
 /* 字体文本 */
 
@@ -1357,38 +1223,6 @@ button.icon.lg {
 	margin-left: 0.5em;
 }
 
-.free-list.grid>.free-item {
-	position: relative;
-	display: flex;
-	padding: 20rpx 0;
-	transition-duration: 0s;
-	flex-direction: column;
-	align-items: center;
-}
-
-.free-list.grid>.free-item:after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	box-sizing: border-box;
-	width: 200%;
-	height: 200%;
-	border-right: 1px solid rgba(0, 0, 0, .1);
-	border-bottom: 1px solid rgba(0, 0, 0, .1);
-	border-radius: inherit;
-	content: " ";
-	transform: scale(.5);
-	transform-origin: 0 0;
-	pointer-events: none
-}
-
-.free-list.grid>.free-item text {
-	display: block;
-	margin-top: 10rpx;
-	color: #888;
-	font-size: 26rpx;
-	line-height: 40rpx
-}
 
 /* 菜单列表 */
 .free-list-name{

@@ -6,10 +6,10 @@ Page({
    */
   data: {
     mode:'circle',// circle 圆形 square 方形
-    bottom:200,//距离顶部距离 rpx
-    top:0,//距离顶部多少距离显示 px
-    bgColor:'',//背景色
-    color:'',//文字图标颜色
+    bottom:100,//距离顶部距离 rpx
+    top:50,//距离顶部多少距离显示 px
+    bgColor:'grey',//背景色
+    color:'#fff',//文字图标颜色
     icon:'top',//图标
     right:'24',//距离右侧距离 rpx
     scrollTop:0
@@ -20,35 +20,9 @@ Page({
       scrollTop: e.scrollTop
     })
   },
-  SetSize(e) {
+  getMode(e){
     this.setData({
-      mode: e.detail.value
-    })
-  },
-  getBottom(e) {
-    this.setData({
-      bottom: e.detail.value
-    })
-  },
-  getTop(e) {
-    this.setData({
-      top: e.detail.value
-    })
-  },
-  getIcon(e) {
-    this.setData({
-      icon: e.detail.value
-    })
-  },
-  getBgColor(e) {
-    this.setData({
-      bgColor: e.detail.value,
-      color:"#fff"
-    })
-  },
-  getRight(e) {
-    this.setData({
-      right:e.detail.value
+      [e.currentTarget.dataset.name]:e.detail.value
     })
   },
   /**
