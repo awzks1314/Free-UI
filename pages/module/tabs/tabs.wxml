@@ -1,20 +1,51 @@
-<view class="margin-bottom">
-  <free-tabs tabs="{{tabs}}"   currentTab="{{currentTab}}" bold='true'  bind:change="change" ></free-tabs>
+
+<free-title type="2" title="效果演示"></free-title>
+
+<!-- 组件 -->
+<free-tabs 
+  tabs="{{list}}"   
+  currentTab="{{currentTab}}" 
+  bold="{{bold}}"  
+  backgroundColor="{{bgColor}}"
+  sliderWidth="{{sliderWidth}}"
+  sliderHeight="{{sliderHeight}}"
+  selectedColor="{{selectedColor}}"
+  bind:change="change" ></free-tabs>
+<!-- 组件 -->
+
+<free-title type="2" title="参数配置"></free-title>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="长列表渲染" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="type" bold="true"></free-subsection>
 </view>
 
-<view class="margin-bottom">
-<free-tabs tabs="{{tabs2}}"   currentTab="{{currentTab}}" bold='true'  selectedColor='red'  bind:change="change" ></free-tabs>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="背景颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#fff', '#f4f5f7','#000']}}" bind:click='getMode' data-name="bgColor" bold="true"></free-subsection>
 </view>
 
-<view class="margin-bottom">
-<free-tabs tabs="{{tabs2}}"   currentTab="{{currentTab}}" bold='true'  bind:change="change" sliderBgColor="orange"  selectedColor='orange' color="#fff" backgroundColor ="#0081ff" ></free-tabs> 
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="选中字体是否加粗" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="bold" bold="true"></free-subsection>
 </view>
 
-<view class="margin-bottom">
-<free-tabs tabs="{{tabs1}}"   currentTab="{{currentTab}}" bold='true'  bind:change="change"   ></free-tabs> 
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="选中标签颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#0081EF','red','orange']}}" bind:click='getMode' data-name="selectedColor" bold="true"></free-subsection>
 </view>
 
-<view class="margin-bottom">
-<free-tabs tabs="{{tabs}}"   currentTab="{{currentTab}}" sliderHeight="{{0}}"  color="#888" selectedColor="#11CDFC" sliderBgColor="#E5FAFF"  bold='true'  bind:change="change" ></free-tabs> 
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="滑块宽度" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[34,40,46]}}" bind:click='getMode' data-name="sliderWidth" bold="true"></free-subsection>
 </view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="高度" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[6,0,14]}}" bind:click='getMode' data-name="sliderHeight" bold="true"></free-subsection>
+</view>
+
+
+
+
 

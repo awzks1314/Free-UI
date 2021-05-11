@@ -5,27 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-    bottom:false,
-    left:false,
-    right:false,
-    bottom:false
+    show:false,
+    mode:'left',//模式
+    radius:'0rpx',
+    closeable:true,
+    maskClosable:true,
+    closeIconPos:'top-right'
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  openDrawer(e){
+  getMode(e){
+    console.log(e)
     this.setData({
-      [e.currentTarget.dataset.type]:true
+      [e.currentTarget.dataset.name]:e.detail.value,
+      show:true
     })
   },
-  closeDrawer(e){
+  openDrawer(){
     this.setData({
-      [e.currentTarget.dataset.type]:false
+      show:true
+    })
+  },
+  closeDrawer(){
+    this.setData({
+      show:false
     })
   },
   /**

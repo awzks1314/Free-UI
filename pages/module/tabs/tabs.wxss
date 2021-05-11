@@ -1,1 +1,3 @@
-/* pages/module/tabs/tabs.wxss */
+page{
+  background: #fff;
+}

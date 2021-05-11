@@ -6,7 +6,7 @@ Component({
       value: ''
     },
     size: {
-      type: Number,
+      type: [Number,String],
       value: 28
     },
     color: {

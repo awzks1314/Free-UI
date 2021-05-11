@@ -5,14 +5,20 @@
 
 <view wx:if="{{currentTab == 0}}" >
   <free-title type="2" title="效果演示"></free-title>
+
   <!-- grid组件 -->
-  <free-list arrow="{{arrow}}">
-    <free-icon name='home' size='24' color='blue' wx:if="{{icon}}"></free-icon>
+  <free-list arrow="{{arrow}}" color="{{color}}" size="{{size}}">
+    <free-icon name='home' size='24' color='blue' wx:if="{{icon && image=='icon'}}"></free-icon>
+    <free-image src="/static/image/my/dog.jpg" width="60rpx" height="60rpx" wx:if="{{image == 'image'}}"></free-image>
+    <!-- 标题+注释 -->
     <view class="free-list-name flex flex-direction">
-      <text>右侧注释文字</text>
-      <text class="text-sm text-grey">我是第二行注释文字</text>
+      <text >右侧注释文字</text>
+      <!-- <text class="text-sm text-grey">我是第二行注释文字</text> -->
     </view>
-    <view class="free-list-right">注释文字</view>
+    <!-- 右侧注释文字 -->
+    <view class="free-list-right" wx:if="{{type=='text'}}">注释文字</view>
+    <free-tag  radius="30rpx" class="free-list-right" wx:if="{{type=='tag'}}">标签显示</free-tag>
+    <!-- 右侧注释文字 -->
   </free-list>
   <!-- grid组件 -->
 
@@ -27,86 +33,28 @@
     <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="arrow" bold="true"></free-subsection>
   </view>
 
-  <free-title icon='line' type='3' titlecolor="#0081ef" bold="{{false}}" size='28' title="行数-滑动模式有效-需配合调整滑动容器的高度" height="40"></free-title>
+  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="字体颜色" height="40"></free-title>
   <view class="padding">
-    <free-subsection list="{{[2,3,4]}}" bind:click='getMode' data-name="row" bold="true"></free-subsection>
+    <free-subsection list="{{['#0081ef','red','green']}}" bind:click='getMode' data-name="color" bold="true"></free-subsection>
   </view>
 
-  <free-title icon='line' type='3' titlecolor="#0081ef" bold="{{false}}" size='28' title="滑动容器高度-仅在滑动模式有效" height="40"></free-title>
+  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="图标或图片" height="40"></free-title>
   <view class="padding">
-    <free-subsection list="{{[400,500,600]}}" bind:click='getMode' data-name="swiperHeight" bold="true"></free-subsection>
+    <free-subsection list="{{['icon','image']}}" bind:click='getMode' data-name="image" bold="true"></free-subsection>
   </view>
 
-  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="修改图像圆角" height="40"></free-title>
+  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="右侧注释文字或标签" height="40"></free-title>
   <view class="padding">
-    <free-subsection list="{{[10,20,30,40]}}" bind:click='getMode' data-name="radius" bold="true"></free-subsection>
+    <free-subsection list="{{['text','tag']}}" bind:click='getMode' data-name="type" bold="true"></free-subsection>
   </view>
 
-  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="是否显示边框" height="40"></free-title>
+  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="字体大小" height="40"></free-title>
   <view class="padding">
-    <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="border" bold="true"></free-subsection>
+    <free-subsection list="{{['28','32',40]}}" bind:click='getMode' data-name="size" bold="true"></free-subsection>
   </view>
+
 </view> 
 
-<view wx:if="{{currentTab == 1}}">
-  <free-list arrow="{{true}}">
-    <free-icon name='home' size='24' color='blue'></free-icon>
-    <view class="free-list-name">基础用法有箭头</view>
-  </free-list>
-  <free-list >
-    <free-icon name='home' size='24' color='blue'></free-icon>
-    <view class="free-list-name">基础用法无箭头</view>
-  </free-list>
-  <free-list arrow="true" bind:click="detail" color="#0081ff">
-    <free-icon name='home-filling' size='24' color='#0081ff'></free-icon>
-    <view class="free-list-name">更换字体颜色</view>
-    <free-tag  radius="30rpx" class="free-list-right">标签显示</free-tag>
-  </free-list>
-  <free-list arrow="true" color="blue">
-    <free-icon name='home' size='24' color='blue'></free-icon>
-    <view class="free-list-name">图标+标题+注释</view>
-    <view class="free-list-right">注释文字</view>
-  </free-list>
-  <free-list arrow="true" color="blue">
-    <!-- <free-icon name='home' size='24' color='blue'></free-icon> -->
-    <free-image src="https://game.gtimg.cn/images/lol/act/img/tft/champions/271.png" width="50rpx" height="50rpx" mode="center"></free-image>
-    <view class="free-list-name">图片+标题</view>
-    <view class="free-list-right">右边注释文字</view>
-  </free-list>
-  <free-list arrow="true" >
-    <free-icon name='home' size='24' ></free-icon>
-    <view class="free-list-name flex flex-direction">
-      <text>右侧注释文字</text>
-      <text class="text-sm text-grey margin-top-xs">我是第二行注释文字</text>
-    </view>
-    <view class="free-list-right">注释文字</view>
-  </free-list>
-  <free-list arrow="true" color="blue" size="40">
-    <!-- <free-icon name='home' size='24' color='blue'></free-icon> -->
-    <free-image src="https://game.gtimg.cn/images/lol/act/img/tft/champions/271.png" width="50rpx" height="50rpx" mode="center"></free-image>
-    <view class="free-list-name">大文字显示</view>
-  </free-list>
-
-  <view class="margin-top  padding-sm ">
-    <view class="radius">
-      <free-list arrow="true" color="blue">
-        <free-icon name='home' size='24' color='blue'></free-icon>
-        <view class="free-list-name">沙卡拉卡</view>
-        <view class="free-list-right">右边注释文字</view>
-      </free-list>
-      <free-list arrow="true" color="blue">
-        <free-icon name='home' size='24' color='blue'></free-icon>
-        <view class="free-list-name">沙卡拉卡</view>
-        <view class="free-list-right">右边注释文字</view>
-      </free-list>
-      <free-list arrow="true" color="blue">
-        <free-icon name='home' size='24' color='blue'></free-icon>
-        <view class="free-list-name">沙卡拉卡</view>
-        <view class="free-list-right">右边注释文字</view>
-      </free-list>
-    </view>
-  </view>
-</view>
 
 <!-- 消息列表 -->
 <view wx:if="{{currentTab == 2}}" class="bg-white">

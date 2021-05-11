@@ -11,12 +11,6 @@ Page({
       {name:'标签页5',disabled: true},
       {name:'标签页3'},
     ],
-    tabs2:[
-      {name:'标签页1'},
-      {name:'标签页2'},
-      {name:'标签页3'},
-      {name:'标签页3'},
-    ],
     tabs:[
       {name:'标签页1',icon:"home",num:99},
       {name:'标签页2',icon:"home"},
@@ -26,19 +20,28 @@ Page({
       {name:'标签页6',icon:"home"},
       {name:'标签页7',icon:"home"},
     ],
+    list:[
+      {name:'标签页1'},
+      {name:'标签页2',num:99},
+      {name:'标签页5',disabled: true},
+      {name:'标签页3'},
+    ],
     currentTab:0,
-    TabCur: 0,
-    scrollLeft:0
+    bgColor:"#fff",
+    bold:true,
+    selectedColor:'#0081ef',
+    sliderHeight:6,
+    sliderWidth:34
+  },
+  getMode(e){
+    this.setData({
+      [e.currentTarget.dataset.name]:e.detail.value,
+      list:e.currentTarget.dataset.name == 'type' && e.detail.value?this.data.tabs:e.currentTarget.dataset.name == 'type' && !e.detail.value?this.data.tabs1:this.data.list
+    })
   },
   change(e){    
     this.setData({
       currentTab:e.detail.index
-    })
-  },
-  tabSelect(e) {
-    this.setData({
-      TabCur: e.currentTarget.dataset.id,
-      scrollLeft: (e.currentTarget.dataset.id-1)*60
     })
   },
   /**

@@ -1,62 +1,47 @@
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>基础用法</text>
-  </view>
-  <view class="free-title">
-    <button class="free-button bg-blue lg" bindtap="openDrawer" data-type="top">顶部抽屉</button>
-  </view>
-</view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>基础用法</text>
-  </view>
-  <view class="free-title">
-    <button class="free-button  bg-orange lg" bindtap="openDrawer" data-type="left">左侧抽屉</button>
-  </view>
-</view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>基础用法</text>
-  </view>
-  <view class="free-title">
-    <button class="free-button  bg-green lg" bindtap="openDrawer" data-type="right">右侧抽屉</button>
-  </view>
-</view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>基础用法</text>
-  </view>
-  <view class="free-title">
-    <button class="free-button  bg-yellow lg" bindtap="openDrawer" data-type="bottom">底部抽屉</button>
-  </view>
-</view>
+<free-title type="2" title="效果演示"></free-title>
 
+<view class="padding text-center">
+  <button class="free-button bg-blue" bindtap="openDrawer">打开抽屉</button>
 
-<!-- 顶部抽屉 -->
-<free-drawer mode="top" visible="{{top}}"  bind:close="closeDrawer" data-type="top" >
-  <view class="padding">
-    <button class="free-button bg-blue lg"  bindtap="closeDrawer" data-type="top">关闭抽屉</button>
-  </view>
-</free-drawer >
-
-<!-- 左侧 -->
- <free-drawer mode="left" visible="{{left}}"  bind:close="closeDrawer" data-type="left">
-    <view class="padding">
-      <button class="free-button bg-blue lg"  bindtap="closeDrawer" data-type="left">关闭抽屉</button>
-      
+  <!-- 组件 -->
+  <free-drawer 
+    show="{{show}}"
+    mode="{{mode}}" 
+    radius="{{radius}}"
+    closeable="{{closeable}}"
+    maskClosable="{{maskClosable}}"
+    closeIconPos="{{closeIconPos}}"
+    length="50%">
+    <view class="padding flex align-center justify-center" style="height:{{mode == 'center'?'400rpx':'100%'}};">
+      <button class="free-button bg-blue lg"  bindtap="closeDrawer" >关闭抽屉</button>
     </view>
   </free-drawer >
+  <!-- 组件 --> 
+</view>
 
-<!-- 右侧 -->
-<free-drawer mode="right" visible="{{right}}"  bind:close="closeDrawer" data-type="right">
-    <view class="padding">
-      <button class="free-button bg-blue lg"  bindtap="closeDrawer" data-type="right">关闭抽屉</button>
-    </view>
-  </free-drawer >
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="五种抽屉模式可选择" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['left', 'right', 'center','top', 'bottom']}}" bind:click='getMode' data-name="mode" bold="true"></free-subsection>
+</view>
 
-<!-- 底部抽屉 -->
-<free-drawer mode="bottom" visible="{{bottom}}"  bind:close="closeDrawer" data-type="bottom">
-  <view class="padding">
-    <button class="free-button bg-blue lg"  bindtap="closeDrawer" data-type="bottom">关闭抽屉</button>
-  </view>
-</free-drawer >
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="圆角" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['0rpx', '20rpx', '40rpx','60rpx']}}" bind:click='getMode' data-name="radius" bold="true"></free-subsection>
+</view>
+
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="是否显示关闭图标" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="closeable" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="图标位置" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['top-right','top-left','bottom-right','bottom-left']}}" bind:click='getMode' data-name="closeIconPos" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="遮罩层能否点击" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="maskClosable" bold="true"></free-subsection>
+</view>

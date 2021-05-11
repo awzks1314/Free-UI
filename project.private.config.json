@@ -25,14 +25,14 @@
           "scene": null
         },
         {
-          "name": "pages/module/list/list",
-          "pathName": "pages/module/list/list",
+          "name": "pages/module/drawer/drawer",
+          "pathName": "pages/module/drawer/drawer",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/module/list/list",
-          "pathName": "pages/module/list/list",
+          "name": "pages/module/index/index",
+          "pathName": "pages/module/index/index",
           "query": "",
           "scene": null
         }

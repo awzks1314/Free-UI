@@ -55,10 +55,10 @@ Component({
       value: 6
     },
     //滑块背景颜色
-    sliderBgColor: {
-      type: String,
-      value: "#0081ff"
-    },
+    // sliderBgColor: {
+    //   type: String,
+    //   value: "#0081ff"
+    // },
     sliderRadius: {
       type: String,
       value: "50rpx"
@@ -95,7 +95,7 @@ Component({
     }
   },
   observers: {
-    'currentTab,tabs': function(currentTab, tabs) {
+    'currentTab,tabs,sliderWidth,sliderHeight': function(currentTab, tabs,sliderWidth,sliderHeight) {
       this.checkCor();
     }
   },

@@ -13,6 +13,10 @@ Page({
     currentTab:0,
     icon:true,//图标图片
     arrow:true,//箭头
+    color:'#000',
+    image:'icon',
+    type:'text',
+    size:'28'
   },
   getMode(e){
     this.setData({
