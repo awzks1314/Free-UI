@@ -11,9 +11,9 @@
         <text class="free-dropdown-menu-item-text"
         style="color:{{item.disabled?'#c0c4cc':(index == current)?activeColor:inactiveColor}}"
         >{{item.title}}</text>
-        <view class="free-dropdown-menu-item-arrow {{index === current?'rotate':''}}">
+        <view class="free-dropdown-menu-item-arrow {{index === current && active?'rotate':''}}">
           <free-icon name="arrow-up-filling" size="18"
-          color="{{item.disabled?'#c0c4cc':(index == current )?activeColor:inactiveColor}}"
+          color="{{item.disabled?'#c0c4cc':(index == current && active)?activeColor:inactiveColor}}"
           ></free-icon>
         </view>
       </view>
@@ -21,13 +21,13 @@
     
     <view class="free-dropdown-content"
       style="z-index:{{contentStyle.zIndex}};opacity:{{contentStyle.opacity}};transition:all 0.3s linear;top:{{height}}rpx;height:{{contentHeight}}px;"
-      
+      wx:if="{{current>=0 || active}}"
       >
         <view class="free-dropdown-content-drawer"
-        style="transform:translateY({{active ? 0 : '-100%'}});transition-duration: 0.3s" catchtap="contentClick">
+        style="transform:translateY({{active ? 0 : '-100%'}});transition-duration: 0.3s" >
           <slot name="content{{current}}" ></slot>
         </view>
-        <view class="free-dropdown-content-mask" catchtap="maskClick"></view>
+        <view class="free-dropdown-content-mask" catchtap="maskClick" ></view>
     </view>
   </view>
 </view> 

@@ -1,6 +1,0 @@
-<view class="free-selected-class free-dropdown-list " style="{{selectHeight?'height:'+selectHeight+'rpx':''}}">
-  <slot name="selectionbox"></slot>
-  <view class="free-dropdown-view {{show?'free-dropdownlist-show':''}}" style="background:{{bgcolor}};height:{{show?height:0}}rpx;top:{{top}}rpx">
-    <slot name="dropdownbox"></slot>
-  </view>
-</view>

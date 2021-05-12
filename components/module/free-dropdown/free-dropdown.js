@@ -26,10 +26,18 @@ Component({
       type:Number,
       value:-1
     },
+    // 是否展示
+    active:{
+      type:Boolean,
+      value:false
+    },
     // 标题菜单的高度，单位任意，数值默认为rpx单位
     height: {
       type: [Number, String],
-      value: 80
+      value: 80,
+      observer:function(){
+        this.getContentHeight()
+      }
     },
     // 是否显示下边框
     borderBottom: {
@@ -45,12 +53,7 @@ Component({
     closeOnClickSelf: {
       type: Boolean,
       value: true
-    },
-    // 点击内容是否关闭菜单
-    closeOnClickcontent: {
-      type: Boolean,
-      value: true
-    },
+    }
 },
 
   /**
@@ -61,11 +64,10 @@ Component({
     highlightIndex: 99999,
     // 外层内容的样式，初始时处于底层，且透明
     contentStyle: {
-      zIndex: -1,
-      opacity: 0
+      zIndex: 11,
+      opacity: 1
     },
-    contentHeight:0,
-    active: false, // 下拉菜单的状态
+    contentHeight:0
   },
   ready(){
     this.getContentHeight()
@@ -74,12 +76,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    // 点击内容
-    contentClick(){
-      if(this.data.closeOnClickcontent){
-        this.close() 
-      }
-    },
     // 点击遮罩
 			maskClick() {
 				// 如果不允许点击遮罩，直接返回
@@ -92,10 +88,9 @@ Component({
       if(this.data.menu[index].disabled) {
         return
       }
-      console.log(this.data.current == index)
-      console.log(this.data.closeOnClickSelf)
       if(index == this.data.current && this.data.closeOnClickSelf){
           this.close()  
+          
         return
       }
       this.open(index)
@@ -118,18 +113,22 @@ Component({
         index:this.data.current
       })
       this.data.contentStyle.zIndex = -1
-      this.data.contentStyle.opacity = 0.6
+      this.data.contentStyle.opacity = 0
       this.setData({
         contentStyle:this.data.contentStyle,
         active:false,
-        current:-1
       })
+      setTimeout(() => {
+        this.setData({
+          current:-1
+        })
+      }, 300);
+      
     },
     // 计算高度
     getContentHeight(){
       wx.getSystemInfo({
         success: (e) => {
-          console.log(e)
           this.setData({
             contentHeight:e.windowHeight - this.data.height/2
           })

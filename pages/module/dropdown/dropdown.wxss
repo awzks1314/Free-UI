@@ -2,27 +2,8 @@
 page{
   background: #fff;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0;
   height: 0;
   color: transparent;
-} */
-.free-selected-list {
-  background: #fff;
-  border-radius: 20rpx;
-  overflow: hidden;
-  transform: translateZ(0);
-}
-
-.free-dropdown-scroll {
-  height: 400rpx;
-}
-/* 动画 */
-.free-animation {
-  transform: rotate(0deg);
-  transition: all 0.2s;
-}
-
-.free-animation-show {
-  transform: rotate(180deg);
 }

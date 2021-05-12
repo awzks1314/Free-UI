@@ -10,69 +10,92 @@ Page({
       {title:'标签二',disabled:false},
       {title:'标签三'},
     ],
+    current:'-1',//当前选中，-1全部隐藏
+    active:false,//展示内容,true/false
+    borderBottom:true,//底部边框
+    height:80,//菜单高度
+    closeOnClickMask:true,//点击遮罩层是否可以关闭
+    closeOnClickSelf:false,//点击标题是否可以关闭
+    activeColor:'#2979ff',//菜单标题和选项的激活态颜色
+    inactiveColor:'#606266',// 菜单标题和选项的未激活态颜色
     list0:[
       {
-        label:'选项一',
+        label:'西瓜',
         value:1
       },
       {
-        label:'选项二',
+        label:'芒果',
         value:2
       },
       {
-        label:'选项三',
+        label:'香蕉',
         value:3
       },
     ],
     list1:[
       {
-        label:'选项一',
+        label:'西瓜',
         value:1
       },
       {
-        label:'选项二',
+        label:'芒果',
         value:2
       },
       {
-        label:'选项三',
+        label:'葡萄',
         value:3
       },
       {
-        label:'选项四',
+        label:'桃子',
         value:4
       },
       {
-        label:'选项五',
+        label:'火龙果',
         value:5
       },
+      {
+        label:'牛油果',
+        value:6
+      },
+      {
+        label:'哈密瓜',
+        value:7
+      }
     ]
+  },
+  // 参数配置
+  getMode(e){
+    this.setData({
+      [e.currentTarget.dataset.name]:e.detail.value
+    })
   },
   change0(e){
     console.log(e.detail.index)
+    wx.showToast({
+      title: '点击了'+this.data.list0[e.detail.index].label,
+      icon:'none'
+    })
+    // 选择了收起下拉菜单
+    this.setData({
+      active:false,
+      current:-1
+    })
   },
   change1(e){
-    console.log(e.detail.index)
+    wx.showToast({
+      title: '点击了'+this.data.list1[e.detail.index].label,
+      icon:'none'
+    })
+    // 选择了收起下拉菜单
+    this.setData({
+      active:false,
+      current:-1
+    })
   },
-  // openDownListShow(){
-  //   this.setData({
-  //     dropdownShow:!this.data.dropdownShow
-  //   })
-  // },
-  // openDownListShow1(){
-  //   this.setData({
-  //     dropdownShow1:!this.data.dropdownShow1
-  //   })
-  // },
-  // selectIndex(e){
-  //   wx.showToast({
-  //     title: '您点击了微信支付'+e.currentTarget.dataset.index,
-  //     icon:'none',
-  //     duration: 1500,
-  //   })
-  //   this.setData({
-  //     dropdownShowValue:'微信支付'+e.currentTarget.dataset.index,
-  //     dropdownShow:false,
-  //     dropdownShow1:false
-  //   })
-  // },
+  closeDropdown(){
+    this.setData({
+      active:false,
+      current:-1
+    })
+  }  
 })
