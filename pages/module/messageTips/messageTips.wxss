@@ -1,1 +1,3 @@
-/* pages/module/messageTips/messageTips.wxss */
+page{
+  background: #fff;
+}

@@ -38,9 +38,10 @@ Component({
     },
     //当前选中星星分数(大于0，小于等于1的数)
     score: {
-      type: Number,
+      type: [Number,String],
       value: 1,
       observer(val) {
+        console.log(val)
         this.getPercent()
       }
     },

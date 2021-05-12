@@ -1,0 +1,26 @@
+.free-dropdown-list{
+  
+}
+.free-dropdown-list-item{
+  padding: 20rpx;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.border-bottom:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  width: 199.8%;
+  height: 199.7%;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+  border-bottom: 2rpx solid #e4e7ed;  
+  z-index: 2;
+}

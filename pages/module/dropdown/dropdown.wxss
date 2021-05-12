@@ -1,10 +1,12 @@
 /* 隐藏scroll-view滚动条*/
-
-::-webkit-scrollbar {
+page{
+  background: #fff;
+}
+/* ::-webkit-scrollbar {
   width: 0;
   height: 0;
   color: transparent;
-}
+} */
 .free-selected-list {
   background: #fff;
   border-radius: 20rpx;

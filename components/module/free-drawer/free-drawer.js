@@ -115,8 +115,17 @@ Component({
         }, 250);
       }
     },  
-    // 图标关闭 遮罩层
+    // 图标关闭
     closeClick(){
+      this.setData({
+        visible:false 
+      })
+    },
+    // 遮罩层关闭
+    maskClick(){
+      if(!this.data.maskClosable){
+        return
+      }
       this.setData({
         visible:false 
       })

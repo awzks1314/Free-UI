@@ -3,7 +3,7 @@
     <view class="free-mask {{showDrawer && mask?'free-mask-show':''}} free-mask-zoom" 
     style="background:rgba(0, 0, 0, 0.6);z-index:{{showDrawer && mask?10073:-1}};transition:all 0.25s ease-in-out 0s;transform:{{showDrawer && mask?'scale(1, 1)':'scale(1.2, 1.2)'}};"
     hover-stop-propagation 
-    bindtap="closeClick"></view>
+    bindtap="maskClick"></view>
 
     <view class="free-drawer-content safe-area-inset-bottom free-drawer-{{mode}} {{showDrawer?'free-drawer-content-visible':''}} {{mode == 'center'?'free-animation-zoo':''}}"
     catchtap="handleMaskClick"

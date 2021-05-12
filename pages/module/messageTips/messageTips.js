@@ -5,16 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list:[
-      {name:'一般提示',type:'default',str:"blue"},
-      {name:'成功提示',type:'success',str:"green"},
-      {name:'警告提示',type:'warning',str:"orange"},
-      {name:'错误提示',type:'danger',str:"red"},
-      {name:'自定义',type:'primary',str:"blue"},
-      {name:'自动关闭',type:'default',str:"grey",duration:4000}
-    ],
-    index:0,
-    type:'top'
+    position:'top',
+    options:{
+      msg:'默认消息提示',
+      duration:2000,
+      type:'blue'
+    }
   },
 
   /**
@@ -23,17 +19,14 @@ Page({
   onLoad: function (options) {
 
   },
-  showTips(e){
-    let index = e.currentTarget.dataset.index;
-    let options={
-      msg: this.data.list[index].name,
-      duration: this.data.list[index].duration || 2000,
-      type: this.data.list[index].str
-    };
+  getMode(e){
     this.setData({
-      type:e.currentTarget.dataset.type
+      [e.currentTarget.dataset.name]:e.detail.value
+    },()=>{
+      this.open()
     })
-    console.log(this.data.type)
-    utils.toast(options);
+  },
+  open(){
+    utils.toast(this.data.options);
   }
 })

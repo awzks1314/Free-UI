@@ -25,8 +25,8 @@
           "scene": null
         },
         {
-          "name": "pages/module/drawer/drawer",
-          "pathName": "pages/module/drawer/drawer",
+          "name": "pages/module/dropdown/dropdown",
+          "pathName": "pages/module/dropdown/dropdown",
           "query": "",
           "scene": null
         },

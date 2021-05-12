@@ -29,6 +29,12 @@ Page({
       show:false
     })
   },
+  open(e){
+    
+  },
+  close(e){
+
+  },
   /**
    * 用户点击右上角分享
    */

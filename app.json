@@ -15,7 +15,7 @@
     "pages/basic/text/text",
     "pages/module/input/input",
     "pages/module/inputNumber/inputNumber",
-    "pages/module/select/select",
+    "pages/module/dropdown/dropdown",
     "pages/module/rate/rate",
     "pages/module/messageTips/messageTips",
     "pages/module/modal/modal",

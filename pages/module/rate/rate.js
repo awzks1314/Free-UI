@@ -5,13 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-    current:0,
-    index:3
+    current:1,//当前位置
+    active:'#0081EF',//颜色
+    number:5,//数量
+    size:20,//尺寸大小
+    hollow:false,//实心空闲
+    score:0,
+    disabled:true
+  },
+  getMode(e){
+    this.setData({
+      [e.currentTarget.dataset.name]:e.detail.value
+    })
   },
   change (e) {
     this.setData({
-      index: e.detail.index,
-      current: e.detail.index
+      current:e.detail.index
     })
   }
 })

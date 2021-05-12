@@ -11,6 +11,8 @@
     closeable="{{closeable}}"
     maskClosable="{{maskClosable}}"
     closeIconPos="{{closeIconPos}}"
+    bind:open="open"
+    bind:close="close"
     length="50%">
     <view class="padding flex align-center justify-center" style="height:{{mode == 'center'?'400rpx':'100%'}};">
       <button class="free-button bg-blue lg"  bindtap="closeDrawer" >关闭抽屉</button>

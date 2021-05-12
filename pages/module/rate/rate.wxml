@@ -1,64 +1,53 @@
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>基础用法</text>
-  </view>
-  <view class="free-title">
-    <free-rate current="{{current}}" bind:change="change"></free-rate>
-  </view>
+<free-title type="2" title="效果演示"></free-title>
+
+<!-- 组件 -->
+<view class="text-center padding" >
+  <free-rate 
+  current="{{current}}" 
+  active="{{active}}"
+  number="{{number}}"
+  size="{{size}}"
+  hollow="{{hollow}}"
+  score="{{score}}"
+  disabled="{{disabled}}"
+  bind:change="change"
+  ></free-rate>
 </view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>不同颜色</text>
-  </view>
-  <view class="free-title">
-    <free-rate current="{{current}}" active='orange' bind:change="change"></free-rate>
-  </view>
+<!-- 组件 -->
+
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="当前星星数" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[ '1','2','3']}}" bind:click='getMode' data-name="current" bold="true"></free-subsection>
 </view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>设置数量</text>
-  </view>
-  <view class="free-title">
-    <free-rate current="{{current}}" number="10"  bind:change="change"></free-rate>
-  </view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="自定义颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#0081EF', 'red','black','orange']}}" bind:click='getMode' data-name="active" bold="true"></free-subsection>
 </view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>小尺寸</text>
-  </view>
-  <view class="free-title">
-    <free-rate current="{{current}}" size='16'  bind:change="change"></free-rate>
-  </view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="数量" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[5,6,7,8]}}" bind:click='getMode' data-name="number" bold="true"></free-subsection>
 </view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>大尺寸</text>
-  </view>
-  <view class="free-title">
-    <free-rate current="{{current}}" size='24'  bind:change="change"></free-rate>
-  </view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="尺寸大小" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[20,24,28]}}" bind:click='getMode' data-name="size" bold="true"></free-subsection>
 </view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>初始空心</text>
-  </view>
-  <view class="free-title">
-    <free-rate current="{{current}}" hollow="true"  bind:change="change"></free-rate>
-  </view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="是否空心" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="hollow" bold="true"></free-subsection>
 </view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>不可点击</text>
-  </view>
-  <view class="free-title">
-    <free-rate current="{{current}}" disabled  bind:change="change"></free-rate>
-  </view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="非整数,仅在不可点击下展示" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[0,0.3,0.6]}}" bind:click='getMode' data-name="score" bold="true"></free-subsection>
 </view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>不可点击3.5星</text>
-  </view>
-  <view class="free-title">
-    <free-rate current="{{3}}" score="{{0.5}}" disabled  bind:change="change"></free-rate>
-  </view>
-</view>
+
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="禁用点击" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="disabled" bold="true"></free-subsection>
+</view> 

@@ -1,3 +1,12 @@
+<free-dropdown menu="{{menu}}">
+  <free-dropdown-item bind:change="change0" slot="content0"  list="{{list0}}"></free-dropdown-item>
+  <free-dropdown-item bind:change="change1"  slot="content1" list="{{list1}}" custom>
+    <view class="padding bg-white">
+      111456465
+    </view>
+  </free-dropdown-item>
+</free-dropdown>
+
 <view class="free-bar  bg-white solid-bottom">
   <view class="free-title ">
     <text>基础用法</text>

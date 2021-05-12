@@ -17,8 +17,8 @@ Page({
         icon:'home',
       },
       {
-        name:'下拉',
-        title:'select',
+        name:'下拉菜单',
+        title:'dropdown',
         icon:'home',
       },
       {

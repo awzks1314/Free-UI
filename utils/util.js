@@ -29,13 +29,13 @@ const utils = {
   },
   interfaceUrl: function() {
     //接口地址
-    return "https://www.thorui.cn";
+    return ''
   },
   toast: function(text, duration, success) {
     wx.showToast({
       title: text,
       icon: success ? 'success' : 'none',
-      duration: duration || 2000
+      duration: duration || 2000,
     })
   },
   preventMultiple: function(fn, gapTime) {

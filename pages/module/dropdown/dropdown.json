@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText":"dropdown下拉菜单",
+  "usingComponents": {
+    "free-dropdown":"/components/module/free-dropdown/free-dropdown",
+    "free-dropdown-item":"/components/module/free-dropdown-item/free-dropdown-item",
+    "free-down-select":"/components/module/free-down-select/free-down-select",
+    "free-input":"/components/module/free-input/free-input"
+  }
+}
