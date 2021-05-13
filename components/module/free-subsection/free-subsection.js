@@ -14,12 +14,15 @@ Component({
     // 当前活动的tab的index
     current: {
       type: [Number, String],
-      value: 0
+      value: 0,
+      observer:function(current) {
+        this.checkCor();
+      }
     },
     // 组件的高度，单位rpx
     height: {
       type: [Number, String],
-      value: 70
+      value: 35
     },
     // 激活tab的字体是否加粗
     bold: {
@@ -63,9 +66,6 @@ Component({
     },
   },
   observers: {
-    'current': function(current) {
-      this.checkCor();
-    },
     'mode': function(current) {
       this.getTabsInfo();
     },
@@ -108,7 +108,7 @@ Component({
         });
         // console.log(this.data.mode)
         this.data.itemBgStyle.width = this.data.listInfo[0].width + 'px'
-        this.data.itemBgStyle.height =this.data.mode == 'button'?this.data.height/2 - this.data.buttonPadding * 2 +'px' :100%
+        this.data.itemBgStyle.height =this.data.mode == 'button'?this.data.height - this.data.buttonPadding * 2 +'px' :100%
         this.setData({
           itemBgStyle:this.data.itemBgStyle
         })

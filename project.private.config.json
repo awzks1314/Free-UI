@@ -19,14 +19,14 @@
           "scene": null
         },
         {
-          "name": "pages/basic/layout/layout",
-          "pathName": "pages/basic/layout/layout",
+          "name": "pages/basic/index/index",
+          "pathName": "pages/basic/index/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/module/dropdown/dropdown",
-          "pathName": "pages/module/dropdown/dropdown",
+          "name": "pages/basic/image/image",
+          "pathName": "pages/basic/image/image",
           "query": "",
           "scene": null
         },

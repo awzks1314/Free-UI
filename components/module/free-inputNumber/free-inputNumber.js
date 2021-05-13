@@ -102,14 +102,21 @@ Component({
       } else if (type === 'add') {
         num += step
       }
+      console.log(num)
       let value = num / scale
+      console.log(value)
       if (type === "add" && value < this.data.min) {
         value = this.data.min
       } else if (type === "reduce" && value > this.data.max) {
         value = this.data.max
       }
-      if (value < this.data.min || value > this.data.max) {
-        return
+      if (value < this.data.min) {
+        value = this.data.min
+        // return
+      }
+      if ( value > this.data.max) {
+        value = this.data.max
+        // return
       }
       this.valueChange(value, type)
     },

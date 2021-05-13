@@ -1,6 +1,6 @@
 <view class="free-dropdown">
   <view class="free-dropdown-menu {{borderBottom?'border-bottom':''}}"
-  style="height:{{height}}rpx;"
+  style="height:{{height}}px;"
   >
     <view class="free-dropdown-menu-item"  
     wx:for="{{menu}}" wx:key="index"
@@ -19,15 +19,15 @@
       </view>
     </view>
     
-    <view class="free-dropdown-content"
-      style="z-index:{{contentStyle.zIndex}};opacity:{{contentStyle.opacity}};transition:all 0.3s linear;top:{{height}}rpx;height:{{contentHeight}}px;"
-      wx:if="{{current>=0 || active}}"
+    <view class="free-dropdown-content {{contentStyle.opacity == '0'?'opacity':''}}"
+      style="z-index:{{contentStyle.zIndex}};transition:opacity 0.3s linear;top:{{height}}px;height:{{contentHeight}}px;"
+      catchtap="maskClick" 
       >
         <view class="free-dropdown-content-drawer"
-        style="transform:translateY({{active ? 0 : '-100%'}});transition-duration: 0.3s" >
-          <slot name="content{{current}}" ></slot>
+        style="transform:translateY({{active?0:'-100%'}});transition-duration: 0.3s" catchtap="content">
+          <slot name="content{{current}}" wx:if="{{active}}"></slot>
         </view>
-        <view class="free-dropdown-content-mask" catchtap="maskClick" ></view>
+        <view class="free-dropdown-content-mask" ></view>
     </view>
   </view>
 </view> 

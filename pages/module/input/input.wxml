@@ -1,5 +1,4 @@
 
-<free-title title="基础用法" type="2"  ></free-title>
 <!-- 
   bgColor:整个input所在块背景色
   value:input输入框的值
@@ -16,20 +15,75 @@
   placeholder: 提示词，string类型
   close: 是否显示关闭按钮，true/false
   disabled:是否禁用，true/false
-  extreaWord:右侧额外按钮
+  extreaWord:右侧额外按钮 
   extreaColor: 右侧额外按钮颜色
  -->
-<view class="solid-top">
-  <free-input placeholder='有背景的输入框'></free-input>
-  <free-input inputStyle='1' placeholder='带边框的输入框'></free-input>
-  <free-input inputStyle='1' placeholder='更改字体图标颜色' color="red"></free-input>
-  <free-input extreaWord='取消' bind:input="getInput" bind:extrea="cancel" radius="4rpx" placeholder="带操作的输入框"></free-input>
-  <free-input extreaWord='确定' bind:input="getInput" bind:extrea="cancel" radius="4rpx" placeholder="更改输入框的背景色" inputBg="orange" color="#fff"></free-input>
-  <free-input prefixIcon="electronics" placeholder="前置图标可更换"></free-input>
-  <free-input suffixIcon="electronics" prefixIcon='' placeholder="后置图标可更换"></free-input>
-  <free-input radius='10rpx'  inputStyle='0' extreaWord='搜索' extreaColor='#fff' placeholder="背景色为蓝" bgColor="#0081ff"></free-input>
-  <free-input radius='10rpx'  inputStyle='0' extreaWord='搜索' extreaColor='#fff' placeholder="背景色为蓝"></free-input>
-  <free-input radius='10rpx' inputBg='#fff' placeholder='无背景的输入框'></free-input>
-  <free-input password placeholder='密码输入'></free-input>
-  <free-input disabled inputStyle='1' placeholder='禁止输入'></free-input>
+<free-title type="2" title="效果演示"></free-title>
+<!-- 组件 -->
+<free-input 
+  placeholder='自定义输入框提示内容'
+  inputStyle="{{inputStyle}}"
+  color="{{color}}"
+  extreaWord="{{extreaWord}}"
+  prefixIcon="{{prefixIcon}}"
+  suffixIcon="{{suffixIcon}}"
+  bgColor="{{bgColor}}"
+  inputBg="{{inputBg}}"
+  password="{{password}}"
+  disabled="{{disabled}}"
+  close="{{close}}"
+  bind:extrea="extrea"
+  bind:input="input"
+  bind:focus="focus"
+  bind:blur = "blur"
+  bind:confirm = "confirm"
+  bind:close = "close"
+></free-input>
+<!-- 组件 -->
+
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="有两种模式供选择" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['0', '1']}}" bind:click='getMode' data-name="inputStyle" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="字体图标颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['默认', '#fff','#0081ef']}}" bind:click='getMode' data-name="color" bold="true"></free-subsection>
+</view>
+ 
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="背景颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#fff', 'skyblue','green']}}" bind:click='getMode' data-name="bgColor" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="输入框的背景色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#f5f5f5', 'orange','olive']}}" bind:click='getMode' data-name="inputBg" bold="true"></free-subsection>
+</view>
+
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="右侧按钮,可自定义颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['默认', '取消','确定']}}" bind:click='getMode' data-name="extreaWord" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="清空图标" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="close" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="密码输入" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="password" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="禁止输入" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="disabled" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="图标更换(后置图标同理)" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['search', 'home','close']}}" bind:click='getMode' data-name="prefixIcon" bold="true"></free-subsection>
 </view>

@@ -1,14 +1,26 @@
-<free-tabs tabs="{{tabs}}"  isFixed="true" currentTab="{{currentTab}}" bold='true'  bind:change="change"   ></free-tabs> 
+<free-title type="2" title="效果演示"></free-title>
 
-<view class="positionView"></view>
-<view wx:if='{{currentTab == 0}}' >
-  <view class="grid col-3  text-center margin-top" >
-    <view wx:for="{{imageList}}" wx:key="index" class=" margin-bottom">
-      <free-image src='/static/image/my/dog.jpg' mode='{{item.name}}' preview="{{true}}"></free-image>
-      <!-- <text>{{item.msg}}</text> -->
-    </view>
-  </view>
+<view class="padding-lr flex align-center justify-center">
+  <free-image 
+  src='/static/image/my/dog.jpg' 
+  mode="{{mode}}" 
+  preview="{{preview}}"></free-image>
 </view>
+
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="图片模式(部分)" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['scaleToFill', 'bottom','right','bottom left']}}" bind:click='getMode' data-name="mode" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="预览" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="preview" bold="true"></free-subsection>
+</view>
+
+<!-- <free-tabs tabs="{{tabs}}"  isFixed="true" currentTab="{{currentTab}}" bold='true'  bind:change="change"   ></free-tabs>  -->
+<!-- <view class="positionView"></view> -->
+
 
 <view wx:if='{{currentTab == 1}}' >
   <view class="grid col-3  text-center margin-top" >

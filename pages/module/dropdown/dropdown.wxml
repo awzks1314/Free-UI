@@ -1,9 +1,12 @@
 <free-dropdown 
   menu="{{menu}}" 
-  current="{{current}}" 
-  active="{{active}}"
+  close="{{close}}"
   borderBottom="{{borderBottom}}"
   height="{{height}}"
+  closeOnClickMask="{{closeOnClickMask}}"
+  closeOnClickSelf="{{closeOnClickSelf}}"
+  activeColor="{{activeColor}}"
+  inactiveColor="{{inactiveColor}}"
   >
   <free-dropdown-item bind:change="change0"  slot="content0"  list="{{list0}}"></free-dropdown-item>
   <free-dropdown-item bind:change="change1"  slot="content1" list="{{list1}}" ></free-dropdown-item>
@@ -20,8 +23,27 @@
   <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="borderBottom" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="菜单高度(px)" height="40"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="菜单标题和选项的激活态颜色" height="40"></free-title>
 <view class="padding">
-  <free-subsection list="{{['80','100','120']}}" bind:click='getMode' data-name="height" bold="true"></free-subsection>
+  <free-subsection list="{{['#0081EF','red','orange']}}" bind:click='getMode' data-name="activeColor" bold="true"></free-subsection>
 </view>
 
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="菜单标题和选项的未激活态颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#606266','green','olive']}}" bind:click='getMode' data-name="inactiveColor" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="菜单高度(px)" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['40','50','60']}}" bind:click='getMode' data-name="height" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="点击遮罩层能否关闭" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="closeOnClickMask" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="点击标题能否关闭" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="closeOnClickSelf" bold="true"></free-subsection>
+</view>

@@ -912,6 +912,7 @@ button.icon.lg {
 }
 
 .padding-0 {
+	
 	padding: 0;
 }
 

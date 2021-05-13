@@ -10,12 +10,11 @@ Page({
       {title:'标签二',disabled:false},
       {title:'标签三'},
     ],
-    current:'-1',//当前选中，-1全部隐藏
-    active:false,//展示内容,true/false
+    close:false,//关闭展开
     borderBottom:true,//底部边框
-    height:80,//菜单高度
+    height:40,//菜单高度px
     closeOnClickMask:true,//点击遮罩层是否可以关闭
-    closeOnClickSelf:false,//点击标题是否可以关闭
+    closeOnClickSelf:true,//点击标题是否可以关闭
     activeColor:'#2979ff',//菜单标题和选项的激活态颜色
     inactiveColor:'#606266',// 菜单标题和选项的未激活态颜色
     list0:[
@@ -77,8 +76,7 @@ Page({
     })
     // 选择了收起下拉菜单
     this.setData({
-      active:false,
-      current:-1
+      close:true
     })
   },
   change1(e){
@@ -88,14 +86,13 @@ Page({
     })
     // 选择了收起下拉菜单
     this.setData({
-      active:false,
-      current:-1
+      close:true
     })
   },
   closeDropdown(){
+    // 选择了收起下拉菜单
     this.setData({
-      active:false,
-      current:-1
+      close:true
     })
   }  
 })

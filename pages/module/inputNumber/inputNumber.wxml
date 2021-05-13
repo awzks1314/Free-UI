@@ -1,72 +1,67 @@
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>基础用法</text>
-  </view>
-  <view class="free-title">
-    <free-inputNumber value="{{value}}" bind:change='getValue'></free-inputNumber> 
-  </view>
+<free-title type="2" title="效果演示"></free-title>
+
+<!-- 组件 -->
+<view class="padding flex justify-center">
+  <free-inputNumber 
+    value="{{value}}" 
+    max="{{max}}"
+    min="{{min}}"
+    step="{{step}}"
+    disabled="{{disabled}}"
+    width="{{width}}"
+    height="{{height}}"
+    iconsize="{{iconsize}}"
+    styleColor="{{styleColor}}"
+    style="{{style}}"
+    bind:change='getValue'>
+  </free-inputNumber> 
 </view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>设置最值</text>
-  </view>
-  <view class="free-title">
-    <free-inputNumber value="{{value1}}" min='5'  max='11' bind:change='getValue1'></free-inputNumber> 
-  </view>
+<!-- 组件 -->
+
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="最大值" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[6,8,10]}}" bind:click='getMode' data-name="max" bold="true"></free-subsection>
 </view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>步长3</text>
-  </view>
-  <view class="free-title">
-    <free-inputNumber value="{{value2}}" step="3" bind:change='getValue2'></free-inputNumber> 
-  </view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="最小值" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[1,2,3]}}" bind:click='getMode' data-name="min" bold="true"></free-subsection>
 </view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>步长0.1</text>
-  </view>
-  <view class="free-title">
-    <free-inputNumber value="{{value3}}" step="0.1" bind:change='getValue3'></free-inputNumber> 
-  </view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="步长" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[1,1.8,3]}}" bind:click='getMode' data-name="step" bold="true"></free-subsection>
 </view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>禁用状态</text>
-  </view>
-  <view class="free-title">
-    <free-inputNumber disabled></free-inputNumber> 
-  </view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="自定义样式" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['normal','custom']}}" bind:click='getMode' data-name="style" bold="true"></free-subsection>
 </view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>尺寸设置</text>
-  </view>
-  <view class="free-title">
-    <free-inputNumber  height='60' width='180'></free-inputNumber> 
-  </view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="颜色(搭配自定义样式custom使用)" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['normal','#0081ef','red','orange']}}" bind:click='getMode' data-name="styleColor" bold="true"></free-subsection>
 </view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>自定义样式</text>
-  </view>
-  <view class="free-title">
-    <free-inputNumber style="1" styleColor="red"></free-inputNumber> 
-  </view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="设置宽度" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[100,160,200]}}" bind:click='getMode' data-name="width" bold="true"></free-subsection>
 </view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>自定义样式</text>
-  </view>
-  <view class="free-title">
-    <free-inputNumber style="1" styleColor="blue" width='200'></free-inputNumber> 
-  </view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="设置高度" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[60,80,100]}}" bind:click='getMode' data-name="height" bold="true"></free-subsection>
 </view>
-<view class="free-bar  bg-white solid-bottom">
-  <view class="free-title ">
-    <text>当前输入框的值是{{value4}}</text>
-  </view>
-  <view class="free-title">
-    <free-inputNumber style="1" value='{{value4}}' styleColor="orange" bind:change='getValue4'></free-inputNumber> 
-  </view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="是否禁用" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="disabled" bold="true"></free-subsection>
 </view>
+
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="字体大小" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[36,44,50]}}" bind:click='getMode' data-name="iconsize" bold="true"></free-subsection>
+</view>
+

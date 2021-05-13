@@ -1,1 +1,3 @@
-/* pages/basic/layout/layout.wxss */
+page{
+  background: #FFF;
+}

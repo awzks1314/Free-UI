@@ -27,11 +27,15 @@ Page({
       {name:'top right',msg:'裁剪模式，不缩放图片，只显示图片的右上边区域'},
       {name:'bottom left',msg:'裁剪模式，不缩放图片，只显示图片的左下边区域'},
       {name:'bottom right',msg:'裁剪模式，不缩放图片，只显示图片的右下边区域'},
-    ]
+    ],
+    mode:'scaleToFill',
+    preview:true
   },
-  change(e){  
+  getMode(e){
     this.setData({
-      currentTab:e.detail.index
+      [e.currentTarget.dataset.name]:e.detail.value
+    },()=>{
+      console.log(this.data.mode)
     })
   }
 })

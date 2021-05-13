@@ -21,20 +21,15 @@ Component({
       type:Array,
       value:[]
     },
-    // 当前选中，-1全部关闭
-    current:{
-      type:Number,
-      value:-1
-    },
     // 是否展示
-    active:{
+    close:{
       type:Boolean,
       value:false
     },
     // 标题菜单的高度，单位任意，数值默认为rpx单位
     height: {
       type: [Number, String],
-      value: 80,
+      value: 40,
       observer:function(){
         this.getContentHeight()
       }
@@ -64,24 +59,36 @@ Component({
     highlightIndex: 99999,
     // 外层内容的样式，初始时处于底层，且透明
     contentStyle: {
-      zIndex: 11,
-      opacity: 1
+      zIndex: -1,
+      opacity: 0
     },
+    active:false,
+    current:99999,
     contentHeight:0
   },
   ready(){
     this.getContentHeight()
   },
+  observers:{
+    'close':function(val){
+      if(val){
+        this.close()
+      }
+    }
+  },
   /**
    * 组件的方法列表
    */
   methods: {
+    content(){
+
+    },
     // 点击遮罩
-			maskClick() {
-				// 如果不允许点击遮罩，直接返回
-				if (!this.data.closeOnClickMask) return;
-				this.close();
-			},
+    maskClick() {
+      // 如果不允许点击遮罩，直接返回
+      if (!this.data.closeOnClickMask) return;
+      this.close();
+    },
     // 点击标题
     menuClick(e){
       let index = e.currentTarget.dataset.index
@@ -89,15 +96,20 @@ Component({
         return
       }
       if(index == this.data.current && this.data.closeOnClickSelf){
-          this.close()  
-          
+        this.close()  
+        setTimeout(() => {
+          this.setData({
+            active:false
+          })
+        }, 300);
         return
       }
       this.open(index)
     },
     open(index){
-      this.data.contentStyle.zIndex = 11
-      this.data.contentStyle.opacity = 1
+      this.data.contentStyle = {
+        zIndex:11
+      }
       this.setData({
         contentStyle:this.data.contentStyle,
         active:true,
@@ -116,21 +128,15 @@ Component({
       this.data.contentStyle.opacity = 0
       this.setData({
         contentStyle:this.data.contentStyle,
-        active:false,
+        current:99999
       })
-      setTimeout(() => {
-        this.setData({
-          current:-1
-        })
-      }, 300);
-      
     },
     // 计算高度
     getContentHeight(){
       wx.getSystemInfo({
         success: (e) => {
           this.setData({
-            contentHeight:e.windowHeight - this.data.height/2
+            contentHeight:e.windowHeight - this.data.height
           })
         },
       })
