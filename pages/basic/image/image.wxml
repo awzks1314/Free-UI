@@ -18,6 +18,11 @@
   <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="preview" bold="true"></free-subsection>
 </view>
 
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="预览" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="preview" bold="true"></free-subsection>
+</view>
+
 <!-- <free-tabs tabs="{{tabs}}"  isFixed="true" currentTab="{{currentTab}}" bold='true'  bind:change="change"   ></free-tabs>  -->
 <!-- <view class="positionView"></view> -->
 
