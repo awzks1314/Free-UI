@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list:[
+    formList:[
+      {
+        name:'表单',  
+        title:'form',
+        icon:'home',
+      },
       {
         name:'输入框',
         title:'input',
@@ -17,13 +22,79 @@ Page({
         icon:'home',
       },
       {
-        name:'下拉菜单',
-        title:'dropdown',
+        name:'评分',
+        title:'rate',
+        icon:'home',
+      },
+    ],
+    dataList:[
+      {
+        name:'list列表',
+        title:'list',
         icon:'home',
       },
       {
-        name:'评分',
-        title:'rate',
+        name:'Grid列表',
+        title:'grid-list',
+        icon:'home',
+      },
+      {
+        name:'卡片',
+        title:'card',
+        icon:'home',
+      },
+      {
+        name:'通告栏',
+        title:'noticeBar',
+        icon:'home',
+      },
+      {
+        name:'折叠面板',
+        title:'collapse',
+        icon:'home',
+      },
+      {
+        name:'步骤条',
+        title:'steps',
+        icon:'home',
+      },
+    ],
+    navigationList:[
+      {
+        name:'导航栏',
+        title:'navBar',
+        icon:'home',
+      },
+      {
+        name:'标签页',
+        title:'tabs',
+        icon:'home',
+      },
+      {
+        name:'自定义tabbar',
+        title:'tabbar',
+        icon:'home',
+      },
+      {
+        name:'页脚',
+        title:'footer',
+        icon:'home',
+      },
+      {
+        name:'分段器',
+        title:'subsection',
+        icon:'home-filling',
+      }
+    ],
+    feedbackList:[
+      {
+        name:'动作面板',
+        title:'actionSheet',
+        icon:'home',
+      },
+      {
+        name:'下拉菜单',
+        title:'dropdown',
         icon:'home',
       },
       {
@@ -42,48 +113,15 @@ Page({
         icon:'home',
       },
       {
-        name:'导航栏',
-        title:'navBar',
+        name:'进度条',
+        title:'progress',
         icon:'home',
       },
-      {
-        name:'标签页',
-        title:'tabs',
-        icon:'home',
-      },
-      {
-        name:'list列表',
-        title:'list',
-        icon:'home',
-      },
-      {
-        name:'Grid列表',
-        title:'grid-list',
-        icon:'home',
-      },
+    ],
+    otherList:[
       {
         name:'滑动菜单',
         title:'swiper-list',
-        icon:'home',
-      },
-      {
-        name:'卡片',
-        title:'card',
-        icon:'home',
-      },
-      {
-        name:'自定义tabbar',
-        title:'tabbar',
-        icon:'home',
-      },
-      {
-        name:'表单',  
-        title:'form',
-        icon:'home',
-      },
-      {
-        name:'折叠面板',
-        title:'collapse',
         icon:'home',
       },
       {
@@ -92,49 +130,21 @@ Page({
         icon:'home',
       },
       {
-        name:'通告栏',
-        title:'noticeBar',
-        icon:'home',
-      },
-      {
-        name:'步骤条',
-        title:'steps',
-        icon:'home',
-      },
-      {
-        name:'动作面板',
-        title:'actionSheet',
-        icon:'home',
-      },
-      {
         name:'加载',
         title:'loading',
         icon:'home',
       },
-      {
-        name:'进度条',
-        title:'progress',
-        icon:'home',
-      },
+      
       {
         name:'时间轴',
         title:'timeline',
         icon:'home',
       },
-      {
-        name:'页脚',
-        title:'footer',
-        icon:'home',
-      },
+      
       {
         name:'返回顶部',
         title:'backTop',
         icon:'home',
-      },
-      {
-        name:'分段器',
-        title:'subsection',
-        icon:'home-filling',
       }
     ]
   },

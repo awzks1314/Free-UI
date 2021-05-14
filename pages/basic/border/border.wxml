@@ -1,39 +1,29 @@
-<free-tabs tabs="{{tabs}}" isFixed="{{true}}"  currentTab="{{currentTab}}" bold='true'  bind:change="change" ></free-tabs>
-<view class="positionView"></view>
-<view class="" wx:if="{{currentTab == 0}}">
-  <view class="padding bg-white text-center" >
-    <view class="padding solids bg-gray" bindtap="copy" data-name="solid">solid</view>
-    <view class="padding solids-top margin-top bg-gray" bindtap="copy" data-name="solid-top">solid-top</view>
-    <view class="padding solids-right margin-top bg-gray" bindtap="copy" data-name="solid-right">solid-right</view>
-    <view class="padding solids-bottom margin-top bg-gray" bindtap="copy" data-name="solid-bottom">solid-bottom</view>
-    <view class="padding solids-left margin-top bg-gray" bindtap="copy" data-name="solid-left">solid-left</view>
-  </view>
-  <view class="padding bg-white text-center">
-    <view class="padding dasheds bg-gray" bindtap="copy" data-name="dashed">dashed</view>
-    <view class="padding dasheds-top margin-top bg-gray"bindtap="copy" data-name="dashed-top">dashed-top</view>
-    <view class="padding dasheds-right margin-top bg-gray"bindtap="copy" data-name="dashed-right">dashed-right</view>
-    <view class="padding dasheds-bottom margin-top bg-gray"bindtap="copy" data-name="dashed-bottom">dashed-bottom</view>
-    <view class="padding dasheds-left margin-top bg-gray"bindtap="copy" data-name="dashed-left">dashed-left</view>
-  </view>
+
+<free-title type="2" title="效果演示"></free-title>
+
+<view class="padding-lr  bg-white">
+  <view class="padding  bg-white {{type}}{{position?'-'+position:''}} {{radius?'radius-'+radius:radius}}"></view> 
+</view> 
+
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="有两种模式供选择" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['solid', 'dashed']}}" bind:click='getMode' data-name="type" bold="true"></free-subsection>
 </view>
-<view class="padding text-center" wx:if="{{currentTab == 1}}">
-  <view class="padding-xl radius-xs bg-blue"bindtap="copy" data-name="radius-xs">radius-xs</view>
-  <view class="padding-xl radius-sm bg-blue margin-top"bindtap="copy" data-name="radius-sm">radius-sm</view>
-  <view class="padding-xl radius bg-blue margin-top"bindtap="copy" data-name="radius">radius</view>
-  <view class="padding-xl radius-lg bg-blue margin-top"bindtap="copy" data-name="radius-lg">radius-lg</view>
-  <view class="padding-xl round bg-blue margin-tb"bindtap="copy" data-name="round">round</view>
-  <view class="flex justify-center align-center"bindtap="copy" data-name="round">
-    <view class="round bg-blue flex justify-center align-center" style="width:100rpx;height:100rpx;">round</view>
-  </view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="五种边框样式" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['默认', 'top','bottom', 'left','right']}}" bind:click='getMode' data-name="position" bold="true"></free-subsection>
 </view>
-<view class="padding text-center" wx:if="{{currentTab == 2}}">
+
+<view class="padding text-center" >
   <view class="padding-xl radius-xs shadow bg-white" bindtap="copy" data-name="shadow bg-white">默认阴影</view>
   <view class="padding-xl radius-xs shadow bg-blue margin-top" bindtap="copy" data-name="shadow bg-blue">根据背景颜色而改变的阴影</view>
   <view class="padding-xl radius-xs shadow shadow-lg bg-white margin-top" bindtap="copy" data-name="shadow shadow-lg bg-white">长阴影</view>
   <view class="padding-xl radius-xs shadow shadow-lg bg-red margin-top" bindtap="copy" data-name="shadow shadow-lg bg-red">根据背景颜色而改变的长阴影</view>
   <view class="padding-xl radius-xs shadow-warp bg-white margin-top" bindtap="copy" data-name="shadow-warp bg-white ">翘边阴影</view>
   <view class="padding-xl radius-xs shadow-main margin-top" bindtap="copy" data-name="shadow-main">发散阴影</view>
-  <view class="padding-xl radius-xs shadow-blur bg-red margin-top bg-img text-blue" style="background-image:url('/static/image/bg/bg.png');" bindtap="copy" data-name="shadow-blur bg-img">
+  <view class="padding-xl radius-xs shadow-blur bg-red margin-top bg-img text-blue" style="background-image:url('https://ossweb-img.qq.com/images/lol/web201310/skin/big84004.jpg');" bindtap="copy" data-name="shadow-blur bg-img">
     <view>根据背景图而改变的阴影</view>
   </view>
 </view>

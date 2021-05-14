@@ -5,17 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    currentTab:0,
-    tabs:[
-      {name:'边框'},
-      {name:'圆角'},
-      {name:'阴影'},
-    ]
+    type:'solid',
+    position:''
   },
-  // 改变选择tab
-  change(e){
+  getMode(e){
     this.setData({
-      currentTab:e.detail.index
+      [e.currentTarget.dataset.name]:e.detail.value=='默认'?'':e.detail.value
     })
   },
   copy(e){

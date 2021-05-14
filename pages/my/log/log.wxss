@@ -1,0 +1,6 @@
+page{
+  background: #fff;
+}
+.title{
+  border: 2rpx solid #fff;
+}

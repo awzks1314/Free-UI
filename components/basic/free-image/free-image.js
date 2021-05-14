@@ -33,7 +33,7 @@ Component({
       type:Boolean,
       value:false
     },
-    menu:{
+    long:{
       type:Boolean,
       value:false
     },
@@ -55,8 +55,7 @@ Component({
         return
       }
       wx.previewImage({
-        // urls: [this.data.src],
-        urls: [' https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1433993011,2529567762&fm=26&gp=0.jpg'],
+        urls: [this.data.src],
         current: '0'
       })
     }

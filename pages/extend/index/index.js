@@ -13,20 +13,20 @@ Page({
         type:'icon',
         icon:'electronics'
       },
-      {
-        name:'布局',
-        title:'layout',
-        desc:'Flex布局、Grid布局、内外边距',
-        type:'icon',
-        icon:'electronics'
-      },
-      {
-        name:'布局',
-        title:'layout',
-        desc:'Flex布局、Grid布局、内外边距',
-        type:'icon',
-        icon:'electronics'
-      },
+      // {
+      //   name:'布局',
+      //   title:'layout',
+      //   desc:'Flex布局、Grid布局、内外边距',
+      //   type:'icon',
+      //   icon:'electronics'
+      // },
+      // {
+      //   name:'布局',
+      //   title:'layout',
+      //   desc:'Flex布局、Grid布局、内外边距',
+      //   type:'icon',
+      //   icon:'electronics'
+      // },
     ]
   },
   /**

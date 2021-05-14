@@ -41,10 +41,10 @@
   position: relative;
   top: -0.2rem;
 }
-.free-sub-title text {
+/* .free-sub-title text {
 	position: relative;
-	z-index: 1;
-}
+  z-index: 1;  
+} */
 
 .free-action:first-child {
   margin-left: 30rpx;

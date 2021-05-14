@@ -10,29 +10,29 @@
 </view>
  
 <view class=" margin-top ">
-  <free-list arrow="true" bind:click="detail" >
-    <free-icon name='home-filling' size='20' color='#0081ff'></free-icon>
-    <view class="free-list-name">Github源码地址</view>
-  </free-list>
-  <free-list arrow="true" bind:click="detail" >
+  <free-list arrow="true" bind:click="detail" data-index="1">
+    <free-icon name='navigation' size='20' color='#e54d42'></free-icon>
+    <view class="free-list-name padding-left-xs">Github源码地址</view>
+  </free-list> 
+  <!-- <free-list arrow="true" bind:click="detail" >
     <free-icon name='home' size='20' color='#0081ff'></free-icon>
-    <view class="free-list-name">Gitee源码地址</view>
+    <view class="free-list-name padding-left-xs">Gitee源码地址</view>
+  </free-list> -->
+  <free-list arrow="true" bind:click="detail" data-url="/pages/my/log/log">
+    <free-icon name='chart-pie' size='20' color='#f37b1d'></free-icon>
+    <view class="free-list-name padding-left-xs">更新日志</view>
   </free-list>
   <free-list arrow="true" bind:click="detail" >
-    <free-icon name='home-filling' size='20' color='#0081ff'></free-icon>
-    <view class="free-list-name">更新日志</view>
+    <free-icon name='fabulous' size='20' color='#fbbd08'></free-icon>
+    <view class="free-list-name padding-left-xs">赞赏支持</view>
   </free-list>
   <free-list arrow="true" bind:click="detail" >
-    <free-icon name='home-filling' size='20' color='#0081ff'></free-icon>
-    <view class="free-list-name">赞赏支持</view>
+    <free-icon name='comment-filling' size='20' color='#39b54a'></free-icon>
+    <view class="free-list-name padding-left-xs">意见反馈</view>
+    <button open-type="contact" class="free-button free-list-right bg-white text-grey">给点建议</button>
   </free-list>
   <free-list arrow="true" bind:click="detail" >
-    <free-icon name='home-filling' size='20' color='#0081ff'></free-icon>
-    <view class="free-list-name">意见反馈</view>
-    <button class="free-button free-list-right bg-white text-grey">给点建议</button>
-  </free-list>
-  <free-list arrow="true" bind:click="detail" >
-    <free-icon name='home-filling' size='20' color='#0081ff'></free-icon>
-    <view class="free-list-name">关于Free UI</view>
+    <free-icon name='setting' size='20' color='#0081ff'></free-icon>
+    <view class="free-list-name padding-left-xs">关于Free UI</view>
   </free-list>
 </view>

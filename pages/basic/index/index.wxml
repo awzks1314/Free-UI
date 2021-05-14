@@ -1,13 +1,26 @@
-<view class="header padding solid-bottom flex flex-direction bg-blue">
-  <text class="tile ">Free UI</text>
-  <text>一款轻量、开箱即用的原生微信小程序UI组件库</text>
+<view class="padding-lr-sm padding-top-sm">
+  <view class="padding  bg-blue radius-sm">
+    <free-image src="/static/image/my/logoBig.png" width="200rpx" height="80rpx" ></free-image>
+    <view class="">一款轻量、开箱即用的原生微信小程序UI组件库</view>
+  </view>
 </view>
-<view class="introduce  bg-white">
-  <navigator wx:for="{{list}}" wx:key class="padding solid-bottom flex align-center justify-between" url="/pages/basic/{{item.title}}/{{item.title}}">
-    <view class="flex flex-direction" >
-      <text class="text-lg text-bold">{{item.name}}</text>
-      <text class="free-sub text-grey">{{item.desc}}</text>
-    </view>
-    <free-icon name='{{item.icon}}' color='#0081ff'></free-icon>
+<view class="">
+  <view class="padding-lr-sm padding-top-sm flex  align-center">
+    <view class="text-bold text-gray padding-left-xs">基础样式</view>
+  </view>
+  <navigator wx:for="{{basicStyle}}" wx:key="index" class="" url="/pages/basic/{{item.title}}/{{item.title}}" hover-class="none">
+    <free-list arrow="true" bind:click="detail" >
+      <view class="free-list-name text-bold  padding-right-xs">{{item.name}}</view>
+      <view class="text-Abc  text-bold">{{item.title}}</view>
+    </free-list>
+  </navigator>
+  <view class="padding-lr-sm padding-top-sm flex  align-center">
+    <view class="text-bold text-gray padding-left-xs">基础组件</view>
+  </view>
+  <navigator wx:for="{{basicCompent}}" wx:key="index" class="" url="/pages/basic/{{item.title}}/{{item.title}}" hover-class="none">
+    <free-list arrow="true" bind:click="detail" >
+      <view class="free-list-name text-bold padding-right-xs">{{item.name}}</view>
+      <view class="text-Abc  text-bold">{{item.title}}</view>
+    </free-list>
   </navigator>
 </view> 

@@ -1,6 +1,4 @@
 @import '/static/style/background.wxss';
-
-
 .tag {
 	font-size: 24rpx;
 	vertical-align: middle;

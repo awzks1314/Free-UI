@@ -164,7 +164,7 @@ button::after {
 }
 
 .solid::after {
-	border: 1rpx solid rgba(0, 0, 0, 0.1);
+	border: 2rpx solid rgba(0, 0, 0, 0.1);
 }
 
 .solid-top::after {
@@ -183,23 +183,23 @@ button::after {
 	border-left: 1rpx solid rgba(0, 0, 0, 0.1);
 }
 .solids::after {
-	border: 8rpx solid var(--blue);
+	border: 8rpx solid var(--white);
 }
 
 .solids-top::after {
-	border-top: 8rpx solid var(--blue);
+	border-top: 8rpx solid var(--white);
 }
 
 .solids-right::after {
-	border-right: 8rpx solid var(--blue);
+	border-right: 8rpx solid var(--white);
 }
 
 .solids-bottom::after {
-	border-bottom: 8rpx solid var(--blue);
+	border-bottom: 8rpx solid var(--white);
 }
 
 .solids-left::after {
-	border-left: 8rpx solid var(--blue);
+	border-left: 8rpx solid var(--white);
 }
 /* 虚线 */
 
@@ -224,23 +224,23 @@ button::after {
 }
 
 .dasheds::after {
-	border: 4rpx dashed var(--blue);
+	border: 4rpx dashed var(--white);
 }
 
 .dasheds-top::after {
-	border-top: 4rpx dashed var(--blue);
+	border-top: 4rpx dashed var(--white);
 }
 
 .dasheds-right::after {
-	border-right: 4rpx dashed var(--blue);
+	border-right: 4rpx dashed var(--white);
 }
 
 .dasheds-bottom::after {
-	border-bottom: 4rpx dashed var(--blue);
+	border-bottom: 4rpx dashed var(--white);
 }
 
 .dasheds-left::after {
-	border-left: 4rpx dashed var(--blue);
+	border-left: 4rpx dashed var(--white);
 }
 /* 阴影 */
 
@@ -1227,7 +1227,7 @@ button.icon.lg {
 
 /* 菜单列表 */
 .free-list-name{
-	padding-left: 20rpx;
+	/* padding-left: 20rpx; */
   vertical-align: middle;
 }
 .free-list-right{

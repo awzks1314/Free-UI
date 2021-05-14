@@ -1,1 +1,3 @@
-/* pages/basic/title/title.wxss */
+page{
+  background: #fff;
+}

@@ -4,7 +4,7 @@
   style="width:{{width}};height:{{height}};border-radius:{{radius}};"
   show-menu-by-longpress="{{showMenu}}"
   lazy-load="{{lazy}}"
-  show-menu-by-longpress="{{menu}}"
+  show-menu-by-longpress="{{long}}"
   wx:if="{{src}}"
   bindtap="onPriview"
 ></image>

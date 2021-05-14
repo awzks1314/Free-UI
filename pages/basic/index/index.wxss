@@ -1,9 +1,59 @@
 page{
   background: #fff;
 }
-.header{
-  padding-top:200rpx;
+
+/* .introduce{
+  width: 49%;
+  position: relative;
 }
-.tile{
-  font-size: 60rpx;
+.ribbon1{
+  position: absolute;
+		top: -6rpx;
+		right: 30rpx;
 }
+.ribbon1:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 50rpx solid transparent;
+  border-right: 50rpx solid transparent;
+  border-top: 10rpx solid #F8463F;
+}
+
+.ribbon1 text {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  background: #F8463F;
+  font-size: 14rpx;
+  line-height: 1;
+  padding: 12rpx 8rpx 10rpx;
+  border-top-right-radius: 8rpx;
+  width: 100rpx;
+}
+
+.ribbon1 text:before,
+.ribbon1 text:after {
+  position: absolute;
+  content: "";
+  display: block;
+}
+
+.ribbon1 text:before {
+  background: #F8463F;
+  height: 6rpx;
+  width: 6rpx;
+  left: -6rpx;
+  top: 0;
+}
+
+.ribbon1 text:after {
+  background: #C02031;
+  height: 6rpx;
+  width: 8rpx;
+  border-radius: 8rpx 8rpx 0 0;
+  left: -8rpx;
+  top: 0;
+} */

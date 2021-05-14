@@ -5,13 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    tabs:[
-      {name:'图片模式'},
-      {name:'圆角大小'},
-      {name:'长按预览'},
-      {name:'懒加载'},
-    ],
-    currentTab:0,
     imageList:[
       {name:'scaleToFill',msg:'缩放模式，不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素'},
       {name:'aspectFit',msg:'缩放模式，保持纵横比缩放图片，使图片的长边能完全显示出来。也就是说，可以完整地将图片显示出来。'},
@@ -29,7 +22,11 @@ Page({
       {name:'bottom right',msg:'裁剪模式，不缩放图片，只显示图片的右下边区域'},
     ],
     mode:'scaleToFill',
-    preview:true
+    preview:true,
+    width:'200rpx',
+    height:'200rpx',
+    radius:0,
+    long:true
   },
   getMode(e){
     this.setData({

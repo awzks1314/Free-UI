@@ -323,3 +323,40 @@ page{
 	background-image: var(--gradualOrder);
 	color: var(--white);
 }
+.free-style-list{
+	background-image: url('https://z3.ax1x.com/2021/05/14/grhfMV.png');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+}
+
+.extend-style-text{
+	font-size: 28rpx;
+	text-transform: Capitalize;
+	margin-top: 20rpx;
+	position: relative;
+}
+.extend-style-text::before{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 40rpx;
+	height: 6rpx;
+	background: #fff;
+	bottom: 0;
+	right: 0;
+	opacity: 0.5;
+}
+.extend-style-text::after{
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100rpx;
+	height: 1px;
+	background: #fff;
+	bottom: 0;
+	right: 40rpx;
+	opacity: 0.3;
+}
+

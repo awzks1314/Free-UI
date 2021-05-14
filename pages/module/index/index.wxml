@@ -1,12 +1,49 @@
-<view class="header padding solid-bottom flex flex-direction bg-blue">
-  <text class="tile ">Free UI</text>
-  <text>一款轻量、开箱即用的原生微信小程序UI组件库</text>
+<view class="padding-lr-sm padding-top-sm flex  align-center">
+  <view class="text-bold text-gray padding-left-xs">Form</view>
 </view>
-<view class="">
-  <view class="free-list grid col-3 border">
-    <view wx:for="{{list}}" wx:key="index" class="free-item padding bg-white flex flex-direction justify-center align-center" bindtap="gotoDetail" data-url="{{item.title}}">
-      <free-icon name='{{item.icon}}' color='#0081ff' size='18'></free-icon>
-      <text class="padding-top-xs">{{item.name}}</text>
-    </view>
-  </view>
-</view> 
+<navigator wx:for="{{formList}}" wx:key class="" url="/pages/module/{{item.title}}/{{item.title}}" hover-class="none">
+  <free-list arrow="true" bind:click="detail" >
+    <view class="free-list-name text-bold  padding-right-xs">{{item.name}}</view>
+    <view class="text-Abc  text-bold">{{item.title}}</view>
+  </free-list>
+</navigator> 
+
+<view class="padding-lr-sm padding-top-sm flex  align-center">
+  <view class="text-bold text-gray padding-left-xs">Data Display</view>
+</view>
+<navigator wx:for="{{dataList}}" wx:key class="" url="/pages/module/{{item.title}}/{{item.title}}" hover-class="none">
+  <free-list arrow="true" bind:click="detail" >
+    <view class="free-list-name text-bold  padding-right-xs">{{item.name}}</view>
+    <view class="text-Abc  text-bold">{{item.title}}</view>
+  </free-list>
+</navigator> 
+
+<view class="padding-lr-sm padding-top-sm flex  align-center">
+  <view class="text-bold text-gray padding-left-xs">Navigation</view>
+</view>
+<navigator wx:for="{{navigationList}}" wx:key class="" url="/pages/module/{{item.title}}/{{item.title}}" hover-class="none">
+  <free-list arrow="true" bind:click="detail" >
+    <view class="free-list-name text-bold  padding-right-xs">{{item.name}}</view>
+    <view class="text-Abc  text-bold">{{item.title}}</view>
+  </free-list>
+</navigator> 
+
+<view class="padding-lr-sm padding-top-sm flex  align-center">
+  <view class="text-bold text-gray padding-left-xs">FeedbackList</view>
+</view>
+<navigator wx:for="{{feedbackList}}" wx:key class="" url="/pages/module/{{item.title}}/{{item.title}}" hover-class="none">
+  <free-list arrow="true" bind:click="detail" >
+    <view class="free-list-name text-bold  padding-right-xs">{{item.name}}</view>
+    <view class="text-Abc  text-bold">{{item.title}}</view>
+  </free-list>
+</navigator> 
+
+<view class="padding-lr-sm padding-top-sm flex  align-center">
+  <view class="text-bold text-gray padding-left-xs">OtherList</view>
+</view>
+<navigator wx:for="{{otherList}}" wx:key class="" url="/pages/module/{{item.title}}/{{item.title}}" hover-class="none">
+  <free-list arrow="true" bind:click="detail" >
+    <view class="free-list-name text-bold  padding-right-xs">{{item.name}}</view>
+    <view class="text-Abc  text-bold">{{item.title}}</view>
+  </free-list>
+</navigator> 

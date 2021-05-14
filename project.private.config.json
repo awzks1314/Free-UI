@@ -25,14 +25,26 @@
           "scene": null
         },
         {
-          "name": "pages/basic/image/image",
-          "pathName": "pages/basic/image/image",
+          "name": "pages/basic/border/border",
+          "pathName": "pages/basic/border/border",
           "query": "",
           "scene": null
         },
         {
           "name": "pages/module/index/index",
           "pathName": "pages/module/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my/index/index",
+          "pathName": "pages/my/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my/log/log",
+          "pathName": "pages/my/log/log",
           "query": "",
           "scene": null
         }

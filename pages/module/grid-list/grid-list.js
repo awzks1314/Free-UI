@@ -8,7 +8,7 @@ Page({
     // 列表属性：
     // name：名字 number：角标 image：图片 width：图片宽 height：图片高 color：角标背景
     gridList:[ 
-      {name:'默认样式',number:49,image:''},
+      {name:'默认样式',number:49,image:'/static/image/my/dog.jpg'},
       {name:'数量超99',number:999,image:''},
       {name:'默认颜色',number:18},
       {name:'无角标',number:0,},

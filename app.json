@@ -45,7 +45,8 @@
     "pages/extend/indexes/ceiling/ceiling",
     "pages/module/backTop/backTop",
     "pages/module/subsection/subsection",
-    "pages/module/grid-list/grid-list"
+    "pages/module/grid-list/grid-list",
+    "pages/my/log/log"
   ],
   "tabBar": {
     "color": "#aaaaaa",
@@ -89,9 +90,9 @@
     "free-image": "/components/basic/free-image/free-image"
   },
   "window": {
-    "navigationBarBackgroundColor": "#0081ff",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Free UI",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"
 }

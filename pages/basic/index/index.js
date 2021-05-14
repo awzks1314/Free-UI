@@ -3,14 +3,14 @@ Page({
 
   /**
    * 页面的初始数据
-   */
+   */ 
   data: {
-    list:[
+    basicStyle:[
       {
         name:'布局',
         title:'layout',
         desc:'Flex布局、Grid布局、内外边距',
-        icon:'electronics'
+        icon:'electronics',
       },
       {
         name:'背景',
@@ -19,34 +19,16 @@ Page({
         icon:'home'
       },
       {
-        name:'图片',
-        title:'image',
-        desc:'图片大小、懒加载以及预览等',
-        icon:'picture-filling'
-      },      
-      {
         name:'图标',
         title:'icon',
         desc:'一些内置的图标，直接食用',
         icon:'notification-filling'
       },
       {
-        name:'标题',
-        title:'title',
-        desc:'一些标题样式',
-        icon:'fabulous'
-      },
-      {
         name:'按钮',
         title:'button',
         desc:'高亮、镂空以及各种颜色大小按钮',
         icon:'arrow-up-circle'
-      },
-      {
-        name:'标签',
-        title:'tag',
-        desc:'常用的标签样式',
-        icon:'good'
       },
       {
         name:'边框',
@@ -60,6 +42,29 @@ Page({
         desc:'文本样式、文本颜色、多行省略、特殊文字',
         icon:'edit'
       }
+    ],
+    basicCompent:[
+      {
+        name:'图片',
+        title:'image',
+        desc:'图片大小、懒加载以及预览等',
+        icon:'picture-filling'
+      },      
+      
+      {
+        name:'标题',
+        title:'title',
+        desc:'一些标题样式',
+        icon:'fabulous'
+      },
+      
+      {
+        name:'标签',
+        title:'tag',
+        desc:'常用的标签样式',
+        icon:'good'
+      },
+      
     ]
   },
 

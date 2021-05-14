@@ -10,7 +10,7 @@ Component({
     },
     padding: {
       type: String,
-      value: "26rpx 30rpx"
+      value: "28rpx 32rpx"
     },
     bgcolor:{
       type: String,

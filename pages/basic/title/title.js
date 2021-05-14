@@ -5,14 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    bold:true,
+    titlecolor:'#0081ef',
+    bottomColor:'#0081ef',
+    type:1,
+    icon:'none',
+    bgColor:'#fff'
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  getMode(e){
+    this.setData({
+      [e.currentTarget.dataset.name]:e.detail.value
+    })
   },
   /**
    * 用户点击右上角分享

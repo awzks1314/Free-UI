@@ -1,6 +1,3 @@
-.header{
-  padding-top:200rpx;
-}
-.tile{
-  font-size: 60rpx;
+page{
+  background: #fff;
 }

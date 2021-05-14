@@ -1,33 +1,49 @@
-<free-title title="默认标题"></free-title>
 
-<free-title title="默认标题不加粗" weight="0"></free-title>
+<free-title type="2" title="效果演示"></free-title>
 
-<free-title title="标题背景为蓝" bgColor="#0081ff" titlecolor="#fff" bottomColor="#fff"></free-title>
+<!-- 组件 -->
+<free-title 
+  title="默认标题"
+  bold="{{bold}}"
+  titlecolor="{{titlecolor}}"
+  bottomColor="{{bottomColor}}"
+  type="{{type}}"
+  bgColor="{{bgColor}}"
+  sub="default"
+  
+></free-title>
+<!-- 组件 -->
 
-<view class="solid-top">
-  <free-title title="默认标题" titlecolor="#e54d42"  bottomColor="linear-gradient(45deg, #f43f3b, #ec008c)" width="3"></free-title>
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="标题加粗" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="bold" bold="true"></free-subsection>
 </view>
 
-<view class="solid-top">
-  <free-title title="默认标题" type="2" titlecolor="#0081ff" bottomColor="#0081ff" ></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="标题颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#0081ef','red','orange']}}" bind:click='getMode' data-name="titlecolor" bold="true"></free-subsection>
 </view>
 
-<view class="solid-top">
-  <free-title title="默认标题" type="3" sub="default" titlecolor="#39b54a" bottomColor="#39b54a" ></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="背景颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#fff','yellow','olive','#000']}}" bind:click='getMode' data-name="bgColor" bold="true"></free-subsection>
 </view>
 
-<view class="solid-top">
-  <free-title title="默认标题" type="2" sub="default" titlecolor="#8dc63f" bottomColor="#8dc63f" ></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="底部条颜色(样式1有效)" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#0081ef','red','orange']}}" bind:click='getMode' data-name="bottomColor" bold="true"></free-subsection>
 </view>
 
-<view class="solid-top">
-  <free-title title="带图标标题" type="3" icon="home" titlecolor="#1cbbb4" bottomColor="#1cbbb4" ></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="样式" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['1','2','3']}}" bind:click='getMode' data-name="type" bold="true"></free-subsection>
 </view>
 
-<view class="solid-top">
-  <free-title title="小圆点标题" type="3" icon="dot" titlecolor="#e54d42" bottomColor="#e54d42" weight="0"></free-title>
-</view>
 
-<view class="solid-top">
-  <free-title title="默认标题" type="3" icon="line" titlecolor="#f37b1d" bottomColor="#f37b1d" ></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="其他样式" height="40"></free-title>
+<view class="">
+  <free-title icon="home" type="" title="效果演示"></free-title>
+  <free-title icon="dot" type="" title="效果演示"></free-title>
+  <free-title icon="line" type="" title="效果演示"></free-title>
 </view>

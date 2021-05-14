@@ -1,6 +1,6 @@
-.header{
-  padding-top:200rpx;
+page{
+  background: #fff;
 }
-.tile{
-  font-size: 60rpx;
+.free-item{
+  width: 48%;
 }
