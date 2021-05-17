@@ -6,9 +6,8 @@ App({
         this.globalData.StatusBar = e.statusBarHeight;
         let custom = wx.getMenuButtonBoundingClientRect();
         this.globalData.Custom = custom;  
+        this.globalData.sysInfo = e
         this.globalData.CustomBar = custom.bottom + custom.top - e.statusBarHeight;
-        console.log(custom)
-        console.log(this.globalData.StatusBar)
       }
     })
   },
@@ -16,6 +15,7 @@ App({
     StatusBar: null,
     CustomBar:null,
     Custom:null,
+    sysInfo:null,//可视化窗口高度
     ColorList: [{
       title: '嫣红',
       name: 'red',

@@ -10,7 +10,6 @@
     "pages/basic/border/border",
     "pages/my/index/index",
     "pages/basic/button/button",
-    "pages/basic/button/design",
     "pages/basic/tag/tag",
     "pages/basic/text/text",
     "pages/module/input/input",
@@ -46,7 +45,10 @@
     "pages/module/backTop/backTop",
     "pages/module/subsection/subsection",
     "pages/module/grid-list/grid-list",
-    "pages/my/log/log"
+    "pages/my/log/log",
+    "pages/my/support/support",
+    "pages/my/about/about",
+    "pages/extend/classify/classify"
   ],
   "tabBar": {
     "color": "#aaaaaa",

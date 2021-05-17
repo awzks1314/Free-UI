@@ -25,8 +25,8 @@
           "scene": null
         },
         {
-          "name": "pages/basic/border/border",
-          "pathName": "pages/basic/border/border",
+          "name": "pages/extend/classify/classify",
+          "pathName": "pages/extend/classify/classify",
           "query": "",
           "scene": null
         },
@@ -43,8 +43,8 @@
           "scene": null
         },
         {
-          "name": "pages/my/log/log",
-          "pathName": "pages/my/log/log",
+          "name": "pages/my/about/about",
+          "pathName": "pages/my/about/about",
           "query": "",
           "scene": null
         }

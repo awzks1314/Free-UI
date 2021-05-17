@@ -18,4 +18,20 @@ Page({
       [e.currentTarget.dataset.name]:e.detail.value=='无'?'':e.detail.value
     })
   },
+  showModal(e) {
+    this.setData({
+      modalName: e.currentTarget.dataset.target
+    })
+  },
+  hideModal(e) {
+    this.setData({
+      modalName: null
+    })
+  },
+  SetColor(e) {
+    this.setData({
+      type: e.currentTarget.dataset.color,
+      modalName: null
+    })
+  },
 })

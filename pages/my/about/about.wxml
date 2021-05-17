@@ -1,0 +1,26 @@
+<view class="shadow bg-white padding radius-xs">
+  <view class="text-center text-lg">关于Free UI组件库</view>
+  <view class="padding-tb">
+    Hi，我的朋友，欢迎使用Free UI组件库。
+  </view>
+  <view class="padding-bottom">
+    该项目是一款轻量简洁的微信小程序组件库。该项目定义了一些漂亮使用的基础样式，也提供了一些常用的组件，希望能帮你进行快速开发。
+  </view>
+  <view class="padding-bottom">
+    项目是开源的,地址我已经放到github以及gitee上，部分灵感来源于@ColorUI@ThorUI@uView。只要有时间我就会进行补充更新，或者你有好的想法或者建议也可以联系我，我会加入到项目中。
+  </view>
+
+  <view class="padding-bottom">
+    如果这个项目有帮助到你，或者你觉得很赞，可以赞赏支持一下作者。
+  </view>
+
+  <view class="padding-bottom">
+    更多功能敬请期待！
+  </view>
+
+  <view class="text-center">
+    <navigator url="/pages/my/support/support" hover-class="none">
+      <button class="free-button sm bg-red">支持一下</button>
+    </navigator>
+  </view>
+</view>

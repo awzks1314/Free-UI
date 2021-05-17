@@ -1,0 +1,18 @@
+<free-input 
+  id="input"
+  placeholder='输入您要查找的分类'
+  bgColor="#0081ef"
+  bind:extrea="extrea"
+  bind:input="input"
+  bind:focus="focus"
+  bind:blur = "blur"
+  bind:confirm = "confirm"
+  bind:close = "close"
+></free-input>
+<!-- 左侧 -->
+<scroll-view scroll-y scroll-with-animation class="left-view" scroll-top="{{scrollTop}}" style="height:{{menuHeight}}px">
+  <view wx:for="{{tabbar}}" wx:key="index" id="item" class="left-item {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" catchtap="swichNav">
+    <text>{{item}}</text>
+  </view>
+</scroll-view>
+<!-- 左侧 -->

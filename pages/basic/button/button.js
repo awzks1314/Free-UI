@@ -6,18 +6,35 @@ Page({
    */
   data: {
     ColorList: app.globalData.ColorList,
-    shadow:false,
-    changePlainShow:false
+    size:'',
+    color:'blue',
+    round:'',
+    shadow:'',
+    light:'',
+    line:'',
+    block:'',
+    disabled:false,
+    loading:false
   },
-  changeShadow(e){
+  getMode(e){
     this.setData({
-      shadow: e.detail.value
+      [e.currentTarget.dataset.name]:e.detail.value=='默认'?'':e.detail.value
     })
   },
-  changePlain(e){
+  showModal(e) {
     this.setData({
-      changePlainShow: e.detail.value
+      modalName: e.currentTarget.dataset.target
     })
-  }
-  
+  },
+  hideModal(e) {
+    this.setData({
+      modalName: null
+    })
+  },
+  SetColor(e) {
+    this.setData({
+      color: e.currentTarget.dataset.color,
+      modalName: null
+    })
+  },
 })

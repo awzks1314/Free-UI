@@ -1,3 +1,6 @@
 page{
   background: #fff;
 }
+.extendItem{
+  width: 48%;
+}

@@ -115,7 +115,7 @@
 					<free-icon name="close" size='16' color='#fff'></free-icon>
 				</view>
 			</view>
-			<view class="solid " bindtap="ChooseImage" wx:if="{{imgList.length<4}}">
+			<view class="solids" bindtap="ChooseImage" wx:if="{{imgList.length<4}}">
         <free-icon name="add" class="free-upicon"></free-icon>
 			</view>
 		</view>

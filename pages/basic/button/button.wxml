@@ -1,87 +1,78 @@
-<view class="free-bar  bg-white solid-bottom flex justify-between">
-  <view class="free-title ">
-    <free-icon name='arrow-right-filling' color='#0081ff' size='18'></free-icon>
-    <text>按钮大小</text>
-  </view>
-  <navigator class="free-title" url="design" hover-class="none">
-    <free-icon name='setting'  size='18'></free-icon>
-    <text class="text-df">设计</text>
-  </navigator>
+<free-title type="2" title="效果演示"></free-title>
+<!-- 按钮 -->
+<view class="text-center">
+  <button class="free-button   {{line?line+'-'+color:'bg-'+color}}  {{size}} {{round}} {{shadow}} {{light}} {{block}}" 
+  disabled="{{disabled}}"
+  loading="{{loading}}"
+  >
+  <!-- <free-icon name='arrow-right-filling' color='#fff' size='18'></free-icon> -->
+  默认按钮</button>
+
+  <view class="padding text-center"> class="free-button<text wx:if="{{color}}"> {{line?line:'bg'}}-{{color}} {{round}} {{light}} {{size}} {{shadow}} {{block}} {{disabled?'disabled':''}} {{loading?'loading':''}}</text>" </view>
 </view>
-<view class="padding flex justify-between align-center">
-  <button class="free-button round sm bg-blue">小尺寸</button>
-  <button class="free-button round bg-blue">默认</button>
-  <button class="free-button round lg bg-blue">大尺寸</button>
-</view>
-<view class="free-bar  bg-white solid-bottom solid-top">
-  <view class="free-title ">
-    <free-icon name='arrow-right-filling' color='#0081ff' size='18'></free-icon>
-    <text>按钮形状</text>
-  </view>
-</view>
-<view class="padding flex justify-between align-center">
-  <button class="free-button bg-blue">默认</button>
-  <button class="free-button round bg-blue">圆角</button>
-</view>
-<view class="free-bar  bg-white solid-bottom solid-top">
-  <view class="free-title ">
-    <free-icon name='arrow-right-filling' color='#0081ff' size='18'></free-icon>
-    <text>按钮颜色</text>
-  </view>
-  <view class="free-title">
-    <text class="text-df margin-right-sm">阴影</text>
-    <switch class="sm" bindchange="changeShadow"></switch>
-  </view>
-  <view class="free-title">
-    <text class="text-df margin-right-sm">高亮</text>
-    <switch class="sm" bindchange="changePlain"></switch>
-  </view>
-</view>
-<view class="grid col-5 padding-sm">
-  <view class="margin-tb-sm text-center" wx:for="{{ColorList}}" wx:key="index">
-    <button class="free-button round bg-{{item.name}} {{changePlainShow?'light':''}} {{shadow?'shadow':''}}">{{item.title}}</button>
-  </view>
-</view>
-<view class="free-bar  bg-white solid-bottom solid-top">
-  <view class="free-title ">
-    <free-icon name='arrow-right-filling' color='#0081ff' size='18'></free-icon>
-    <text>按钮镂空</text>
-  </view>
-</view>
-<view class="grid col-5 padding-sm">
-  <view class="margin-tb-sm text-center" wx:for="{{ColorList}}" wx:key="index">
-    <button class="free-button round line-{{item.name}} {{changePlainShow?'light':''}} {{shadow?'shadow':''}}">{{item.title}}</button>
-  </view>
-</view>
-<view class="free-bar  bg-white solid-bottom solid-top">
-  <view class="free-title ">
-    <free-icon name='arrow-right-filling' color='#0081ff' size='18'></free-icon>
-    <text>块状按钮</text>
-  </view>
-</view>
-<view class="padding flex flex-direction">
-  <button class="free-button bg-blue lg margin-bottom">海蓝</button>
-  <button class="free-button bg-red lg margin-bottom round">嫣红</button>
-</view>
-<view class="free-bar  bg-white solid-bottom solid-top">
-  <view class="free-title ">
-    <free-icon name='arrow-right-filling' color='#0081ff' size='18'></free-icon>
-    <text>禁用按钮</text>
-  </view>
-</view>
-<view class="padding ">
-  <button class="free-button block bg-blue margin-bottom lg" disabled type="">无效状态</button>
-  <button class="free-button block line-red lg" disabled >无效状态</button>
-</view>
-<view class="free-bar  bg-white solid-bottom solid-top">
-  <view class="free-title ">
-    <free-icon name='arrow-right-filling' color='#0081ff' size='18'></free-icon>
-    <text>图标按钮</text>
-  </view>
-</view>
+<!-- 按钮 -->
+
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮大小" height="40"></free-title>
 <view class="padding">
-  <button class="free-button block bg-blue lg margin-bottom">
-    <free-icon name='arrow-right-filling' color='#fff' size='18'></free-icon> 图标
-  </button>
-  <button class="free-button block bg-red margin-tb-sm lg" loading> 微信加载</button>
+  <free-subsection list="{{['默认','sm', 'lg']}}" bind:click='getMode' data-name="size" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮颜色" height="40"></free-title>
+<view class="free-form-group" bindtap="showModal" data-target="ColorModal">
+  <view class="title">选择颜色</view>
+  <view class="padding bg-{{color}} solid radius shadow-blur"></view>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮形状" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['默认','round']}}" bind:click='getMode' data-name="round" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮高亮" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['默认','light']}}" bind:click='getMode' data-name="light" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮阴影" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['默认','shadow']}}" bind:click='getMode' data-name="shadow" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮镂空" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['默认','line','lines']}}" bind:click='getMode' data-name="line" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮加载" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="loading" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="块级按钮" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['默认','block']}}" bind:click='getMode' data-name="block" bold="true"></free-subsection>
+</view>
+
+
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮禁用" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="disabled" bold="true"></free-subsection>
+</view>
+
+<view class="free-modal {{modalName=='ColorModal'?'show':''}}">
+  <view class="free-dialog">
+    <view class="free-bar justify-end solid-bottom">
+      <view class="content">选择颜色</view>
+      <view class="free-title" bindtap="hideModal">
+        <free-icon name='close' color='#0081ff' size='18'></free-icon>
+      </view>
+    </view>
+    <view class="grid col-5 padding">
+      <view class="padding-xs" wx:for="{{ColorList}}" wx:key bindtap="SetColor" data-color="{{item.name}}" wx:if="{{item.name!='white'}}">
+        <view class="padding-tb bg-{{item.name}} radius"> {{item.title}} </view>
+      </view>
+    </view>
+  </view>
 </view>

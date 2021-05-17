@@ -1,38 +1,18 @@
 <view class=" bg-white padding">
   <free-timeline-list>
-    <free-timeline-item>
+    <free-timeline-item wx:for="{{logData}}" wx:key="index">
       <view slot="icon" class="">
-        <free-icon name="calendar" size="18" color="#0081ef"></free-icon>
+        <free-icon name="calendar" size="18" color="{{index == 0 ?'#0081ef':''}}"></free-icon>
       </view>
       <view slot="content" class="bg-gradual-blue  light padding-sm radius-sm  ">
         <view class="flex ">
           <view class="flex align-center  radius-sm text-sm title">
-            <text class="padding-xs bg-white " style="">v0.0.1</text>
-            <text class="padding-xs "> Apr 23 2021</text>
+            <text class="padding-xs bg-white " style="">{{item.version}}</text>
+            <text class="padding-xs ">{{item.time}}</text>
           </view>
         </view>
         <view class="padding-top-sm flex flex-direction">
-          <text>1.初始化项目</text>
-          <text>2.初始化项目</text>
-        </view>
-      </view>
-    </free-timeline-item>
-  </free-timeline-list>
-  <free-timeline-list>
-    <free-timeline-item>
-      <view slot="icon" class="">
-        <free-icon name="calendar" size="18" color="#0081ef"></free-icon>
-      </view>
-      <view slot="content" class="bg-gradual-blue  light padding-sm radius-sm  ">
-        <view class="flex ">
-          <view class="flex align-center  radius-sm text-sm title">
-            <text class="padding-xs bg-white " style="">v0.0.1</text>
-            <text class="padding-xs "> Apr 23 2021</text>
-          </view>
-        </view>
-        <view class="padding-top-sm flex flex-direction">
-          <text>1.初始化项目</text>
-          <text>2.初始化项目</text>
+          <text wx:for="{{item.content}}" wx:key="index" wx:for-item="data">{{data}}</text>
         </view>
       </view>
     </free-timeline-item>

@@ -1,0 +1,7 @@
+page{
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  padding-top: 160rpx;
+}

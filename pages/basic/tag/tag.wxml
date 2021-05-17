@@ -13,11 +13,12 @@
 
 <free-title type="2" title="参数配置"></free-title>
 <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="颜色" height="40"></free-title>
-<view class="padding">
-  <free-subsection list="{{['red', 'orange','yellow','olive','green','mauve']}}" bind:click='getMode' data-name="type" bold="true"></free-subsection>
+<view class="free-form-group" bindtap="showModal" data-target="ColorModal">
+  <view class="title">选择颜色</view>
+  <view class="padding bg-{{type}} solid radius shadow-blur"></view>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="颜色" height="40"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="标签大小" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['默认','sm']}}" bind:click='getMode' data-name="size" bold="true"></free-subsection>
 </view>
@@ -43,4 +44,19 @@
   <free-subsection list="{{['无','#0081ef','#000']}}" bind:click='getMode' data-name="iconColor" bold="true"></free-subsection>
 </view>
 
+<view class="free-modal {{modalName=='ColorModal'?'show':''}}">
+  <view class="free-dialog">
+    <view class="free-bar justify-end solid-bottom">
+      <view class="content">选择颜色</view>
+      <view class="free-title" bindtap="hideModal">
+        <free-icon name='close' color='#0081ff' size='18'></free-icon>
+      </view>
+    </view>
+    <view class="grid col-5 padding">
+      <view class="padding-xs" wx:for="{{ColorList}}" wx:key bindtap="SetColor" data-color="{{item.name}}" wx:if="{{item.name!='white'}}">
+        <view class="padding-tb bg-{{item.name}} radius"> {{item.title}} </view>
+      </view>
+    </view>
+  </view>
+</view>
 

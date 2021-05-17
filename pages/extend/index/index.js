@@ -11,15 +11,17 @@ Page({
         title:'indexes',
         desc:'城市选择、通讯录、通讯录吸顶效果',
         type:'icon',
+        color:'red',
         icon:'electronics'
       },
-      // {
-      //   name:'布局',
-      //   title:'layout',
-      //   desc:'Flex布局、Grid布局、内外边距',
-      //   type:'icon',
-      //   icon:'electronics'
-      // },
+      {
+        name:'商品分类',
+        title:'classify',
+        desc:'',
+        type:'icon',
+        color:'orange',
+        icon:'electronics'
+      },
       // {
       //   name:'布局',
       //   title:'layout',

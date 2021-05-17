@@ -2,7 +2,6 @@
   src="{{src}}"
   mode="{{mode}}"
   style="width:{{width}};height:{{height}};border-radius:{{radius}};"
-  show-menu-by-longpress="{{showMenu}}"
   lazy-load="{{lazy}}"
   show-menu-by-longpress="{{long}}"
   wx:if="{{src}}"

@@ -183,23 +183,23 @@ button::after {
 	border-left: 1rpx solid rgba(0, 0, 0, 0.1);
 }
 .solids::after {
-	border: 8rpx solid var(--white);
+	border: 8rpx solid #eee;
 }
 
 .solids-top::after {
-	border-top: 8rpx solid var(--white);
+	border-top: 8rpx solid #eee;
 }
 
 .solids-right::after {
-	border-right: 8rpx solid var(--white);
+	border-right: 8rpx solid #eee;
 }
 
 .solids-bottom::after {
-	border-bottom: 8rpx solid var(--white);
+	border-bottom: 8rpx solid #eee;
 }
 
 .solids-left::after {
-	border-left: 8rpx solid var(--white);
+	border-left: 8rpx solid #eee;
 }
 /* 虚线 */
 

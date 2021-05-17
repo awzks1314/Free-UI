@@ -1,9 +1,8 @@
 
-<view class="extend-box padding ">
-  <navigator wx:for="{{list}}" wx:key class="free-style-list bg-blue padding radius-sm  justify-between" url="/pages/extend/{{item.title}}/{{item.title}}">
+<view class="extend-box padding flex flex-wrap justify-between">
+  <navigator wx:for="{{list}}" wx:key class="extendItem free-style-list bg-{{item.color}} padding radius-sm margin-bottom justify-between" url="/pages/extend/{{item.title}}/{{item.title}}">
     <view class="flex align-center justify-between" >
       <text class="text-lg ">{{item.name}}</text>
-      <free-icon name='{{item.icon}}' color='#0text-cut-3081ff'></free-icon>
     </view>
     <view class="extend-style-text">{{item.title}}
     </view>

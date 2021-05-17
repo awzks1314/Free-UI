@@ -24,6 +24,11 @@ Page({
       })
     } 
   },
+  support(){
+    wx.previewImage({
+      urls: ['cloud://freeui-8gr0qrob21525637.6672-freeui-8gr0qrob21525637-1305934642/wechat.jpg']
+    })
+  },
   /**
    * 用户点击右上角分享
    */
