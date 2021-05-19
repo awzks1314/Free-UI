@@ -1,0 +1,51 @@
+page{
+  background: #fff;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.left-view{
+  width: 200rpx;
+  /* position: fixed; */
+  left: 0;
+  top: 100rpx;
+  z-index: 10;
+}
+
+.left-item {
+  width: 200rpx;
+  height: 110rpx;
+  background: #f6f6f6;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26rpx;
+  color: #444;
+  font-weight: 400;
+}
+
+.active {
+  position: relative;
+  color: #000;
+  font-size: 30rpx;
+  font-weight: 600;
+  background: #fcfcfc;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  border-left: 8rpx solid #0081ef;
+  height: 30rpx;
+  left: 0;
+}
+.right-view{
+  width: 100%;
+}
+.swiper{
+  width: 100%;
+  height: 200rpx;
+}

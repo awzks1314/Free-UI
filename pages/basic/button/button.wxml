@@ -70,7 +70,7 @@
       </view>
     </view>
     <view class="grid col-5 padding">
-      <view class="padding-xs" wx:for="{{ColorList}}" wx:key bindtap="SetColor" data-color="{{item.name}}" wx:if="{{item.name!='white'}}">
+      <view class="padding-xs" wx:for="{{ColorList}}" wx:key="index" bindtap="SetColor" data-color="{{item.name}}" wx:if="{{item.name!='white'}}">
         <view class="padding-tb bg-{{item.name}} radius"> {{item.title}} </view>
       </view>
     </view>

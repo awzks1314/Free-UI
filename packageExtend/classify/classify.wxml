@@ -1,0 +1,16 @@
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>垂直分类(左右独立)</text>
+  </view>
+  <view class="free-title ">
+    <button class="free-button bg-blue" bindtap="look" data-url="/packageExtend/classify/class-one/class-one">查看实例</button>
+  </view>
+</view>
+<view class="free-bar  bg-white solid-bottom">
+  <view class="free-title ">
+    <text>垂直分类(左右联动)</text>
+  </view>
+  <view class="free-title ">
+    <button class="free-button bg-blue" bindtap="look" data-url="/packageExtend/classify/class-two/class-two">查看实例</button>
+  </view>
+</view>

@@ -7,11 +7,11 @@ Component({
     },
     size: {
       type: [Number,String],
-      value: 28
+      value: 20
     },
     color: {
       type: String,
-      value: '#999'
+      value: '#aaaaaa'
     },
     bold:{
       type:Boolean,

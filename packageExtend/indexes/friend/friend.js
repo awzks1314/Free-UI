@@ -1,4 +1,5 @@
-const city = require("../../../../utils/city.js")
+const friend = require("../../../utils/friend.js")
+
 Page({
 
   /**
@@ -6,8 +7,6 @@ Page({
    */
   data: {
     value:'',
-    localCity:'',//当前定位城市
-    hotCity: ['北京', '上海', '广州', '深圳', '杭州', '长沙', '武汉', '厦门', '西安', '昆明', '成都', '重庆'], // 热门城市
     lists:[],//城市列表
     searchResult:[],//查找列表
     winHeight: 0,
@@ -31,8 +30,8 @@ Page({
             winHeight:winHeight - 50,
             indexBarHeight: barHeight ,
             indexBarItemHeight: barHeight / 25,
-            titleHeight: res.windowWidth / 750 * 132,
-            lists: city.list
+            titleHeight: res.windowWidth / 750 * 116,
+            lists: friend.list
           })
         }
       })
@@ -56,10 +55,13 @@ Page({
   // 查找
   searchCity(){
     let result = []
-    city.list.forEach((item1, index1) => {
+    friend.list.forEach((item1, index1) => {
       item1.data.forEach((item2, index2) => {
         if (item2.keyword.indexOf(this.data.value.toLocaleUpperCase()) !== -1) {
-          result.push(item2.cityName)
+          result.push({
+            name: item2.name,
+            mobile: item2.mobile
+          })
         }
       })
     })
@@ -71,9 +73,16 @@ Page({
   detail(e){
     wx.showModal({
       confirmText: '好的',
-      content: `您选择了${e.currentTarget.dataset.name}`,
-      showCancel: false,
-      title: '提示'
+      content: `是否联系${e.currentTarget.dataset.name}`,
+      showCancel: true,
+      title: '提示',
+      success:(res => {
+        if(res.confirm){
+          wx.makePhoneCall({
+            phoneNumber: e.currentTarget.dataset.mobile,
+          })
+        }
+      })
     })
   },
   touchStart(e) {
@@ -113,7 +122,6 @@ Page({
       touchmoveIndex: -1
     })
   },
-
   /**
    * 用户点击右上角分享
    */

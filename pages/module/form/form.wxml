@@ -10,7 +10,7 @@
 <view class="free-form-group ">
   <view class="title">收货地址</view>
   <input placeholder="请输入内容"></input>
-  <free-icon name="home-filling" size='20' color="orange"></free-icon>
+  <free-icon name="locationfill" color="orange"></free-icon>
 </view>
 <view class="free-form-group ">
   <view class="title">手机号</view>
@@ -109,7 +109,7 @@
 </view>
 <view class="free-form-group">
 		<view class="grid col-4 grid-square flex-sub">
-			<view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+			<view class="bg-img" wx:for="{{imgList}}" wx:key="index" bindtap="ViewImage" data-url="{{imgList[index]}}">
 				<image src='{{imgList[index]}}' mode='aspectFill'></image>
 				<view class="free-tag bg-red" catchtap="DelImg" data-index="{{index}}">
 					<free-icon name="close" size='16' color='#fff'></free-icon>

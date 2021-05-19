@@ -37,7 +37,7 @@
 
 <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="自定义图标" height="40"></free-title>
 <view class="padding">
-  <free-subsection list="{{['top', 'arrow-up-bold','home']}}" bind:click='getMode' data-name="icon" bold="true"></free-subsection>
+  <free-subsection list="{{['top', 'triangleupfill','home']}}" bind:click='getMode' data-name="icon" bold="true"></free-subsection>
 </view>
 
 

@@ -8,7 +8,7 @@ Component({
     },
     //当前选中
     current: {
-      type: Number,
+      type: [Number,String],
       value: 0
     },
     //禁用点击

@@ -26,7 +26,7 @@
     </view>
 </free-navBar>
 
-<free-navBar title='自定义样式' background='#fff'  back="{{true}}" backIcon="arrow-left-filling" home="{{true}}" homeIcon="good" bindback="handlerGobackClick"  bindhome="handlerGohomeClick"  wx:if='{{index == 7}}'>
+<free-navBar title='自定义样式' background='#fff'  back="{{true}}" backIcon="roundleftfill" home="{{true}}" homeIcon="scan" bindback="handlerGobackClick"  bindhome="handlerGohomeClick"  wx:if='{{index == 7}}'>
 </free-navBar>
 
 <view style='height:0;'>

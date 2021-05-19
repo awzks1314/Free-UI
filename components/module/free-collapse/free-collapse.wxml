@@ -5,7 +5,7 @@
         <free-list bgcolor="{{hdBgColor}}" >
           <view class="free-list-name" slot="title">{{item.title}}</view>
         </free-list>
-        <free-icon name="arrow-up-bold" size="18" class="free-icon {{item.open?'free-icon-active':''}}" wx:if="{{arrow}}" color="{{arrowColor}}"></free-icon>
+        <free-icon name="fold"  class="free-icon {{item.open?'free-icon-active':''}}" wx:if="{{arrow}}" color="{{arrowColor}}"></free-icon>
       </view>
     </view>
     <view class="free-collapse-body_box" style="height:{{item.open?height:'0rpx'}};">

@@ -8,19 +8,19 @@ Page({
     list:[],
     listIcon:[
       {
-        icon:'play',
+        icon:'playfill',
         name:'开始'
       },
       {
-        icon:'loading',
+        icon:'pullright',
         name:'第二步'
       },
       {
-        icon:'time',
+        icon:'pullright',
         name:'第三步'
       },
       {
-        icon:'security',
+        icon:'roundcheckfill',
         name:'第四步'
       },
     ],

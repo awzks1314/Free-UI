@@ -1,14 +1,16 @@
-const friend = require("../../../../utils/friend.js")
+const city = require("../../../utils/city.js")
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    scrollTop:0,
     value:'',
+    localCity:'',//当前定位城市
+    hotCity: ['北京', '上海', '广州', '深圳', '杭州', '长沙', '武汉', '厦门', '西安', '昆明', '成都', '重庆'], // 热门城市
     lists:[],//城市列表
     searchResult:[],//查找列表
+    winHeight: 0,
     titleHeight: 0, // 索引二字距离窗口顶部的高度
     indexBarHeight: 0, // 索引表高度
     indexBarItemHeight: 0, // 索引表子项的高度
@@ -22,31 +24,19 @@ Page({
       wx.getSystemInfo({
         success: function(res) {
           let winHeight = res.windowHeight
+          console.log(res)
           let barHeight = winHeight - res.windowWidth / 750 * 232
           // 上下距离232/2px
-          that.setData({            
-            indexBarHeight: barHeight,
+          that.setData({      
+            winHeight:winHeight - 50,
+            indexBarHeight: barHeight ,
             indexBarItemHeight: barHeight / 25,
             titleHeight: res.windowWidth / 750 * 132,
-            lists: friend.list
+            lists: city.list
           })
         }
       })
     }, 50)
-  },
-  stickyChange: function(e) {
-    let index = e.detail.index;
-    let key = `lists[${index}].stickyTop`
-    this.setData({
-      [key]: e.detail.top
-    })
-  },
-  //页面滚动执行方式
-  onPageScroll(e) {
-    console.log(e)
-    this.setData({
-      scrollTop: e.scrollTop
-    })
   },
   // 得到value
   getInputValue(e){
@@ -62,21 +52,14 @@ Page({
     this.setData({
       value:''
     })
-    wx.pageScrollTo({
-      top:0,
-      duration: 500,
-    })
   },
   // 查找
   searchCity(){
     let result = []
-    friend.list.forEach((item1, index1) => {
+    city.list.forEach((item1, index1) => {
       item1.data.forEach((item2, index2) => {
         if (item2.keyword.indexOf(this.data.value.toLocaleUpperCase()) !== -1) {
-          result.push({
-            name: item2.name,
-            mobile: item2.mobile
-          })
+          result.push(item2.cityName)
         }
       })
     })
@@ -84,53 +67,37 @@ Page({
       searchResult: result
     })
   },
-  // 点击
+  // 点击城市
   detail(e){
     wx.showModal({
       confirmText: '好的',
-      content: `是否联系${e.currentTarget.dataset.name}`,
-      showCancel: true,
-      title: '提示',
-      success:(res => {
-        if(res.confirm){
-          wx.makePhoneCall({
-            phoneNumber: e.currentTarget.dataset.mobile,
-          })
-        }
-      })
+      content: `您选择了${e.currentTarget.dataset.name}`,
+      showCancel: false,
+      title: '提示'
     })
   },
   touchStart(e) {
     this.setData({
       touchmove: true
     })
-    let pageY = e.touches[0].pageY - this.data.scrollTop;
-    // (当前距离 - 距离顶部距离)/每一个高度 = 算出index值。
+    let pageY = e.touches[0].pageY
     let index = Math.floor((pageY - this.data.titleHeight) / this.data.indexBarItemHeight)
     let item = this.data.lists[index]
     if (item) {
       this.setData({
         scrollViewId: item.letter,
         touchmoveIndex: index
-      })
-      wx.pageScrollTo({
-        scrollTop: this.data.lists[index].stickyTop,
-        duration: 0
       })
     }
   },
   touchMove(e) {
-    let pageY = e.touches[0].pageY - this.data.scrollTop;
+    let pageY = e.touches[0].pageY;
     let index = Math.floor((pageY - this.data.titleHeight) / this.data.indexBarItemHeight)
     let item = this.data.lists[index]
     if (item) {
       this.setData({
         scrollViewId: item.letter,
         touchmoveIndex: index
-      })
-      wx.pageScrollTo({
-        scrollTop: this.data.lists[index].stickyTop,
-        duration: 0
       })
     }
   },
@@ -146,6 +113,7 @@ Page({
       touchmoveIndex: -1
     })
   },
+
   /**
    * 用户点击右上角分享
    */

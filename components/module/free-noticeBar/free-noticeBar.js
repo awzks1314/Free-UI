@@ -10,7 +10,7 @@ Component({
     },
     leftIcon:{
       type:String,
-      value:'notification'
+      value:'notificationfill'
     },
     iconColor:{
       type:String,

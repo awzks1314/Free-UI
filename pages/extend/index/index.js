@@ -15,20 +15,17 @@ Page({
         icon:'electronics'
       },
       {
-        name:'商品分类',
+        name:'分类选择',
         title:'classify',
         desc:'',
         type:'icon',
         color:'orange',
         icon:'electronics'
       },
-      // {
-      //   name:'布局',
-      //   title:'layout',
-      //   desc:'Flex布局、Grid布局、内外边距',
-      //   type:'icon',
-      //   icon:'electronics'
-      // },
+      {
+        name:'收货地址',
+        title:'address'
+      },
     ]
   },
   /**

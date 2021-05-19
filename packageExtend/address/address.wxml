@@ -1,0 +1,33 @@
+<view class="padding">
+  <view wx:for="{{addressList}}" wx:key="index" class="solid margin-bottom padding radius-xs">
+    <view class="flex align-center margin-bottom-xs">
+      <text>{{item.name}}</text>
+      <text class="padding-left">{{item.phone}}</text>
+    </view>
+    <view class="text-gray text-cut-2 text-sm padding-bottom-sm solid-bottom">{{item.address}}</view>
+    <view class="margin-top-sm flex align-center justify-between text-gray">
+      <view class="flex">
+        <free-icon name="{{index==0?'roundcheckfill':'round'}}" size="16" ></free-icon>
+        <text class="text-sm padding-left-xs">默认地址</text>
+      </view>
+      <view class="flex align-center justify-between">
+        <view class="flex">
+          <free-icon name="edit" size="16" ></free-icon>
+          <text class="text-sm padding-left-xs">编辑地址</text>
+        </view>
+        <view class="flex padding-left">
+          <free-icon name="delete" size="16" ></free-icon>
+          <text class="text-sm padding-left-xs">删除地址</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="positionView"></view>
+<view class="bottomBtn padding-lr">
+  <button class="free-icon block bg-blue round lg flex align-center justify-center">
+    <free-icon name="add" color="#fff" size="20"></free-icon>
+    新增收货地址
+  </button>
+</view>

@@ -1,7 +1,6 @@
 {
   "navigationBarTitleText":"折叠面板",
   "usingComponents": {
-    "free-collapse":"/components/module/free-collapse/free-collapse",
-    "free-list":"/components/module/free-list/free-list"
+    "free-collapse":"/components/module/free-collapse/free-collapse"    
   }
 }

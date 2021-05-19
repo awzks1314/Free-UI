@@ -6,21 +6,21 @@
 </view>
 <view class="">
   <view class="padding-lr-sm padding-top-sm flex  align-center">
-    <view class="text-bold text-gray padding-left-xs">基础样式</view>
+    <view class=" text-gray padding-left-xs">Basic Style</view>
   </view>
   <navigator wx:for="{{basicStyle}}" wx:key="index" class="" url="/pages/basic/{{item.title}}/{{item.title}}" hover-class="none">
     <free-list arrow="true" bind:click="detail" >
-      <view class="free-list-name text-bold  padding-right-xs">{{item.name}}</view>
-      <view class="text-Abc  text-bold">{{item.title}}</view>
+      <view class="free-list-name  padding-right-xs">{{item.name}}</view>
+      <view class="text-Abc  ">{{item.title}}</view>
     </free-list>
   </navigator>
   <view class="padding-lr-sm padding-top-sm flex  align-center">
-    <view class="text-bold text-gray padding-left-xs">基础组件</view>
+    <view class=" text-gray padding-left-xs">Basic Component</view>
   </view>
   <navigator wx:for="{{basicCompent}}" wx:key="index" class="" url="/pages/basic/{{item.title}}/{{item.title}}" hover-class="none">
     <free-list arrow="true" bind:click="detail" >
-      <view class="free-list-name text-bold padding-right-xs">{{item.name}}</view>
-      <view class="text-Abc  text-bold">{{item.title}}</view>
+      <view class="free-list-name  padding-right-xs">{{item.name}}</view>
+      <view class="text-Abc  ">{{item.title}}</view>
     </free-list>
   </navigator>
 </view> 

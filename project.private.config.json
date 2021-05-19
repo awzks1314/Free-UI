@@ -25,8 +25,8 @@
           "scene": null
         },
         {
-          "name": "pages/extend/classify/classify",
-          "pathName": "pages/extend/classify/classify",
+          "name": "pages/basic/icon/icon",
+          "pathName": "pages/basic/icon/icon",
           "query": "",
           "scene": null
         },
@@ -37,14 +37,8 @@
           "scene": null
         },
         {
-          "name": "pages/my/index/index",
-          "pathName": "pages/my/index/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/my/about/about",
-          "pathName": "pages/my/about/about",
+          "name": "packageExtend/address/address",
+          "pathName": "packageExtend/address/address",
           "query": "",
           "scene": null
         }

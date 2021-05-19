@@ -22,7 +22,7 @@ Page({
         name:'图标',
         title:'icon',
         desc:'一些内置的图标，直接食用',
-        icon:'notification-filling'
+        icon:'noticefill'
       },
       {
         name:'按钮',

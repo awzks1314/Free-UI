@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText":"左右独立",
+  "usingComponents": {
+    "free-input":"/components/module/free-input/free-input",
+    "free-list-grid":"/components/module/free-list-grid/free-list-grid"
+  }
+} 

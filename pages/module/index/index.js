@@ -71,7 +71,7 @@ Page({
         icon:'home',
       },
       {
-        name:'自定义tabbar',
+        name:'自定义',
         title:'tabbar',
         icon:'home',
       },

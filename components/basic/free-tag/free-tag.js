@@ -43,7 +43,7 @@ Component({
     // 图标颜色
     iconColor:{
       type:String,
-      value:''
+      value:'#'
     },
   },
 

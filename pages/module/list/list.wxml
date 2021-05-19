@@ -8,7 +8,7 @@
 
   <!-- grid组件 -->
   <free-list arrow="{{arrow}}" color="{{color}}" size="{{size}}">
-    <free-icon name='home' size='24' color='blue' wx:if="{{icon && image=='icon'}}"></free-icon>
+    <free-icon name='home'  color='blue' wx:if="{{icon && image=='icon'}}"></free-icon>
     <free-image src="/static/image/my/dog.jpg" width="60rpx" height="60rpx" wx:if="{{image == 'image'}}"></free-image>
     <!-- 标题+注释 -->
     <view class="free-list-name flex flex-direction">

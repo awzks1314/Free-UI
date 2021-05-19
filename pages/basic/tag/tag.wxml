@@ -35,7 +35,7 @@
 
 <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="图标" height="40"></free-title>
 <view class="padding">
-  <free-subsection list="{{['无','home','electronics']}}" bind:click='getMode' data-name="icon" bold="true"></free-subsection>
+  <free-subsection list="{{['无','add','apps']}}" bind:click='getMode' data-name="icon" bold="true"></free-subsection>
 </view>
 
 
@@ -53,7 +53,7 @@
       </view>
     </view>
     <view class="grid col-5 padding">
-      <view class="padding-xs" wx:for="{{ColorList}}" wx:key bindtap="SetColor" data-color="{{item.name}}" wx:if="{{item.name!='white'}}">
+      <view class="padding-xs" wx:for="{{ColorList}}" wx:key="index" bindtap="SetColor" data-color="{{item.name}}" wx:if="{{item.name!='white'}}">
         <view class="padding-tb bg-{{item.name}} radius"> {{item.title}} </view>
       </view>
     </view>

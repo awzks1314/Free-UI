@@ -30,7 +30,7 @@ Component({
     // 返回图标
     backIcon:{
       type:String,
-      value:'arrow-left-bold'
+      value:'back'
     },
     home: {
       type: Boolean,
@@ -38,7 +38,7 @@ Component({
     },
     homeIcon:{
       type:String,
-      value:'home-filling'
+      value:'homefill'
     },
     iconTheme: {
       type: String,

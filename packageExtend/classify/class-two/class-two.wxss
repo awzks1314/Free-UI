@@ -6,9 +6,13 @@ page{
   height: 0;
   color: transparent;
 }
+.menu-wrap{
+  display: flex;
+  overflow: hidden;
+}
 .left-view{
   width: 200rpx;
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   top: 100rpx;
   z-index: 10;
@@ -41,4 +45,11 @@ page{
   border-left: 8rpx solid #0081ef;
   height: 30rpx;
   left: 0;
+}
+.right-view{
+  width: 100%;
+}
+.swiper{
+  width: 100%;
+  height: 200rpx;
 }

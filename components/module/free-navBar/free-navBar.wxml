@@ -18,7 +18,7 @@
                         <free-icon name='{{backIcon}}' size='18' color="{{iconTheme}}"></free-icon>
                     </view>
                     <view bindtap="home" class="free-nav-bar__button ">
-                        <free-icon name='{{homeIcon}}' size='20' color="{{iconTheme}}"></free-icon>
+                        <free-icon name='{{homeIcon}}' color="{{iconTheme}}"></free-icon>
                     </view>
                 </view>
             </block>

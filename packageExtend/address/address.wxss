@@ -1,0 +1,9 @@
+page{
+  background: #fff;
+}
+.bottomBtn{
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  bottom: 30rpx;
+}

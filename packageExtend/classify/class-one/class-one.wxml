@@ -1,0 +1,43 @@
+<free-input 
+  id="input"
+  placeholder='输入您要查找的分类'
+ 
+  bind:extrea="extrea"
+  bind:input="input"
+  bind:focus="focus"
+  bind:blur = "blur"
+  bind:confirm = "confirm"
+  bind:close = "close"
+></free-input>
+<view class="flex solid-top">
+  <!-- 左侧 -->
+<scroll-view scroll-y scroll-with-animation class="left-view" scroll-top="{{scrollTop}}" style="height:{{menuHeight}}px">
+  <view wx:for="{{tabbar}}" wx:key="index" id="item" class="left-item {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" catchtap="swichNav">
+    <text>{{item}}</text>
+  </view>
+</scroll-view>
+<!-- 左侧 --> 
+
+<block class="" wx:for="{{tabbar}}" wx:key="index">
+  <view wx:if="{{currentTab == index}}" class="right-view ">
+    <!-- 轮播 -->
+    <swiper class="swiper {{true?'square-dot':'round-dot'}} padding-sm" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+      <swiper-item wx:for="{{swiperList}}" wx:key="index" class="radius-sm">
+        <free-image src="{{item.url}}" width="100%" height="200rpx"></free-image>
+      </swiper-item>
+    </swiper>
+    <!-- 具体内容 -->
+    <view >
+      <view class=" text-sm text-bold padding-lr-sm">{{item}}</view>
+      <free-list-grid 
+        list="{{gridList}}" 
+        col="3" 
+        radius="500"
+        width="100"
+        height="100"
+        bind:click='onClick'
+        ></free-list-grid>
+    </view>
+  </view>
+</block>
+</view>

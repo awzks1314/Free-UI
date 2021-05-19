@@ -12,7 +12,7 @@
         style="color:{{item.disabled?'#c0c4cc':(index == current)?activeColor:inactiveColor}}"
         >{{item.title}}</text>
         <view class="free-dropdown-menu-item-arrow {{index === current && active?'rotate':''}}">
-          <free-icon name="arrow-up-filling" size="18"
+          <free-icon name="triangleupfill" size="18"
           color="{{item.disabled?'#c0c4cc':(index == current && active)?activeColor:inactiveColor}}"
           ></free-icon>
         </view>

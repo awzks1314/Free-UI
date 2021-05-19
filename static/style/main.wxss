@@ -616,8 +616,8 @@ button.icon.lg {
 .free-form-group picker::after {
 	font-family: "icomoon";
 	display: block;
-	content: "\e909";
-	position: absolute;
+	content: "\ea03";
+	position: absolute; 
 	font-size: 34rpx;
 	color: var(--grey);
 	line-height: 100rpx;
@@ -1396,7 +1396,7 @@ radio {
 switch::after,
 switch::before {
 	font-family: "icomoon";
-	content: "\e93f";
+	content: "\e910";
 	position: absolute;
 	color: var(--white) !important;
 	top: 0%;
@@ -1415,7 +1415,7 @@ switch::before {
 }
 
 switch::before {
-	content: "\e91a";
+	content: "\e911";
 	right: 0;
 	transform: scale(1, 1);
 	left: auto;
@@ -1438,7 +1438,7 @@ switch[checked]::before {
 radio::before,
 checkbox::before {
 	font-family: "icomoon";
-	content: "\e93f";
+	content: "\e910";
 	position: absolute;
 	color: var(--white) !important;
 	top: 50%;
@@ -1534,7 +1534,7 @@ radio.radio[checked]::after {
 }
 
 .switch-home::after {
-	content: "\e92e";
+	content: "\e90f";
 }
 
 .switch-home::before { 

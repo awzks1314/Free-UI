@@ -1,4 +1,4 @@
-// pages/extend/indexes/indexes.js
+// pages/extend/classify/classify.js
 Page({
 
   /**
@@ -9,7 +9,7 @@ Page({
   },
   look(e){
     wx.navigateTo({
-      url: `/pages/extend/indexes/${e.currentTarget.dataset.type}/${e.currentTarget.dataset.type}`
+      url: e.currentTarget.dataset.url
     })
   },
   /**

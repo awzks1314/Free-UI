@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText":"商品分类",
-  "usingComponents": {
-    "free-input":"/components/module/free-input/free-input"
-  }
-}

@@ -1,4 +1,4 @@
-
+<!-- 
 <view class="extend-box padding flex flex-wrap justify-between">
   <navigator wx:for="{{list}}" wx:key class="extendItem free-style-list bg-{{item.color}} padding radius-sm margin-bottom justify-between" url="/pages/extend/{{item.title}}/{{item.title}}">
     <view class="flex align-center justify-between" >
@@ -7,4 +7,13 @@
     <view class="extend-style-text">{{item.title}}
     </view>
   </navigator>
-</view> 
+</view>   -->
+<view class="padding-lr-sm padding-top-sm flex  align-center">
+  <view class="text-bold text-gray padding-left-xs">Form</view>
+</view>
+<navigator wx:for="{{list}}" wx:key="index" class="" url="/packageExtend/{{item.title}}/{{item.title}}" hover-class="none">
+  <free-list arrow="true" bind:click="detail" >
+    <view class="free-list-name   padding-right-xs">{{item.name}}</view>
+    <view class="text-Abc  ">{{item.title}}</view>
+  </free-list>
+</navigator> 

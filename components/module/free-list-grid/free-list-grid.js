@@ -21,7 +21,7 @@ Component({
     // 边框
     border:{
       type:Boolean,
-      value:true
+      value:false
     },
     // 背景色
     bgColor:{

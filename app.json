@@ -38,17 +38,27 @@
     "pages/module/timeline/timeline",
     "pages/basic/title/title",
     "pages/module/footer/footer",
-    "pages/extend/indexes/indexes",
-    "pages/extend/indexes/city/city",
-    "pages/extend/indexes/friend/friend",
-    "pages/extend/indexes/ceiling/ceiling",
     "pages/module/backTop/backTop",
     "pages/module/subsection/subsection",
     "pages/module/grid-list/grid-list",
     "pages/my/log/log",
     "pages/my/support/support",
-    "pages/my/about/about",
-    "pages/extend/classify/classify"
+    "pages/my/about/about"
+  ],
+  "subPackages": [
+    {
+      "root": "packageExtend",
+      "pages": [
+        "classify/class-one/class-one",
+        "classify/class-two/class-two",
+        "classify/classify",
+        "indexes/indexes",
+        "indexes/city/city",
+        "indexes/friend/friend",
+        "indexes/ceiling/ceiling",
+        "address/address"
+      ]
+    }
   ],
   "tabBar": {
     "color": "#aaaaaa",

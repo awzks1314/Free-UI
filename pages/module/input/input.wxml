@@ -85,5 +85,5 @@
 
 <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="图标更换(后置图标同理)" height="40"></free-title>
 <view class="padding">
-  <free-subsection list="{{['search', 'home','close']}}" bind:click='getMode' data-name="prefixIcon" bold="true"></free-subsection>
+  <free-subsection list="{{['search', 'close','favorfill']}}" bind:click='getMode' data-name="prefixIcon" bold="true"></free-subsection>
 </view>
