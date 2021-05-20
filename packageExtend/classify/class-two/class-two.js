@@ -45,7 +45,6 @@ Page({
     const query = wx.createSelectorQuery()                // 创建节点查询器 query
     query.select('#input').boundingClientRect()
     query.exec((res) => {
-      console.log(res)
       this.setData({
         menuHeight: app.globalData.sysInfo.windowHeight - res[0].height
       });
@@ -137,7 +136,7 @@ Page({
     if(this.data.timer){
       return
     }
-    console.log(this.data.arr)
+    
     setTimeout(() => {
       this.setData({
         timer:null

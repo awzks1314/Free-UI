@@ -1,0 +1,67 @@
+<free-navBar title='{{title}}'  back="{{true}}" home="{{true}}" bindback="handlerGobackClick" bindhome="handlerGohomeClick" >
+</free-navBar>
+<view class="free-form-group ">
+  <view class="title">联系人</view>
+  <input placeholder="请填写收货人的姓名" value="{{form.name}}" bindinput="changeInput" data-type="form.name"></input>
+</view>
+<view class="free-form-group">
+  <view class="title">性别</view>
+  <view class='add_item_con flex-sub'>
+    <radio-group bindchange="getGender">
+      <label class="margin-left-sm">
+        <radio class="blue sm radio" value="1" checked = "{{form.gender == 1}}"></radio>
+        <text> 男</text>
+      </label>
+      <label class="margin-left-sm">
+        <radio class="blue sm radio" value="0" checked = "{{form.gender == 0}}"></radio>
+        <text> 女</text>
+      </label>
+    </radio-group>
+  </view>
+</view>
+<view class="free-form-group ">
+  <view class="title">手机号</view>
+  <input placeholder="输入手机号码" value="{{form.phone}}" bindinput="changeInput" data-type="form.phone"></input>
+  <view class="radius-xs">
+    <view class="free-tag bg-blue">
+      +86
+    </view>
+    <view class="free-tag line-blue solid">
+      中国大陆
+    </view>
+  </view>
+</view>
+<!-- <view class="free-form-group ">
+  <view class="title">地址选择</view>
+  <picker mode="region" bindchange="RegionChange" value="{{region}}" >
+			<view class="picker">
+				{{region[0]}}，{{region[1]}}，{{region[2]}}
+			</view>
+		</picker>
+</view> -->
+<view class="free-form-group ">
+  <view class="title">收货地址</view>
+  <input placeholder="请选择收货地址" value="{{form.address}}" bindinput="changeInput" data-type="form.address"></input>
+  <free-icon name="locationfill" color="orange"></free-icon>
+</view>
+<view class="free-form-group ">
+  <view class="title">详细地址</view>
+  <input placeholder="请输入详细地址" value="{{form.notes}}" bindinput="changeInput" data-type="form.notes"></input>
+</view>
+<!-- <view class="free-form-group align-start">
+  <view class="title">详细地址</view>
+  <textarea maxlength="-1" value="{{form.notes}}" bindinput="textareaAInput" placeholder="请输入详细地址"></textarea>
+</view> -->
+<view class="free-form-group"> 
+  <view class="title">设为默认</view>
+  <switch class="blue" checked="{{form.default}}" bindchange="changeInput" data-type="form.default"></switch>
+</view>
+
+<view class="bottomBtn padding-lr">
+  <button class="free-icon block bg-blue round lg flex align-center justify-center"
+  bindtap="sure" 
+  >
+    <free-icon name="add" color="#fff" size="20"></free-icon>
+    {{title}}
+  </button>
+</view>

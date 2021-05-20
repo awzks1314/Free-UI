@@ -10,7 +10,7 @@ Component({
     //当前页面背景颜色
     bgcolor: {
       type: String,
-      value: "#fff"
+      value: "#f4f5f7"
     },
     //isDot为false时生效
     text:{

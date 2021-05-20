@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"占位槽",
+  "usingComponents": {
+    "free-gap":"/components/module/free-gap/free-gap"
+  }
+}

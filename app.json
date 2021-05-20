@@ -43,7 +43,9 @@
     "pages/module/grid-list/grid-list",
     "pages/my/log/log",
     "pages/my/support/support",
-    "pages/my/about/about"
+    "pages/my/about/about",
+    "pages/module/empty/empty",
+    "pages/module/gap/gap"
   ],
   "subPackages": [
     {
@@ -56,7 +58,13 @@
         "indexes/city/city",
         "indexes/friend/friend",
         "indexes/ceiling/ceiling",
-        "address/address"
+        "address/address",
+        "address/editAddress/editAddress",
+        "loginPage/loginPage",
+        "judgeLogin/judgeLogin",
+        "actionBar/actionBar",
+        "orderList/orderList",
+        "orderDetail/orderDetail"
       ]
     }
   ],
@@ -98,6 +106,7 @@
     "free-icon": "/components/basic/free-icon/free-icon",
     "free-title": "/components/basic/free-title/free-title",
     "free-subsection": "/components/module/free-subsection/free-subsection",
+    "free-gap":"/components/module/free-gap/free-gap",
     "free-list": "/components/module/free-list/free-list",
     "free-image": "/components/basic/free-image/free-image"
   },

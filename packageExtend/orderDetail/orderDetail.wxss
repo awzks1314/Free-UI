@@ -1,0 +1,18 @@
+.orderDetailHeader{
+  padding:0 40rpx;
+  height: 200rpx;
+  border-bottom-left-radius: 12%;
+  border-bottom-right-radius: 12%;
+}
+.contentBox{
+  position: relative;
+}
+.content-all{
+  position: absolute;
+  width: calc(100% - 40rpx);
+  left: 20rpx;
+  top: -40rpx;
+} 
+.orderTit{
+  width:140rpx;
+}

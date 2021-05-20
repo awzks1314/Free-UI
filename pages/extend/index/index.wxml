@@ -1,17 +1,17 @@
-<!-- 
-<view class="extend-box padding flex flex-wrap justify-between">
-  <navigator wx:for="{{list}}" wx:key class="extendItem free-style-list bg-{{item.color}} padding radius-sm margin-bottom justify-between" url="/pages/extend/{{item.title}}/{{item.title}}">
-    <view class="flex align-center justify-between" >
-      <text class="text-lg ">{{item.name}}</text>
-    </view>
-    <view class="extend-style-text">{{item.title}}
-    </view>
-  </navigator>
-</view>   -->
+
 <view class="padding-lr-sm padding-top-sm flex  align-center">
-  <view class="text-bold text-gray padding-left-xs">Form</view>
+  <view class=" text-gray padding-left-xs">页面</view>
 </view>
-<navigator wx:for="{{list}}" wx:key="index" class="" url="/packageExtend/{{item.title}}/{{item.title}}" hover-class="none">
+<navigator wx:for="{{listPage}}" wx:key="index" class="" url="/packageExtend/{{item.title}}/{{item.title}}" hover-class="none">
+  <free-list arrow="true" bind:click="detail" >
+    <view class="free-list-name   padding-right-xs">{{item.name}}</view>
+    <view class="text-Abc  ">{{item.title}}</view>
+  </free-list>
+</navigator> 
+<view class="padding-lr-sm padding-top-sm flex  align-center">
+  <view class="text-gray padding-left-xs">组件</view>
+</view>
+<navigator wx:for="{{listComponent}}" wx:key="index" class="" url="/packageExtend/{{item.title}}/{{item.title}}" hover-class="none">
   <free-list arrow="true" bind:click="detail" >
     <view class="free-list-name   padding-right-xs">{{item.name}}</view>
     <view class="text-Abc  ">{{item.title}}</view>

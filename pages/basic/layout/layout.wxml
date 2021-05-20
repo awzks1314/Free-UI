@@ -1,6 +1,6 @@
 <free-tabs tabs="{{tabs}}" isFixed="{{true}}"  currentTab="{{currentTab}}" bold='true'  bind:change="change" ></free-tabs>
 <!-- tabs固定定位，元素上浮，所以需要占位块， -->
-<view class="positionView"></view>
+<free-gap height="100"></free-gap>
 <block wx:if="{{currentTab == 0}}">
   <free-title type="2" title="效果演示"></free-title>
   <view class="flex flex-wrap padding-lr padding-bottom">

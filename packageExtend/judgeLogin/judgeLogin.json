@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"登录判断",
+  "usingComponents": {
+    "free-judgeLogin":"/components/extend/free-judgeLogin/free-judgeLogin"
+  }
+}

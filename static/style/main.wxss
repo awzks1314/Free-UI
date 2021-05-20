@@ -80,11 +80,12 @@ image {
 }
 button::after {
   border: none;
-}
+} 
 
 /* 圆角 */
 .round{
-  border-radius: 2000rpx;
+	border-radius: 2000rpx;
+	overflow: hidden;
 }
 .radius-xs{
 	border-radius: 6rpx;
@@ -1193,8 +1194,25 @@ button.icon.lg {
 	position: relative;
 	align-items: center;
 	min-height: 100rpx;
-	/* margin: 20rpx 0; */
 	justify-content: space-between;
+}
+
+.free-bar.tabbar {
+	padding: 0;
+	height: calc(100rpx + env(safe-area-inset-bottom) / 2);
+	padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+}
+.free-bar.tabbar .action {
+	font-size: 22rpx;
+	position: relative;
+	flex: 1;
+	text-align: center;
+	padding: 0;
+	display: block;
+	height: auto;
+	line-height: 1;
+	margin: 0;
+	overflow: initial;
 }
 
 .free-bar .free-title {
@@ -1255,9 +1273,7 @@ button.icon.lg {
 }
 
 /* 站位块 */
-.positionView{
-	height: 100rpx;
-}
+
 /* flex 布局 */
 
 .flex {
@@ -1316,9 +1332,7 @@ button.icon.lg {
 	align-items: center;
 }
 
-.align-stretch {
-	align-items: stretch;
-}
+
 
 .self-start {
 	align-self: flex-start;
@@ -1533,20 +1547,20 @@ radio.radio[checked]::after {
 	border: 8px solid var(--white) !important;
 }
 
-.switch-home::after {
-	content: "\e90f";
+.switch-sex::after {
+	content: "\e920";
+}
+ 
+.switch-sex::before { 
+	content: "\e931"; 
 }
 
-.switch-home::before { 
-	content: "\e91e";
-}
-
-.switch-home .wx-switch-input {
+.switch-sex .wx-switch-input {
 	background: var(--red) !important;
 	border-color: var(--red) !important;
 }
 
-.switch-home[checked] .wx-switch-input {
+.switch-sex[checked] .wx-switch-input {
 	background: var(--blue) !important;
 	border-color: var(--blue) !important;
 }
@@ -1773,3 +1787,18 @@ radio.white[checked] .wx-radio-input {
   padding-bottom: env(safe-area-inset-bottom);  
 } 
 /* end-iPhoneX底部安全区定义--end */
+
+/* 定位在底部悬浮的按钮 */
+.bottomBtn{
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  bottom: 30rpx;
+}
+.orderDetailBottom{
+  position: fixed;
+  z-index: 99;
+  background: #fff;
+  width: 100%;
+  bottom:0;
+}

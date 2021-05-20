@@ -1,0 +1,24 @@
+<view class="container flex">
+		<view class="left-bottom-sign"></view>
+		<view class="right-top-sign"></view>
+		<!-- 设置白色背景防止软键盘把下部绝对定位元素顶上来盖住输入框等 -->
+		<view class="wrapper flex-sub ">
+			<view class="left-top-sign">LOGIN</view>
+			<view class="welcome">
+				欢迎回来！
+			</view>
+			
+      <!-- <button class="free-button lg bg-blue round block"  open-type="getPhoneNumber" bindgetphonenumber="showLoginLayer" disabled="{{logining}}" >微信一键登录</button>	 -->
+      <!-- 个人开发者不能获取用户手机 -->
+      <view class="padding-lr">
+        <button class="free-button lg bg-green round block">微信一键登录</button>
+        <view class="text-center margin-top-xs text-sm">
+          <text class="text-gray">登录即代表已阅读并同意</text>
+          <text class="text-blue padding-left-xs">《软件服务协议》</text>
+        </view>
+      </view>
+		</view>
+		<view class="register-section">
+			<text>FreeUI组件库</text>
+		</view>
+  </view>

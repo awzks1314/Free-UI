@@ -1,10 +1,7 @@
 <view class="free-modal {{showLogin?'show':''}}"  bindtap="hideModal" wx:if="{{showLogin}}" >
 		<view class="free-dialog"  style="background: none;overflow: visible;">
 			<view class="modal-box">
-				<view class="zr">
-					<view class="text-white">
-						14564
-					</view>
+				<view class="zr" style="background:{{bgColor}};">
 					<view class="water">
 						<view class="water-c">
 							<view class="water-1"> </view>
@@ -14,11 +11,11 @@
 				</view>
 				<view class="detail">
 					<view class="title1">您还没有登录</view>
-					<view class="title2">登录即刻开启品质生活</view>
+					<view class="title2">{{title}}</view>
 				</view>
 				<view class="btn-box y-f">
-					<button class="free-btns login-btn"  catchtap="onLogin">立即登录</button>
-					<button class="free-btn close-btn" catchtap="hideModal">取消</button>
+					<button class="free-btns login-btn" style="background:{{bgColor}};" catchtap="onLogin">立即登录</button>
+					<button class="free-btn close-btn" catchtap="hideModal" style="color:{{color}};">取消</button>
 				</view>
 			</view>
 		</view> 

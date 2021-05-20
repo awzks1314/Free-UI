@@ -1,5 +1,5 @@
 <free-tabs tabs="{{tabs}}" isFixed="{{true}}"  currentTab="{{currentTab}}" bold='true'  bind:change="change"></free-tabs>
-<view class="positionView"></view>
+<free-gap height="100"></free-gap>
 <view class="grid col-3 padding-sm bg-white" wx:if="{{currentTab == 0}}">
   <view class="padding-sm" wx:for="{{ColorList}}" wx:key='index'>
     <view class="bg-{{item.name}} padding radius-xs text-center shadow-main" bindtap="copy" data-name="{{item.name}}">

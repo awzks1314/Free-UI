@@ -87,17 +87,16 @@
 .login-btn {
   width: 492rpx;
   height: 70rpx;
-  background: linear-gradient(90deg, #0b3f8a, #3c83e7);
-  box-shadow: 0px 7rpx 6rpx 0px rgba(247, 100, 42, 0.22);
+  box-shadow: 0px 7rpx 6rpx 0px rgba(24, 23, 23, 0.22);
   border-radius: 35rpx;
   font-size: 28rpx;
   color: rgba(#fff, 0.9);
-}
+} 
 
 .close-btn {
   width: 492rpx;
   height: 70rpx;
-  color: #0b3f8a;
+  
   font-size: 26rpx;
   margin-top: 20rpx;
   background: none;
@@ -107,7 +106,7 @@
 }
 /*组件背景颜色*/
 	.zr {
-		background: #0b3f8a;
+		
 		width: 100%;
 		height: 200rpx;
 		position: relative;

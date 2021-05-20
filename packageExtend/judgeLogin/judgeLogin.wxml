@@ -1,0 +1,22 @@
+<free-title type="2" title="效果演示"></free-title>
+
+<view class="text-center">
+  <button class="free-button bg-blue round lg" bindtap="startLogin">开始演示</button>
+  <free-judgeLogin 
+  showLogin="{{showLogin}}"
+  bgColor="{{bgColor}}"
+  color="{{color}}"
+  title="登录即可享受品质生活"
+  ></free-judgeLogin>
+</view>
+
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="背景颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#0081ef', '#e54d42','#f37b1d','#39b54a']}}" bind:click='getMode' data-name="bgColor" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="取消字体颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#0081ef', '#e54d42','#f37b1d','#39b54a']}}" bind:click='getMode' data-name="color" bold="true"></free-subsection>
+</view>

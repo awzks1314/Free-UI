@@ -7,7 +7,19 @@ Component({
   properties: {
     showLogin:{
       type:Boolean,
-      value:true
+      value:false
+    },
+    bgColor:{
+      type:String,
+      value:'#0081ef'
+    },
+    color:{
+      type:String,
+      value:'#0081ef'
+    },
+    title:{
+      type:String,
+      value:'登录即刻开启品质生活'
     }
   },
 
@@ -34,9 +46,8 @@ Component({
       this.setData({
         showLogin:false
       })
-      app.geturl()
       wx.navigateTo({
-        url: '/pages/login/login'              
+        url: '/packageExtend/loginPage/loginPage'              
       })
 		}
   }

@@ -140,7 +140,16 @@ Page({
         title:'timeline',
         icon:'home',
       },
-      
+      {
+        name:'占位槽',
+        title:'gap',
+        icon:'home',
+      },
+      {
+        name:'空内容',
+        title:'empty',
+        icon:'home',
+      },
       {
         name:'返回顶部',
         title:'backTop',

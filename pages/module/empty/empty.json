@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"空内容",
+  "usingComponents": {
+    "free-empty":"/components/module/free-empty/free-empty"
+  }
+}

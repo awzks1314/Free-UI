@@ -1,0 +1,109 @@
+<view class="orderDetailHeader bg-gradual-orange flex align-center">
+  <view class="flex flex-direction padding-bottom-lg">
+    <text class="text-xl">待收货</text>
+    <text class="text-sm">等待买家收货</text>
+  </view>
+</view>
+<view class="contentBox">
+  <view class="content-all">
+    <!--  -->
+    <view class="bg-white radius padding-lr-sm">
+      <view class="flex align-center padding-tb-sm">
+        <free-icon name="deliver" color="#ff5722"></free-icon>
+        <view class="flex-sub padding-lr-sm ">
+          <view class="text-cut-2 text-lg text-orange">[昆明市]云南省昆明市官渡区矣六街道正在派件请保持电话畅通请保持电话畅通请保持电话畅通</view>
+          <view class="text-sm text-gray margin-top-xs">2021-05-20 16:07:55</view>
+        </view>
+        <!-- <free-icon name="right" size="18"></free-icon> -->
+      </view>
+      <view class="flex align-center padding-tb-sm solid-top">
+        <free-icon name="locationfill" color="#ff5722"></free-icon>
+        <view class="flex-sub padding-lr-sm ">
+          <view class="text-black text-lg text-bold">
+            <text class="">收货人：张三三</text>
+            <text class="padding-left-xs">18787878787</text>
+          </view>
+          <view class="text-sm text-gray margin-top-xs text-cut-2">云南省昆明市官渡区矣六街道888号十字路口交汇处十字路口交汇处十字路口交汇处十字路口交汇处十字路口交汇处</view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 商品详情 -->
+    <view class="bg-white radius padding-lr-sm margin-top-sm">
+      <view class="flex align-center padding-tb-sm">
+        <free-icon name="shop" size="17" ></free-icon>
+        <text class="margin-left-xs text-gray">云南省昆明市官渡区XX旗舰店</text>
+      </view>
+      <view wx:for="{{2}}" wx:key="index" class="margin-bottom-xs flex ">
+        <free-image src="/static/image/my/dog.jpg" width="160rpx" height="160rpx" radius="10rpx"></free-image>
+        <view class="padding-left-sm">
+          <view class="flex align-center justify-between">
+            <view class="text-cut-2 padding-right-xs text-black">PORTS宝姿2021春夏新款女装时尚印花半身裙百褶裙LM8S0 BLACK 6</view>
+            <view class="flex flex-direction align-end">
+              <text class="text-price text-black">299.00</text>
+              <!-- <text class="text-price text-gray text-sm text-lineThrough">399.00</text> -->
+              <text class="text-sm text-gray">x6</text>
+            </view>
+          </view>
+          <view class="text-gray ">灰色；M</view>
+          <view class="text-red">冰凉透气 高弹塑型</view>
+        </view>
+      </view>
+
+      <!-- 商品合计 -->
+      <view class="padding-tb-sm solid-bottom">
+        <view class="flex align-center justify-between">
+          <text class="text-gray">商品金额</text>
+          <text class="text-price text-black">566.00</text>
+        </view>
+        <view class="flex align-center justify-between margin-top-xs">
+          <text class="text-gray">配送费</text>
+          <text class="text-price text-black">6.00</text>
+        </view>
+        <view class="flex align-center justify-between margin-top-xs">
+          <text class="text-gray">包装费</text>
+          <text class="text-price text-black">0.80</text>
+        </view>
+        <view class="flex align-center justify-between margin-top-xs">
+          <text class="text-gray">优惠金额</text>
+          <text class="text-price text-black">-8.00</text>
+        </view>
+      </view>
+
+      <!-- 合计 -->
+      <view class="flex justify-end align-center padding-tb-sm text-lg">
+        合计金额：<text class="text-price text-bold text-red">1666.00</text>
+      </view>
+    </view>
+
+    <!-- 订单信息 -->
+    <view class="bg-white radius padding-lr-sm margin-top-sm">
+      <view class="flex align-center padding-tb-sm solid-bottom">
+        <text class="text-bold text-black">订单信息</text>
+      </view>
+      <view class="padding-tb-sm solid-bottom">
+        <view class="flex align-center justify-between">
+          <view class="flex align-center">
+            <text class="orderTit text-gray" >订单编号</text>
+            <text class="text-black">ADSFAFWFAF204545121</text>
+          </view>
+          <text class="text-orange">复制</text>
+        </view>
+        <view class="flex align-center  margin-top-xs">
+          <text class="orderTit text-gray">下单时间</text>
+          <text class="text-black">2021-05-20 18:20:16</text>
+        </view>
+        <view class="flex align-center  margin-top-xs">
+          <text class="orderTit text-gray">订单备注</text>
+          <text class="text-black">尽快配送</text>
+        </view>
+      </view>
+    </view>
+    <free-gap height="120"></free-gap>
+  </view>
+</view>
+
+<view class="orderDetailBottom padding-sm flex align-center justify-end solid-top">
+  <button class="free-button bg-red  round lg">取消订单</button>
+  <button class="free-button line-orange  round lg margin-left">确认收货</button>
+</view>

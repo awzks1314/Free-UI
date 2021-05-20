@@ -13,7 +13,7 @@ Component({
     //距离顶部多少距离显示 px
     top: {
       type: Number,
-      value: 40
+      value: 150
     },
     //背景色
     bgColor: {

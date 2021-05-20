@@ -1,0 +1,30 @@
+<free-title type="2" title="效果演示"></free-title>
+
+<!-- 组件 -->
+<view class="text-center padding bg-white">
+  <free-gap
+    bgColor="{{bgColor}}"
+    height="{{height}}"
+    top="{{top}}"
+    bottom="{{bottom}}"
+  ></free-gap>
+</view>
+
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="占位槽背景颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#f4f5f7','transparent', '#000','#0081ef']}}" bind:click='getMode' data-name="bgColor" bold="true"></free-subsection>
+</view>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="占位槽高度rpx" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['30','50', '70','100']}}" bind:click='getMode' data-name="height" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="占位槽距离上个组件的距离" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['0','20', '40','60']}}" bind:click='getMode' data-name="top" bold="true"></free-subsection>
+</view>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="占位槽距离下个组件的距离" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['0','20', '40','60']}}" bind:click='getMode' data-name="bottom" bold="true"></free-subsection>
+</view>

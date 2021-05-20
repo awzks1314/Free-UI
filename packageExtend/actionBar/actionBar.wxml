@@ -1,0 +1,155 @@
+<view class="free-bar tabbar bg-white  align-center" >
+  <view class="flex flex-sub">
+    <button class="action bg-white" open-type="contact" hover-class="none">
+      <view class="padding-bottom-xs">
+        <free-icon name='comment' class=""></free-icon>
+      </view>
+      <text class="">客服</text>
+    </button>
+    <view class="action">
+      <view class="padding-bottom-xs">
+        <free-icon name='like' class=""></free-icon>
+      </view>
+      <text>客服</text>
+    </view>
+    <view class="action">
+      <view class="padding-bottom-xs">
+        <free-icon name='cart' class=""></free-icon>
+      </view>
+      <text>购物车</text>
+    </view>
+  </view>
+  <view class="flex-sub flex self-stretch">
+    <view class="bg-blue  flex-sub self-stretch flex align-center justify-center">立即购买</view>
+  </view>
+</view>
+
+<!-- 样式2 -->
+<view class="free-bar tabbar bg-white  align-center margin-top-sm" >
+  <view class="flex flex-sub">
+    <button class="action bg-white" open-type="contact" hover-class="none">
+      <view class="padding-bottom-xs">
+        <free-icon name='comment' class=""></free-icon>
+      </view>
+      <text class="">客服</text>
+    </button>
+    <view class="action">
+      <view class="padding-bottom-xs">
+        <free-icon name='like' class=""></free-icon>
+      </view>
+      <text>客服</text>
+    </view>
+    <view class="action">
+      <view class="padding-bottom-xs">
+        <free-icon name='cart' class=""></free-icon>
+      </view>
+      <text>购物车</text>
+    </view>
+  </view>
+  <view class="padding-lr flex-sub">
+    <button class="free-button  round bg-blue  lg block">立即购买</button>
+  </view>
+</view>
+
+<!-- 样式3 -->
+<view class="free-bar tabbar bg-white  align-center margin-top-sm" >
+  <view class="flex flex-sub">
+    <button class="action bg-white" open-type="contact" hover-class="none">
+      <view class="padding-bottom-xs">
+        <free-icon name='comment' class=""></free-icon>
+      </view>
+      <text class="">客服</text>
+    </button>
+    <view class="action">
+      <view class="padding-bottom-xs">
+        <free-icon name='likefill' color="red"></free-icon>
+      </view>
+      <text>客服</text>
+    </view>
+    <view class="action">
+      <view class="padding-bottom-xs">
+        <free-icon name='cart' class="">
+        </free-icon>
+      </view>
+      <view class="badge bg-red">99</view>
+      <text>购物车</text>
+    </view>
+  </view>
+  <view class="flex-sub flex self-stretch">
+    <view class="bg-red  flex-sub self-stretch flex align-center justify-center">立即购买</view>
+    <view class="bg-orange  flex-sub self-stretch flex align-center justify-center">立即购买</view>
+  </view>
+</view>
+
+<view class="free-bar tabbar bg-white  align-center margin-top-sm" >
+  <view class="flex flex-sub">
+    <button class="action bg-white" open-type="contact" hover-class="none">
+      <view class="padding-bottom-xs">
+        <free-icon name='comment' class=""></free-icon>
+      </view>
+      <text class="">客服</text>
+    </button>
+    <view class="action">
+      <view class="padding-bottom-xs">
+        <free-icon name='like' class=""></free-icon>
+      </view>
+      <text>客服</text>
+    </view>
+    <view class="action">
+      <view class="padding-bottom-xs">
+        <free-icon name='cart' class=""></free-icon>
+      </view>
+      <text>购物车</text>
+    </view>
+  </view>
+  <view class=" flex-twice flex padding-lr-sm">
+    <button class="free-button flex-sub round bg-red  lg margin-right">立即购买</button>
+    <button class="free-button flex-sub round bg-orange  lg ">立即购买</button>
+  </view>
+</view>
+
+
+<!--  -->
+<view class="free-bar tabbar bg-white  align-center margin-top-sm" >
+  <view class="flex flex-sub">
+    <button class="action bg-white" open-type="contact" hover-class="none">
+      <view class="padding-bottom-xs">
+        <free-icon name='comment' class=""></free-icon>
+      </view>
+      <text class="">客服</text>
+    </button>
+    <view class="action">
+      <view class="padding-bottom-xs">
+        <free-icon name='cart' class=""></free-icon>
+      </view>
+      <text>购物车</text>
+    </view>
+  </view>
+  <view class=" flex-twice flex padding-lr-sm">
+    <button class="free-button flex-sub round bg-red  lg margin-right">立即购买</button>
+    <button class="free-button flex-sub round bg-orange  lg ">立即购买</button>
+  </view>
+</view>
+
+<view class="bottomBtn padding-lr ">
+  <view class="free-bar tabbar bg-white  align-center margin-top-sm round" >
+  <view class="flex flex-sub">
+    <button class="action bg-white" open-type="contact" hover-class="none">
+      <view class="padding-bottom-xs">
+        <free-icon name='comment' class=""></free-icon>
+      </view>
+      <text class="">客服</text>
+    </button>
+    <view class="action">
+      <view class="padding-bottom-xs">
+        <free-icon name='cart' class=""></free-icon>
+      </view>
+      <text>购物车</text>
+    </view>
+  </view>
+  <view class=" flex-twice flex padding-lr-xs">
+    <button class="free-button flex-sub round bg-red  lg margin-right shadow">立即购买</button>
+    <button class="free-button flex-sub round bg-orange  lg shadow">立即购买</button>
+  </view>
+</view>
+</view>

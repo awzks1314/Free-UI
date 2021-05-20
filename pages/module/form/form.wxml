@@ -93,7 +93,7 @@
 </view>
 <view class="free-form-group">
   <view class="title">自定义图标</view>
-  <switch class="switch-home blue radius-xs" checked></switch>
+  <switch class="switch-sex blue radius-xs" checked></switch>
 </view>
 <view class="free-form-group margin-top">
   <view class="title">默认颜色(radio)</view>

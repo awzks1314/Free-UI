@@ -66,7 +66,7 @@ Component({
     //滑块bottom
     bottom: {
       type: String,
-      value: "0"
+      value: "10"
     },
     //标签页宽度
     tabWidth: {

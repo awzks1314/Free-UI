@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list:[
+    listPage:[
       {
         name:'索引列表',
         title:'indexes',
@@ -25,6 +25,28 @@ Page({
       {
         name:'收货地址',
         title:'address'
+      },
+      {
+        name:'登录页面', 
+        title:'loginPage'
+      },
+      {
+        name:'订单列表', 
+        title:'orderList'
+      },
+      {
+        name:'订单详情', 
+        title:'orderDetail'
+      }
+    ],
+    listComponent:[
+      {
+        name:'登录判断',
+        title:'judgeLogin'
+      },
+      {
+        name:'操作条',
+        title:'actionBar'
       },
     ]
   },
