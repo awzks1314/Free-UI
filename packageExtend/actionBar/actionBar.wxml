@@ -67,11 +67,14 @@
       <text>客服</text>
     </view>
     <view class="action">
-      <view class="padding-bottom-xs">
-        <free-icon name='cart' class="">
-        </free-icon>
+      <view class="padding-bottom-xs flex justify-center" >
+        <view style="position:relative;">
+          <free-icon name='cart' class="">
+          </free-icon>
+          <view class="badge bg-red">99</view>
+        </view>
       </view>
-      <view class="badge bg-red">99</view>
+      
       <text>购物车</text>
     </view>
   </view>

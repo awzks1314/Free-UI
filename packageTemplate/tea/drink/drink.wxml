@@ -1,0 +1,8 @@
+
+<text>packageTemplate/tea/drink/drink.wxml</text>
+<free-tabbar 
+  list="{{teaList.list}}" 
+  color="{{teaList.color}}"
+  selectColor="{{teaList.selectedColor}}"
+  current="1"
+  bind:click="change"></free-tabbar>

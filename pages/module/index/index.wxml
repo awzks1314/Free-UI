@@ -47,3 +47,7 @@
     <view class="text-Abc  ">{{item.title}}</view>
   </free-list>
 </navigator> 
+
+<free-backTop 
+  scrollTop="{{scrollTop}}" 
+  ></free-backTop>

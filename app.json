@@ -5,7 +5,6 @@
     "pages/basic/icon/icon",
     "pages/module/index/index",
     "pages/extend/index/index",
-    "pages/doing/index/index",
     "pages/basic/color/color",
     "pages/basic/border/border",
     "pages/my/index/index",
@@ -45,7 +44,14 @@
     "pages/my/support/support",
     "pages/my/about/about",
     "pages/module/empty/empty",
-    "pages/module/gap/gap"
+    "pages/module/gap/gap",
+    "pages/module/divider/divider",
+    "pages/module/readMore/readMore",
+    "pages/template/index/index",
+    "packageTemplate/tea/home/home",
+    "packageTemplate/tea/mine/mine",
+    "packageTemplate/tea/drink/drink",
+    "packageTemplate/tea/take/take"
   ],
   "subPackages": [
     {
@@ -64,7 +70,8 @@
         "judgeLogin/judgeLogin",
         "actionBar/actionBar",
         "orderList/orderList",
-        "orderDetail/orderDetail"
+        "orderDetail/orderDetail",
+        "identify/identify"
       ]
     }
   ],
@@ -84,6 +91,12 @@
         "text": "组件",
         "iconPath": "static/image/tabbarIcon/mores.png",
         "selectedIconPath": "static/image/tabbarIcon/more.png"
+      },
+      {
+        "pagePath": "pages/template/index/index",
+        "text": "模板",
+        "iconPath": "static/image/tabbarIcon/ings.png",
+        "selectedIconPath": "static/image/tabbarIcon/ing.png"
       },
       {
         "pagePath": "pages/extend/index/index",
@@ -106,7 +119,7 @@
     "free-icon": "/components/basic/free-icon/free-icon",
     "free-title": "/components/basic/free-title/free-title",
     "free-subsection": "/components/module/free-subsection/free-subsection",
-    "free-gap":"/components/module/free-gap/free-gap",
+    "free-gap": "/components/module/free-gap/free-gap",
     "free-list": "/components/module/free-list/free-list",
     "free-image": "/components/basic/free-image/free-image"
   },

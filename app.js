@@ -91,6 +91,41 @@ App({
       name: 'white',
       color: '#ffffff'
     },
-  ]
+  ],
+  teaList: {
+    "color": "#919293",
+    "selectedColor": "#97af13",
+    "backgroundColor": "#fff",
+    list: [
+        {
+          "pagePath": "/packageTemplate/tea/home/home",
+          "text": "首页",
+          "iconPath": "/static/image/tea/tabBar/index.png",
+          "selectedIconPath": "/static/image/tea/tabBar/index_selected.png",
+          type:'tab'
+        },
+        {
+          "pagePath": "/packageTemplate/tea/drink/drink",
+          "text": "点餐",
+          "iconPath": "/static/image/tea/tabBar/drink.png",
+          "selectedIconPath": "/static/image/tea/tabBar/drink_selected.png",
+          type:'tab'
+        },
+        {
+          "pagePath": "/packageTemplate/tea/take/take",
+          "text": "取餐",
+          "iconPath": "/static/image/tea/tabBar/take.png",
+          "selectedIconPath": "/static/image/tea/tabBar/take_selected.png",
+          type:'tab'
+        },
+        {
+          "pagePath": "/packageTemplate/tea/mine/mine",
+          "text": "我的",
+          "iconPath": "/static/image/tea/tabBar/mine.png",
+          "selectedIconPath": "/static/image/tea/tabBar/mine_selected.png",
+          type:'tab'
+        }
+      ]
+    }
   }
 })

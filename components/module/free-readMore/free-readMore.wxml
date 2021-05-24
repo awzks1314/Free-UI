@@ -1,0 +1,14 @@
+<view>
+  <view class="readMoreId" style="height:{{isLongContent && !showMore?height+'px':'auto'}};text-indent:{{textIndent}};line-height:1.8;">
+    <slot></slot>
+  </view>
+
+  <view wx:if="{{isLongContent}}" bindtap="openShow" class="content-showmore {{showMore?'content-more':''}}"
+  style="background-image: {{!showMore?'linear-gradient(-180deg, rgba(255, 255,255, 0) 0%, #fff 80%)':''}};padding-top:300rpx;margin-top: -300rpx"
+  >
+    <text style="color:{{color}};font-size:{{fontSize}}rpx;">{{ showMore ? openText : closeText }}</text>
+    <view class="upBtn">
+      <free-icon name="{{showMore?'fold':'unfold'}}" size="{{fontSize/2}}" color="{{color}}"></free-icon>
+    </view>
+  </view>
+</view>

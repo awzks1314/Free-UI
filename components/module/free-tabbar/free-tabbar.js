@@ -19,7 +19,7 @@ Component({
       value:null
     },
     // 默认字体颜色
-    color:{
+    color:{ 
       type:String,
       value:'#aaaaaa'
     },
@@ -66,10 +66,19 @@ Component({
       this.triggerEvent("click", {
         index: e.currentTarget.dataset.index
       })
-      // 可以进行跳转
-      wx.reLaunch({
-        url: e.currentTarget.dataset.url
-      })
+      console.log(e.currentTarget.dataset)
+      if(e.currentTarget.dataset.type == 'url'){
+        // 带有记忆路由跳转
+        wx.redirectTo({
+          url: e.currentTarget.dataset.url,
+        })
+      }else{
+        // 可以进行跳转
+        wx.reLaunch({
+          url: e.currentTarget.dataset.url
+        })
+      }
+      
     }
   }
 })

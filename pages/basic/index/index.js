@@ -1,4 +1,4 @@
-// pages/basic/index/index.js
+const app =getApp()
 Page({
 
   /**
@@ -64,7 +64,6 @@ Page({
         desc:'常用的标签样式',
         icon:'good'
       },
-      
     ]
   },
 

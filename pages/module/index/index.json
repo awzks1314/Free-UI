@@ -1,4 +1,6 @@
 {
-  "navigationBarTitleText":"简单组件",
-  "usingComponents": {}
+  "navigationBarTitleText":"组件",
+  "usingComponents": {
+    "free-backTop":"/components/module/free-backTop/free-backTop"
+  }
 }

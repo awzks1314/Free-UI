@@ -1,0 +1,32 @@
+
+<view class="homeHeader">
+  <free-image src="https://z3.ax1x.com/2021/05/24/gv6ePO.jpg" width="750rpx" height="600rpx"> </free-image>
+  <view class="homeIntro text-white flex flex-direction" style="top:{{StatusBar}}px;left:40rpx;">
+    <text class=" text-bold">您好，欢迎光临奈雪</text>
+    <text class="text-sm">一杯好茶，一口软欧包，在奈雪遇见两种美好</text>
+  </view>
+</view>
+<view class="home-content padding-lr">
+  <view class="entrance">
+    <view class="item flex-sub flex-sub flex flex-direction align-center justify-center">
+      <view>
+        <free-image src="/static/image/tea/index/zq.png" width="82rpx" height="82rpx"></free-image>
+      </view>
+      <text class="padding-top-sm text-bold">自取</text>
+    </view>
+    <view class="item flex-sub flex flex-direction align-center justify-center">
+      <view>
+        <free-image src="/static/image/tea/index/wm.png" width="82rpx" height="82rpx"></free-image>
+      </view>
+      <text class="padding-top-sm text-bold">外卖</text>
+    </view>
+  </view> 
+
+</view>
+
+<free-tabbar 
+  list="{{teaList.list}}" 
+  color="{{teaList.color}}"
+  selectColor="{{teaList.selectedColor}}"
+  current="0"
+  bind:click="change"></free-tabbar>

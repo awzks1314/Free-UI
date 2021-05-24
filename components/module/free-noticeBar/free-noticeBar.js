@@ -14,12 +14,12 @@ Component({
     },
     iconColor:{
       type:String,
-      value:'#0081ff'
+      value:'#fff'
     },
     // 背景色
     backgroundColor:{
       type:String,
-      value:'#fff'
+      value:'#0081ef'
     },
     // 动画
     animation:{
@@ -76,12 +76,12 @@ Component({
       })
     },
     onlo(){
-      console.log(this.data.notice.length)
-      if(this.data.notice && this.data.notice.length >1){
+      console.log(typeof this.data.notice)
+      if(typeof this.data.notice == Array){
         this.setData({
           type:2
         })
-      }else{
+      }else{ 
         this.setData({
           type:1
         })

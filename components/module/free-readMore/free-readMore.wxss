@@ -1,0 +1,25 @@
+.readMoreId{
+
+		text-align: left;
+		overflow: hidden;
+}
+.content-showmore{
+  position: relative;
+  width: 100%;
+  padding-bottom: 26rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-more{
+  padding-top: 0;
+  background: none;
+  margin-top: 20rpx;
+}
+.upBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  margin-left:10rpx;
+}

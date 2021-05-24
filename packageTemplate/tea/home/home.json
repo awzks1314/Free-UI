@@ -1,0 +1,6 @@
+{
+  "navigationStyle":"custom",
+  "usingComponents": {
+    "free-tabbar":"/components/module/free-tabbar/free-tabbar"
+  }
+}

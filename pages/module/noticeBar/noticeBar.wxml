@@ -5,7 +5,7 @@
   animation="{{animation}}"
   isFixed="{{isFixed}}"
   isLeft="{{isLeft}}"  
-  isRight="{{isRight}}"
+  isRight="{{isRight}}" 
   vertical="{{vertical}}"
   backgroundColor="{{backgroundColor}}"
   iconColor="{{iconColor}}"

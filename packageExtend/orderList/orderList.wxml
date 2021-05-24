@@ -44,7 +44,7 @@
       <block wx:else>
         <view  class="margin-bottom-xs flex ">
           <scroll-view scroll-x class="" style="white-space: nowrap;width:calc(100% - 160rpx);height:160rpx;">
-            <free-image src="/static/image/my/dog.jpg" width="160rpx" height="160rpx" radius="10rpx" wx:for="{{4}}" wx:key="index" class="margin-right-sm"></free-image>
+            <free-image src="/static/image/my/dog.jpg" width="160rpx" height="160rpx" radius="10rpx" wx:for="{{5}}" wx:key="index" class="margin-right-sm imageFlex"></free-image>
           </scroll-view>
           <view class="flex-sub flex flex-direction align-center justify-center bg-gray" style="width:160rpx;height:160rpx;">
 						查看更多

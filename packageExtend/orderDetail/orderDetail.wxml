@@ -46,7 +46,7 @@
             </view>
           </view>
           <view class="text-gray ">灰色；M</view>
-          <view class="text-red">冰凉透气 高弹塑型</view>
+          <view class="text-orange">冰凉透气 高弹塑型</view>
         </view>
       </view>
 
@@ -99,7 +99,8 @@
         </view>
       </view>
     </view>
-    <free-gap height="120"></free-gap>
+    <!-- 占位槽 -->
+    <free-gap height="130"></free-gap>
   </view>
 </view>
 

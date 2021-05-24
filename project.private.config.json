@@ -25,20 +25,20 @@
           "scene": null
         },
         {
-          "name": "pages/basic/icon/icon",
-          "pathName": "pages/basic/icon/icon",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "pages/module/index/index",
           "pathName": "pages/module/index/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "packageExtend/orderList/orderList",
-          "pathName": "packageExtend/orderList/orderList",
+          "name": "pages/template/index/index",
+          "pathName": "pages/template/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "packageTemplate/tea/home/home",
+          "pathName": "packageTemplate/tea/home/home",
           "query": "",
           "scene": null
         }

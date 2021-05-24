@@ -1,0 +1,6 @@
+<navigator wx:for="{{list}}" wx:key="index" class="" url="/packageTemplate/{{item.title}}/home/home" hover-class="none">
+  <free-list arrow="true" bind:click="detail" >
+    <view class="free-list-name   padding-right-xs">{{item.name}}</view>
+    <view class="text-Abc  ">{{item.title}}</view>
+  </free-list>
+</navigator> 

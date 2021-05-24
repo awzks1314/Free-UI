@@ -51,7 +51,8 @@
 .free-tabbar.tabbar .free-tabbar-item .free-icon{
   width: 100rpx;
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
   height: auto;
   margin: 0 auto 10rpx;
   text-align: center;  

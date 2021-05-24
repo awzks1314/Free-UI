@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"divider-分割线",
+  "usingComponents": {
+    "free-divider":"/components/module/free-divider/free-divider"
+  }
+}

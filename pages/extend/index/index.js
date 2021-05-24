@@ -1,4 +1,4 @@
-// pages/extend/index/index.js
+const app = getApp()
 Page({
 
   /**
@@ -37,7 +37,11 @@ Page({
       {
         name:'订单详情', 
         title:'orderDetail'
-      }
+      },
+      {
+        name:'证件识别',
+        title:'identify'
+      },
     ],
     listComponent:[
       {
@@ -48,6 +52,7 @@ Page({
         name:'操作条',
         title:'actionBar'
       },
+      
     ]
   },
   /**

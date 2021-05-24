@@ -1,1 +1,4 @@
 /* packageExtend/orderList/orderList.wxss */
+.imageFlex{
+  display: inline-flex;
+}

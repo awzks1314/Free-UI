@@ -1,16 +1,29 @@
-<image 
-  src="{{src}}"
-  mode="{{mode}}"
-  style="width:{{width}};height:{{height}};border-radius:{{radius}};"
-  lazy-load="{{lazy}}"
-  show-menu-by-longpress="{{long}}"
-  wx:if="{{src}}"
-  bindtap="onPriview"
-></image>
-<view
-wx:else
-class="fle"
-style="width:{{width}};height:{{height}};background:#f4f5f7;border-radius:{{radius}}rpx;"
->
-<free-icon name='picfill'></free-icon>
+<view style="position: relative;transition: opacity {{durationTime/1000}}s ease-in-out;opacity:{{opacity}};backgroundColor:{{backgroundColor}};width:{{width}};height:{{height}};">
+  <image 
+    wx:if="{{!isError}}"
+    src="{{src}}"
+    mode="{{mode}}"
+    style="width: 100%;height: 100%;border-radius:{{radius}};"
+    lazy-load="{{lazy}}"
+    show-menu-by-longpress="{{long}}"
+    bindtap="onPriview"
+    bindload="load"
+    binderror="error"
+  ></image>
+    <view
+    wx:if="{{loading}}"
+    class="fle"
+    style="border-radius:{{radius}}rpx;"
+    >
+    <free-icon name='picfill'></free-icon>
+    </view>
+
+    <view
+    wx:if="{{isError && !loading}}"
+    class="fle"
+    style="border-radius:{{radius}}rpx;"
+    >
+    <free-icon name='infofill'></free-icon>
+    </view>
+
 </view>

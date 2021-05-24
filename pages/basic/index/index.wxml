@@ -1,9 +1,4 @@
-<view class="padding-lr-sm padding-top-sm">
-  <view class="padding  bg-blue radius-sm">
-    <free-image src="/static/image/my/logoBig.png" width="200rpx" height="80rpx" ></free-image>
-    <view class="">一款轻量、开箱即用的原生微信小程序UI组件库</view>
-  </view>
-</view>
+
 <view class="">
   <view class="padding-lr-sm padding-top-sm flex  align-center">
     <view class=" text-gray padding-left-xs">Basic Style</view>
@@ -23,4 +18,4 @@
       <view class="text-Abc  ">{{item.title}}</view>
     </free-list>
   </navigator>
-</view> 
+</view>  

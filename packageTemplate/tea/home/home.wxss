@@ -1,0 +1,24 @@
+page{
+  background: #F1F8FA;
+}
+.homeHeader{
+  position: relative;
+}
+.homeIntro{
+  position: absolute; 
+}
+.entrance{
+  position: relative;
+  margin-top: -80rpx;
+  margin-bottom: 30rpx;
+  border-radius: 10rpx;
+  background-color: #ffffff;
+  box-shadow: 0 20rpx 20rpx -20rpx rgba(51, 51, 51, 0.1);
+  padding: 30rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item{
+  position: relative;
+}

@@ -8,39 +8,39 @@ Page({
     // 你也可以在组件写死
     list:[
       {
-        title:"首页",
-        icon:"/static/image/tabbarIcon/basics.png",
-        selectIcon:"/static/image/tabbarIcon/basic.png",
+        text:"首页",
+        iconPath:"/static/image/tabbarIcon/basics.png",
+        selectedIconPath:"/static/image/tabbarIcon/basic.png",
         number:0,
-        url:"/pages/module/index/index"
+        pagePath:"/pages/module/index/index"
       },
       {
-        title:"扩展",
-        icon:"/static/image/tabbarIcon/extends.png",
-        selectIcon:"/static/image/tabbarIcon/extend.png",
+        text:"扩展",
+        iconPath:"/static/image/tabbarIcon/extends.png",
+        selectedIconPath:"/static/image/tabbarIcon/extend.png",
         number:0,
-        url:"/pages/module/index/index"
+        pagePath:"/pages/module/index/index"
       },
       {
-        title:"进行",
-        icon:"/static/image/tabbarIcon/ings.png",
-        selectIcon:"/static/image/tabbarIcon/ing.png",
+        text:"进行",
+        iconPath:"/static/image/tabbarIcon/ings.png",
+        selectedIconPath:"/static/image/tabbarIcon/ing.png",
         number:0,
-        url:"/pages/module/index/index"
+        pagePath:"/pages/module/index/index"
       },
       {
-        title:"扩展",
-        icon:"/static/image/tabbarIcon/mores.png",
-        selectIcon:"/static/image/tabbarIcon/more.png",
+        text:"扩展",
+        iconPath:"/static/image/tabbarIcon/mores.png",
+        selectedIconPath:"/static/image/tabbarIcon/more.png",
         number:0,
-        url:"/pages/module/index/index"
+        pagePath:"/pages/module/index/index"
       },
       {
-        title:"我的",
-        icon:"/static/image/tabbarIcon/mys.png",
-        selectIcon:"/static/image/tabbarIcon/my.png",
+        text:"我的",
+        iconPath:"/static/image/tabbarIcon/mys.png",
+        selectedIconPath:"/static/image/tabbarIcon/my.png",
         number:99,//角标
-        url:"/pages/module/index/index"
+        pagePath:"/pages/module/index/index"
       }
     ],
     current:0,//当前选中

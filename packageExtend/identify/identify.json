@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"证件识别",
+  "usingComponents": {
+    "free-noticeBar":"/components/module/free-noticeBar/free-noticeBar"
+  }
+}

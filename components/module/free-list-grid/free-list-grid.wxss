@@ -156,8 +156,8 @@
 .badge {
 	border-radius: 200rpx;
 	position: absolute;
-	top: -10rpx;
-	right: 14rpx;
+	top: -11rpx;
+	right: -18rpx;
 	font-size: 20rpx;
 	padding: 0rpx 10rpx;
 	color: #fff;

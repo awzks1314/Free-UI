@@ -1,0 +1,56 @@
+<free-noticeBar 
+  notice="{{notice}}" 
+  isFixed="true"
+></free-noticeBar>
+
+<free-gap height="64"></free-gap>
+
+<free-title type="2" title="上传识别"></free-title>
+<view class="padding-lr padding-bottom bg-white flex flex-wrap justify-between">
+  <view class="flex  flex-direction radius-sm" style="width:46%;background:#f1f7ff;">
+    <view class="padding-tb flex justify-center">
+      <free-image src="/static/image/idcard/front.png" width="211rpx" height='140rpx'></free-image>
+    </view>
+    <view class="padding-tb-sm text-center bg-blue text-lg">上传正面</view>
+  </view>
+  <view class="flex  flex-direction radius-sm" style="width:46%;background:#f1f7ff;">
+    <view class="padding-tb flex justify-center">
+      <free-image src="/static/image/idcard/back.png" width="211rpx" height='140rpx'></free-image>
+    </view>
+    <view class="padding-tb-sm text-center bg-blue text-lg">上传反面</view>
+  </view>
+</view>
+
+<free-gap height="20" ></free-gap>
+<free-title type="2" title="识别内容"></free-title>
+<view class="padding-lr bg-white ">
+  <view class="padding-bottom-xs flex align-center">
+    <view class="text-bold" style="width:140rpx;">姓名：</view>
+    <text>吴彦祖</text>
+  </view>
+  <view class="padding-bottom-xs flex align-center">
+    <view class="text-bold" style="width:140rpx;">民族：</view>
+    <text>汉</text>
+  </view>
+  <view class="padding-bottom-xs flex align-center">
+    <view class="text-bold" style="width:140rpx;">居住地：</view>
+    <text>云南省昆明市</text>
+  </view>
+  <view class="padding-bottom-xs flex align-center">
+    <view class="text-bold" style="width:140rpx;">身份证号：</view>
+    <text>511011119906066666</text>
+  </view>
+</view>
+
+<free-gap height="20" ></free-gap>
+<free-title type="2" title="拍照须知"></free-title>
+<view class="padding-lr bg-white">
+  <view class="text-gray">请上传大陆公民持有的本人有效身份证；</view>
+  <view class="text-gray margin-top-xs padding-bottom-sm">
+    上传时确保身份证<text class="text-red">边框完整，字体清晰，亮度均匀； </text>
+  </view>
+</view>
+
+<view class="padding">
+  <button class="free-button bg-blue block lg">提交认证</button>
+</view>

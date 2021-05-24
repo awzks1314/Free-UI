@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"readMore-阅读更多",
+  "usingComponents": {
+    "free-readMore":"/components/module/free-readMore/free-readMore"
+  }
+}

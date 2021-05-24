@@ -1,4 +1,4 @@
-// pages/module/index/index.js
+const app =getApp()
 Page({
 
   /**
@@ -56,6 +56,16 @@ Page({
       {
         name:'步骤条',
         title:'steps',
+        icon:'home',
+      },
+      {
+        name:'分割线',
+        title:'divider',
+        icon:'home',
+      },
+      {
+        name:'阅读更多',
+        title:'readMore',
         icon:'home',
       },
     ],
@@ -155,9 +165,15 @@ Page({
         title:'backTop',
         icon:'home',
       }
-    ]
+    ],
+    scrollTop:0
   },
-
+  //页面滚动执行方式
+  onPageScroll(e) {
+    this.setData({
+      scrollTop: e.scrollTop
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

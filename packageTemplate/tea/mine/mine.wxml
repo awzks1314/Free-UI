@@ -1,0 +1,8 @@
+<!--packageTemplate/tea/mine/mine.wxml-->
+<text>packageTemplate/tea/mine/mine.wxml</text>
+<free-tabbar 
+  list="{{teaList.list}}" 
+  color="{{teaList.color}}"
+  selectColor="{{teaList.selectedColor}}"
+  current="3"
+  bind:click="change"></free-tabbar>

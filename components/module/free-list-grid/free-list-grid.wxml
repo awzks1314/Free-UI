@@ -5,10 +5,11 @@ wx:if="{{!isSwiper}}"
     <view class="free-item " wx:for="{{list}}" wx:key="index" bindtap="onClick" data-index="{{index}}">
       <view class="free-tag">
         <image src="{{item.image?item.image:'https://game.gtimg.cn/images/lol/act/img/tft/champions/27'+index+'.png'}}" style="width:{{item.width?item.width:width}}rpx;height:{{item.height?item.height:height}}rpx;border-radius:{{radius}}rpx;"></image>
+        <view class="badge" style="background:{{item.color?item.color:'red'}};" wx:if="{{item.number>0}}">
+          <block >{{item.number>99?"99+":item.number}}</block>
+        </view> 
       </view >
-      <view class="badge" style="background:{{item.color?item.color:'red'}};" wx:if="{{item.number>0}}">
-        <block >{{item.number>99?"99+":item.number}}</block>
-      </view> 
+      
       <text>{{item.name}}</text> 
     </view>
 </view> 
@@ -20,10 +21,11 @@ wx:if="{{!isSwiper}}"
         <view class="free-item" style="height:{{swiperHeight/row}}rpx" wx:for="{{itemData}}" wx:key="index" bindtap="onClick" data-index="{{item.id}}">
           <view class="free-tag">
             <image src="{{item.image?item.image:'https://game.gtimg.cn/images/lol/act/img/tft/champions/27'+index+'.png'}}" style="width:{{item.width?item.width:width}}rpx;height:{{item.height?item.height:height}}rpx;border-radius:{{radius}}rpx;"></image>
+            <view class="badge" style="background:{{item.color?item.color:'red'}};" wx:if="{{item.number>0}}">
+              <block >{{item.number>99?"99+":item.number}}</block>
+            </view> 
           </view >
-          <view class="badge" style="background:{{item.color?item.color:'red'}};" wx:if="{{item.number>0}}">
-            <block >{{item.number>99?"99+":item.number}}</block>
-          </view> 
+          
           <text>{{item.name}}</text> 
         </view>
       </view>

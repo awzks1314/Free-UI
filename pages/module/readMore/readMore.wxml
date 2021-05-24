@@ -1,0 +1,25 @@
+<free-title type="2" title="效果演示"></free-title>
+
+<view class="padding-lr">
+  <free-readMore
+  height="{{height}}"
+  closeText="展开阅读全文"
+  openText="收起"
+  color="{{color}}"
+  bind:open="open"
+  bind:close='close'
+  >
+    <rich-text nodes="{{content}}"></rich-text>
+  </free-readMore>
+</view>
+
+<free-title type="2" title="参数配置"></free-title>
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="最小高度，超出隐藏，px" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['200', '300','400']}}" bind:click='getMode' data-name="height" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#0081ef','red','orange']}}" bind:click='getMode' data-name="color" bold="true"></free-subsection>
+</view>
