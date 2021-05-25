@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText":"奈雪の茶",
   "usingComponents": {
     "free-tabbar":"/components/module/free-tabbar/free-tabbar"
   }

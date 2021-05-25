@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    teaList:app.globalData.teaList
+    teaList:app.globalData.teaList,
+    login:false
   },
 
   /**

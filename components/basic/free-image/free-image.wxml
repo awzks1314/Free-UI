@@ -1,6 +1,6 @@
 <view style="position: relative;transition: opacity {{durationTime/1000}}s ease-in-out;opacity:{{opacity}};backgroundColor:{{backgroundColor}};width:{{width}};height:{{height}};">
   <image 
-    wx:if="{{!isError}}"
+    wx:if="{{!isError }}"
     src="{{src}}"
     mode="{{mode}}"
     style="width: 100%;height: 100%;border-radius:{{radius}};"
@@ -11,7 +11,7 @@
     binderror="error"
   ></image>
     <view
-    wx:if="{{loading}}"
+    wx:if="{{loading }}"
     class="fle"
     style="border-radius:{{radius}}rpx;"
     >
@@ -19,7 +19,7 @@
     </view>
 
     <view
-    wx:if="{{isError && !loading}}"
+    wx:if="{{isError && !loading }}"
     class="fle"
     style="border-radius:{{radius}}rpx;"
     >

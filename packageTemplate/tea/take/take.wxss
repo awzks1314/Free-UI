@@ -1,1 +1,5 @@
-/* packageTemplate/tea/take/take.wxss */
+page{
+  background: #F1F8FA;
+  width: 100%;
+  height: 100%;
+}

@@ -1,4 +1,6 @@
 <view class="pageBox flex flex-direction" style="height:100vh;">
+    
+  <view class="main " >
     <free-input 
     id="input"
     placeholder='输入您要查找的分类'
@@ -10,33 +12,53 @@
     bind:confirm = "confirm"
     bind:close = "close"
   ></free-input>
-  <view class="menu-wrap flex solid-top">
+  <!-- 内容 -->
+  <view class="menu-wrap ">
     <!-- 左侧 -->
-    <scroll-view scroll-y scroll-with-animation class="left-view" scroll-top="{{scrollTop}}" scroll-into-view="{{itemId}}">
-      <view wx:for="{{tabbar}}" wx:key="index" id="item" class="left-item {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" catchtap="swichNav">
-        <text>{{item}}</text>
+    <scroll-view scroll-with-animation scroll-y class="menus" scroll-top="{{scrollTop}}" scroll-into-view="{{itemId}}">
+      <view class="wrapper">
+        <view wx:for="{{menuList}}" wx:key="index" id="item-{{index}}" class="menu {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" bindtap="swichNav">
+          <text>{{item.name}}</text>
+        </view>
       </view>
     </scroll-view>
-    <!-- 左侧 --> 
-    <!-- 联动 -->
-    <scroll-view bindscroll="rightScroll" scroll-y scroll-top="{{scrollRightTop}}" scroll-with-animation >
-        <!-- 轮播 -->
-        <!-- <swiper class="swiper {{true?'square-dot':'round-dot'}} padding-sm" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
-          <swiper-item wx:for="{{swiperList}}" wx:key="index" class="radius-sm">
-            <free-image src="{{item.url}}" width="100%" height="200rpx"></free-image>
+
+    
+    <scroll-view scroll-with-animation scroll-y class="goods " scroll-top="{{scrollRightTop}}" bindscroll="rightScroll">
+      
+      <view class="wrapper padding-sm">
+        <swiper class="ads " id="ads" autoplay interval="3000" indicator-dots>
+          <swiper-item wx:for="{{ads}}" wx:key='index' class="radius-sm">
+            <free-image src="{{item.image}}" width="100%" height="250rpx"></free-image>
           </swiper-item>
-        </swiper> -->
-        <view class="right-item" wx:for="{{tabbar}}" wx:key="index" id="{{'item'+index}}">
-          <view class=" text-sm text-bold padding-lr-sm">{{item}}</view>
-          <free-list-grid 
-            list="{{gridList}}" 
-            col="3" 
-            radius="500"
-            width="100"
-            height="100"
-            bind:click='onClick'
-            ></free-list-grid>
+        </swiper>
+        <!-- goods -->
+        <view class="list padding-bottom">
+          <view wx:for="{{menuList}}" wx:key="index" class="category" id="cate-{{index}}">
+            <view class="padding-top">
+              <text>{{item.name}}</text>
+            </view>
+
+            <view class="items flex flex-direction">
+              <view class="good flex align-center padding-top" wx:for="{{item.product}}" wx:for-item="good" wx:key="index">
+                <free-image  src="{{good.images}}" width="160rpx" height="160rpx" radius="10rpx"></free-image>
+                <view class="flex-sub padding-left-sm padding-right-sm  flex flex-direction align-start justify-around" style="height:160rpx;overflow: hidden;">
+                  <text>{{good.name}}</text>
+                  <view class="text-sm text-cut w100">{{good.content}}大叔大婶</view>
+                  <view class="flex align-center justify-between w100">
+                    <text class="text-bold text-lg text-price">{{good.price}}</text>
+                    <free-icon name="roundaddfill" color="#ADB838" wx:if="{{!good.property || good.property.length == 0}}"></free-icon>
+                    <view wx:else class="">
+                      <text class="radius-lg text-sm text-white" style="background:#ADB838;padding:6rpx 12rpx;">选规格</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
         </view>
+      </view>
     </scroll-view>
   </view>
+</view>
 </view>

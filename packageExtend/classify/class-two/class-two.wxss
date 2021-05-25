@@ -1,4 +1,5 @@
 page{
+  height: 100vh;
   background: #fff;
 }
 ::-webkit-scrollbar {
@@ -6,50 +7,73 @@ page{
   height: 0;
   color: transparent;
 }
+.contain{
+  overflow: hidden; 
+  position: relative;
+  height: 100%;
+  padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+}
+.main{
+  width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.nav{
+  width: 100%;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+}
+.right{
+  background-color: #F5F5F5;
+  border-radius: 40rpx;
+  padding: 0 40rpx;
+}
+.takeout{
+  padding:14rpx 38rpx;
+  background-color: #ADB838;
+  color: #fff;
+  border-radius: 40rpx;
+  margin-right: -38rpx;
+  margin-left: 20rpx;
+}
 .menu-wrap{
+  flex: 1;
+	overflow: hidden;
+	width: 100%;
   display: flex;
+}
+.menus{
+  width: 200rpx;
+  height: 100%;
+  background-color: #F5F5F5;
   overflow: hidden;
 }
-.left-view{
-  width: 200rpx;
-  /* position: fixed; */
-  left: 0;
-  top: 100rpx;
-  z-index: 10;
+.wrapper{
+  width: 100%;
+  height: 100%;
 }
-
-.left-item {
-  width: 200rpx;
-  height: 110rpx;
-  background: #f6f6f6;
-  box-sizing: border-box;
+.menu{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 30rpx 20rpx;
   font-size: 26rpx;
-  color: #444;
-  font-weight: 400;
-}
-
-.active {
   position: relative;
-  color: #000;
-  font-size: 30rpx;
-  font-weight: 600;
-  background: #fcfcfc;
 }
-
-.active::before {
-  content: "";
-  position: absolute;
-  border-left: 8rpx solid #0081ef;
-  height: 30rpx;
-  left: 0;
+.goods{
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
 }
-.right-view{
-  width: 100%;
+.active{
+  background-color: #ffffff;
+  
 }
-.swiper{
-  width: 100%;
-  height: 200rpx;
+.ads{
+  width:100%;
+  height:250rpx;
 }

@@ -12,18 +12,80 @@
       <view>
         <free-image src="/static/image/tea/index/zq.png" width="82rpx" height="82rpx"></free-image>
       </view>
-      <text class="padding-top-sm text-bold">自取</text>
+      <text class="padding-top-xs text-bold text-lg">自取</text>
+      <text class="text-sm text-gray padding-top-xs">预约点单，到店自取</text>
     </view>
     <view class="item flex-sub flex flex-direction align-center justify-center">
       <view>
         <free-image src="/static/image/tea/index/wm.png" width="82rpx" height="82rpx"></free-image>
       </view>
-      <text class="padding-top-sm text-bold">外卖</text>
+      <text class="padding-top-xs text-bold text-lg">外卖</text>
+      <text class="text-sm text-gray padding-top-xs">外卖下单，快速送达</text>
     </view>
   </view> 
 
-</view>
+  <!-- 2 -->
+  <view class="info ">
+    <view class="flex flex-direction">
+      <view>
+        <text>我的积分</text>
+        <text class="text-xxl text-black text-bold padding-left-xs">8888</text>
+      </view>
+      <view class="flex align-center text-sm">
+        <text class="text-gray">签到得积分，商城兑限量周边</text>
+        <free-icon name="right" size="13" color="#aaaaaa"></free-icon>
+      </view>
+    </view>
+    <view class="text-center">
+        <free-icon name="qrcode" color="#ADB838" size="20"></free-icon>
+        <view class="text-tea padding-top-xs text-sm" >会员码</view>
+    </view>
+  </view>
 
+  <!-- 3 -->
+  <view class="info">
+    <view class="left flex-sub margin-right-sm flex flex-direction">
+      <view class="leftTop flex-sub flex flex-direction  justify-center">
+        <view class="flex align-center">
+          <free-image src="/static/image/tea/index/csc.png" width="30rpx" height="30rpx"></free-image>
+          <text class="padding-left-xs">奈雪的茶商城</text>
+        </view>
+        <text class="text-gray text-sm padding-left-lg">优质茶礼盒，网红零食</text>
+      </view>
+      <view class="leftBottom flex-sub flex align-end justify-end">
+        <free-image src="/static/image/tea/index/yzclh.png"  width="173rpx" height="99rpx"></free-image>
+      </view>
+    </view>
+    <view class="right flex-sub  flex flex-direction">
+      <view class="rightTop padding-lr-sm flex-sub flex align-center justify-around margin-bottom-sm ">
+        <free-image src="/static/image/tea/index/mcsb.png" width="30rpx" height="30rpx"></free-image>
+        <text>买茶送包</text>
+        <view class="" style="margin-right:-26rpx;margin-bottom:-26rpx;">
+          <free-image src="/static/image/tea/index/mcsb_bg.png" width="114rpx" height="104rpx"></free-image>
+        </view>
+      </view>
+      <view class="rightBottom padding-lr-sm flex-sub flex  align-center justify-around">
+        <free-image src="/static/image/tea/index/hyjb.png" width="30rpx" height="30rpx"></free-image>
+        <text>会员券包</text>
+        <view class="" style="margin-right:-26rpx;margin-bottom:-26rpx;">
+          <free-image src="/static/image/tea/index/hyjb_bg.png" width="114rpx" height="104rpx"></free-image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 4 -->
+  <view class="flex align-center justify-between">
+    <text class="text-bold">会员新鲜事</text>
+    <free-icon name="roundright"></free-icon>
+  </view>
+
+  <view class="margin-top-sm">
+    <free-image src="https://z3.ax1x.com/2021/05/25/gxXGLR.jpg" width="100%" height="240rpx" radius="10rpx"> </free-image>
+  </view>
+</view> 
+
+<free-gap height="120"></free-gap>
 <free-tabbar 
   list="{{teaList.list}}" 
   color="{{teaList.color}}"

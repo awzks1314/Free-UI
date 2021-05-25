@@ -48,6 +48,7 @@ Component({
     // 图片是否加载错误，如果是，则显示错误占位图
     isError: false,
     // 初始化组件时，默认为加载中状态
+    // 不想使用为false，且注释load方法
     loading: true,
     // 不透明度，为了实现淡入淡出的效果
     opacity: 1,

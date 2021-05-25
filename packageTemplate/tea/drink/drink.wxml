@@ -1,5 +1,79 @@
 
-<text>packageTemplate/tea/drink/drink.wxml</text>
+<view class="contain">
+  <view class="main " >
+  <view class="nav">
+    <view class="padding-sm bg-white flex align-center justify-between">
+      <view class="left">
+        <view class="flex align-center">
+          <text class="text-lg">卓悦中心ONE AVENUE店</text>
+          <free-icon name="right" size="14" color="#333333"></free-icon>
+        </view>
+        <view class="flex align-center text-sm text-gray margin-top-xs">
+          <free-icon name="location" size="16" color="#ADB838"></free-icon>
+          <text class="padding-left-xs">距离您 889m</text>
+        </view>
+      </view>
+      <view class="right flex align-center ">
+        <text class="dinein flex-sub">自取</text>
+        <text class="dinein takeout flex-sub">外卖</text>
+      </view>
+    </view>
+    <view class="notice padding-sm flex align-center justify-between teaBg">
+      <text class="text-tea">"霸气mini卡"超级购券活动，赶紧去购买</text>
+      <free-icon name="right" size="14" color="#ADB838"></free-icon>
+    </view>
+  </view>
+
+  <!-- 内容 -->
+  <view class="menu-wrap ">
+    <!-- 左侧 -->
+    <scroll-view scroll-with-animation scroll-y class="menus" scroll-top="{{scrollTop}}" scroll-into-view="{{itemId}}">
+      <view class="wrapper">
+        <view wx:for="{{menuList}}" wx:key="index" id="item-{{index}}" class="menu {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" bindtap="swichNav">
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+    </scroll-view>
+
+    
+    <scroll-view scroll-with-animation scroll-y class="goods " scroll-top="{{scrollRightTop}}" bindscroll="rightScroll">
+      
+      <view class="wrapper padding-sm">
+        <swiper class="ads " id="ads" autoplay interval="3000" indicator-dots>
+          <swiper-item wx:for="{{ads}}" wx:key='index' class="radius-sm">
+            <free-image src="{{item.image}}" width="100%" height="250rpx"></free-image>
+          </swiper-item>
+        </swiper>
+        <!-- goods -->
+        <view class="list padding-bottom">
+          <view wx:for="{{menuList}}" wx:key="index" class="category" id="cate-{{index}}">
+            <view class="padding-top">
+              <text>{{item.name}}</text>
+            </view>
+
+            <view class="items flex flex-direction">
+              <view class="good flex align-center padding-top" wx:for="{{item.product}}" wx:for-item="good" wx:key="index">
+                <free-image  src="{{good.images}}" width="160rpx" height="160rpx" radius="10rpx"></free-image>
+                <view class="flex-sub padding-left-sm padding-right-sm  flex flex-direction align-start justify-around" style="height:160rpx;overflow: hidden;">
+                  <text>{{good.name}}</text>
+                  <view class="text-sm text-cut w100">{{good.content}}大叔大婶</view>
+                  <view class="flex align-center justify-between w100">
+                    <text class="text-bold text-lg text-price">{{good.price}}</text>
+                    <free-icon name="roundaddfill" color="#ADB838" wx:if="{{!good.property || good.property.length == 0}}"></free-icon>
+                    <view wx:else class="">
+                      <text class="radius-lg text-sm text-white" style="background:#ADB838;padding:6rpx 12rpx;">选规格</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+</view>
 <free-tabbar 
   list="{{teaList.list}}" 
   color="{{teaList.color}}"

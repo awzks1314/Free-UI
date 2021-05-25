@@ -1,5 +1,99 @@
 <!--packageTemplate/tea/mine/mine.wxml-->
-<text>packageTemplate/tea/mine/mine.wxml</text>
+<view class="">
+  <view class="relative">
+    <free-image src="https://img-shop.qmimg.cn/s16/images/2020/01/20/9a82219bedcae5c2.jpeg" width="100%" height="500rpx"></free-image>
+    <view class="codeBtn">
+      <free-icon name="qrcode" color="#ADB838" size="16"></free-icon>
+      <text class="padding-left-xs">会员码</text>
+    </view>
+  </view>
+
+  <view class="padding-lr">
+    <!-- 1 -->
+    <view class="userInfo bg-white flex flex-direction">
+      <view class="flex align-center">
+        <view class="avatar">
+          <free-image src="/static/image/my/dog.jpg" width="140rpx" height="140rpx" radius="50%" ></free-image>
+        </view>
+        <view class="flex flex-direction flex-sub margin-top-xs">
+          <text class="text-bold text-lg">请点击授权登录</text>
+          <text class="text-sm text-gray">当前成长值0/0</text>
+        </view>
+        <view class="vip flex align-center text-sm text-white justify-end">
+          <text>会员权益</text>
+          <free-icon name="right" color="#fff" size="18"></free-icon>
+        </view>
+      </view>
+
+      <view class="w100 flex align-center justify-center">
+        <view class="user-grid padding-sm">
+          <text class="text-xxl  text-bold">***</text>
+          <text class="text-sm text-gray">奈雪券</text>
+        </view>
+        <view class="user-grid padding-sm">
+          <text class="text-xxl  text-bold">***</text>
+          <text class="text-sm text-gray">积分商城</text>
+        </view>
+        <view class="user-grid padding-sm">
+          <text class="text-xxl  text-bold">***</text>
+          <text class="text-sm text-gray">余额</text>
+        </view>
+        <view class="user-grid padding-sm">
+          <text class="text-xxl  text-bold">***</text>
+          <text class="text-sm text-gray">礼品卡</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 2 -->
+    <view class="level-benefit-box">
+      <view class="flex align-center justify-between">
+        <text>新用户加入会员，享会员权益</text>
+        <text class="text-tea">立即加入</text>
+      </view>
+      <view class="padding-top flex align-center justify-center">
+        <view class="grid">
+          <free-image src="/static/image/tea/mine/rhyl.png" width="80rpx" height="80rpx"></free-image>
+          <text class="text-sm text-gray margin-top-xs">入会有礼</text>
+        </view>
+        <view class="grid">
+          <free-image src="/static/image/tea/mine/jfdh.png" width="80rpx" height="80rpx"></free-image>
+          <text class="text-sm text-gray margin-top-xs">积分兑换</text>
+        </view>
+        <view class="grid">
+          <free-image src="/static/image/tea/mine/sjtq.png" width="80rpx" height="80rpx"></free-image>
+          <text class="text-sm text-gray margin-top-xs">升级特权</text>
+        </view>
+        <view class="grid">
+          <free-image src="/static/image/tea/mine/srtq.png" width="80rpx" height="80rpx"></free-image>
+          <text class="text-sm text-gray margin-top-xs">生日特权</text>
+        </view>
+        <view class="grid">
+          <free-image src="/static/image/tea/mine/nxbz.png" width="80rpx" height="80rpx"></free-image>
+          <text class="text-sm text-gray margin-top-xs">奈雪宝藏</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 3 -->
+
+    <view class="margin-bottom">
+      <free-image  src="/static/image/tea/mine/banner.png" width="100%" height="160rpx" radius="10rpx" ></free-image>
+    </view>
+  </view>
+
+  <!-- serve -->
+  <view class="bg-white padding">
+    <view class="text-lg text-bold">我的服务</view>
+    <view class=" flex align-center justify-center flex-wrap">
+      <view class="user-grid padding-top" wx:for="{{serveList}}" wx:key="index">
+        <free-image src="/static/image/tea/mine/{{item.img}}.png" width="80rpx" height="80rpx"></free-image>
+        <text class="text-sm text-gray margin-top-xs">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<free-gap height="120"></free-gap>
 <free-tabbar 
   list="{{teaList.list}}" 
   color="{{teaList.color}}"

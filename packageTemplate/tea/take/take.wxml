@@ -1,5 +1,17 @@
 <!--packageTemplate/tea/take/take.wxml-->
-<text>packageTemplate/tea/take/take.wxml</text>
+<view class="container">
+  <view wx:if="{{!login}}" class="h100 w100 flex align-center justify-center flex-direction">
+    <free-image src="https://z3.ax1x.com/2021/05/25/gz45GR.gif" width="260rpx" height="260rpx"></free-image>
+    <view class="padding-tb-lg flex align-center justify-center flex-direction text-sm text-gray">
+      <text>您还没有点单</text>
+      <text class="padding-top-xs">快去犒劳一下自己吧~</text>
+    </view>
+    <view class=" padding-tb-sm round bg-tea text-center" style="width:240rpx;">
+      去点餐
+    </view>
+    <text class="text-tea padding-top-lg text-sm">查看历史订单</text>
+  </view>
+</view>
 <free-tabbar 
   list="{{teaList.list}}" 
   color="{{teaList.color}}"
