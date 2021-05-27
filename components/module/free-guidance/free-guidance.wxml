@@ -1,0 +1,7 @@
+<view class="class guidance-style" wx:if="{{showTips}}" style="animation: {{animation?'rotate':'none'}} .9s linear infinite;">
+  <view class="triangle" style="border-color: transparent transparent {{bgColor}} transparent;"></view>
+  <view class="tips" style="background-color: {{bgColor}};color:{{color}};font-size:{{size}}rpx;">
+    <text>{{tip}}</text>
+    <free-icon name="close" class="closeIcon" color="{{color}}" size="16" catchtap="closeTip" wx:if="{{close}}"></free-icon>
+  </view>
+</view>

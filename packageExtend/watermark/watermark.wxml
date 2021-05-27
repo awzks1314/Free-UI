@@ -1,0 +1,30 @@
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
+
+<view class="text-center">
+<button class="free-button bg-blue">查看页面</button>
+</view>
+
+<free-watermark
+  opacity="{{opacity}}"
+  color="{{color}}"
+  number="{{number}}"
+  deg="{{deg}}"
+></free-watermark>
+
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="字体透明度" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['0.3','0.5','0.9']}}" bind:click='getMode' data-name="opacity" bold="true"></free-subsection>
+</view>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="字体颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#0081ef','red','orange']}}" bind:click='getMode' data-name="color" bold="true"></free-subsection>
+</view>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="水印数量" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[6,9,12]}}" bind:click='getMode' data-name="number" bold="true"></free-subsection>
+</view>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="水印旋转角度deg" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['-45','-18','-29']}}" bind:click='getMode' data-name="deg" bold="true"></free-subsection>
+</view>

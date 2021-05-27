@@ -1,0 +1,30 @@
+.waterMask{
+  position: fixed;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	pointer-events: none;
+	z-index: 9999999;
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+	overflow: hidden;
+}
+.contentBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.water-text{
+  width: 375rpx;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: 32rpx;
+  white-space: nowrap;
+}

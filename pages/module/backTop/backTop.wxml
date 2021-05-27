@@ -1,4 +1,4 @@
-<free-title type="2" title="效果演示"></free-title>
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
 <view class="padding text-center ">
   滚动查看具体效果
 </view>
@@ -14,34 +14,34 @@
   icon="{{icon}}"
   ></free-backTop>
 
-<free-title type="2" title="参数配置"></free-title>
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="组件形状" height="40"></free-title>
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="组件形状" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['circle', 'square']}}" bind:click='getMode' data-name="mode" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="组件距离底部的距离" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="组件距离底部的距离" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['100', '200','300']}}" bind:click='getMode' data-name="bottom" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="组件距离右侧的距离" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="组件距离右侧的距离" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['24', '64','104']}}" bind:click='getMode' data-name="right" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="显示组件的滚动条距离,当前滚动条距离{{scrollTop}}" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="显示组件的滚动条距离,当前滚动条距离{{scrollTop}}" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['50', '150','300']}}" bind:click='getMode' data-name="top" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="自定义图标" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="自定义图标" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['top', 'triangleupfill','home']}}" bind:click='getMode' data-name="icon" bold="true"></free-subsection>
 </view>
 
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="自定义颜色" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="自定义颜色" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['grey', 'red','blue']}}" bind:click='getMode' data-name="bgColor" bold="true"></free-subsection>
 </view>

@@ -1,4 +1,4 @@
-<free-title type="2" title="效果演示"></free-title>
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
 
 <view class="padding flex align-center justify-center">
   <free-tag 
@@ -11,35 +11,35 @@
   >默认标签</free-tag>
 </view>
 
-<free-title type="2" title="参数配置"></free-title>
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="颜色" height="40"></free-title>
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="颜色" height="40"></free-title>
 <view class="free-form-group" bindtap="showModal" data-target="ColorModal">
   <view class="title">选择颜色</view>
   <view class="padding bg-{{type}} solid radius shadow-blur"></view>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="标签大小" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="标签大小" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['默认','sm']}}" bind:click='getMode' data-name="size" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="圆角" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="圆角" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['默认','10rpx','50rpx']}}" bind:click='getMode' data-name="radius" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="主题" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="主题" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['dark','light','plain']}}" bind:click='getMode' data-name="effect" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="图标" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="图标" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['无','add','apps']}}" bind:click='getMode' data-name="icon" bold="true"></free-subsection>
 </view>
 
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="图标颜色" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="图标颜色" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['无','#0081ef','#000']}}" bind:click='getMode' data-name="iconColor" bold="true"></free-subsection>
 </view>

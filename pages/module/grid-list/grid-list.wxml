@@ -1,7 +1,7 @@
 
 
 
-  <free-title type="2" title="效果演示"></free-title>
+  <free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
   <!-- grid组件 -->
   <free-list-grid 
     list="{{gridList}}" 
@@ -15,8 +15,8 @@
     ></free-list-grid>
   <!-- grid组件 -->
 
-  <free-title type="2" title="参数配置"></free-title>
-  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="列数" height="40"></free-title>
+  <free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+  <free-title icon='line' type='3'  bold="{{false}}" size='28' title="列数" height="40"></free-title>
   <view class="padding">
     <free-subsection list="{{[3,4,5,2]}}" bind:click='getMode' data-name="col" bold="true"></free-subsection>
   </view>
@@ -36,12 +36,12 @@
     <free-subsection list="{{[400,500,600]}}" bind:click='getMode' data-name="swiperHeight" bold="true"></free-subsection>
   </view>
 
-  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="修改图像圆角" height="40"></free-title>
+  <free-title icon='line' type='3'  bold="{{false}}" size='28' title="修改图像圆角" height="40"></free-title>
   <view class="padding">
     <free-subsection list="{{[10,20,30,40]}}" bind:click='getMode' data-name="radius" bold="true"></free-subsection>
   </view>
 
-  <free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="是否显示边框" height="40"></free-title>
+  <free-title icon='line' type='3'  bold="{{false}}" size='28' title="是否显示边框" height="40"></free-title>
   <view class="padding">
     <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="border" bold="true"></free-subsection>
   </view>

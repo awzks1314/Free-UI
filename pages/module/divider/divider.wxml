@@ -1,4 +1,4 @@
-<free-title type="2" title="效果演示"></free-title>
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
 
 <!-- 组件 -->
 <free-divider
@@ -8,22 +8,22 @@
   color="{{color}}"
 ></free-divider>
 <!-- 组件 -->
-<free-title type="2" title="参数配置"></free-title>
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="左右线宽" height="40"></free-title>
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="左右线宽" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['50', '100', '150', '200']}}" bind:click='getMode' data-name="lineWidth" bold="true"></free-subsection>
 </view>
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="线条颜色" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="线条颜色" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['#dcdfe6', 'red', 'blue', 'orange']}}" bind:click='getMode' data-name="lineColor" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="内容" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="内容" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['没有更多了', '这是一个分割线', '啥子都没有了']}}" bind:click='getMode' data-name="title" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="内容文本颜色" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="内容文本颜色" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['#333', '#0081ef', 'yellow']}}" bind:click='getMode' data-name="color" bold="true"></free-subsection>
 </view>

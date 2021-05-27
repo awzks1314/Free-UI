@@ -59,7 +59,8 @@
     "packageTemplate/tea/pay/pay",
     "packageTemplate/tea/order/order",
     "packageTemplate/tea/orderDetail/orderDetail",
-    "packageTemplate/tea/review/review"
+    "packageTemplate/tea/review/review",
+    "pages/module/guidance/guidance"
   ],
   "subPackages": [
     {
@@ -79,7 +80,8 @@
         "actionBar/actionBar",
         "orderList/orderList",
         "orderDetail/orderDetail",
-        "identify/identify"
+        "identify/identify",
+        "watermark/watermark"
       ]
     }
   ],

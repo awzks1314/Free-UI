@@ -14,10 +14,10 @@
     <free-icon name='rankfill'  color='#e54d42'></free-icon>
     <view class="free-list-name padding-left-xs">Github源码地址</view>
   </free-list> 
-  <!-- <free-list arrow="true" bind:click="detail" >
-    <free-icon name='shop' color='#0081ff'></free-icon>
+  <free-list arrow="true" bind:click="detail" data-index="2">
+    <free-icon name='xiazai' color='#0081ff'></free-icon>
     <view class="free-list-name padding-left-xs">Gitee源码地址</view>
-  </free-list> -->
+  </free-list>
   <free-list arrow="true" bind:click="detail" data-url="/pages/my/log/log">
     <free-icon name='news_hot_fill_light' color='#f37b1d'></free-icon>
     <view class="free-list-name padding-left-xs">更新日志</view>
@@ -36,4 +36,4 @@
     <view class="free-list-name padding-left-xs">关于Free UI</view>
   </free-list>
 </view>
-
+<official-account></official-account> 

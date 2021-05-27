@@ -1,0 +1,58 @@
+.guidance-style{
+  position: fixed;
+  top: 0;
+  /* 距离顶部高度，部分自定义标题栏会覆盖提示栏 */
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 600rpx;
+  
+}
+/* 弹跳动画 */
+@keyframes rotate {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(2rpx);
+  }
+
+  50% {
+    transform: translateY(5rpx) scale(1.01, 0.99);
+
+  }
+
+  75% {
+    ransform: translateY(2rpx);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+.triangle{
+  width: 0;
+  height: 0;
+  margin-right: 120rpx;
+  border-width: 10rpx;
+  border-style: solid;
+  
+  /* 箭头颜色 */
+}
+.tips{
+  
+  /* 背景颜色 */
+  box-shadow: 0 10rpx 20rpx -10rpx #F1F1F1;
+  /* 阴影颜色 */
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56rpx;
+  padding: 0 10rpx 0 15rpx;
+  margin-right: 40rpx;
+}

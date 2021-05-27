@@ -1,0 +1,5 @@
+<view class="waterMask">
+  <view wx:for="{{number}}" wx:key="index" class="contentBox">
+      <view class="water-text" style="opacity:{{opacity}};transform: rotate({{deg}}deg);color:{{color}};"> {{text}}</view>
+  </view>
+</view>

@@ -37,8 +37,8 @@
           "scene": null
         },
         {
-          "name": "packageTemplate/tea/drink/drink",
-          "pathName": "packageTemplate/tea/drink/drink",
+          "name": "packageExtend/watermark/watermark",
+          "pathName": "packageExtend/watermark/watermark",
           "query": "",
           "scene": null
         },
@@ -47,6 +47,12 @@
           "pathName": "pages/module/steps/steps",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/basic/index/index",
+          "pathName": "pages/basic/index/index",
+          "query": "",
+          "scene": 1047
         }
       ]
     }

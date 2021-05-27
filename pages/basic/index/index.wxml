@@ -18,4 +18,5 @@
       <view class="text-Abc  ">{{item.title}}</view>
     </free-list>
   </navigator>
-</view>  
+</view> 
+<official-account></official-account> 

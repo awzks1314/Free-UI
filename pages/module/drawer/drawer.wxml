@@ -1,4 +1,4 @@
-<free-title type="2" title="效果演示"></free-title>
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
 
 <view class="padding text-center">
   <button class="free-button bg-blue" bindtap="openDrawer">打开抽屉</button>
@@ -21,29 +21,29 @@
   <!-- 组件 --> 
 </view>
 
-<free-title type="2" title="参数配置"></free-title>
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="五种抽屉模式可选择" height="40"></free-title>
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="五种抽屉模式可选择" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['left', 'right', 'center','top', 'bottom']}}" bind:click='getMode' data-name="mode" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="圆角" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="圆角" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['0rpx', '20rpx', '40rpx','60rpx']}}" bind:click='getMode' data-name="radius" bold="true"></free-subsection>
 </view>
 
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="是否显示关闭图标" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="是否显示关闭图标" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="closeable" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="图标位置" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="图标位置" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['top-right','top-left','bottom-right','bottom-left']}}" bind:click='getMode' data-name="closeIconPos" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="遮罩层能否点击" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="遮罩层能否点击" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="maskClosable" bold="true"></free-subsection>
 </view>

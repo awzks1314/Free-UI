@@ -1,17 +1,17 @@
 
-<free-title type="2" title="效果演示"></free-title>
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
 
 <view class="padding-lr  bg-white">
   <view class="padding  bg-white {{type}}{{position?'-'+position:''}} {{radius?'radius-'+radius:radius}}"></view> 
 </view> 
 
-<free-title type="2" title="参数配置"></free-title>
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="有两种模式供选择" height="40"></free-title>
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="有两种模式供选择" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['solid', 'dashed']}}" bind:click='getMode' data-name="type" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="五种边框样式" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="五种边框样式" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['默认', 'top','bottom', 'left','right']}}" bind:click='getMode' data-name="position" bold="true"></free-subsection>
 </view>

@@ -18,6 +18,10 @@ Page({
       wx.setClipboardData({
         data: 'https://github.com/awzks1314/Free-UI',
       })
+    }else if(index == 2){
+      wx.setClipboardData({
+        data: 'https://gitee.com/zkszz/free-ui',
+      })
     }else{
       wx.navigateTo({
         url: e.currentTarget.dataset.url

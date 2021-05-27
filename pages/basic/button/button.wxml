@@ -1,4 +1,4 @@
-<free-title type="2" title="效果演示"></free-title>
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
 <!-- 按钮 -->
 <view class="text-center">
   <button class="free-button   {{line?line+'-'+color:'bg-'+color}}  {{size}} {{round}} {{shadow}} {{light}} {{block}}" 
@@ -12,51 +12,51 @@
 </view>
 <!-- 按钮 -->
 
-<free-title type="2" title="参数配置"></free-title>
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮大小" height="40"></free-title>
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="按钮大小" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['默认','sm', 'lg']}}" bind:click='getMode' data-name="size" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮颜色" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="按钮颜色" height="40"></free-title>
 <view class="free-form-group" bindtap="showModal" data-target="ColorModal">
   <view class="title">选择颜色</view>
   <view class="padding bg-{{color}} solid radius shadow-blur"></view>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮形状" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="按钮形状" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['默认','round']}}" bind:click='getMode' data-name="round" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮高亮" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="按钮高亮" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['默认','light']}}" bind:click='getMode' data-name="light" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮阴影" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="按钮阴影" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['默认','shadow']}}" bind:click='getMode' data-name="shadow" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮镂空" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="按钮镂空" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['默认','line','lines']}}" bind:click='getMode' data-name="line" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮加载" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="按钮加载" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="loading" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="块级按钮" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="块级按钮" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['默认','block']}}" bind:click='getMode' data-name="block" bold="true"></free-subsection>
 </view>
 
 
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="按钮禁用" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="按钮禁用" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="disabled" bold="true"></free-subsection>
 </view>

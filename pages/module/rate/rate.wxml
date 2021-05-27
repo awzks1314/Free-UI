@@ -1,4 +1,4 @@
-<free-title type="2" title="效果演示"></free-title>
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
 
 <!-- 组件 -->
 <view class="text-center padding" >
@@ -15,39 +15,39 @@
 </view>
 <!-- 组件 -->
 
-<free-title type="2" title="参数配置"></free-title>
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="当前星星数" height="40"></free-title>
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="当前星星数" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[ '1','2','3']}}" bind:click='getMode' data-name="current" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="自定义颜色" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="自定义颜色" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['#0081EF', 'red','black','orange']}}" bind:click='getMode' data-name="active" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="数量" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="数量" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[5,6,7,8]}}" bind:click='getMode' data-name="number" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="尺寸大小" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="尺寸大小" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[20,24,28]}}" bind:click='getMode' data-name="size" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="是否空心" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="是否空心" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="hollow" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="非整数,仅在不可点击下展示" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="非整数,仅在不可点击下展示" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[0,0.3,0.6]}}" bind:click='getMode' data-name="score" bold="true"></free-subsection>
 </view>
 
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="禁用点击" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="禁用点击" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="disabled" bold="true"></free-subsection>
 </view> 

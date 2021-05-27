@@ -52,7 +52,10 @@ Page({
         name:'操作条',
         title:'actionBar'
       },
-      
+      {
+        name:'水印',
+        title:'watermark'
+      }
     ]
   },
   /**

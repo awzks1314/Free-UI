@@ -164,6 +164,11 @@ Page({
         name:'返回顶部',
         title:'backTop',
         icon:'home',
+      },
+      {
+        name:'提示引导',
+        title:'guidance',
+        icon:'home',
       }
     ],
     scrollTop:0

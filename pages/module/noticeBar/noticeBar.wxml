@@ -1,4 +1,4 @@
-<free-title type="2" title="效果演示"></free-title>
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
 <!-- 组件 -->
 <free-noticeBar 
   notice="{{notice}}" 
@@ -12,35 +12,35 @@
 ></free-noticeBar>
 <!-- 组件 -->
 
-<free-title type="2" title="参数配置"></free-title>
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="组件是否固定在头部" height="40"></free-title>
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="组件是否固定在头部" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[false, true]}}" bind:click='getMode' data-name="isFixed" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="是否开启动画" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="是否开启动画" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[false, true]}}" bind:click='getMode' data-name="animation" bold="bold"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="自定义背景色" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="自定义背景色" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['#0081ef', 'red','green']}}" bind:click='getMode' data-name="backgroundColor" bold="bold"></free-subsection>
 </view>
 
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="滚动模式，true竖向，false横向" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="滚动模式，true竖向，false横向" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="vertical" bold="bold"></free-subsection>
 </view>
 
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="左侧是否有图标" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="左侧是否有图标" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[true, false]}}" bind:click='getMode' data-name="isLeft" bold="bold"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="右侧展示关闭按钮" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="右侧展示关闭按钮" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="isRight" bold="bold"></free-subsection>
 </view>

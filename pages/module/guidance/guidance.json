@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"guidance引导",
+  "usingComponents": {
+    "free-guidance":"/components/module/free-guidance/free-guidance"
+  }
+} 

@@ -11,7 +11,7 @@ Component({
     // 标题字体颜色
     titlecolor:{
       type:String,
-      value:'#0081ff'
+      value:'#333333' 
     },
     height:{
       type:String,

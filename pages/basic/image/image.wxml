@@ -1,4 +1,4 @@
-<free-title type="2" title="效果演示"></free-title>
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
 
 <view class="padding-lr flex align-center justify-center">
   <free-image 
@@ -13,33 +13,33 @@
   ></free-image>
 </view>
 
-<free-title type="2" title="参数配置"></free-title>
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="图片模式(部分)" height="40"></free-title>
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="图片模式(部分)" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['scaleToFill', 'bottom','right','bottom left']}}" bind:click='getMode' data-name="mode" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="图片高度" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="图片高度" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['200rpx','180rpx','160rpx']}}" bind:click='getMode' data-name="height" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="图片宽度" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="图片宽度" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['200rpx','100rpx','50rpx']}}" bind:click='getMode' data-name="width" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="图片圆角" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="图片圆角" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{['0','20rpx','50rpx','50%']}}" bind:click='getMode' data-name="radius" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="长按识别保存分享" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="长按识别保存分享" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="long" bold="true"></free-subsection>
 </view>
 
-<free-title icon='line' type='3' titlecolor="#000" bold="{{false}}" size='28' title="点击预览" height="40"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="点击预览" height="40"></free-title>
 <view class="padding">
   <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="preview" bold="true"></free-subsection>
 </view>

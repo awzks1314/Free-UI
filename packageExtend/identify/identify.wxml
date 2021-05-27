@@ -5,7 +5,7 @@
 
 <free-gap height="64"></free-gap>
 
-<free-title type="2" title="上传识别"></free-title>
+<free-title type="2" title="上传识别" titlecolor="#0081ef"></free-title>
 <view class="padding-lr padding-bottom bg-white flex flex-wrap justify-between">
   <view class="flex  flex-direction radius-sm" style="width:46%;background:#f1f7ff;">
     <view class="padding-tb flex justify-center">
@@ -22,7 +22,7 @@
 </view>
 
 <free-gap height="20" ></free-gap>
-<free-title type="2" title="识别内容"></free-title>
+<free-title type="2" title="识别内容" titlecolor="#0081ef"></free-title>
 <view class="padding-lr bg-white ">
   <view class="padding-bottom-xs flex align-center">
     <view class="text-bold" style="width:140rpx;">姓名：</view>
@@ -43,7 +43,7 @@
 </view>
 
 <free-gap height="20" ></free-gap>
-<free-title type="2" title="拍照须知"></free-title>
+<free-title type="2" title="拍照须知" titlecolor="#0081ef"></free-title>
 <view class="padding-lr bg-white">
   <view class="text-gray">请上传大陆公民持有的本人有效身份证；</view>
   <view class="text-gray margin-top-xs padding-bottom-sm">

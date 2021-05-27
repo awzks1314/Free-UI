@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"watermark水印",
+  "usingComponents": {
+    "free-watermark":"/components/extend/free-watermark/free-watermark"
+  }
+}

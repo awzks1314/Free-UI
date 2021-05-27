@@ -1,0 +1,39 @@
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
+
+<free-guidance
+  tip="点击「添加小程序」，下次访问更便捷"
+  time="{{time}}"
+  animation="{{animation}}"
+  bgColor="{{bgColor}}"
+  color="{{color}}"
+  close="{{close}}"
+></free-guidance>
+<view class="text-center">
+<button class="free-button bg-blue">查看演示</button>
+</view>
+
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="time，自动关闭时间，单位秒,0时不关闭" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[0,1,2,3]}}" bind:click='getMode' data-name="time" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="是否有动画" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="animation" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="背景颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#f1f1f1','#0081ef','red']}}" bind:click='getMode' data-name="bgColor" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="字体颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#919293','#fff','orange']}}" bind:click='getMode' data-name="color" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="关闭图标" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="close" bold="true"></free-subsection>
+</view>
