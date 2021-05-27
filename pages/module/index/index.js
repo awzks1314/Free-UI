@@ -191,5 +191,8 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onShareTimeline(){
+    
   }
 })

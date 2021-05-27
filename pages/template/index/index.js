@@ -18,5 +18,8 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onShareTimeline(){
+    
   }
 })
