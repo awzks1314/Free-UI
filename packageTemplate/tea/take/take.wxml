@@ -1,17 +1,98 @@
 <!--packageTemplate/tea/take/take.wxml-->
 <view class="container">
-  <view wx:if="{{!login}}" class="h100 w100 flex align-center justify-center flex-direction">
+  <view wx:if="{{!hasOrder}}" class="h100 w100 flex align-center justify-center flex-direction">
     <free-image src="https://z3.ax1x.com/2021/05/25/gz45GR.gif" width="260rpx" height="260rpx"></free-image>
     <view class="padding-tb-lg flex align-center justify-center flex-direction text-sm text-gray">
       <text>您还没有点单</text>
       <text class="padding-top-xs">快去犒劳一下自己吧~</text>
     </view>
-    <view class=" padding-tb-sm round bg-tea text-center" style="width:240rpx;">
+    <view class=" padding-tb-sm round bg-tea text-center" style="width:240rpx;" bindtap="goToUrl" data-url="/packageTemplate/tea/drink/drink">
       去点餐
     </view>
-    <text class="text-tea padding-top-lg text-sm">查看历史订单</text>
+    <text class="text-tea padding-top-lg text-sm" bindtap="goToUrl" data-url="/packageTemplate/tea/order/order">查看历史订单</text>
   </view>
+  <view wx:else class="padding">
+    <view class="padding-sm bg-white radius-sm ">
+      <view class="flex align-center justify-between solid-bottom padding-bottom-sm">
+        <view>官渡万达广场店</view>
+        <view class="flex align-center">
+          <free-image src="/static/image/tea/order/mobile.png" width="60rpx" height="60rpx"></free-image>
+          <free-image src="/static/image/tea/order/navigation.png" width="60rpx" height="60rpx" class="margin-left-xs"></free-image>
+        </view>
+      </view>
+
+      <!-- 2 -->
+      <view class="padding-top-sm">
+        <view class="padding-tb-sm text-center">
+          取餐号：<text class="text-xl text-bold">0156</text>
+        </view>
+        <free-steps 
+          list="{{list}}" 
+          current="{{0}}"
+          ></free-steps>
+        <view class="padding-tb text-center text-gray">您前面还有<text class="text-tea padding-lr-xs">4</text>单待制作</view>
+        <view class="">
+          <view class="flex align-center justify-between padding-bottom" wx:for="{{4}}" wx:key='index'>
+            <view class="flex flex-direction">
+              <text>霸气芝士芒果</text>
+              <text class="text-sm text-gray margin-top-xs">标准(芝士),标准冰,标准糖</text>
+            </view>
+            <text>x11</text>
+            <text class="text-price text-bold">29.9</text>
+          </view>
+        </view>
+
+        <view class="solid-top padding-bottom">
+          <view class="flex align-center justify-between padding-top">
+            <text>支付方式</text>
+            <text class="text-bold text-black">微信支付</text>
+          </view>
+          <view class="flex align-center justify-between padding-top">
+            <text>金额总计</text>
+            <text class="text-bold text-black text-price">73.00</text>
+          </view>
+        </view>
+
+        <view class="solid-top padding-bottom">
+          <view class="flex align-center justify-between padding-top">
+            <text>下单时间</text>
+            <text class="text-bold text-black">2021-05-26 16：14：55</text>
+          </view>
+          <view class="flex align-center justify-between padding-top">
+            <text>下单门店</text>
+            <text class="text-bold text-black text-price">官渡万达广场店</text>
+          </view>
+          <view class="flex align-center justify-between padding-top">
+            <text>订单号</text>
+            <text class="text-bold text-black text-price">ABCDEFGHIJKLMN0002</text>
+          </view>
+        </view>
+
+        <view class="solid-top">
+          <view class="flex align-center justify-between padding-top">
+            <text>取单号</text>
+            <text class="text-bold text-black">0156</text>
+          </view>
+          <view class="flex align-center justify-between padding-top">
+            <text>取餐方式</text>
+            <text class="text-bold text-black text-price">自取</text>
+          </view>
+          <view class="flex align-center justify-between padding-top">
+            <text>取餐时间</text>
+            <text class="text-bold text-black text-price">2021-05-26 16：14：55</text>
+          </view>
+          <view class="flex align-center justify-between padding-top">
+            <text>备注</text>
+            <text class="text-bold text-black text-price">不要奶只要茶</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <free-gap height="120"></free-gap>
 </view>
+
+
 <free-tabbar 
   list="{{teaList.list}}" 
   color="{{teaList.color}}"

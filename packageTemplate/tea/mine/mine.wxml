@@ -1,6 +1,6 @@
 <!--packageTemplate/tea/mine/mine.wxml-->
-<view class="">
-  <view class="relative">
+<view class="safe-area-inset-bottom">
+  <view class="relative" bindtap="gotoUrl" data-url="memberCode">
     <free-image src="https://img-shop.qmimg.cn/s16/images/2020/01/20/9a82219bedcae5c2.jpeg" width="100%" height="500rpx"></free-image>
     <view class="codeBtn">
       <free-icon name="qrcode" color="#ADB838" size="16"></free-icon>
@@ -13,11 +13,25 @@
     <view class="userInfo bg-white flex flex-direction">
       <view class="flex align-center">
         <view class="avatar">
-          <free-image src="/static/image/my/dog.jpg" width="140rpx" height="140rpx" radius="50%" ></free-image>
+          <free-image src="/static/image/tea/mine/default.png" width="140rpx" height="140rpx" radius="50%" ></free-image>
+          <view class="badgeLevel" wx:if="{{name}}">
+            <free-image src="/static/image/tea/mine/level.png" width="28rpx" height="28rpx"></free-image>
+            <view class="padding-left-xs">2</view>
+          </view>
         </view>
-        <view class="flex flex-direction flex-sub margin-top-xs">
-          <text class="text-bold text-lg">请点击授权登录</text>
-          <text class="text-sm text-gray">当前成长值0/0</text>
+        <view class="flex flex-direction flex-sub margin-top-xs" >
+          <text class="text-bold text-lg" bindtap="login" wx:if="{{!name}}">请点击授权登录</text>
+          <view class="text-bold text-lg flex align-center"  wx:else>
+            <text>{{name}}</text>
+            <free-icon name="right" size="16" color="#000"></free-icon>
+          </view>
+          <text class="text-sm text-gray">当前成长值{{name?'600':'0'}}/{{name?'1000':'0'}}</text>
+          <free-progress 
+            width="{{name?'60%':'0'}}"
+            height="12rpx"
+            progressBg="#eee"
+            widthBg="#ADB838" 
+            ></free-progress>
         </view>
         <view class="vip flex align-center text-sm text-white justify-end">
           <text>会员权益</text>
@@ -25,28 +39,28 @@
         </view>
       </view>
 
-      <view class="w100 flex align-center justify-center">
+      <view class="w100 flex align-center justify-center margin-top-sm">
         <view class="user-grid padding-sm">
-          <text class="text-xxl  text-bold">***</text>
-          <text class="text-sm text-gray">奈雪券</text>
+          <text class="text-ll  text-bold ">{{name?'66':'***'}}</text>
+          <text class="text-sm margin-top-sm text-gray">奈雪券</text>
         </view>
         <view class="user-grid padding-sm">
-          <text class="text-xxl  text-bold">***</text>
-          <text class="text-sm text-gray">积分商城</text>
+          <text class="text-ll  text-bold">{{name?'668':'***'}}</text>
+          <text class="text-sm margin-top-sm text-gray">积分商城</text>
         </view>
         <view class="user-grid padding-sm">
-          <text class="text-xxl  text-bold">***</text>
-          <text class="text-sm text-gray">余额</text>
+          <text class="text-ll  text-bold">{{name?'0':'***'}}</text>
+          <text class="text-sm margin-top-sm text-gray">余额</text>
         </view>
         <view class="user-grid padding-sm">
-          <text class="text-xxl  text-bold">***</text>
-          <text class="text-sm text-gray">礼品卡</text>
+          <text class="text-ll  text-bold">{{name?'18':'***'}}</text>
+          <text class="text-sm margin-top-sm text-gray">礼品卡</text>
         </view>
       </view>
     </view>
 
     <!-- 2 -->
-    <view class="level-benefit-box">
+    <view class="level-benefit-box" wx:if="{{!name}}">
       <view class="flex align-center justify-between">
         <text>新用户加入会员，享会员权益</text>
         <text class="text-tea">立即加入</text>
@@ -83,15 +97,17 @@
   </view>
 
   <!-- serve -->
-  <view class="bg-white padding">
+  <view class="bg-white padding boxshadow">
     <view class="text-lg text-bold">我的服务</view>
     <view class=" flex align-center justify-center flex-wrap">
-      <view class="user-grid padding-top" wx:for="{{serveList}}" wx:key="index">
+      <view class="user-grid padding-top" wx:for="{{serveList}}" wx:key="index" bindtap="gotoUrl" data-url="{{item.url}}">
         <free-image src="/static/image/tea/mine/{{item.img}}.png" width="80rpx" height="80rpx"></free-image>
         <text class="text-sm text-gray margin-top-xs">{{item.name}}</text>
       </view>
     </view>
   </view>
+
+  <view class="text-center padding-top-sm text-sm text-gray">会员卡适用于奈雪的茶和奈雪酒屋指定范围</view>
 </view>
 <free-gap height="120"></free-gap>
 <free-tabbar 

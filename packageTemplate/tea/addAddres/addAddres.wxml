@@ -1,0 +1,37 @@
+<view class="padding  safe-area-inset-bottom">
+  <view class="free-form-group ">
+    <view class="title">收货人</view>
+    <input placeholder="请输入收货人姓名"></input>  
+  </view>
+  <view class="free-form-group">
+    <view class="title">性别</view>
+    <view class='add_item_con flex-sub'>
+      <radio-group bindchange="getGender">
+        <label class="">
+          <radio class="text-tea sm radio" value="1" checked ></radio>
+          <text> 先生</text>
+        </label>
+        <label class="margin-left-sm">
+          <radio class="text-tea sm radio" value="0" ></radio>
+          <text> 女士</text>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+  <view class="free-form-group ">
+    <view class="title">联系方式</view>
+    <input placeholder="请输入收货人联系方式"></input>  
+  </view>
+  <view class="free-form-group ">
+    <view class="title">收货地址</view>
+    <input placeholder="请输入收货地址"></input>  
+  </view>
+  <view class="free-form-group ">
+    <view class="title">门牌号</view>
+    <input placeholder="请输入收货人详细地址"></input>  
+  </view>
+</view>
+<free-gap height="100"></free-gap>
+<view class="btn-box ">
+  <button class="free-button block round bg-tea flex-sub lg" bindtap="update">保存</button>
+</view>

@@ -1,0 +1,27 @@
+<view class="padding safe-area-inset-bottom">
+  <view class="padding-sm bg-white radiu-sm margin-bottom" wx:for="{{10}}" wx:key="index" bindtap="goToUrl" data-url="/packageTemplate/tea/orderDetail/orderDetail">
+    <view class="flex align-center justify-between solid-bottom padding-bottom-sm" >
+      <view class="flex-direction flex">
+        <text>万达广场店</text>
+        <text class="text-gray text-sm margin-top-xs">订单编号：ABCDEFGHIJKLMN0001</text>
+      </view>
+      <view class="text-tea">已完成</view>
+    </view>
+    <view class="padding-top-sm"> 
+      <view class="text-cut">
+        杨枝甘露宝藏茶*1，霸气芝士芒果*1，霸气绿柠檬*1，霸气芝士芒果*1，霸气绿柠檬*1
+      </view>
+      <view class="padding-top-sm flex align-center justify-between ">
+        <text class="text-sm text-gray">2021-05-26 20:33:21</text>
+        <view class="flex align-center text-sm">
+          <text>共5件商品，实付</text>
+          <text class="text-price text-black padding-left-xs">66.8</text>
+        </view>
+      </view>
+      <view class="padding-top-sm flex align-center justify-end">
+        <button class="free-button tea-line">查看发票</button>
+        <button class="free-button tea-line margin-left" catchtap="goToUrl" data-url="/packageTemplate/tea/review/review">去评价</button>
+      </view>
+    </view>
+  </view>
+</view>

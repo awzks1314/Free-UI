@@ -30,13 +30,34 @@ page{
   border-radius: 40rpx;
   padding: 0 40rpx;
 }
+.dinein{
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
 .takeout{
+  margin-left: 20rpx;
+  height: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  padding: 14rpx 0;
+}
+.subActive{
   padding:14rpx 38rpx;
-  background-color: #ADB838;
+  background: #ADB838;
   color: #fff;
   border-radius: 40rpx;
+}
+.lf{
+  margin-left: -38rpx;
+}
+.lr{
   margin-right: -38rpx;
-  margin-left: 20rpx;
 }
 .menu-wrap{
   flex: 1;
@@ -50,6 +71,9 @@ page{
   background-color: #F5F5F5;
   overflow: hidden;
 }
+.list{
+  padding-bottom: 140rpx;
+}
 .wrapper{
   width: 100%;
   height: 100%;
@@ -61,6 +85,9 @@ page{
   padding: 30rpx 20rpx;
   font-size: 26rpx;
   position: relative;
+}
+.menu:nth-last-child(1){
+  margin-bottom: 130rpx;
 }
 .goods{
   flex: 1;
@@ -75,4 +102,61 @@ page{
 .ads{
   width:100%;
   height:250rpx;
+}
+.dot{
+  position: absolute;
+  width: 34rpx;
+  height: 34rpx;
+  line-height: 34rpx;
+  font-size: 22rpx;
+  background-color: #ADB838;
+  color: #ffffff;
+  top: 16rpx;
+  right: 10rpx;
+  border-radius: 100%;
+  text-align: center;
+}
+.cart-box {
+	position: absolute;
+	bottom: 130rpx;
+	left: 30rpx;
+	right: 30rpx;
+	height: 96rpx;
+  border-radius: 48rpx;
+  
+	box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.2);
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  z-index: 10088;
+}
+
+.cartMark{
+  padding-left: 23px;
+  margin-right: 15px;
+  position: relative;
+}
+.cartImg{
+  position: relative;
+	margin-top: -48rpx;
+}
+.cartMarkTag{
+  background-color:#FAB714 ;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  position: absolute;
+  right: -10rpx;
+  top: -50rpx;
+  border-radius: 100%;
+  padding: 4rpx;
+  width: 40rpx;
+  height: 40rpx;
+  opacity: .9;
+}
+.cartitem:nth-last-child(1){
+  padding-bottom:260rpx;
 }

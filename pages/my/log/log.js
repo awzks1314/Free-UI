@@ -7,6 +7,14 @@ Page({
   data: {
     logData:[
       {
+        time:'May 27 2021',
+        version:'v1.0.2',
+        content:[
+          '1.新增模板之奈雪小程序',
+          '2.修复组件bug，新增组件class属性',
+        ]
+      },
+      {
         time:'May 20 2021',
         version:'v1.0.1',
         content:[

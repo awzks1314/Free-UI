@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    notice:[
+    notice:[  
       {
         text:"与现实生活一致：与现实生活的流程、逻辑保持一致，",
         url:'/pages/module/input/input'

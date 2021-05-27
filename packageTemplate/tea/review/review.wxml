@@ -1,0 +1,30 @@
+<view class="padding bg-white flex align-center justify-between">
+  <text>万达广场店</text>
+  <text class="text-gray">2021-05-26 堂食</text>
+</view>
+
+<view class="bg-white margin-top padding">
+  <view class="flex align-start margin-bottom" wx:for="{{list}}" wx:key="index">
+    <text class="text-tea text-ll padding-right-lg padding-top-sm">{{item.name}}</text>
+    <view class="flex-sub flex flex-direction">
+      <free-rate 
+      current="{{item.rate}}" 
+      active="#ADB838"
+      number="5"
+      size="36"
+      hollow
+      bind:change="change"
+      ></free-rate>
+      <text class="padding-left-sm">{{item.title}}</text>
+    </view>
+  </view>
+  <view class="review-textarea">
+    <textarea value="{{textareaValue}}" placeholder="如果您有什么意见和建议,请告诉我们,我们会认真聆听" 
+    placeholder-class="text-sm text-gray"/>
+    <view class="text-right text-sm text-gray">{{ textareaValue.length }}/500</view>
+  </view>
+</view>
+<free-gap height="100"></free-gap>
+<view class="btn-box ">
+  <button class="free-button block round bg-tea flex-sub lg" bindtap="address">提交评论</button>
+</view>

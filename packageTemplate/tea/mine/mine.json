@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText":"奈雪乐园",
   "usingComponents": {
-    "free-tabbar":"/components/module/free-tabbar/free-tabbar"
+    "free-tabbar":"/components/module/free-tabbar/free-tabbar",
+    "free-progress":"/components/module/free-progress/free-progress"
   }
 }

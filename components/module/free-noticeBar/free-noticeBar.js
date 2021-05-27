@@ -76,8 +76,8 @@ Component({
       })
     },
     onlo(){
-      console.log(typeof this.data.notice)
-      if(typeof this.data.notice == Array){
+      console.log(this.data.notice instanceof Array)
+      if(this.data.notice instanceof Array){
         this.setData({
           type:2
         })

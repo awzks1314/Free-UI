@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"奈雪の茶",
+  "usingComponents": {
+    "free-modal":"/components/module/free-modal/free-modal"
+  }
+}

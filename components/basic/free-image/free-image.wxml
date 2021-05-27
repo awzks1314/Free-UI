@@ -1,4 +1,4 @@
-<view style="position: relative;transition: opacity {{durationTime/1000}}s ease-in-out;opacity:{{opacity}};backgroundColor:{{backgroundColor}};width:{{width}};height:{{height}};">
+<view class="class" style="position: relative;transition: opacity {{durationTime/1000}}s ease-in-out;opacity:{{opacity}};backgroundColor:{{backgroundColor}};width:{{width}};height:{{height}};">
   <image 
     wx:if="{{!isError }}"
     src="{{src}}"

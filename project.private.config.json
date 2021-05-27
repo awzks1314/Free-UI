@@ -37,8 +37,14 @@
           "scene": null
         },
         {
-          "name": "packageTemplate/tea/mine/mine",
-          "pathName": "packageTemplate/tea/mine/mine",
+          "name": "packageTemplate/tea/drink/drink",
+          "pathName": "packageTemplate/tea/drink/drink",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/module/steps/steps",
+          "pathName": "pages/module/steps/steps",
           "query": "",
           "scene": null
         }

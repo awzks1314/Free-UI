@@ -1095,6 +1095,11 @@ button.icon.lg {
 	font-size: 36rpx;
 }
 
+.text-ll {
+	font-size: 40rpx;
+}
+
+
 .text-xxl {
 	font-size: 44rpx;
 }

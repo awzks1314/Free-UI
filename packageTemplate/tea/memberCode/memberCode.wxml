@@ -1,0 +1,41 @@
+<view class="container padding-top padding-lr">
+  <view>
+    <view class="flex align-center justify-center">
+      <view class="avatar">
+        <free-image src="/static/image/tea/mine/default.png" width="140rpx" height="140rpx" radius="50%" ></free-image>
+        <view class="badgeLevel" >
+          <free-image src="/static/image/tea/mine/level.png" width="28rpx" height="28rpx"></free-image>
+          <view class="padding-left-xs">2</view>
+        </view>
+      </view>
+    </view>
+    <view class="user-box">
+      <view class="text-center text-bold text-black">{{name}}</view>
+      <view class="padding-tb flex  align-center">
+        <view class="user-grid">
+          <text class="text-bold">6</text>
+          <text class="text-sm text-gray margin-top-xs">奈雪券</text>
+        </view>
+        <view class="user-grid">
+          <text class="text-bold">6</text>
+          <text class="text-sm text-gray margin-top-xs">积分</text>
+        </view>
+        <view class="user-grid">
+          <text class="text-bold">6</text>
+          <text class="text-sm text-gray margin-top-xs">余额</text>
+        </view>
+        <view class="user-grid">
+          <text class="text-bold">6</text>
+          <text class="text-sm text-gray margin-top-xs">礼品卡</text>
+        </view>
+      </view>
+
+      <view class='w100 flex justify-center' >
+        <canvas canvas-id="qrcode" style="width: 350rpx; height: 350rpx;" />
+      </view>
+      <view class="text-sm text-center text-gray">支付前出示可累计积分，会员码每30秒更新</view>
+    </view>
+  </view>
+
+  <free-image src="https://img-shop.qmimg.cn/s16/images/2020/04/26/4a36d33657677787.png" width="100%" height="160rpx"></free-image>
+</view>

@@ -15,7 +15,7 @@ page{
 	--grey: #8799a3;
 	--black: #333333;
 	--darkGray: #666666;
-	--gray: #aaaaaa;
+	--gray: #919293;
 	--ghostWhite: #f4f5f7;
   --white: #ffffff;
   /* 浅色 */

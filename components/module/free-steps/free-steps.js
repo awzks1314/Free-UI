@@ -1,9 +1,10 @@
 // components/module/free-steps/free-steps.js
 Component({
+  externalClasses:['class'],
   /**
    * 组件的属性列表
    */
-  properties: {
+  properties: { 
     list:{
       type:Array,
       value:[]
@@ -14,7 +15,7 @@ Component({
     },
     color:{
       type:String,
-      value:'red'
+      value:'#000'
     },
     // type:icon number more
     type:{

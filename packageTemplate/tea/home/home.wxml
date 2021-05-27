@@ -8,14 +8,14 @@
 </view>
 <view class="home-content padding-lr">
   <view class="entrance">
-    <view class="item flex-sub flex-sub flex flex-direction align-center justify-center">
+    <view class="item flex-sub flex-sub flex flex-direction align-center justify-center" bindtap="gotoMenu" data-url="address" data-type="takeIn">
       <view>
         <free-image src="/static/image/tea/index/zq.png" width="82rpx" height="82rpx"></free-image>
       </view>
       <text class="padding-top-xs text-bold text-lg">自取</text>
       <text class="text-sm text-gray padding-top-xs">预约点单，到店自取</text>
     </view>
-    <view class="item flex-sub flex flex-direction align-center justify-center">
+    <view class="item flex-sub flex flex-direction align-center justify-center" bindtap="gotoMenu" data-url="address" data-type="takeOut">
       <view>
         <free-image src="/static/image/tea/index/wm.png" width="82rpx" height="82rpx"></free-image>
       </view>
@@ -36,7 +36,7 @@
         <free-icon name="right" size="13" color="#aaaaaa"></free-icon>
       </view>
     </view>
-    <view class="text-center">
+    <view class="text-center" bindtap="gotoUrl" data-url="memberCode">
         <free-icon name="qrcode" color="#ADB838" size="20"></free-icon>
         <view class="text-tea padding-top-xs text-sm" >会员码</view>
     </view>

@@ -1,5 +1,5 @@
 .free-steps-box{
-  padding: 20rpx;
+  /* padding: 20rpx; */
   background: #fff;
 }
 
@@ -24,7 +24,7 @@ scroll-view.free-steps .free-item {
 }
 
 .free-steps .free-item:not([class*="text-"]) {
-	color: var(--grey);
+	color: #919293;
 }
 
 .free-steps .free-item .free-icon,
@@ -45,7 +45,7 @@ scroll-view.free-steps .free-item {
 	width: calc(100% - 80rpx);
 	border-bottom: 1px solid #ccc;
 	left: calc(0px - (100% - 80rpx) / 2);
-	top: 40rpx;
+	top: 60rpx;
   z-index: 0;
   
 }

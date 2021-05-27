@@ -1,5 +1,6 @@
 // components/basic/free-image/free-image.js
 Component({
+  externalClasses: ['class'], //自定义样式
   /**
    * 组件的属性列表
    */

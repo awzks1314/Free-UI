@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="top flex flex-direction justify-around align-center">
+    <free-image src="/static/image/tea/logo.png" width="164rpx" height="164rpx"></free-image>
+
+    <view class="text-gray flex flex-direction align-center">
+      <text>一杯好茶，一口软欧包</text>
+      <text class="padding-tb">在奈雪遇见两种美好</text>
+    </view>
+  </view>
+  <view class="bottom padding-lr flex flex-direction justify-between">
+    <button class="free-button block round bg-tea lg" bindtap="login">登录</button>
+    <view class=" flex flex-direction align-center justify-around" style="height:30vh;">
+      <text class="text-gray">新用户登录即可加入会员，享会员权益</text>
+      <view class="padding-top flex align-center w100">
+        <view class="grid">
+          <free-image src="/static/image/tea/mine/rhyl.png" width="80rpx" height="80rpx"></free-image>
+          <text class="text-sm text-gray margin-top-xs">入会有礼</text>
+        </view>
+        <view class="grid">
+          <free-image src="/static/image/tea/mine/jfdh.png" width="80rpx" height="80rpx"></free-image>
+          <text class="text-sm text-gray margin-top-xs">积分兑换</text>
+        </view>
+        <view class="grid">
+          <free-image src="/static/image/tea/mine/sjtq.png" width="80rpx" height="80rpx"></free-image>
+          <text class="text-sm text-gray margin-top-xs">升级特权</text>
+        </view>
+        <view class="grid">
+          <free-image src="/static/image/tea/mine/srtq.png" width="80rpx" height="80rpx"></free-image>
+          <text class="text-sm text-gray margin-top-xs">生日特权</text>
+        </view>
+        <view class="grid">
+          <free-image src="/static/image/tea/mine/nxbz.png" width="80rpx" height="80rpx"></free-image>
+          <text class="text-sm text-gray margin-top-xs">奈雪宝藏</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+<view class="padding safe-area-inset-bottom">
+  <view class="address flex justify-between align-end margin-bottom" wx:for="{{7}}" wx:key="index" bindtap="onChoose">
+    <view class="flex-sub">
+      <text class="text-bold tex-cut">魅力之城5期3单元1栋606</text>
+      <view class="text-sm text-gray margin-top-xs">
+        <text>隔壁老王</text>
+        <text class="padding-left-xs">先生</text>
+        <text class="padding-left-xs">1888888888</text>
+      </view>
+    </view>
+    <view class="flex ">
+      <view class="text-sm flex align-center"><free-icon name="edit" color="#ADB838" size="20"></free-icon>编辑</view>
+      <view class="text-sm flex align-center padding-left-sm"><free-icon name="deletefill" color="#aaaaaa" size="20"></free-icon>删除</view>
+    </view>
+  </view>
+</view>
+
+<free-gap height="100"></free-gap>
+<view class="btn-box ">
+  <button class="free-button block round bg-tea flex-sub lg" bindtap="address">新增收货地址</button>
+</view>

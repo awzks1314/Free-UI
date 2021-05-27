@@ -1,0 +1,90 @@
+<view class="container ">
+  <view class="padding">
+    <view class="padding-sm bg-white radius-sm ">
+      <view class="w100 flex align-center justify-between solid-bottom padding-bottom-sm">
+        <view  class=" padding-right flex flex-direction" style="width:60%;">
+          <text>官渡万达广场店</text>
+          <view class="flex align-center flex-sub">
+            <free-icon name="location" size="16" color="#ADB838"></free-icon>
+            <view class=" text-cut text-gray text-sm">广东省深圳市宝安区深圳市宝安区福海街道宝安大道6259号 L1 层55/56号商铺</view>
+          </view>
+        </view>
+        <view class="flex align-center">
+          <free-image src="/static/image/tea/order/mobile.png" width="60rpx" height="60rpx"></free-image>
+          <free-image src="/static/image/tea/order/navigation.png" width="60rpx" height="60rpx" class="margin-left-xs"></free-image>
+        </view>
+      </view>
+
+      <!-- 2 -->
+      <view class="padding-top-sm">
+        <view class="">
+          <view class="flex align-center justify-between padding-bottom" wx:for="{{4}}" wx:key='index'>
+            <view class="flex flex-direction">
+              <text>霸气芝士芒果</text>
+              <text class="text-sm text-gray margin-top-xs">标准(芝士),标准冰,标准糖</text>
+            </view>
+            <text>x11</text>
+            <text class="text-price text-bold">29.9</text>
+          </view>
+        </view>
+
+        <view class="solid-top padding-bottom">
+          <view class="flex align-center justify-between padding-top">
+            <text>支付方式</text>
+            <text class="text-bold text-black">微信支付</text>
+          </view>
+          <view class="flex align-center justify-between padding-top">
+            <text>金额总计</text>
+            <text class="text-bold text-black text-price">73.00</text>
+          </view>
+        </view>
+
+        <view class="solid-top padding-bottom">
+          <view class="flex align-center justify-between padding-top">
+            <text>下单时间</text>
+            <text class="text-bold text-black">2021-05-26 16：14：55</text>
+          </view>
+          <view class="flex align-center justify-between padding-top">
+            <text>下单门店</text>
+            <text class="text-bold text-black text-price">官渡万达广场店</text>
+          </view>
+          <view class="flex align-center justify-between padding-top">
+            <text>订单号</text>
+            <text class="text-bold text-black text-price">ABCDEFGHIJKLMN0002</text>
+          </view>
+        </view>
+
+        <view class="solid-top">
+          <view class="flex align-center justify-between padding-top">
+            <text>取单号</text>
+            <text class="text-bold text-black">0156</text>
+          </view>
+          <view class="flex align-center justify-between padding-top">
+            <text>取餐方式</text>
+            <text class="text-bold text-black text-price">自取</text>
+          </view>
+          <view class="flex align-center justify-between padding-top">
+            <text>取餐时间</text>
+            <text class="text-bold text-black text-price">2021-05-26 16：14：55</text>
+          </view>
+          <view class="flex align-center justify-between padding-top">
+            <text>完成制作时间</text>
+            <text class="text-bold text-black text-price">2021-05-26 16：14：55</text>
+          </view>
+          <view class="flex align-center justify-between padding-top">
+            <text>备注</text>
+            <text class="text-bold text-black text-price">不要奶只要茶</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <free-gap height="100"></free-gap>
+  <view class="btn-box flex align-center justify-between">
+    <button class="free-button bg-tea round">查看发票</button>
+    <button class="free-button tea-line round" catchtap="goToUrl" data-url="/packageTemplate/tea/review/review">去评价</button>
+    <button class="free-button bg-tea  round" >再来一单</button>
+  </view>
+
+</view>

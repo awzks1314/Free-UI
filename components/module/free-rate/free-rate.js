@@ -65,11 +65,25 @@ Component({
       if (this.data.disabled) {
         return;
       }
-      const index = e.currentTarget.dataset.index;
-      this.triggerEvent('change', {
-        index: index + 1
+      const index = e.currentTarget.dataset.index + 1;
+      
+      if(index  == 1 ){
+        if(this.data.current == 1){
+          this.data.current = 0
+        }else{
+          this.data.current = 1
+        }
+      }else{
+        this.data.current = index
+      }
+      
+      this.setData({
+        current : this.data.current
       })
-    },
+      this.triggerEvent('change', {
+        index: this.data.current
+      })
+    },    
     touchMove(e) {
       if (this.data.disabled) {
         return;
@@ -79,12 +93,22 @@ Component({
       }
       const movePageX = e.changedTouches[0].pageX;
       const distance = movePageX - this.data.pageX;
-
+      let index = 0
       if (distance <= 0) {
-        return;
+        index = 0
+        this.setData({
+          current:0
+        })
+        // return;
+      }else{
+        index = Math.ceil(distance / this.data.size);
+      index = index > this.data.number ? this.data.number : index;
+       
+        this.setData({
+          current:index
+        })
       }
-      let index = Math.ceil(distance / this.data.size);
-      index = index > this.data.count ? this.data.count : index;
+      
       this.triggerEvent('change', {
         index: index
       })

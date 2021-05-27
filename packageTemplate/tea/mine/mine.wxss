@@ -37,6 +37,20 @@ page{
   background-color: #FFFFFF;
   box-shadow: 0 0 20rpx rgba(66,66,66,0.1);
 }
+.badgeLevel{
+		position: absolute;
+		right: -10rpx;
+		bottom: -10rpx;
+		background-color: #FFFFFF;
+		border-radius: 50rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 24rpx;
+		color: #FAB714;
+		padding: 8rpx 16rpx;
+		box-shadow: 0 0 20rpx rgba(66,66,66,0.1);
+}
 .vip{
   margin-left: 35rpx;
 	padding: 10rpx 0 10rpx 30rpx;
@@ -67,4 +81,7 @@ page{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.boxshadow{
+	box-shadow: 0 0 20rpx rgba(66,66,66,0.1);
 }

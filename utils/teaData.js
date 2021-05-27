@@ -6,7 +6,7 @@ const Menu = [
         name:'奈雪早餐',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       }
     ]
   },
@@ -17,19 +17,19 @@ const Menu = [
         name:'脏脏王',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/29/99daa7b20061efab10.jpg?imageView2/2/w/400/h/400",
         content: "酥软口感,进口奶油搭配特制巧克力内馅",
-        price: 18 ,
+        number:0,number:0,price: 18 ,
       },
       {
         name:'抹茶王',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/29/4a62ee45dd527609ed.jpg?imageView2/2/w/400/h/400",
         content: "精选北川半兵卫抹茶粉和秘制红豆泥",
-        price: 18 ,
+        number:0,price: 18 ,
       },
       {
         name:"霸气杨梅",
         images: "https://img-shop.qmimg.cn/s23107/2020/04/26/559a075d81060b23c7.jpg?imageView2/2/w/400/h/400",
         content: "饱满大颗的新鲜杨梅,满杯手工去核,搭配茉莉初雪茶底,清爽多汁",
-        price: 30,
+        number:0,price: 30,
         property:[
           {
             name:'温度',
@@ -54,7 +54,7 @@ const Menu = [
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       }
     ]
   },
@@ -65,7 +65,7 @@ const Menu = [
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       }
     ]
   },
@@ -76,7 +76,7 @@ const Menu = [
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       }
     ]
   },
@@ -87,7 +87,7 @@ const Menu = [
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       }
     ]
   },
@@ -98,7 +98,7 @@ const Menu = [
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       }
     ]
   },
@@ -109,18 +109,18 @@ const Menu = [
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },
       {
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },{
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       }
     ]
   },
@@ -131,7 +131,7 @@ const Menu = [
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       }
     ]
   },
@@ -142,18 +142,18 @@ const Menu = [
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },
       {
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },{
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       }
     ]
   },
@@ -164,102 +164,102 @@ const Menu = [
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },
       {
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },{
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },
       {
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },
       {
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },{
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       }
     ]
   },
   {
-    name:'霸气鲜果茶',
+    name:'霸气鲜果茶1',
     product:[
       {
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },
       {
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },{
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       }
     ]
   },
   {
-    name:'霸气鲜果茶',
+    name:'霸气鲜果茶2',
     product:[
       {
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },
       {
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },{
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },
       {
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },
       {
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },{
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       },
       {
         name:'奈雪の茶',
         images: "https://img-shop.qmimg.cn/s23107/2020/04/19/fda6dd99c83af02353.jpg?imageView2/2/w/400/h/400",
         content: "购买三明治,享早餐指定饮品半价",
-        price: 18.5,
+        number:0,price: 18.5,
       }
     ]
   },

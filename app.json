@@ -51,7 +51,15 @@
     "packageTemplate/tea/home/home",
     "packageTemplate/tea/mine/mine",
     "packageTemplate/tea/drink/drink",
-    "packageTemplate/tea/take/take"
+    "packageTemplate/tea/take/take",
+    "packageTemplate/tea/login/login",
+    "packageTemplate/tea/memberCode/memberCode",
+    "packageTemplate/tea/address/address",
+    "packageTemplate/tea/addAddres/addAddres",
+    "packageTemplate/tea/pay/pay",
+    "packageTemplate/tea/order/order",
+    "packageTemplate/tea/orderDetail/orderDetail",
+    "packageTemplate/tea/review/review"
   ],
   "subPackages": [
     {

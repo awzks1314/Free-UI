@@ -1,0 +1,117 @@
+<view class="padding safe-area-inset-bottom">
+  <view class="radius-sm">
+    <view class="bg-white  padding flex align-center justify-between solid-bottom">
+      <view>
+        <text class="text-lg">魅力之城5期三单元1栋</text>
+        <view class="flex align-center text-sm margin-top-xs">
+          <text>隔壁老王</text>
+          <text class="padding-lr-xs">先生</text>
+          <text>1868745487</text>
+        </view>
+      </view>
+      <free-icon name="right" size="18"></free-icon>
+    </view>
+    <view class="bg-white padding">
+      <view class="flex align-center justify-between">
+        <text>预计送达时间</text>
+        <view class="flex align-center">
+          <text>16:44</text>
+          <free-icon name="right" size="18"></free-icon>
+        </view>
+      </view>
+      <text class="text-tea">特殊时期减少接触，请修改下方订单备注</text>
+    </view>
+  </view>
+
+  <view class="margin-top bg-white radius-sm padding">
+    <view class="flex align-center justify-between margin-bottom" wx:for="{{4}}" wx:key="index">
+      <free-image src="/static/image/tea/mine/default.png" width="120rpx" height="120rpx" radius="10rpx"></free-image>
+      <view class="padding-left-sm flex flex-direction flex-sub">
+        <text>奈雪早餐</text>
+        <text class="text-price text-gray margin-top">188</text>
+      </view>
+      <text>x6</text>
+    </view>
+
+    <view class="solid-top ">
+      <view class="flex align-center justify-between padding-top-sm"> 
+        <text>包装费</text>
+        <text class="text-price">20</text>
+      </view>
+      <view class="flex align-center justify-between padding-top-sm"> 
+        <text>配送费</text>
+        <text class="text-price">20</text>
+      </view>
+      <view class="flex align-center justify-between padding-top-sm"> 
+        <text>奈雪券</text>
+        <view class="flex align-center">
+          <text class="text-tea">购买优惠券大礼包</text>
+          <free-icon name="right" size="16"></free-icon>
+        </view>
+      </view>
+      <view class="flex align-center justify-between padding-tb-sm "> 
+        <text>礼品卡</text>
+        <view class="flex align-center">
+          <text class="text-tea">请选择</text>
+          <free-icon name="right" size="16"></free-icon>
+        </view>
+      </view>
+      <view class="flex align-center justify-end padding-top-sm solid-top"> 
+        <text>总计：</text>
+        <text class="text-price">166</text>，
+        <text>实付</text>
+        <text class="text-price text-bold text-lg">3666</text>
+      </view>
+    </view>
+  </view>
+
+  <!--  -->
+  <view class="text-yellow padding-tb-sm ">优惠券不与满赠、满减活动共享</view>
+
+  <view class="bg-white padding radius-sm">
+    <view class="padding-bottom solid-bottom">支付方式</view>
+    <view class="padding-top">
+      <view class="flex align-center">
+        <free-icon name="weixin" color="#38d618" size="28" class="padding-right-sm"></free-icon>
+        <text >微信支付</text>
+      </view>
+    </view>
+  </view>
+
+  <!--  -->
+  <view class="padding bg-white radius-sm margin-top">
+    <view class="flex align-center justify-between "> 
+        <text>备注</text>
+        <view class="flex align-center">
+          <text class="text-tea">点击填写备注</text>
+          <free-icon name="right" size="16"></free-icon>
+        </view>
+      </view>
+  </view>
+</view>
+<free-gap height="120"></free-gap>
+<view class="btn-box flex align-center justify-between w100">
+  <view>
+    <text class="text-sm">合计：</text>
+    <text class="text-price">66.8</text>
+  </view>
+  <view class="h100 padding-lr bg-tea flex align-center justify-center" style="width:160rpx;" bindtap="surePay">
+    付款
+  </view>
+</view>
+
+
+<free-modal show="{{payShow}}" custom="{{true}}" bind:cancel="hide" >
+  <view class="flex flex-direction  w100">
+    <view class="padding text-center text-xl">请再次确认下单地址</view>
+    <view class="flex align-center justify-between text-bold">
+      <text>隔壁老王 先生</text>
+      <text>1684874484</text>
+    </view>
+    <view class="flex align-center justify-between margin-tb-sm">
+      <text>魅力之城5期三单元1栋</text>
+      <button class="free-button bg-tea  radius">修改地址</button>
+    </view>
+    <button class="free-button bg-tea round" bindtap="sure">确认并付款</button>
+  </view>
+</free-modal>

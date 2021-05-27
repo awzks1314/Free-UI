@@ -10,10 +10,10 @@
   <free-icon name="{{leftIcon}}" color="{{iconColor}}" class="free-notice-icon" wx:if="{{isLeft}}"></free-icon>
   <swiper vertical="{{vertical}}" autoplay="{{true}}" circular="{{true}}" interval="3000" class="free-swiper">
       <swiper-item wx:for="{{notice}}" wx:key="index" class="free-swiper-item">
-        <view class="free-news-item" bindtap='details' data-url="{{item.url}}" data-type="{{item.type}}" style="color:{{iconColor}};">{{item.text}}</view>
+        <view class="free-news-item" bindtap='details' data-url="{{item.url}}" data-type="{{item.type}}" style="color:{{iconColor}};">{{item.text}}</view> 
       </swiper-item>
     </swiper> 
     <free-icon name="close" size='18' color="{{iconColor}}" wx:if="{{isRight}}" catchtap="closeNotice"></free-icon>
 </view>
 
-
+ 

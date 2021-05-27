@@ -3,7 +3,7 @@
   <view class="main " >
   <view class="nav">
     <view class="padding-sm bg-white flex align-center justify-between">
-      <view class="left">
+      <view class="left" wx:if="{{orderType == 'takeIn'}}">
         <view class="flex align-center">
           <text class="text-lg">卓悦中心ONE AVENUE店</text>
           <free-icon name="right" size="14" color="#333333"></free-icon>
@@ -13,10 +13,22 @@
           <text class="padding-left-xs">距离您 889m</text>
         </view>
       </view>
-      <view class="right flex align-center ">
-        <text class="dinein flex-sub">自取</text>
-        <text class="dinein takeout flex-sub">外卖</text>
+      <view class="left" wx:if="{{orderType == 'takeOut'}}">
+        <view class="flex align-center">
+          <text class="text-lg">{{address.address}}</text>
+          <free-icon name="location" size="16" color="#ADB838"></free-icon>
+        </view>
+        <view class="flex align-center text-sm text-gray margin-top-xs">
+          <text>由</text>
+          <text class="padding-lr-xs text-black">卓悦中心ONE AVENUE店</text>
+          <text>配送</text>
+        </view>
       </view>
+      <view class="right flex align-center ">
+        <text class="dinein {{orderType=='takeIn'?'subActive lf':''}} flex-sub" bindtap="changeType" data-type="takeIn">自取</text>
+        <text class="takeout  {{orderType=='takeOut'?'subActive lr':''}} flex-sub"
+        bindtap="changeType" data-type="takeOut">外卖</text>
+      </view> 
     </view>
     <view class="notice padding-sm flex align-center justify-between teaBg">
       <text class="text-tea">"霸气mini卡"超级购券活动，赶紧去购买</text>
@@ -31,6 +43,7 @@
       <view class="wrapper">
         <view wx:for="{{menuList}}" wx:key="index" id="item-{{index}}" class="menu {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" bindtap="swichNav">
           <text>{{item.name}}</text>
+          <view class="dot" wx:if="{{item.number>0}}">{{item.number}}</view>
         </view>
       </view>
     </scroll-view>
@@ -45,7 +58,7 @@
           </swiper-item>
         </swiper>
         <!-- goods -->
-        <view class="list padding-bottom">
+        <view class="list ">
           <view wx:for="{{menuList}}" wx:key="index" class="category" id="cate-{{index}}">
             <view class="padding-top">
               <text>{{item.name}}</text>
@@ -56,11 +69,17 @@
                 <free-image  src="{{good.images}}" width="160rpx" height="160rpx" radius="10rpx"></free-image>
                 <view class="flex-sub padding-left-sm padding-right-sm  flex flex-direction align-start justify-around" style="height:160rpx;overflow: hidden;">
                   <text>{{good.name}}</text>
-                  <view class="text-sm text-cut w100">{{good.content}}大叔大婶</view>
+                  <view class="text-sm text-cut w100">{{good.content}}</view>
                   <view class="flex align-center justify-between w100">
                     <text class="text-bold text-lg text-price">{{good.price}}</text>
-                    <free-icon name="roundaddfill" color="#ADB838" wx:if="{{!good.property || good.property.length == 0}}"></free-icon>
-                    <view wx:else class="">
+                    <view wx:if="{{!good.property || good.property.length == 0}}" class="flex align-center">
+                      <view class="bg-gray light round text-ll  flex align-center justify-center" style="width:44rpx;height:44rpx;" 
+                      wx:if="{{good.number>0}}"
+                      bindtap="addProduct" data-type="reduce"  data-item="{{item}}" data-index="{{index}}">-</view>
+                      <text wx:if="{{good.number>0}}" class="padding-lr-xs">{{good.number}}</text>
+                      <view class="bg-tea light round text-ll  flex align-center justify-center" style="width:44rpx;height:44rpx;" bindtap="addProduct" data-type="add" data-item="{{item}}" data-index="{{index}}">+</view>
+                    </view>
+                    <view wx:else class="" bindtap="openSize" data-item="{{good}}">
                       <text class="radius-lg text-sm text-white" style="background:#ADB838;padding:6rpx 12rpx;">选规格</text>
                     </view>
                   </view>
@@ -74,9 +93,78 @@
   </view>
 </view>
 </view>
+<view class="cart-box" wx:if="{{cartList.length>0}}">
+  <view class="cartMark" bindtap="openCart">
+    <free-image src="/static/image/tea/cart.png" width="96rpx" height="96rpx" class="cartImg"></free-image>
+    <view class="cartMarkTag">{{ cartNumber }}</view>
+  </view>
+  <view class="flex-sub">
+    合计：<text class="text-price">188</text>
+    <view class="text-sm text-gray">已优惠 <text class="text-price">66</text></view>
+  </view>
+  <view class="bg-tea h100 flex align-center padding-lr" style="border-radius: 0 50rpx 50rpx 0;" bindtap="pay">去结算</view>
+</view>
 <free-tabbar 
   list="{{teaList.list}}" 
   color="{{teaList.color}}"
   selectColor="{{teaList.selectedColor}}"
   current="1"
   bind:click="change"></free-tabbar>
+
+  <free-drawer 
+    show="{{show}}"
+    closeable="{{false}}"
+    mode="bottom" 
+    length="600rpx">
+    <view class=" " style="height:600rpx;">
+      <view class="text-right padding-tb-xs padding-lr" style="background-color: #E8EACF;color: #ADB838;">清空</view>
+      <scroll-view scroll-y class="flex flex-direction flex-sub align-center justify-between padding-lr" style="height:540rpx;">
+        <view wx:for="{{cartList}}" wx:key="index" class="cartitem flex align-center justify-between solid-bottom w100 padding-tb-sm">
+          <text class="flex-twice">{{item.name}}</text>
+          <text class="text-price flex-sub text-left">{{item.price}}</text>
+          <view  class="flex align-center flex-sub justify-end">
+            <view class="bg-gray light round text-ll  flex align-center justify-center" style="width:44rpx;height:44rpx;" 
+            catchtap="changeCart" data-type="reduce"  data-index="{{index}}">-</view>
+            <text  class="padding-lr-xs">{{item.number}}</text>
+            <view class="bg-tea light round text-ll  flex align-center justify-center" style="width:44rpx;height:44rpx;" catchtap="changeCart" data-type="add"  data-index="{{index}}">+</view>
+          </view>
+        </view> 
+      </scroll-view>
+    </view>
+  </free-drawer >
+
+  <!-- 规格模态框 -->
+  <free-modal show="{{sizeShow}}" custom="{{true}}" bind:cancel="hideSize" padding="0">
+  <view class="flex flex-direction">
+      <free-image src="{{sizeSelectInfo.images}}" width="260rpx" height="260rpx" class="padding-tb-sm flex justify-center"></free-image>
+      
+      <view class="padding-lr solid-bottom">
+        <view>{{sizeSelectInfo.name}}</view>
+        <view class="text-gray text-sm padding-top-xs padding-bottom-sm">{{sizeSelectInfo.content}}</view>
+      </view>
+      <view class="padding-top-sm padding-lr">
+        <view wx:for="{{sizeSelectInfo.property}}" wx:key="index">
+          <view class="padding-bottom-xs">{{item.name}}</view>
+          <view class="flex flex-wrap">
+            <view wx:for="{{item.values}}" wx:key="index" wx:for-item="value" class="padding-lr-sm padding-tb-xs margin-right-sm margin-bottom-sm text-gray radius-xs {{value.default == 1?'bg-tea':'bg-gray'}}">
+              {{value.value}}  
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="padding-lr padding-tb-sm bg-gray flex align-center justify-between">
+        <view class="flex flex-direction">
+          <text class="text-price text-lg">32</text>
+          <text class="text-sm text-gray">标准冰，标准糖</text>
+        </view>
+        <view  class="flex align-center flex-sub justify-end">
+            <view class="bg-white light round text-ll  flex align-center justify-center" style="width:44rpx;height:44rpx;" 
+            >-</view>
+            <text  class="padding-lr-xs">1</text>
+            <view class="bg-tea light round text-ll  flex align-center justify-center" style="width:44rpx;height:44rpx;" >+</view>
+          </view>
+      </view>
+
+      <view class="padding-tb-sm text-center bg-tea" bindtap="hideSize">加入购物车</view>
+    </view>
+</free-modal>
