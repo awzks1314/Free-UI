@@ -8,7 +8,7 @@ Page({
     logData:[
       {
         time:'May 27 2021',
-        version:'v1.0.2',
+        version:'v1.0.3',
         content:[
           '1.新增模板之奈雪小程序',
           '2.新增组件【提示引导】',
@@ -18,7 +18,7 @@ Page({
       },
       {
         time:'May 20 2021',
-        version:'v1.0.1',
+        version:'v1.0.2',
         content:[
           '1.新增索引列表，分城市索引、通讯录吸顶等',
           '2.新增分类选择扩展页面',
@@ -34,7 +34,7 @@ Page({
       },
       {
         time:'May 14 2021',
-        version:'v1.0.0',
+        version:'v1.0.1',
         content:[
           '1.新增项目',
           '2.新增图标、色彩、布局'

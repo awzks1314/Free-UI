@@ -55,6 +55,10 @@ Page({
       {
         name:'水印',
         title:'watermark'
+      },
+      {
+        name:'底部分享',
+        title:'share'
       }
     ]
   },
