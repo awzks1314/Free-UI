@@ -14,27 +14,27 @@ Page({
     jsList:[
       {
         name:'时间格式化',
-        title:'tea'
+        title:'timeFormat'
       },
       {
         name:'多久之前',
-        title:'tea'
+        title:'timeFrom'
       },
       {
         name:'防抖节流',
-        title:'tea'
+        title:'debounce'
       },
       {
         name:'颜色转化',
-        title:'tea'
+        title:'colorSwitch'
       },
       {
         name:'规则验证',
-        title:'tea'
+        title:'rules'
       },
       {
         name:'去除空格',
-        title:'tea'
+        title:'trim'
       }
     ]
   },

@@ -11,7 +11,7 @@
 <view class="padding-lr-sm padding-top-sm flex  align-center">
   <view class=" text-gray padding-left-xs">js工具库</view>
 </view>
-<navigator wx:for="{{jsList}}" wx:key="index" class="" url="/packageTemplate/{{item.title}}/home/home" hover-class="none">
+<navigator wx:for="{{jsList}}" wx:key="index" class="" url="/packageTemplate/js/{{item.title}}/{{item.title}}" hover-class="none">
   <free-list arrow="true" bind:click="detail" >
     <view class="free-list-name   padding-right-xs">{{item.name}}</view>
     <view class="text-Abc  ">{{item.title}}</view>

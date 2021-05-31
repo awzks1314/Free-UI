@@ -1,0 +1,6 @@
+<view catchtouchmove="moveClick">
+  <view class="class free-bottom-popup {{show?'free-popup-show':''}}" style="background:{{bgcolor}};{{height?'height:'+height+'rpx':''}}">
+    <slot></slot>
+  </view>
+  <view class="free-popup-mask {{show?'free-mask-show':''}}" wx:if="{{mask}}" bindtap="handleClose"></view>
+</view>

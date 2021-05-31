@@ -1,0 +1,10 @@
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
+<view class="flex flex-direction align-center">
+<button class="free-button margin-top-sm bg-blue">{{time}}</button>
+</view>
+
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="方法接受一个13位的时间戳，请转化后再传入方法" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['2021-05-31 16:43:47','2021-04-30 16:43:47']}}" bind:click='getMode'  bold="true"></free-subsection>
+</view>

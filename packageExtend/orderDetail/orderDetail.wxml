@@ -11,7 +11,7 @@
       <view class="flex align-center padding-tb-sm">
         <free-icon name="deliver" color="#ff5722"></free-icon>
         <view class="flex-sub padding-lr-sm ">
-          <view class="text-cut-2 text-lg text-orange">[昆明市]云南省昆明市官渡区矣六街道正在派件请保持电话畅通请保持电话畅通请保持电话畅通</view>
+          <view class="text-cut-2 text-orange">[昆明市]云南省昆明市官渡区矣六街道正在派件请保持电话畅通请保持电话畅通请保持电话畅通</view>
           <view class="text-sm text-gray margin-top-xs">2021-05-20 16:07:55</view>
         </view>
         <!-- <free-icon name="right" size="18"></free-icon> -->
@@ -19,7 +19,7 @@
       <view class="flex align-center padding-tb-sm solid-top">
         <free-icon name="locationfill" color="#ff5722"></free-icon>
         <view class="flex-sub padding-lr-sm ">
-          <view class="text-black text-lg text-bold">
+          <view class="text-black  text-bold">
             <text class="">收货人：张三三</text>
             <text class="padding-left-xs">18787878787</text>
           </view>

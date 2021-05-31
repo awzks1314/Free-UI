@@ -60,7 +60,13 @@
     "packageTemplate/tea/order/order",
     "packageTemplate/tea/orderDetail/orderDetail",
     "packageTemplate/tea/review/review",
-    "pages/module/guidance/guidance"
+    "pages/module/guidance/guidance",
+    "packageTemplate/js/timeFormat/timeFormat",
+    "packageTemplate/js/debounce/debounce",
+    "packageTemplate/js/colorSwitch/colorSwitch",
+    "packageTemplate/js/rules/rules",
+    "packageTemplate/js/trim/trim",
+    "packageTemplate/js/timeFrom/timeFrom"
   ],
   "subPackages": [
     {
@@ -81,7 +87,8 @@
         "orderList/orderList",
         "orderDetail/orderDetail",
         "identify/identify",
-        "watermark/watermark"
+        "watermark/watermark",
+        "share/share"
       ]
     }
   ],

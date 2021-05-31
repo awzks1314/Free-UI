@@ -12,7 +12,7 @@
           <free-icon name="location" size="16" color="#ADB838"></free-icon>
           <text class="padding-left-xs">距离您 889m</text>
         </view>
-      </view>
+      </view> 
       <view class="left" wx:if="{{orderType == 'takeOut'}}">
         <view class="flex align-center">
           <text class="text-lg">{{address.address}}</text>
@@ -39,7 +39,7 @@
   <!-- 内容 -->
   <view class="menu-wrap ">
     <!-- 左侧 -->
-    <scroll-view scroll-with-animation scroll-y class="menus" scroll-top="{{scrollTop}}" scroll-into-view="{{itemId}}">
+    <scroll-view scroll-with-animation scroll-y class="menus" scroll-top="{{scrollTop}}" >
       <view class="wrapper">
         <view wx:for="{{menuList}}" wx:key="index" id="item-{{index}}" class="menu {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" bindtap="swichNav">
           <text>{{item.name}}</text>
@@ -49,7 +49,7 @@
     </scroll-view>
 
     
-    <scroll-view scroll-with-animation scroll-y class="goods " scroll-top="{{scrollRightTop}}" bindscroll="rightScroll">
+    <scroll-view scroll-with-animation scroll-y class="goods " scroll-top="{{scrollRightTop}}" bindscroll="rightScroll" scroll-into-view="{{itemId}}">
       
       <view class="wrapper padding-sm">
         <swiper class="ads " id="ads" autoplay interval="3000" indicator-dots>

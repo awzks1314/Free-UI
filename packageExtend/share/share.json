@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"share底部分享",
+  "usingComponents": {
+    "free-bottom-popup":"/components/module/free-bottom-popup/free-bottom-popup"
+  }
+}

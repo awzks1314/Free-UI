@@ -1,0 +1,11 @@
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
+<view class="flex flex-direction align-center">
+<view class="text-left" style="width:48%;">时间戳为：{{time}}</view>
+<button class="free-button margin-top-sm bg-blue">{{times}}</button>
+</view>
+
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="时间格式('Y', 'M', 'D', 'h', 'm', 's')" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['Y-M-D','Y年M月D日','Y.M.D h:m','M-D']}}" bind:click='getMode'  bold="true"></free-subsection>
+</view>

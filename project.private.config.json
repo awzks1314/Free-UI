@@ -37,22 +37,16 @@
           "scene": null
         },
         {
-          "name": "packageExtend/watermark/watermark",
-          "pathName": "packageExtend/watermark/watermark",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/module/steps/steps",
-          "pathName": "pages/module/steps/steps",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "pages/basic/index/index",
           "pathName": "pages/basic/index/index",
           "query": "",
           "scene": 1047
+        },
+        {
+          "name": "packageTemplate/js/timeFrom/timeFrom",
+          "pathName": "packageTemplate/js/timeFrom/timeFrom",
+          "query": "",
+          "scene": null
         }
       ]
     }

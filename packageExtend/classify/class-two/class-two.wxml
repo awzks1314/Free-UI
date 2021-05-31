@@ -15,32 +15,32 @@
   <!-- 内容 -->
   <view class="menu-wrap ">
     <!-- 左侧 -->
-    <scroll-view scroll-with-animation scroll-y class="menus" scroll-top="{{scrollTop}}" scroll-into-view="{{itemId}}">
+    <scroll-view scroll-with-animation scroll-y class="menus" scroll-top="{{scrollTop}}" >
       <view class="wrapper">
-        <view wx:for="{{menuList}}" wx:key="index" id="item-{{index}}" class="menu {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" bindtap="swichNav">
-          <text>{{item.name}}</text>
+        <view wx:for="{{menuList}}" wx:key="index" class="menu {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" bindtap="swichNav">
+          <text>{{item.name}}{{index}}</text>
         </view>
       </view>
     </scroll-view>
 
     
-    <scroll-view scroll-with-animation scroll-y class="goods " scroll-top="{{scrollRightTop}}" bindscroll="rightScroll">
+    <scroll-view scroll-with-animation scroll-y class="goods " scroll-top="{{scrollRightTop}}" scroll-into-view="{{itemId}}" bindscroll="rightScroll">
       
-      <view class="wrapper padding-sm">
-        <swiper class="ads " id="ads" autoplay interval="3000" indicator-dots>
+      <view class="wrapper ">
+        <swiper class="ads padding-lr-sm padding-top-sm" id="ads" autoplay interval="3000" indicator-dots>
           <swiper-item wx:for="{{ads}}" wx:key='index' class="radius-sm">
             <free-image src="{{item.image}}" width="100%" height="250rpx"></free-image>
           </swiper-item>
         </swiper>
         <!-- goods -->
-        <view class="list padding-bottom">
+        <view class="list padding-bottom padding-lr-sm">
           <view wx:for="{{menuList}}" wx:key="index" class="category" id="cate-{{index}}">
-            <view class="padding-top">
+            <view class="padding-top-sm">
               <text>{{item.name}}</text>
             </view>
 
             <view class="items flex flex-direction">
-              <view class="good flex align-center padding-top" wx:for="{{item.product}}" wx:for-item="good" wx:key="index">
+              <view class="good flex align-center padding-top-sm" wx:for="{{item.product}}" wx:for-item="good" wx:key="index">
                 <free-image  src="{{good.images}}" width="160rpx" height="160rpx" radius="10rpx"></free-image>
                 <view class="flex-sub padding-left-sm padding-right-sm  flex flex-direction align-start justify-around" style="height:160rpx;overflow: hidden;">
                   <text>{{good.name}}</text>

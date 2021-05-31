@@ -87,7 +87,7 @@ page{
   position: relative;
 }
 .menu:nth-last-child(1){
-  margin-bottom: 130rpx;
+  margin-bottom: 145rpx;
 }
 .goods{
   flex: 1;

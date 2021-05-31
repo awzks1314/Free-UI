@@ -1,0 +1,38 @@
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
+<view class="text-center">
+<button class="free-button bg-blue">查看演示</button>
+</view>
+
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="底部分享弹窗" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[false,true]}}" bind:click='getMode' data-name="popupShow" bold="true"></free-subsection>
+</view>
+
+<!--底部分享弹窗-->
+<free-bottom-popup show="{{popupShow}}" bind:close="popup">
+    <view class="free-share">
+      <view class="free-share-title">分享到</view>
+      <scroll-view scroll-x  class="scroll">
+        <view class="free-share-item {{shareList[0].share.length-1===index?'free-item-last':''}}" wx:for="{{shareList[0].share}}" wx:key="{{index}}" bindtap="popup">
+            <view class="free-share-icon" hover-class="free-hover" hover-stay-time="150">
+              <free-icon name="{{item.icon}}" color="{{item.color}}" size="{{item.size?item.size:36}}"></free-icon>
+            </view>
+            <view class="free-share-text">{{item.name}}</view>
+          </view>
+          <view class="free-empty">!</view>
+      </scroll-view>
+
+      <scroll-view scroll-x  class="scroll paddbot">
+        <view class="free-share-item {{shareList[1].operate.length-1===index?'free-item-last':''}}" wx:for="{{shareList[1].operate}}" wx:key="{{index}}" bindtap="popup">
+            <view class="free-share-icon" hover-class="free-hover" hover-stay-time="150">
+              <free-icon name="{{item.icon}}" color="{{item.color}}" size="{{item.size?item.size:36}}"></free-icon>
+            </view>
+            <view class="free-share-text">{{item.name}}</view>
+          </view>
+          <view class="free-empty">!</view>
+      </scroll-view>
+      <view class="free-btn-cancle" bindtap="popup">取消</view>
+    </view>
+  </free-bottom-popup>
+  <!--底部分享弹窗-->
