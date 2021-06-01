@@ -1,62 +1,49 @@
-// packageTemplate/js/debounce/debounce.js
+const {debounce} = require('../../../utils/debounce')
+const {throttle} = require('../../../utils/throttle')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    result:[0],
+    timeout: 1000,
+    immediate: true,
+    mode: 'throttle'
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  getMode(e){
+    this.setData({
+      [e.currentTarget.dataset.name]:e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  getModeMode(e){
+    this.setData({
+      mode:e.detail.value=='节流'?'throttle':'debounce'
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  getModeIm(e){
+    this.setData({
+      immediate:e.detail.value=='执行前'?true:false
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  // 定义一个时间A
+  functionA(){
+    if(this.data.result.length>=6){
+      this.data.result = []
+    }
+    this.data.result.push(0)
+    this.setData({
+      result:this.data.result
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  start(){
+    if(this.data.mode == 'throttle'){
+      // 调用节流
+      throttle(this.functionA,this.data.timeout,this.data.immediate)
+    }else{
+      debounce(this.functionA,this.data.timeout,this.data.immediate)
+    }
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
   /**
    * 用户点击右上角分享
    */

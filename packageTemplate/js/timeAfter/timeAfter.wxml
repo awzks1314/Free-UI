@@ -1,0 +1,25 @@
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
+<view class="flex flex-direction align-center">
+<view class="text-left" style="width:48%;">当前时间为：{{nowTime}}</view>
+</view>
+
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="几天后" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['5','6','7','8']}}" bind:click='getMode'  data-name="days" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="初始时间" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['2021-06-01','2021-12-27']}}" bind:click='getMode'  data-name="nowTime" bold="true"></free-subsection>
+</view>
+
+<free-title type="2" title="时间列表"  titlecolor="#0081ef"></free-title>
+<view class="padding-lr flex flex-direction align-center">
+  <view class=" margin-top">
+    <view wx:for="{{afterTime}}" wx:key="index" class="flex align-center">
+      <text>{{item.time}}</text>
+      <text class="padding-left">{{item.week}}</text>
+    </view>
+  </view>
+</view>

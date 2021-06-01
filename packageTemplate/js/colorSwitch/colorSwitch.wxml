@@ -1,2 +1,16 @@
-<!--packageTemplate/js/colorSwitch/colorSwitch.wxml-->
-<text>packageTemplate/js/colorSwitch/colorSwitch.wxml</text>
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
+<view class="text-center">
+
+<button class="free-button bg-blue" style="background:{{value}};">{{value}}</button>
+</view>
+
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="rgb转hex" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['rgb(112,64,87)','rgb(242,44,8)','rgb(22,144,188)']}}" bind:click='getMode'  bold="true"></free-subsection>
+</view> 
+
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="hex转rgb" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#704057','#0081ef','#E54464']}}" bind:click='getModes'  bold="true"></free-subsection>
+</view> 

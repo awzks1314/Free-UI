@@ -1,1 +1,3 @@
-/* packageTemplate/js/colorSwitch/colorSwitch.wxss */
+page{
+  background:#fff;
+}

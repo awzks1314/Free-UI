@@ -66,6 +66,11 @@ Page({
       [e.currentTarget.dataset.name]:e.detail.value
     })
   },
+  open(){
+    this.setData({
+      popupShow:true
+    })
+  },
   popup(){
     this.setData({
       popupShow:false

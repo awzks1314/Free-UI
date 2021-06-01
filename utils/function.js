@@ -69,53 +69,93 @@ function beautifyTime(time){
     if (delta / 60 <= 1) return `刚刚`
 }
 
-//公共js，主要做表单验证，以及基本方法封装
-const utils = {
-  isNullOrEmpty: function(value) {
-    //是否为空
-    return (value === null || value === '' || value === undefined) ? true : false;
-  },
-  trim: function(value,pos = 'both') {
-    if (pos == 'both') {
-      return value.replace(/^\s+|\s+$/g, "");
-    } else if (pos == "left") {
-      return value.replace(/^\s*/, '');
-    } else if (pos == 'right') {
-      return value.replace(/(\s*$)/g, "");
-    } else if (pos == 'all') {
-      return value.replace(/\s+/g, "");
-    } else {
-      return value; 
-    }
-  },
-  isMobile: function(value) {
-    //是否为手机号
-    return /^(?:13\d|14\d|15\d|16\d|17\d|18\d|19\d)\d{5}(\d{3}|\*{3})$/.test(value);
-  },
-  isFloat: function(value) {
-    //金额，只允许保留两位小数
-    return /^([0-9]*[.]?[0-9])[0-9]{0,1}$/.test(value);
-  },
-  isNum: function(value) {
-    //是否全为数字
-    return /^[0-9]+$/.test(value);
-  },
-  formatNum: function(num) {
-    //格式化手机号码
-    if (utils.isMobile(num)) {
-      num = num.replace(/^(\d{3})\d{4}(\d{4})$/, '$1****$2')
-    }
-    return num;
+function trim(value,pos = 'both') {
+  if (pos == 'both') {
+    return value.replace(/^\s+|\s+$/g, "");
+  } else if (pos == "left") {
+    return value.replace(/^\s*/, '');
+  } else if (pos == 'right') {
+    return value.replace(/(\s*$)/g, "");
+  } else if (pos == 'all') {
+    return value.replace(/\s+/g, "");
+  } else {
+    return value; 
   }
 }
+
+
+// 将hex表示方式转换为rgb表示方式(这里返回rgb数组模式)
+function hexToRgb(sColor, str = true) {
+	let reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/;
+	sColor = sColor.toLowerCase();
+	if (sColor && reg.test(sColor)) {
+		if (sColor.length === 4) {
+			let sColorNew = "#";
+			for (let i = 1; i < 4; i += 1) {
+				sColorNew += sColor.slice(i, i + 1).concat(sColor.slice(i, i + 1));
+			}
+			sColor = sColorNew;
+		}
+		//处理六位的颜色值
+		let sColorChange = [];
+		for (let i = 1; i < 7; i += 2) {
+			sColorChange.push(parseInt("0x" + sColor.slice(i, i + 2)));
+		}
+		if(!str) {
+			return sColorChange;
+		} else {
+			return `rgb(${sColorChange[0]},${sColorChange[1]},${sColorChange[2]})`;
+		}
+	} else if (/^(rgb|RGB)/.test(sColor)) {
+		let arr = sColor.replace(/(?:\(|\)|rgb|RGB)*/g, "").split(",")
+		return arr.map(val => Number(val));
+	} else {
+		return sColor;
+	}
+};
+
+// 将rgb表示方式转换为hex表示方式
+function rgbToHex(rgb) {
+	let _this = rgb;
+	let reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/;
+	if (/^(rgb|RGB)/.test(_this)) {
+		let aColor = _this.replace(/(?:\(|\)|rgb|RGB)*/g, "").split(",");
+		let strHex = "#";
+		for (let i = 0; i < aColor.length; i++) {
+			let hex = Number(aColor[i]).toString(16);
+			hex = String(hex).length == 1 ? 0 + '' + hex : hex; // 保证每个rgb的值为2位
+			if (hex === "0") {
+				hex += hex;
+			}
+			strHex += hex;
+		}
+		if (strHex.length !== 7) {
+			strHex = _this;
+		}
+		return strHex;
+	} else if (reg.test(_this)) {
+		let aNum = _this.replace(/#/, "").split("");
+		if (aNum.length === 6) {
+			return _this;
+		} else if (aNum.length === 3) {
+			let numHex = "#";
+			for (let i = 0; i < aNum.length; i += 1) {
+				numHex += (aNum[i] + aNum[i]);
+			}
+			return numHex;
+		}
+	} else {
+		return _this;
+	}
+}
+
+
+
 module.exports = {
-  isNullOrEmpty: utils.isNullOrEmpty,
-  trim: utils.trim,
-  isMobile: utils.isMobile,
-  isFloat: utils.isFloat,
-  isNum: utils.isNum,
-  formatNum: utils.formatNum,
-  timeFormat: timeFormat,
-  getDates: getDates,
-  beautifyTime:beautifyTime
+  trim,
+  timeFormat,
+  getDates,
+  beautifyTime,
+  hexToRgb,
+	rgbToHex
 }

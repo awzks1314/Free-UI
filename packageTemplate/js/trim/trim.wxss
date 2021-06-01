@@ -1,1 +1,3 @@
-/* packageTemplate/js/trim/trim.wxss */
+page{
+  background: #fff;
+}

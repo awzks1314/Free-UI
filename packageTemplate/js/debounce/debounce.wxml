@@ -1,2 +1,38 @@
-<!--packageTemplate/js/debounce/debounce.wxml-->
-<text>packageTemplate/js/debounce/debounce.wxml</text>
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
+<view class="text-center">
+<view class="margin-bottom-sm flex justify-center">
+  <view wx:for="{{result}}" wx:key="index">{{(index >= 1) ? '-' : ''}}回调</view>
+</view>
+<button class="free-button bg-blue" bindtap="start">点击执行</button>
+</view>
+
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="选择模式" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['节流','防抖']}}" bind:click='getModeMode'  bold="true"></free-subsection>
+</view> 
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="选择时间间隔/ms" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['1000','2000','3000']}}" bind:click='getMode' data-name="timeout"  bold="true"></free-subsection>
+</view> 
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="执行位置" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['执行前','执行后']}}" bind:click='getModeIm'  bold="true"></free-subsection>
+</view> 
+
+<free-title type="2" title="说明"  titlecolor="#0081ef"></free-title>
+<view class="padding-lr">
+  <view class="flex">
+    <text class="text-blue">防抖：</text>
+    <text class="flex-sub">n秒内只会执行一次，如果中间点击，则重新计算时间，才能执行</text>
+  </view>
+  <view class="flex margin-top-sm">
+    <text class="text-blue">节流：</text>
+    <text class="flex-sub">事件触发，但在 n 秒内只会执行一次</text>
+  </view>
+  <view class="flex margin-top-sm">
+    <text class="text-blue">区别：</text>
+    <text class="flex-sub">防抖动是将多次执行变为最后一次执行，节流是将多次执行变成每隔一段时间执行。</text>
+  </view>
+  
+</view>

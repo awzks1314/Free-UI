@@ -1,2 +1,27 @@
-<!--packageTemplate/js/rules/rules.wxml-->
-<text>packageTemplate/js/rules/rules.wxml</text>
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
+<view class=" padding-lr">
+  系统内置了一些验证方法，放在utils/rules.js中
+</view>
+
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="是否为手机号" 
+height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['13578468725','123456']}}" bind:click='getMode' data-name="isMobile"  bold="true"></free-subsection>
+</view>  
+
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="是否邮箱" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['664423077@qq.com','664大叔大婶']}}" bind:click='getMode' data-name="isEmail"  bold="true"></free-subsection>
+</view>  
+
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="是否整数" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['6','大婶','ss','1s']}}" bind:click='getMode' data-name="isDigits"  bold="true"></free-subsection>
+</view>  
+
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="是否金额" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['6','7.4','7.4.','16.']}}" bind:click='getMode' data-name="isFloat"  bold="true"></free-subsection>
+</view>  
+  

@@ -15,15 +15,22 @@ function qrc(id, src, code, width, height) {
   })
 }
 
+// 消息提示
+function toast(title, duration = 1500) {
+	wx.showToast({
+		title: title,
+		icon: 'none',
+		duration: duration
+	})
+}
 
-
+// 记忆路由
 function getUrl(){
   var pages = getCurrentPages()//获取加载的页面
   var currentPage = pages[pages.length - 1] //获取当前页面的对象
   var url = currentPage.route//当前页面的url
 
   var options = currentPage.options //获取url中的参数
-
 
   var urlWithAges = url + '?'
   for (var key in options){
@@ -37,6 +44,7 @@ module.exports = {
 
   // barcode: barc,
   qrcode: qrc,
+  toast,
   getUrl
 }
 

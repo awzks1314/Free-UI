@@ -1,2 +1,10 @@
-<!--packageTemplate/js/trim/trim.wxml-->
-<text>packageTemplate/js/trim/trim.wxml</text>
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
+<view class="text-center">
+<button class="free-button bg-blue">"{{values}}"</button>
+</view>
+
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="去除空格" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['左空格','右空格','所有空格','两边空格']}}" bind:click='getMode'  bold="true"></free-subsection>
+</view> 

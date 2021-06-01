@@ -37,14 +37,14 @@
           "scene": null
         },
         {
-          "name": "pages/basic/index/index",
-          "pathName": "pages/basic/index/index",
+          "name": "packageTemplate/js/debounce/debounce",
+          "pathName": "packageTemplate/js/debounce/debounce",
           "query": "",
           "scene": 1047
         },
         {
-          "name": "packageTemplate/js/timeFrom/timeFrom",
-          "pathName": "packageTemplate/js/timeFrom/timeFrom",
+          "name": "packageTemplate/js/timeAfter/timeAfter",
+          "pathName": "packageTemplate/js/timeAfter/timeAfter",
           "query": "",
           "scene": null
         }

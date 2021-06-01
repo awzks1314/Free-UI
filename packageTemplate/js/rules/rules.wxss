@@ -1,1 +1,3 @@
-/* packageTemplate/js/rules/rules.wxss */
+page{
+  background: #fff;
+}

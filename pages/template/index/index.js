@@ -21,6 +21,10 @@ Page({
         title:'timeFrom'
       },
       {
+        name:'多久之后',
+        title:'timeAfter'
+      },
+      {
         name:'防抖节流',
         title:'debounce'
       },

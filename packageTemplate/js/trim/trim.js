@@ -1,62 +1,27 @@
-// packageTemplate/js/trim/trim.js
+
+// 引入外部js,utils/function.js
+const {trim} = require('../../../utils/function')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    value:" 那些年 我们一起追过的 女孩 ",
+    values:''
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad(){
+    this.setData({
+      values:trim(this.data.value,'left')
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  getMode(e){
+    console.log(e)
+    let post = e.detail.index == 0 ? 'left' : e.detail.index == 1 ? 'right' : e.detail.index == 2 ? 'all' : 'both';
+    this.setData({
+      values:trim(this.data.value,post)
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
   /**
    * 用户点击右上角分享
    */
