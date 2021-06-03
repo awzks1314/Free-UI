@@ -25,16 +25,18 @@ Page({
       {name:'标签页2',num:99},
       {name:'标签页5',disabled: true},
       {name:'标签页3'},
-    ],
+    ], 
     currentTab:0,
     bgColor:"#fff",
     bold:true,
     selectedColor:'#0081ef',
     sliderHeight:6,
-    sliderWidth:34
+    sliderWidth:34,
+    type:false
   },
   getMode(e){
     this.setData({
+      currentTab:0,
       [e.currentTarget.dataset.name]:e.detail.value,
       list:e.currentTarget.dataset.name == 'type' && e.detail.value?this.data.tabs:e.currentTarget.dataset.name == 'type' && !e.detail.value?this.data.tabs1:this.data.list
     })

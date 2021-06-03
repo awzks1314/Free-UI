@@ -1,7 +1,6 @@
 {
   "navigationBarTitleText":"inputNumber",
   "usingComponents": {
-    "free-input":"/components/module/free-input/free-input",
     "free-inputNumber":"/components/module/free-inputNumber/free-inputNumber"
   }
 }

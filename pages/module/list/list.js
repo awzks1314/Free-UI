@@ -11,7 +11,7 @@ Page({
       {name:"消息列表"}
     ],
     currentTab:0,
-    icon:true,//图标图片
+    icon:'',//图标图片
     arrow:true,//箭头
     color:'#000',
     image:'icon',

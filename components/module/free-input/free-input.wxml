@@ -2,7 +2,7 @@
   <view  class="{{inputStyle == 0?'inputStyle':'inputStyles'}} {{inputStyle == 1 &&disabled?'disabled':''}}" style="border-radius:{{radius}};background:{{inputBg}};">
     <!-- 前置图标 -->
     <view style="margin: 0 0 0 0.8em;" wx:if="{{prefixIcon}}">
-      <free-icon name="{{prefixIcon}}" color="{{color}}" size="18"></free-icon>
+      <free-icon name="{{prefixIcon}}" color="{{color}}" size="28"></free-icon>
     </view>
     <input type="{{type}}" 
     style="color:{{color}}"
@@ -19,11 +19,11 @@
     class="input"/>
     <!-- 删除 -->
     <view class="deleStyle" wx:if="{{value && close}}">
-      <free-icon name="close" color="{{color?color:'rgb(139, 138, 138)'}}"  size="18" bindtap="close"></free-icon>
+      <free-icon name="close" color="{{color?color:'rgb(139, 138, 138)'}}"  size="28" bindtap="close"></free-icon>
     </view>
     <!-- 后置图标 -->
     <view style="padding: 0 20rpx;" wx:if="{{suffixIcon}}" >
-      <free-icon name="{{suffixIcon}}" color="{{color}}" size="18"></free-icon>
+      <free-icon name="{{suffixIcon}}" color="{{color}}" size="28"></free-icon>
       <!-- <slot name='suffix' ></slot> -->
     </view>    
   </view>

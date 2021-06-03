@@ -19,7 +19,7 @@
   extreaColor: 右侧额外按钮颜色
  -->
 <free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
-<!-- 组件 -->
+<!-- 组件 --> 
 <free-input 
   placeholder='自定义输入框提示内容'
   inputStyle="{{inputStyle}}"
@@ -37,7 +37,7 @@
   bind:focus="focus"
   bind:blur = "blur"
   bind:confirm = "confirm"
-  bind:close = "close"
+  bind:close = "close" 
 ></free-input>
 <!-- 组件 -->
 

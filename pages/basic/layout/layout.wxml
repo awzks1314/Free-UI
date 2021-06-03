@@ -3,14 +3,13 @@
 <free-gap height="100"></free-gap>
 <block wx:if="{{currentTab == 0}}">
   <free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
-  <view class="flex flex-wrap padding-lr padding-bottom">
-    <view class="basis-{{width}} bg-blue margin-xs padding-sm radius-xs" >{{width}}</view>
-    <!-- <view class="basis-{{width}} bg-blue margin-xs padding-sm radius-xs" >{{width}}</view> -->
-  </view>
+    <view class="flex flex-wrap padding-lr padding-bottom">
+      <view class="basis-{{width}} bg-blue margin-xs padding-sm radius-xs" >{{width}}</view>
+    </view>
   <free-title icon='line' type='3'  bold="{{false}}" size='28' title="分别对应20/40/50/60/80,单位百分比%" height="40"></free-title>
   <view class="padding">
     <free-subsection list="{{['xs', 'sm','df','lg','xl']}}" bind:click='getMode' data-name="width" bold="true"></free-subsection>
-  </view> 
+  </view>  
 
 <!-- 比例布局 -->
   <free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>

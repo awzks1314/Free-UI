@@ -4,7 +4,7 @@
       <view class="icon-{{icon}}" style="background:{{titlecolor}};"></view>
     </view>
     <view wx:elif="{{icon}}" class="icon-style">
-      <free-icon name="{{icon}}" size="18" color="{{titlecolor}}"  ></free-icon>
+      <free-icon name="{{icon}}" size="{{size}}" color="{{titlecolor}}"  ></free-icon>
     </view>
     <text style="font-size:{{size}}rpx; vertical-align: middle;" class="{{bold?'text-bold':''}}">{{title}}</text>
     <text  style="width:{{width}}rem;background:{{bottomColor}};" class="bottom-style" wx:if="{{!sub || type == 1}}"></text>

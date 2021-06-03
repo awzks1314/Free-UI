@@ -1,5 +1,5 @@
 Component({
-  externalClasses: ['free-actionsheet-class'],
+  externalClasses: ['class'],
   properties: {
     //点击遮罩 是否可关闭
     maskClosable: {

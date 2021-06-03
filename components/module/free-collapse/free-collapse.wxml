@@ -1,9 +1,8 @@
 
   <view class="free-collapse" wx:for="{{listInfo}}" wx:key='inedx' >
-    <view catchtap="handleClick" data-index="{{index}}">
+    <view catchtap="handleClick" data-index="{{index}}" >
       <view class="free-header {{item.disabled?'free-opacity':''}}" >
-        <free-list bgcolor="{{hdBgColor}}" >
-          <view class="free-list-name" slot="title">{{item.title}}</view>
+        <free-list bgcolor="{{hdBgColor}}" title="{{item.title}}">
         </free-list>
         <free-icon name="fold"  class="free-icon {{item.open?'free-icon-active':''}}" wx:if="{{arrow}}" color="{{arrowColor}}"></free-icon>
       </view>
@@ -13,4 +12,5 @@
         <view  class="free-content" style="background:{{bdBgColor}};">{{item.intro}}</view>
       </view>
     </view>
-  </view> 
+  </view>  
+ 

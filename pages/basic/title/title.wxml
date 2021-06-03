@@ -11,7 +11,8 @@
   bgColor="{{bgColor}}"
   sub="default"
   
-></free-title>
+></free-title> 
+
 <!-- 组件 -->
 
 <free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>

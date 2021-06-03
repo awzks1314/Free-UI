@@ -156,6 +156,9 @@ Page({
       data: e.currentTarget.dataset.name
     })
   },
+  clickIcon(e){
+    console.log(e)
+  },
   getClose(e){
     this.data.iconList.forEach(o => o.show = true)
     this.setData({

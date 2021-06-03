@@ -1,1 +1,1 @@
-<view class="free-icon-class free-icon free-icon-{{name}}" style="font-size: {{ size }}px; {{ color ? 'color:' + color : '' }};{{bold?'font-weight: bold': ''}}" wx:if="{{visible}}"></view>
+<view class="free-icon-class free-icon free-icon-{{name}}" style="font-size: {{ size }}rpx; {{ color ? 'color:' + color : '' }};{{bold?'font-weight: bold': ''}}" wx:if="{{visible}}" bindtap="click"></view>

@@ -8,6 +8,7 @@
   <!-- <free-icon name='arrow-right-filling' color='#fff' size='18'></free-icon> -->
   默认按钮</button>
 
+  
   <view class="padding text-center"> class="free-button<text wx:if="{{color}}"> {{line?line:'bg'}}-{{color}} {{round}} {{light}} {{size}} {{shadow}} {{block}} {{disabled?'disabled':''}} {{loading?'loading':''}}</text>" </view>
 </view>
 <!-- 按钮 -->

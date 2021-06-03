@@ -7,12 +7,12 @@ Component({
     },
     size: {
       type: [Number,String],
-      value: 20
+      value: 40
     },
     color: {
       type: String,
       value: '#aaaaaa'
-    },
+    }, 
     bold:{
       type:Boolean,
       value:false
@@ -20,6 +20,17 @@ Component({
     visible:{
       type: Boolean,
       value: true
+    },
+    index:{
+      type: Number,
+      value: 0
+    }
+  },
+  methods:{
+    click(){
+      this.triggerEvent('click',{
+        index:this.data.index
+      })
     }
   }
 });

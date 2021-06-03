@@ -5,7 +5,7 @@
 <view class="container bg-white" style="margin-top:50px">
   <view class="free-list grid col-3 text-center"  >
     <view class="free-item " wx:for="{{iconList}}" wx:key="index" bindtap="copy" data-name="{{item.name}}" wx:if='{{item.show}}'>
-      <free-icon name="{{item.name}}" class="padding-tb-sm" size="30"></free-icon>
+      <free-icon name="{{item.name}}" class="padding-tb-sm" size="60" ></free-icon>
       <text class="text-gray">{{item.name}}</text>
     </view>
   </view>

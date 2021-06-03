@@ -50,10 +50,6 @@
     <view class="padding-bottom text-grey solid-bottom">text-abc：英文单词全部小写</view>
     <view class=" padding-top   text-abc text-blue">FREE UI</view>
   </view>
-  <view class="padding bg-white radius-xs  margin-bottom text-center">
-    <view class="padding-bottom text-grey solid-bottom">text-abc：英文单词全部小写</view>
-    <view class=" padding-top   text-abc text-blue">FREE UI</view>
-  </view>
 </view>
 <view class="padding " wx:if="{{currentTab == 4}}">
   <view class="padding bg-white radius-xs  margin-bottom text-center">

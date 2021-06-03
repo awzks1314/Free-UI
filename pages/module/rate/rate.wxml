@@ -13,7 +13,7 @@
   bind:change="change"
   ></free-rate>
 </view>
-<!-- 组件 -->
+<!-- 组件 --> 
 
 <free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
 <free-title icon='line' type='3'  bold="{{false}}" size='28' title="当前星星数" height="40"></free-title>

@@ -19,7 +19,7 @@ Component({
     //大小
     size: {
       type: Number,
-      value: 20
+      value: 40
     },
     //未选中颜色
     normal: {

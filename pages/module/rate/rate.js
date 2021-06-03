@@ -8,7 +8,7 @@ Page({
     current:1,//当前位置
     active:'#0081EF',//颜色
     number:5,//数量
-    size:20,//尺寸大小
+    size:40,//尺寸大小
     hollow:false,//实心空闲
     score:0,
     disabled:true

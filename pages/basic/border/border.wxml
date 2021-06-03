@@ -15,15 +15,15 @@
 <view class="padding">
   <free-subsection list="{{['默认', 'top','bottom', 'left','right']}}" bind:click='getMode' data-name="position" bold="true"></free-subsection>
 </view>
-
+ 
 <view class="padding text-center" >
   <view class="padding-xl radius-xs shadow bg-white" bindtap="copy" data-name="shadow bg-white">默认阴影</view>
-  <view class="padding-xl radius-xs shadow bg-blue margin-top" bindtap="copy" data-name="shadow bg-blue">根据背景颜色而改变的阴影</view>
-  <view class="padding-xl radius-xs shadow shadow-lg bg-white margin-top" bindtap="copy" data-name="shadow shadow-lg bg-white">长阴影</view>
+  <view class="padding-xl radius-xs shadow bg-blue margin-top" bindtap="copy" data-name="shadow bg-blue">根据背景颜色而改变的阴影</view> 
+
   <view class="padding-xl radius-xs shadow shadow-lg bg-red margin-top" bindtap="copy" data-name="shadow shadow-lg bg-red">根据背景颜色而改变的长阴影</view>
   <view class="padding-xl radius-xs shadow-warp bg-white margin-top" bindtap="copy" data-name="shadow-warp bg-white ">翘边阴影</view>
   <view class="padding-xl radius-xs shadow-main margin-top" bindtap="copy" data-name="shadow-main">发散阴影</view>
-  <view class="padding-xl radius-xs shadow-blur bg-red margin-top bg-img text-blue" style="background-image:url('https://ossweb-img.qq.com/images/lol/web201310/skin/big84004.jpg');" bindtap="copy" data-name="shadow-blur bg-img">
+  <view class="padding-xl radius-xs shadow-blur bg-red margin-top bg-img text-blue"    bindtap="copy" data-name="shadow-blur bg-img">
     <view>根据背景图而改变的阴影</view>
   </view>
 </view>

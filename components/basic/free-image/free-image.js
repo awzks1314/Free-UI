@@ -30,6 +30,10 @@ Component({
       type:Boolean,
       value:false
     }, 
+    preview:{
+      type:Boolean,
+      value:false
+    },
     // 长按识别
     long:{
       type:Boolean,
@@ -39,7 +43,11 @@ Component({
 		duration: {
 			type: [String, Number],
 			value: 500
-		}
+    },
+    index:{
+      type: Number,
+			value: 0
+    }
   },
 
   /**
@@ -76,6 +84,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    click(){
+      this.triggerEvent('click',{
+        index:this.data.index
+      })
+    },
     // 图片加载失败
 		error() {
       this.setData({

@@ -40,6 +40,7 @@ Page({
   },
   // 得到value
   getInputValue(e){
+    console.log(e)
     this.setData({
       value:e.detail.value
     },()=>{
@@ -55,6 +56,7 @@ Page({
   },
   // 查找
   searchCity(){
+    console.log(this.data.value)
     let result = []
     city.list.forEach((item1, index1) => {
       item1.data.forEach((item2, index2) => {

@@ -2,7 +2,7 @@
 style="border-radius:{{radius}};padding:{{padding}};"
 >
   <view wx:if="{{icon}}" class="iconStyle">
-    <free-icon name="{{icon}}" size='18' color="{{iconColor?iconColor:effect=='dark'?'#ffffff':'text-'+type}}"></free-icon>
+    <free-icon name="{{icon}}" size='28' color="{{iconColor?iconColor:effect=='dark'?'#ffffff':'text-'+type}}"></free-icon>
   </view>
   <slot></slot>
 </view>

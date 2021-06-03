@@ -11,12 +11,12 @@ Component({
     // 列数
     col:{
       type:[Number,String],
-      value:1
+      value:4
     },
     // 行数
     row:{
       type:[Number,String],
-      value:1
+      value:2
     },
     // 边框
     border:{

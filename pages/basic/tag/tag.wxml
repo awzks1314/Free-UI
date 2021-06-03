@@ -4,13 +4,14 @@
   <free-tag 
     type="{{type}}"
     size="{{size}}"
-    radius="{{radius}}"
+    radius="{{radius}}" 
     effect="{{effect}}"
     icon="{{icon}}"
     iconColor="{{iconColor}}"
   >默认标签</free-tag>
 </view>
 
+  
 <free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
 <free-title icon='line' type='3'  bold="{{false}}" size='28' title="颜色" height="40"></free-title>
 <view class="free-form-group" bindtap="showModal" data-target="ColorModal">

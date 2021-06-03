@@ -2,50 +2,40 @@
   <view class=" text-gray padding-left-xs">Form</view>
 </view>
 <navigator wx:for="{{formList}}" wx:key="index" class="" url="/pages/module/{{item.title}}/{{item.title}}" hover-class="none">
-  <free-list arrow="true" bind:click="detail" >
-    <view class="free-list-name   padding-right-xs">{{item.name}}</view>
-    <view class="text-Abc  ">{{item.title}}</view>
-  </free-list>
+  <free-list arrow="true" bind:click="detail" title="{{item.name}}  {{item.title}}">
+    </free-list>
 </navigator> 
 
 <view class="padding-lr-sm padding-top-sm flex  align-center">
   <view class=" text-gray padding-left-xs">Data Display</view>
 </view>
 <navigator wx:for="{{dataList}}" wx:key="index"  class="" url="/pages/module/{{item.title}}/{{item.title}}" hover-class="none">
-  <free-list arrow="true" bind:click="detail" >
-    <view class="free-list-name   padding-right-xs">{{item.name}}</view>
-    <view class="text-Abc  ">{{item.title}}</view>
-  </free-list>
+  <free-list arrow="true" bind:click="detail" title="{{item.name}}  {{item.title}}">
+    </free-list>
 </navigator> 
 
 <view class="padding-lr-sm padding-top-sm flex  align-center">
   <view class=" text-gray padding-left-xs">Navigation</view>
 </view>
 <navigator wx:for="{{navigationList}}" wx:key="index" class="" url="/pages/module/{{item.title}}/{{item.title}}" hover-class="none">
-  <free-list arrow="true" bind:click="detail" >
-    <view class="free-list-name   padding-right-xs">{{item.name}}</view>
-    <view class="text-Abc  ">{{item.title}}</view>
-  </free-list>
+  <free-list arrow="true" bind:click="detail" title="{{item.name}}  {{item.title}}">
+    </free-list>
 </navigator> 
 
 <view class="padding-lr-sm padding-top-sm flex  align-center">
   <view class=" text-gray padding-left-xs">FeedbackList</view>
 </view>
 <navigator wx:for="{{feedbackList}}" wx:key="index"  class="" url="/pages/module/{{item.title}}/{{item.title}}" hover-class="none">
-  <free-list arrow="true" bind:click="detail" >
-    <view class="free-list-name   padding-right-xs">{{item.name}}</view>
-    <view class="text-Abc  ">{{item.title}}</view>
-  </free-list>
+  <free-list arrow="true" bind:click="detail" title="{{item.name}}  {{item.title}}">
+    </free-list>
 </navigator> 
 
 <view class="padding-lr-sm padding-top-sm flex  align-center">
   <view class=" text-gray padding-left-xs">OtherList</view>
 </view>
 <navigator wx:for="{{otherList}}" wx:key="index" class="" url="/pages/module/{{item.title}}/{{item.title}}" hover-class="none">
-  <free-list arrow="true" bind:click="detail" >
-    <view class="free-list-name   padding-right-xs">{{item.name}}</view>
-    <view class="text-Abc  ">{{item.title}}</view>
-  </free-list>
+  <free-list arrow="true" bind:click="detail" title="{{item.name}}  {{item.title}}">
+    </free-list>
 </navigator> 
 
 <free-backTop 

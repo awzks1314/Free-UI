@@ -4,13 +4,42 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    title:{
+      type: String,
+      value: ""
+    },
+    color: {
+      type: String,
+      value: "#333" //字体颜色
+    },
+    // 副标题
+    sub:{
+      type: String,
+      value: ""
+    },
     arrow: {
       type: Boolean,
       value: false //是否有箭头
+    }, 
+    
+    icon:{
+      type: String,
+      value: ""
+    }, 
+    iconColor:{
+      type: String,
+      value: ""
     },
+    // 是图片还是内置icon
+    image:{
+      type: Boolean,
+      value: false //是否有箭头
+    },
+    
+    // 内边距
     padding: {
       type: String,
-      value: "28rpx 32rpx"
+      value: "28rpx 30rpx"
     },
     bgcolor:{
       type: String,
@@ -18,12 +47,9 @@ Component({
     },
     size:{
       type: Number,
-      value: 28//字体大小
+      value: 28//字体大小 
     },
-    color: {
-      type: String,
-      value: "#333" //字体颜色
-    },
+    
     last: {
       type: Boolean,
       value: false //最后一条数据隐藏底部线条

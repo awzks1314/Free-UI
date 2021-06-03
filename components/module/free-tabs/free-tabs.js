@@ -147,7 +147,6 @@ Component({
       );
     },
     checkCor: function() {
-      
       let tabInfo = this.data.tabQueryInfo[this.data.currentTab];
       if (!tabInfo) return;
       let tabWidth = tabInfo.width

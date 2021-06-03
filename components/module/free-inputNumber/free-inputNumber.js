@@ -12,11 +12,11 @@ Component({
       }
     },
     min:{
-      type:String,
+      type:[String,Number],
       value:'1'
     },
     max:{
-      type:String,
+      type:[String,Number],
       value:'9999'
     },
     step: {

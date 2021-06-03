@@ -4,12 +4,20 @@ Component({
    * 组件的属性列表 
    */
   properties: {
+    // 初始化notice，判断是列表还是对象
+    notice:{
+      type:[Array,String],
+      value:null,
+      observer(val){
+        this.onlo()
+      }
+    },
     isLeft:{
       type:Boolean,
       value:true
     },
     leftIcon:{
-      type:String,
+      type:String, 
       value:'notificationfill'
     },
     iconColor:{
@@ -21,7 +29,7 @@ Component({
       type:String,
       value:'#0081ef'
     },
-    // 动画
+    // 动画,type == 1下有效
     animation:{
       type:Boolean,
       value:true
@@ -31,25 +39,12 @@ Component({
       type:Boolean,
       value:false
     },
-    // 初始化notice，判断是列表还是对象
-    notice:{
-      type:[Array,String],
-      value:null,
-      observer(val){
-        this.onlo()
-      }
-    },
     // 是否有右图标
-    isRight:{
+    isRight:{ 
       type:Boolean,
       value:false
     },
     //  
-    // 是否有左侧图标
-    isIcon:{
-      type:Boolean,
-      value:true
-    },
     // 竖向滚动还是横向滚动
     vertical:{
       type:Boolean,

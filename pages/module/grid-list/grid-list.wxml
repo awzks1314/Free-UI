@@ -13,7 +13,7 @@
     radius="{{radius}}"
     bind:click='onClick'
     ></free-list-grid>
-  <!-- grid组件 -->
+  <!-- grid组件 --> 
 
   <free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
   <free-title icon='line' type='3'  bold="{{false}}" size='28' title="列数" height="40"></free-title>

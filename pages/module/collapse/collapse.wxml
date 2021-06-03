@@ -5,12 +5,12 @@
   list="{{list}}"
   accordion="{{accordion}}"
   arrow="{{arrow}}"
-  height="{{height}}"
+  height="{{height}}" 
   hdBgColor="{{hdBgColor}}"
   bdBgColor="{{bdBgColor}}"
   bind:click="change"
   >
-  </free-collapse>
+  </free-collapse> 
 </view>
 
 <free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>

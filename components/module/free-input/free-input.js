@@ -14,7 +14,7 @@ Component({
     },
     value:{
       type:String,
-      value:''
+      value:'' 
     },
     // 输入框样式
     inputStyle:{
@@ -109,8 +109,11 @@ Component({
       this.setData({
         value:e.detail.value
       })
+      
       this.triggerEvent("input", {
-        value: e.detail.value
+        value: e.detail.value,
+        cursor:e.detail.cursor,
+        keyCode:e.detail.keyCode
       })
     },
     // 聚焦输入框变化
@@ -120,7 +123,8 @@ Component({
         value:e.detail.value
       })
       this.triggerEvent("focus", {
-        value: e.detail.value
+        value: e.detail.value,
+        height:e.detail.height,
       })
     },
     // 失焦

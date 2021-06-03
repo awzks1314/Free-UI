@@ -42,3 +42,23 @@
 .free-cell-last::after {
 border-bottom: 0 !important;
 }
+
+.free-list-name{
+	/* padding-left: 10rpx; */
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  text-transform: Capitalize;
+}
+
+.subStyle{
+  font-size: 24rpx;
+  color: #aaaaaa;
+}
+.free-list-right{
+	margin-left: auto;
+	/* margin-right: 34rpx; */
+	padding: 0 14px;
+  font-size: 26rpx;
+  /* color: #999; */
+}

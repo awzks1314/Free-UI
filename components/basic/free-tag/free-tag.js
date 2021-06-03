@@ -25,8 +25,8 @@ Component({
       type:Boolean,
       value:true
     },
-    // 大小
-    size:{
+    // 大小 sm
+    size:{ 
       type:String,
       value:''
     },
@@ -43,7 +43,7 @@ Component({
     // 图标颜色
     iconColor:{
       type:String,
-      value:'#'
+      value:'#fff'
     },
   },
 

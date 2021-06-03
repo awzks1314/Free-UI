@@ -1,9 +1,9 @@
-<view class="free-actionsheet-class free-actionsheet {{show?'free-actionsheet-show':''}}">
+<view class="class free-actionsheet {{show?'free-actionsheet-show':''}}">
   <view class="free-tips" style="font-size:{{size}}rpx;color:{{color}};" wx:if="{{tips}}">
     {{tips}}
   </view>
   <view class="{{isCancel?'free-operate-box':''}}">
-    <block wx:for="{{itemList}}" wx:key="{{index}}">
+    <block wx:for="{{itemList}}" wx:key="index">
       <view class="free-actionsheet-btn free-actionsheet-divider {{(!isCancel && index==itemList.length-1)?'free-btn-last':''}}" hover-class="free-actionsheet-hover" hover-stay-time="150" data-index="{{index}}" style="color:{{item.color || '#1a1a1a'}}" bindtap="handleClickItem">{{item.text}}</view>
     </block>
   </view>

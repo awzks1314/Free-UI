@@ -65,6 +65,10 @@ Component({
     handleClick(e) {
       let index = e.currentTarget.dataset.index
       let show = this.data.listInfo[index].open
+      let disabled = this.data.listInfo[index].disabled
+      if(disabled){
+        return
+      }
       if(this.data.accordion){
         // 手风琴模式
         this.data.listInfo.forEach(o => {
@@ -76,6 +80,7 @@ Component({
         listInfo:this.data.listInfo
       })
       this.triggerEvent("click", {
+        type:!show?'open':'close',
         index: Number(index)
       })
     }

@@ -48,7 +48,7 @@ Component({
       type:String,
       value:''
     },
-    // 加粗程度0-800
+    // 加粗程度
     bold:{
       type:Boolean,
       value:true

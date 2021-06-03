@@ -5,25 +5,24 @@
   <free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
 
   <!-- grid组件 -->
-  <free-list arrow="{{arrow}}" color="{{color}}" size="{{size}}">
-    <free-icon name='home'  color='blue' wx:if="{{icon && image=='icon'}}"></free-icon>
-    <free-image src="/static/image/my/dog.jpg" width="60rpx" height="60rpx" wx:if="{{image == 'image'}}"></free-image>
-    <!-- 标题+注释 -->
-    <view class="free-list-name flex flex-direction">
-      <text >右侧注释文字</text>
-      <!-- <text class="text-sm text-grey">我是第二行注释文字</text> -->
-    </view>
-    <!-- 右侧注释文字 -->
-    <view class="free-list-right" wx:if="{{type=='text'}}">注释文字</view>
-    <free-tag  radius="30rpx" class="free-list-right" wx:if="{{type=='tag'}}">标签显示</free-tag>
-    <!-- 右侧注释文字 -->
+  <free-list 
+    arrow="{{arrow}}" 
+    color="{{color}}" 
+    size="{{size}}"
+    icon="{{icon}}"
+    iconColor="iconColor"   
+    title="默认标题"
+    >
+    <text wx:if="{{type == 'text'}}" class="text-gray">文本</text>
+    <free-tag  radius="30rpx" wx:if="{{type == 'tag'}}" >标签显示</free-tag>
+    <button class="free-button sm round bg-blue" wx:if="{{type == 'btn'}}">按钮</button>
   </free-list>
-  <!-- grid组件 -->
-
+  <!-- grid组件 --> 
+  
   <free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
-  <free-title icon='line' type='3'  bold="{{false}}" size='28' title="有无图标" height="40"></free-title>
+  <free-title icon='line' type='3'  bold="{{false}}" size='28' title="更换左侧图标，不传则无图标" height="40"></free-title>
   <view class="padding">
-    <free-subsection list="{{[true,false]}}" bind:click='getMode' data-name="icon" bold="true"></free-subsection>
+    <free-subsection list="{{['默认','home','cameraaddfill']}}" bind:click='getMode' data-name="icon" bold="true"></free-subsection>
   </view>
 
   <free-title icon='line' type='3'  bold="{{false}}" size='28' title="有无箭头" height="40"></free-title>
@@ -36,14 +35,10 @@
     <free-subsection list="{{['#0081ef','red','green']}}" bind:click='getMode' data-name="color" bold="true"></free-subsection>
   </view>
 
-  <free-title icon='line' type='3'  bold="{{false}}" size='28' title="图标或图片" height="40"></free-title>
-  <view class="padding">
-    <free-subsection list="{{['icon','image']}}" bind:click='getMode' data-name="image" bold="true"></free-subsection>
-  </view>
 
   <free-title icon='line' type='3'  bold="{{false}}" size='28' title="右侧注释文字或标签" height="40"></free-title>
   <view class="padding">
-    <free-subsection list="{{['text','tag']}}" bind:click='getMode' data-name="type" bold="true"></free-subsection>
+    <free-subsection list="{{['text','tag','btn']}}" bind:click='getMode' data-name="type" bold="true"></free-subsection>
   </view>
 
   <free-title icon='line' type='3'  bold="{{false}}" size='28' title="字体大小" height="40"></free-title>

@@ -1,7 +1,18 @@
 <view>
   <view class="free-list-cell {{arrow?'free-cell-arrow':''}} {{last?'free-cell-last':''}} {{lineLeft?'free-line-left':''}} {{lineRight?'free-line-right':''}}"
-  style="padding:{{padding}};background:{{bgcolor}};font-size: {{ size }}rpx; color:{{ color ?color : '' }};"
+  style="padding:{{padding}};background:{{bgcolor}};font-size: {{ size }}rpx; "
   bindtap="handleClick">
-  <slot ></slot> 
+  <free-icon name='{{icon}}' size="{{size}}" color='{{iconColor}}' wx:if="{{icon && !image}}"></free-icon>
+  <free-image src="{{icon}}" width="{{size}}rpx" height="{{size}}rpx" wx:if="{{image && icon}}"></free-image>
+    <!-- 标题+注释 -->
+    <view class="free-list-name " style="padding-left:{{icon?'10rpx':''}}">
+      <text style="color:{{ color ?color : '' }};">{{title}}</text>
+      <text class="subStyle" wx:if="{{sub}}">{{sub}}</text>
+    </view>
+    <!-- 右侧 -->
+    <view class="free-list-right" >
+      <slot></slot>
+    </view>
+    <!-- 右侧 -->
   </view>
-</view>
+</view> 

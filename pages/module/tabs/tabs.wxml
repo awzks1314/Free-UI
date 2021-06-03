@@ -3,7 +3,21 @@
 
 <!-- 组件 -->
 <free-tabs 
+wx:if="{{!type}}"
   tabs="{{list}}"   
+  currentTab="{{currentTab}}" 
+  bold="{{bold}}"  
+  backgroundColor="{{bgColor}}"
+  sliderWidth="{{sliderWidth}}"
+  sliderHeight="{{sliderHeight}}"
+  selectedColor="{{selectedColor}}"
+  bind:change="change" ></free-tabs>
+<!-- 组件 -->
+
+<!-- 组件_长列表-->
+<free-tabs 
+  wx:if="{{type}}"
+  tabs="{{tabs}}"   
   currentTab="{{currentTab}}" 
   bold="{{bold}}"  
   backgroundColor="{{bgColor}}"
