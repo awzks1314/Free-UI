@@ -3,9 +3,9 @@
 <view class="padding-lr">
   <free-readMore
   height="{{height}}"
-  closeText="展开阅读全文"
-  openText="收起"
-  color="{{color}}"
+  closeText="收起"
+  openText="展开阅读全文"
+  color="{{color}}" 
   bind:open="open"
   bind:close='close'
   >

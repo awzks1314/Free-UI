@@ -9,24 +9,24 @@ Page({
     listIcon:[ 
       {
         icon:'playfill',
-        size:24,//单位px
+        size:40,//单位px
         name:'开始'
       },
       {
         icon:'pullright',
-        size:24,
+        size:40,
         name:'第二步'
       },
       {
         load:'/static/image/tea/order/delivery.png',//初始图片
-        height:24,//图标默认48rpx，所以图片也48
-        width:24,
+        height:40,//
+        width:40,
         selected:'/static/image/tea/order/delivered_selected.png',//执行到该步骤的图片
         name:'第三步'
       },
       {
         icon:'roundcheckfill',
-        size:24,
+        size:40,
         name:'第四步'
       },
     ],

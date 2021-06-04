@@ -1,7 +1,7 @@
 // components/module/free-tabbar/free-tabbar.js
 Component({
   /**
-   * 组件的属性列表
+   * 组件的属性列表 
    */
   properties: {
     list:{
@@ -12,6 +12,16 @@ Component({
     bottom:{
       type:String,
       value:'0'
+    },
+    // 是否固定在底部
+    isFixed:{
+      type:Boolean,
+      value:true
+    },
+    // 当前选中下标
+    current:{
+      type:[String,Number],
+      value:0
     },
     // 凸起下标
     humpIndex:{
@@ -33,16 +43,8 @@ Component({
       type:String,
       value:'#FFFFFF'
     },
-    // 当前选中下标
-    current:{
-      type:[String,Number],
-      value:0
-    },
-    // 是否固定在底部
-    isFixed:{
-      type:Boolean,
-      value:true
-    },
+    
+    
     // 底部阴影凸显
     shadow:{
       type:Boolean,
@@ -66,6 +68,9 @@ Component({
       this.triggerEvent("click", {
         index: e.currentTarget.dataset.index
       })
+      if(!e.currentTarget.dataset.url){
+        return
+      }
       console.log(e.currentTarget.dataset)
       if(e.currentTarget.dataset.type == 'url'){
         // 带有记忆路由跳转

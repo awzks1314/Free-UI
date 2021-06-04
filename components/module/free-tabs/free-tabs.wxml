@@ -7,11 +7,11 @@
       catchtap="swichTabs" data-index="{{index}}"
       > 
         <free-icon name="{{item.icon}}"  color="{{currentTab==index?selectedColor:color}}" wx:if="{{item.icon}}" ></free-icon>
-        <free-tag class="free-tabs-tag" size='sm' wx:if="{{item.num}}" type="red">{{item.num}}</free-tag>
+        <free-tag class="free-tabs-tag " style="font-weight:bold;" size='sm' wx:if="{{item.num}}" type="red">{{item.num}}</free-tag>
         {{item.name}}
       </view>
-      <view class="free-tabs-slider" style="transform:translateX({{scrollSliderLeft}}px);transition: {{barFirstTimeMove?'':'all 0.3s linear'}};width:{{sliderWidth}}px;height:{{sliderHeight}}rpx;border-radius:{{sliderRadius}};bottom:{{bottom}}rpx;background:{{selectedColor}};"></view>
+      <view class="free-tabs-slider" style="transform:translateX({{scrollSliderLeft}}px);transition: {{barFirstTimeMove?'':'all 0.3s linear'}};width:{{sliderWidth}}px;height:{{sliderHeight}}px;border-radius:{{sliderRadius}};bottom:{{bottom}}rpx;background:{{selectedColor}};"></view>
     </view> 
   </scroll-view> 
    
-</view> 
+</view>  

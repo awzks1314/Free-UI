@@ -15,7 +15,7 @@ Page({
       {name:'标签页1',icon:"home",num:99},
       {name:'标签页2',icon:"home"},
       {name:'标签页3',icon:""},
-      {name:'标签页4',icon:"home"},
+      {name:'标签页4',icon:"home",disabled: true},
       {name:'标签页5',icon:"home"},
       {name:'标签页6',icon:"home"},
       {name:'标签页7',icon:"home"},
@@ -30,7 +30,7 @@ Page({
     bgColor:"#fff",
     bold:true,
     selectedColor:'#0081ef',
-    sliderHeight:6,
+    sliderHeight:3,
     sliderWidth:34,
     type:false
   },

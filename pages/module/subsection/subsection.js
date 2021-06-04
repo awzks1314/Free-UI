@@ -18,6 +18,9 @@ Page({
     })
     console.log(this.data)
   },
+  getInfo(e){
+    console.log(e)
+  },
   /**
    * 用户点击右上角分享
    */

@@ -2,7 +2,7 @@
   <free-timeline-list>
     <free-timeline-item>
       <view slot="icon" class="free-timeline-icon">
-        <free-icon name="home" size="18"></free-icon>
+        <free-icon name="home"></free-icon>
       </view>
       <view slot="content" class="padding-lr-xs">
           <view class="text-bold ">已签收</view>
@@ -12,7 +12,7 @@
     </free-timeline-item>
     <free-timeline-item>
       <view slot="icon" class="free-timeline-icon">
-        <free-icon name="settings" size="18"></free-icon>
+        <free-icon name="settings"></free-icon>
       </view>
       <view slot="content" class="padding-lr-xs">
           <view class="text-bold ">运输中</view>
@@ -29,7 +29,7 @@
     </free-timeline-item>
     <free-timeline-item>
       <view slot="icon" class="">
-        <free-icon name="settings" size="18" color="#0081ff"></free-icon>
+        <free-icon name="settings" color="#0081ff"></free-icon>
       </view>
       <view slot="content" class="bg-blue padding-xs">
           <view class="">您的订单已由本人签收。感谢您在商城购物，欢迎再次光临已由本人签收。感谢您在商城购物，欢迎再次光临</view>
@@ -38,7 +38,7 @@
     </free-timeline-item>
     <free-timeline-item>
       <view slot="icon" class="">
-        <free-icon name="settings" size="18" color="#f37b1d"></free-icon>
+        <free-icon name="settings" color="#f37b1d"></free-icon>
       </view>
       <view slot="content" class="bg-orange padding-xs light">
           <view class="">您的订单已由本人签收。感谢您在商城购物，欢迎再次光临已由本人签收。感谢您在商城购物，欢迎再次光临</view>
@@ -47,7 +47,7 @@
     </free-timeline-item>
     <free-timeline-item>
       <view slot="icon" class="bg-white">
-        <free-icon name="settings" size="18" color="#39b54a"></free-icon>
+        <free-icon name="settings" color="#39b54a"></free-icon>
       </view>
       <view slot="content" class="bg-green padding-xs lines-green">
           <view class="">您的订单已由本人签收。感谢您在商城购物，欢迎再次光临已由本人签收。感谢您在商城购物，欢迎再次光临</view>
@@ -56,7 +56,7 @@
     </free-timeline-item>
     <free-timeline-item>
       <view slot="icon" class="bg-white">
-        <free-icon name="settings" size="18" color="#39b54a"></free-icon>
+        <free-icon name="settings" color="#39b54a"></free-icon>
       </view>
       <view slot="content" class="bg-green padding-xs lines-green">
           <view class="">您的订单已由本人签收。感谢您在商城购物，欢迎再次光临已由本人签收。感谢您在商城购物，欢迎再次光临</view>

@@ -42,7 +42,7 @@
   border-radius: 50%;
   line-height: 70rpx;
   font-size: 50rpx;
-  top: -35rpx;
+  top: -20rpx;
   left: 0;
   right: 0;
   margin: auto;

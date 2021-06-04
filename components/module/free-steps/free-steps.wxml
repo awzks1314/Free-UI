@@ -2,7 +2,7 @@
   <view class="free-steps">
     <view class="free-item {{index>current?'':'text-'}}" style="color:{{index>current?'':color}}" wx:for="{{list}}" wx:key="index">
       <free-icon name="{{item.icon}}" size='{{item.size}}' color="{{index>current?'':color}}" class="free-icon" wx:if="{{type=='icon' && item.icon}}"></free-icon>
-      <free-image src="{{index>current?item.load:item.selected}}" wx:if="{{type=='icon' && item.load}}" width="{{item.width}}px" height="{{item.height}}px" class="free-icon"></free-image>
+      <free-image src="{{index>current?item.load:item.selected}}" wx:if="{{type=='icon' && item.load}}" width="{{item.width}}rpx" height="{{item.height}}rpx" class="free-icon"></free-image>
       <text class="num {{index==2?'err':''}}" data-index="{{index + 1}}" wx:if="{{type=='number'}}"></text> 
       {{item.name}}
     </view> 
@@ -11,5 +11,5 @@
 <scroll-view scroll-x class="class scroll free-steps steps-bottom" scroll-into-view="scroll-{{current}}" scroll-with-animation wx:if="{{type == 'more'}}">
   <view class="free-item {{index>current?'':'text-blue'}} padd-lr" wx:for="{{list}}" style="color:{{index>current?'':color}}" wx:key id="scroll-{{index}}">
   <text class="num" data-index="{{index + 1}}"></text> {{item.name}}
-  </view>
+  </view> 
 </scroll-view>

@@ -11,14 +11,14 @@ Component({
     textIndent:{
       type:String,
       value:'2em'
-    },
+    }, 
     openText:{
       type:String,
-      value:'收起'
+      value:'展开阅读全文'
     },
     closeText:{
       type:String,
-      value:'展开阅读全文'
+      value:'收起'
     },
     color:{
       type:String,

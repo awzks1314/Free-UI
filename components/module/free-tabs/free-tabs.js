@@ -49,10 +49,10 @@ Component({
       type: Number,
       value: 34
     },
-    //滑块高度 rpx
+    //滑块高度 px
     sliderHeight: {
       type: Number,
-      value: 6
+      value: 3
     },
     //滑块背景颜色
     // sliderBgColor: {
@@ -68,11 +68,11 @@ Component({
       type: String,
       value: "10"
     },
-    //标签页宽度
-    tabWidth: {
-      type: String,
-      value: "100"
-    },
+    // //标签页宽度
+    // tabWidth: {
+    //   type: String,
+    //   value: "100"
+    // },
     //字体颜色
     color: {
       type: String,

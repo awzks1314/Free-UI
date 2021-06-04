@@ -4,18 +4,14 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    // 是否绝对定位
-    fixed:{
-      type:Boolean,
-      value:false
-    },
+
     bgcolor:{
       type:String,
       value:'#f4f5f7'
     },
     text:{
       type:String,
-      value:"Copyright © 2021-9999 Free UI."
+      value:"Copyright © 2021-2024"
     },
     color:{
       type:String,

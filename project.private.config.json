@@ -43,8 +43,14 @@
           "scene": null
         },
         {
-          "name": "pages/module/actionSheet/actionSheet",
-          "pathName": "pages/module/actionSheet/actionSheet",
+          "name": "pages/module/tabs/tabs",
+          "pathName": "pages/module/tabs/tabs",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/module/subsection/subsection",
+          "pathName": "pages/module/subsection/subsection",
           "query": "",
           "scene": null
         }

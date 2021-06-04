@@ -56,7 +56,7 @@ wx:if="{{!type}}"
 
 <free-title icon='line' type='3'  bold="{{false}}" size='28' title="高度" height="40"></free-title>
 <view class="padding">
-  <free-subsection list="{{[6,0,14]}}" bind:click='getMode' data-name="sliderHeight" bold="true"></free-subsection>
+  <free-subsection list="{{[3,0,5]}}" bind:click='getMode' data-name="sliderHeight" bold="true"></free-subsection>
 </view>
 
 

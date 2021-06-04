@@ -6,7 +6,7 @@ Page({
    */
   data: {
     index:'',
-    background:'#FFF'
+    background:'#fff'
   },
 
   /**

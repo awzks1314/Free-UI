@@ -1,5 +1,5 @@
 
-<free-navBar title='自定义导航栏'  back="{{true}}" home="{{true}}" bindback="handlerGobackClick" bindhome="handlerGohomeClick" wx:if='{{index == 1}}'>
+<free-navBar title='自定义导航栏'   back="{{true}}" home="{{true}}" bindback="handlerGobackClick" bindhome="handlerGohomeClick" wx:if='{{index == 1}}'>
 </free-navBar>
 
 <free-navBar title='' background='#fff' back="{{true}}" home="{{true}}" bindback="handlerGobackClick" bindhome="handlerGohomeClick" wx:if='{{index == 2}}'>
@@ -34,7 +34,7 @@
 </free-navBar>
 </view>
 
-<free-navBar title='下滑查看效果' background='{{background}}' backgroundColorTop='rgba(0,0,0,0)' back="{{true}}"  home="{{true}}" bindback="handlerGobackClick"  bindhome="handlerGohomeClick"   wx:if='{{index == 9}}'>
+<free-navBar title='下滑查看效果' background='{{background}}' backgroundColorTop='rgba(255,255,255)' back="{{true}}"  home="{{true}}"  bindback="handlerGobackClick"  bindhome="handlerGohomeClick"   wx:if='{{index == 9}}'>
 </free-navBar>
 
 <view class="padding flex justify-center align-center bg-cyan" style="height:2800rpx;">

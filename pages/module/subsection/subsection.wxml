@@ -4,10 +4,11 @@
   <free-subsection 
     list="{{['西瓜', '苹果','芒果','香蕉']}}" 
     mode="{{mode}}" 
-    activeColor="{{activeColor}}" 
+    activeColor="{{activeColor}}"  
     inactiveColor="{{inactiveColor}}" 
     buttonColor="#fff" 
     bold="{{bold}}"
+    bindclick="getInfo"
     current="{{current}}"
     ></free-subsection>
 </view>
@@ -30,4 +31,4 @@
   <free-subsection list="{{[true, false]}}" bind:click='getMode' data-name="bold" bold="true"></free-subsection>
 </view>
 
-
+ 

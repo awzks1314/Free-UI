@@ -4,4 +4,4 @@ style="background:{{bgColor}};"
   <view class="line" style="width:{{lineWidth}}rpx;background:{{lineColor}};"></view>
   <view style="margin:0 10rpx;color:{{color}};">{{title}}</view>
   <view class="line" style="width:{{lineWidth}}rpx;background:{{lineColor}};"></view>
-</view>
+</view> 
