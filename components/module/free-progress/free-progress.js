@@ -4,6 +4,20 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    // 进度条
+    width:{
+      type:String,
+      value:''
+    },
+    // 进度条尺寸
+    height:{
+      type:String,
+      value:'28rpx'
+    },
+    radius:{
+      type:String,
+      value:''
+    },
     // 进度条颜色
     widthBg:{
       type:String,
@@ -33,21 +47,7 @@ Component({
     notext:{
       type:Boolean,
       value:false
-    },
-    // 进度条
-    width:{
-      type:String,
-      value:''
-    },
-    // 进度条尺寸
-    height:{
-      type:String,
-      value:'28rpx'
-    },
-    radius:{
-      type:String,
-      value:''
-    },
+    }
   },
 
   /**

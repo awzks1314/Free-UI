@@ -1,6 +1,6 @@
 //为了可重用性强，这里做了修改，和thorui.css里的略有不同
 Component({
-  externalClasses: ['free-nomore-class'],
+  externalClasses: ['class'],
   properties: {
     //是否可见
     visible: {
@@ -12,7 +12,7 @@ Component({
       type: String,
       value: "#fff"
     },
-    //isDot为false时生效
+    //加载状态文字
     text:{
       type:Object,
       value: {

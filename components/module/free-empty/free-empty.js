@@ -14,11 +14,13 @@ Component({
     width:{
       type:String,
       value:'400rpx'
-    },
+    }, 
+    // 是否展示
     show:{
       type:Boolean,
       value:false
     },
+    // order/coupon/cart/product/search
     type:{
       type:String,
       value:'order'

@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText":"精度条",
+  "navigationBarTitleText":"进度条",
   "usingComponents": {
     "free-progress":"/components/module/free-progress/free-progress"
   }

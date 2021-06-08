@@ -7,7 +7,7 @@
       width="300rpx"
       info="什么都没有"
       image="{{image}}"
-      color="{{color}}"
+      color="{{color}}" 
       type="{{type}}"
     >
     

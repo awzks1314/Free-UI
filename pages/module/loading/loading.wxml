@@ -3,7 +3,7 @@
 <free-loading visible="{{true}}" bgcolor="blue"></free-loading>
 
 <free-loading visible="{{true}}" index="2"></free-loading>
-
+ 
 <free-loading visible="{{true}}" index="3" ></free-loading>
 
 <free-loading visible="{{true}}" index="3" type="primary"></free-loading>

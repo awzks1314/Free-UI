@@ -5,7 +5,7 @@
       <view class="free-dropdown-list">
         <view wx:for="{{list}}" wx:key="index" class="free-dropdown-list-item border-bottom" bindtap="itemClick" data-index="{{index}}">
           <text>{{item.label}}</text>
-          <free-icon name="check" color="#0081ef"  wx:if="{{index==current}}"> </free-icon>
+          <free-icon name="check" color="#0081ef"  wx:if="{{index==current}}" size="32"> </free-icon>
         </view>
       </view>
     </scroll-view>

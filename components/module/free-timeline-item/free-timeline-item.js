@@ -1,6 +1,6 @@
 // components/module/free-timeline-item/free-timeline-item.js
 Component({
-  externalClasses:['free-timeline-item-class'],
+  externalClasses:['class'],
   options: {
     multipleSlots: true
   },
@@ -8,11 +8,7 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    //节点背景色
-    bgcolor: {
-      type: String,
-      value: "#fafafa"
-    }
+   
   },
 
   /**

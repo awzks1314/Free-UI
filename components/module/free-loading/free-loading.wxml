@@ -1,4 +1,4 @@
-<view class="free-nomore-class free-loadmore" wx:if="{{visible}}">
+<view class="class free-loadmore" wx:if="{{visible}}">
   <view class="free-nomore">
     <view style="background:{{bgcolor}};display:flex;align-items:center;" class="free-text">
       <view class="{{'free-loading-'+index}} {{(index==3 && type)?'free-loading-'+type:''}}" wx:if="{{status=='loading'}}"></view>

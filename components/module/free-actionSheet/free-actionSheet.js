@@ -15,7 +15,7 @@ Component({
     itemList: {
       type: Array,
       value: [{
-        text: "确定",
+        text: "确定", 
         color: "#1a1a1a"
       }]
     },

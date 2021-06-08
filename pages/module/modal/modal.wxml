@@ -14,7 +14,7 @@
     <text>内容变色</text>
   </view>
   <view class="free-title ">
-    <button class="free-button bg-red" bindtap="show1">打开弹窗</button>
+    <button class="free-button bg-red" bindtap="show1">打开弹窗</button> 
   </view>
 </view>
 <free-modal show="{{modal1}}" bind:click="handleClick1" bind:cancel="hide1" color="red" content="填写说明内容文字"></free-modal>

@@ -12,7 +12,7 @@
         style="color:{{item.disabled?'#c0c4cc':(index == current)?activeColor:inactiveColor}}"
         >{{item.title}}</text>
         <view class="free-dropdown-menu-item-arrow {{index === current && active?'rotate':''}}">
-          <free-icon name="triangleupfill" size="18"
+          <free-icon name="triangleupfill" size="22"
           color="{{item.disabled?'#c0c4cc':(index == current && active)?activeColor:inactiveColor}}"
           ></free-icon>
         </view>
@@ -20,7 +20,7 @@
     </view>
     
     <view class="free-dropdown-content {{contentStyle.opacity == '0'?'opacity':''}}"
-      style="z-index:{{contentStyle.zIndex}};transition:opacity 0.3s linear;top:{{height}}px;height:{{contentHeight}}px;"
+      style="z-index:{{contentStyle.zIndex}};transition:opacity 0.3s linear;top:{{height}}px;height:{{contentStyle.opacity == 0?0:contentHeight}}px;"
       catchtap="maskClick" 
       >
         <view class="free-dropdown-content-drawer"

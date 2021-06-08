@@ -6,7 +6,7 @@ Component({
       type:Boolean,
       value:false
     },
-    width: {
+    width: { 
       type: String,
       value: "84%"
     },

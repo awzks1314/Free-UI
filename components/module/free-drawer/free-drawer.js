@@ -2,17 +2,17 @@
 Component({
   externalClasses: ['free-drawer-class'], //自定义样式
   properties: {
-    visible: {
-      type: Boolean,
-      value: false
-    },
+    // visible: {
+    //   type: Boolean,
+    //   value: false
+    // },
     show:{
       type: Boolean,
       value: false
     },
     mode: {
       type: String,
-      value: 'left' // left right top bottom
+      value: 'left' // left right top bottom center
     },
     mask: {
       type: Boolean,
@@ -51,7 +51,7 @@ Component({
       type:String,
       value:'top-right'
     },
-    // 关闭图标的名称，只能uView的内置图标
+    // 关闭图标的名称，只能FreeUI的内置图标
 		closeIcon: {
 			type: String,
 			value: 'close'
@@ -64,7 +64,7 @@ Component({
 		// 关闭图标的大小，单位rpx
 		closeIconSize: {
 			type: [String, Number],
-			value: '20'
+			value: '36'
 		},
   },
   observers:{
@@ -86,6 +86,7 @@ Component({
     }
   },
   data: {
+    visible:'',
     showDrawer:false,
     sync:false,
     closeFromInner:false

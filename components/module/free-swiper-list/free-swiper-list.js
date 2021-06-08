@@ -10,7 +10,7 @@ Component({
   properties: {
     actions: {
       value: [],
-      type: Array,
+      type: Array, 
       observer: 'updateButtonSize'
     },
     unclosable: {
@@ -24,7 +24,7 @@ Component({
     },
     operateWidth: {
       type: Number,
-      value: 160
+      value: 260
     },
     params:{
       type:Object,

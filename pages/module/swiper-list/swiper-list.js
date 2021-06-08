@@ -26,7 +26,7 @@ Page({
       },
     ],
     actions: [
-      {
+      { 
         name: '删除',
         color: '#fff',
         fontsize: '22',

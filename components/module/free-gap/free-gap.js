@@ -7,7 +7,7 @@ Component({
     // transparent 透明
     bgColor:{
       type:String,
-      value:'transparent'
+      value:'transparent' 
     },
     height:{
       type:[Number,String],

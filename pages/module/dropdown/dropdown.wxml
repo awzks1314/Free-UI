@@ -6,7 +6,7 @@
   closeOnClickMask="{{closeOnClickMask}}"
   closeOnClickSelf="{{closeOnClickSelf}}"
   activeColor="{{activeColor}}"
-  inactiveColor="{{inactiveColor}}"
+  inactiveColor="{{inactiveColor}}" 
   >
   <free-dropdown-item bind:change="change0"  slot="content0"  list="{{list0}}"></free-dropdown-item>
   <free-dropdown-item bind:change="change1"  slot="content1" list="{{list1}}" ></free-dropdown-item>

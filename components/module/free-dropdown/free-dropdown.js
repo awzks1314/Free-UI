@@ -16,16 +16,16 @@ Component({
     inactiveColor: {
       type: String,
       value: '#606266'
-    },
+    }, 
     menu:{
       type:Array,
       value:[]
     },
-    // 是否展示
-    close:{
-      type:Boolean,
-      value:false
-    },
+    // // 是否展示
+    // close:{
+    //   type:Boolean,
+    //   value:false
+    // },
     // 标题菜单的高度，单位任意，数值默认为rpx单位
     height: {
       type: [Number, String],

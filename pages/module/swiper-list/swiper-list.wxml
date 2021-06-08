@@ -6,7 +6,7 @@
            <view class="text-cut">{{item.title}}</view>
            <view class="text-sm text-grey">2021-5-4 14:48</view>
          </view>
-      </view>
+      </view> 
     </view>
   </free-swiper-list>
   <!--
