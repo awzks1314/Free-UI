@@ -41,3 +41,4 @@
 <free-backTop 
   scrollTop="{{scrollTop}}" 
   ></free-backTop>
+  <official-account></official-account> 

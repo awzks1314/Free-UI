@@ -1,0 +1,68 @@
+.unlockBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-size: 100% 100%;
+  position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  overflow: hidden;
+  z-index: 10074;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+}
+.text-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 20px;
+  color: #fff;
+  
+}
+ .slideBox{
+  border-radius: 300rpx;
+  background:transparent;
+  /* margin-bottom: 50px; */
+  position:relative;
+}
+ .slide{
+  border-radius: 50%;
+  background:#fff;
+  position:absolute;
+}
+.slideY{
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  transition: all .3;
+}
+.left{
+  top:0;
+  left:0;
+}
+.bottom{
+  bottom: 0;
+}
+.right{
+  top:0;
+  right:0;
+}
+.timeBox{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.timeText{
+  font-size: 100rpx;
+  color: #fff;
+}
+.tiemText1{
+  color: #fff;
+}

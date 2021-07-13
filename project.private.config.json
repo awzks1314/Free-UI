@@ -31,28 +31,16 @@
           "scene": null
         },
         {
-          "name": "pages/template/index/index",
-          "pathName": "pages/template/index/index",
+          "name": "packageExtend/slideUnlock/slideUnlock",
+          "pathName": "packageExtend/slideUnlock/slideUnlock",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/module/collapse/collapse",
-          "pathName": "pages/module/collapse/collapse",
+          "name": "pages/basic/index/index",
+          "pathName": "pages/basic/index/index",
           "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/module/tabs/tabs",
-          "pathName": "pages/module/tabs/tabs",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/module/guidance/guidance",
-          "pathName": "pages/module/guidance/guidance",
-          "query": "",
-          "scene": null
+          "scene": 1047
         }
       ]
     }

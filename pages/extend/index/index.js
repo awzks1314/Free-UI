@@ -41,7 +41,7 @@ Page({
       {
         name:'证件识别',
         title:'identify'
-      },
+      }
     ],
     listComponent:[
       {
@@ -59,7 +59,11 @@ Page({
       {
         name:'底部分享',
         title:'share'
-      }
+      },
+      {
+        name:'滑动解锁',
+        title:'slideUnlock'
+      },
     ]
   },
   /**

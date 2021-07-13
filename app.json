@@ -89,7 +89,8 @@
         "orderDetail/orderDetail",
         "identify/identify",
         "watermark/watermark",
-        "share/share"
+        "share/share",
+        "slideUnlock/slideUnlock"
       ]
     }
   ],

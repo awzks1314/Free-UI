@@ -9,7 +9,7 @@ function formatNumber(n) {
  * number: 传入时间戳 
  * format：返回格式，支持自定义，但参数必须与formateArr里保持一致 
 */
-function timeFormat(number, format) {
+function timeFormat(number , format) {
 
   var formateArr = ['Y', 'M', 'D', 'h', 'm', 's'];
   var returnArr = [];

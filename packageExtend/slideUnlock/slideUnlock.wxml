@@ -1,0 +1,32 @@
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
+<view class="text-center">
+  <button class="free-button bg-blue" bindtap="open">查看演示</button>
+</view>
+
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="滑动解锁模式" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['right','left','top']}}" bind:click='getMode' data-name="slideStyle" bold="true"></free-subsection>
+</view>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="背景颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['gray','#0081ef','orange']}}" bind:click='getMode' data-name="background" bold="true"></free-subsection>
+</view>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="滑动锁长度" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['280','240','200']}}" bind:click='getMode' data-name="slideBoxWidth" bold="true"></free-subsection>
+</view>
+
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="自定义图片" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[false,true]}}" bind:click='sureImage' data-name="image" bold="true"></free-subsection>
+</view>
+
+<free-patternUnlock
+  slideBoxWidth="{{slideBoxWidth}}"
+  slideWidth="{{50}}"
+  slideStyle="{{slideStyle}}"
+  background="{{background}}"
+  image="{{image}}"
+  show="{{show}}"
+  ></free-patternUnlock> 

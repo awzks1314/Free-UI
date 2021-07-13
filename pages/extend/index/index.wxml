@@ -14,3 +14,4 @@
   <free-list arrow="true" bind:click="detail" title="{{item.name}}  {{item.title}}">
     </free-list>
 </navigator> 
+<official-account></official-account> 

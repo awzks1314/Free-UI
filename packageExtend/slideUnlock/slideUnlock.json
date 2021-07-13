@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"滑动解锁",
+  "usingComponents": {
+    "free-patternUnlock":"/components/extend/free-patternUnlock/free-patternUnlock"
+  }
+}

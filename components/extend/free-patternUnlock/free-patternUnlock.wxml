@@ -1,0 +1,35 @@
+<view class="unlockBox" style="background-image: url({{image}});background:{{image?'':background}};" wx:if="{{show}}">
+  <view class="timeBox">
+    <view class="timeText">{{hour}}:{{minute}}</view>
+    <text class="tiemText1">{{time}}</text>
+  </view>
+
+  <!-- 右滑 -->
+  <view class=' slideBox'
+    style="width:{{slideBoxWidth}}px;height:{{slideWidth + 2}}px;border:1px solid {{borderColor}};"
+    wx:if="{{slideStyle == 'right' && show}}">
+    <view class='slide left' catchtouchmove='touchmoveTap' catchtouchend='touchendTap' catchtouchstart='touchstartTap'
+      style='left:{{moveToLeft}}px;width:{{slideWidth}}px;height:{{slideWidth}}px;'>
+    </view>
+    <view class="text-center" style="padding-left:{{slideWidth/2}}px;">右滑解锁屏幕</view>
+  </view>
+
+  <!-- 左滑 -->
+  <view class='slideBox' style="width:{{slideBoxWidth}}px;height:{{slideWidth + 2}}px;border:1px solid {{borderColor}};"
+    wx:if="{{slideStyle == 'left' && show}}">
+    <view class='slide right' catchtouchmove='touchmoveTap' catchtouchend='touchendTap' catchtouchstart='touchstartTap'
+      style='right:{{moveToLeft}}px;width:{{slideWidth}}px;height:{{slideWidth}}px;'>
+    </view>
+    <view class="text-center" style="padding-right:{{slideWidth/2}}px;">左滑解锁屏幕</view>
+  </view>
+
+  <!-- 上滑动 -->
+  <view class='slideBox' style="height:{{slideBoxWidth}}px;width:100px;" wx:if="{{slideStyle == 'top' && show}}">
+    <view class='slideY' catchtouchmove='touchmoveTapY' catchtouchend='touchendTap' catchtouchstart='touchstartTap'
+      style='bottom:{{moveToLeft}}px;width:100px;'>
+      <free-icon name="pullup" size="40" color="#fff"></free-icon>
+      <view style="padding-top:10px;color:#fff;">向上滑动解锁</view>
+    </view>
+  </view>
+
+</view>

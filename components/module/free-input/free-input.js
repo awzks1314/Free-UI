@@ -105,7 +105,7 @@ Component({
   methods: {
     // 输入变化
     getInput(e){
-      this.data.value = e.detail.value
+      console.log(e)
       this.setData({
         value:e.detail.value
       })
