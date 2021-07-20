@@ -8,6 +8,12 @@ FreeUI是一款轻量、实用的UI组件库。目前只编写了`微信小程�
 打开微信，扫码快速预览
 
 <div align="left"><image src="https://z3.ax1x.com/2021/06/01/2nN0yt.jpg" width="200" height="200"> </image></div>
+#### 联系方式
+
+关注公众号【搞文艺的猿】，有好的建议、bug反馈、需求组件可以给我留言。
+
+<div align="left"><image src="https://z3.ax1x.com/2021/07/13/WAkfpR.jpg" width="200" height="200"> </image></div>
+
 #### 链接
 
 - 文档地址(正在编写中): [https://awzks1314.github.io/freeui-web/#/](https://awzks1314.github.io/freeui-web/#/)
