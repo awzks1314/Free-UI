@@ -54,7 +54,7 @@
   display: flex;
   justify-content: center;
   height: auto;
-  margin: 0 auto 10rpx;
+  margin: 0 auto 6rpx;
   text-align: center;  
 }
 .free-tabbar-tag{

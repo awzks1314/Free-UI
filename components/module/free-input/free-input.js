@@ -89,6 +89,11 @@ Component({
     extreaColor:{
       type:String,
       value:'#0081ff'
+    },
+    // 左右边距
+    margin:{
+      type:String,
+      value:'0 30rpx'
     }
   },
 

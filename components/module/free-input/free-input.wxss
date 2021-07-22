@@ -21,7 +21,7 @@
   color: #333333;
   flex: 1;
   overflow: hidden;
-  margin: 0 30rpx;
+  /* margin: 0 30rpx; */
 }
 .inputStyles{
   position: relative;
