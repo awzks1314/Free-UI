@@ -91,7 +91,7 @@ Component({
     //选中后 是否加粗 ，未选中则无效
     bold: {
       type: Boolean,
-      value: false
+      value: true
     }
   },
   observers: {

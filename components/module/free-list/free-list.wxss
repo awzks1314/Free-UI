@@ -17,6 +17,9 @@
   right: 0;
   left: 0;
 }
+.noBorder::after {
+  border: none !important;
+}
 .free-list-cell.free-cell-arrow:before {
   content: " ";
   height: 11px;

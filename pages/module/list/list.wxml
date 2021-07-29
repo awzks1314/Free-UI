@@ -10,6 +10,7 @@
     color="{{color}}" 
     size="{{size}}"
     icon="{{icon}}"
+    noBorder="{{noBorder}}"
     iconColor="iconColor"   
     title="默认标题"
     >

@@ -49,7 +49,10 @@ Component({
       type: Number,
       value: 28//字体大小 
     },
-    
+    noBorder: {
+      type: Boolean,
+      value: false //不要底部线条
+    },
     last: {
       type: Boolean,
       value: false //最后一条数据隐藏底部线条

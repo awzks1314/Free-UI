@@ -32,7 +32,6 @@
   password="{{password}}"
   disabled="{{disabled}}"
   close="{{close}}"
-  bind:extrea="extrea"
   bind:input="input"
   bind:focus="focus"
   bind:blur = "blur"

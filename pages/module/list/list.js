@@ -10,6 +10,7 @@ Page({
       {name:"菜单列表"},
       {name:"消息列表"}
     ],
+    noBorder:true,
     currentTab:0,
     icon:'',//图标图片
     arrow:true,//箭头

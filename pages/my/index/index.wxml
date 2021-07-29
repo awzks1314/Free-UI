@@ -10,7 +10,7 @@
 </view>
  
 <view class=" margin-top ">
-  <free-list arrow="true" icon="rankfill"  wx:for="{{list}}" wx:key="index" bind:click="detail" data-index="{{index}}" data-url="{{item.url}}" title="{{item.name}}" icon="{{item.icon}}" iconColor="{{item.iconColor}}">
+  <free-list arrow="true"  wx:for="{{list}}" wx:key="index" bind:click="detail" data-index="{{index}}" data-url="{{item.url}}" title="{{item.name}}" icon="{{item.icon}}" iconColor="{{item.iconColor}}">
 
     <button wx:if="{{item.type=='btn'}}" open-type="contact" class="free-button  bg-white text-grey" style="height:auto;">给点建议</button>
     </free-list>

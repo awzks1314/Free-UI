@@ -1,5 +1,5 @@
 <view>
-  <view class="free-list-cell {{arrow?'free-cell-arrow':''}} {{last?'free-cell-last':''}} {{lineLeft?'free-line-left':''}} {{lineRight?'free-line-right':''}}"
+  <view class="free-list-cell {{arrow?'free-cell-arrow':''}} {{!noBorder?'':'noBorder'}} {{last?'free-cell-last':''}} {{lineLeft?'free-line-left':''}} {{lineRight?'free-line-right':''}}"
   style="padding:{{padding}};background:{{bgcolor}};font-size: {{ size }}rpx; "
   bindtap="handleClick">
   <free-icon name='{{icon}}' size="{{size}}" color='{{iconColor}}' wx:if="{{icon && !image}}"></free-icon>

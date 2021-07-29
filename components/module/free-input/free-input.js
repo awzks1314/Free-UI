@@ -10,7 +10,7 @@ Component({
     // 整个背景颜色
     bgColor:{
       type:String,
-      value:''
+      value:'#fff'
     },
     value:{
       type:String,
@@ -110,7 +110,7 @@ Component({
   methods: {
     // 输入变化
     getInput(e){
-      console.log(e)
+      // console.log(e)
       this.setData({
         value:e.detail.value
       })
@@ -154,7 +154,7 @@ Component({
     },
     // 额外按钮
     extreaBtn(){
-      this.triggerEvent("extrea", {
+      this.triggerEvent("confirm", {
         value: this.data.value
       },{})
     },
