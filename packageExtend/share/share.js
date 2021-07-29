@@ -39,24 +39,19 @@ Page({
     }, {
       operate: [{
         name: "投诉",
-        icon: "warnfill",
-        size: 28
+        icon: "warnfill"
       }, {
         name: "复制链接",
-        icon: "tag",
-        size: 28
+        icon: "tag"
       }, {
         name: "收藏",
-        icon: "like",
-        size: 28
+        icon: "like"
       }, {
         name: "搜索内容",
-        icon: "search",
-        size: 28
+        icon: "search"
       },{
         name:'扫一扫',
-        icon:'scan',
-        size:28
+        icon:'scan'
       }]
     }]
   },
