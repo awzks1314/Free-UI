@@ -41,6 +41,12 @@
           "pathName": "pages/basic/index/index",
           "query": "",
           "scene": 1047
+        },
+        {
+          "name": "packageTemplate/tea/mine/mine",
+          "pathName": "packageTemplate/tea/mine/mine",
+          "query": "",
+          "scene": null
         }
       ]
     }

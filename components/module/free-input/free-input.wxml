@@ -13,6 +13,7 @@
     bindinput="getInput"  
     bindfocus="getFocus"
     bindblur="getBlur"
+    focus="{{focus}}"
     bindconfirm="getConfirm"
     password="{{password}}"
     disabled="{{disabled}}" 

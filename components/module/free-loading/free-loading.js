@@ -10,7 +10,12 @@ Component({
     //当前页面背景颜色
     bgcolor: {
       type: String,
-      value: "#fff"
+      value: "transport"
+    },
+    // 是否有左右横线
+    noBorder:{
+      type: Boolean,
+      value: false
     },
     //加载状态文字
     text:{

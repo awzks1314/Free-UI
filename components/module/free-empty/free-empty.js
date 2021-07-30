@@ -9,11 +9,11 @@ Component({
   properties: {
     height:{
       type:String,
-      value:'400rpx'
+      value:'300rpx'
     },
     width:{
       type:String,
-      value:'400rpx'
+      value:'300rpx'
     }, 
     // 是否展示
     show:{

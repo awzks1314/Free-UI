@@ -3,7 +3,7 @@
   <view class="relative" bindtap="gotoUrl" data-url="memberCode">
     <free-image src="https://img-shop.qmimg.cn/s16/images/2020/01/20/9a82219bedcae5c2.jpeg" width="100%" height="500rpx"></free-image>
     <view class="codeBtn">
-      <free-icon name="qrcode" color="#ADB838" size="16"></free-icon>
+      <free-icon name="qrcode" color="#ADB838" ></free-icon>
       <text class="padding-left-xs">会员码</text>
     </view>
   </view>

@@ -1,7 +1,7 @@
 <view class="free-tabbar tabbar {{isFixed?'free-fixed':''}}" style="background:{{backgroundColor}};bottom:{{bottom}};box-shadow:{{shadow?'0 -3rpx 8rpx rgba(0, 0, 0, 0.08);':''}}">
   <view wx:for="{{list}}" wx:key="index" class="free-tabbar-item {{index == humpIndex?'free-action':''}}" catchtap="handleClick" data-index="{{index}}" data-url="{{item.pagePath}}" data-type="{{item.type}}">
       <free-image src="{{current == index ?item.selectedIconPath:item.iconPath}}" width="{{index == humpIndex?'70rpx':'50rpx'}}"
-    height="{{index == humpIndex?'70rpx':'50rpx'}}" radius="50%" class="free-icon" ></free-image>
+    height="{{index == humpIndex?'70rpx':'50rpx'}}" radius="{{radius}}" class="free-icon" ></free-image>
       <view class="free-tabbar-tag" wx:if="{{item.number>0}}">{{item.number}}</view>
       <text style="color:{{current == index ?selectColor:color}};">{{item.text}}</text>
   </view> 

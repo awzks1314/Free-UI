@@ -75,6 +75,11 @@ Component({
       type:Boolean, 
       value:false
     },
+    // 是否自动聚焦
+    focus:{
+      type:Boolean, 
+      value:false
+    },
     // 是否禁用
     disabled:{
       type:Boolean,

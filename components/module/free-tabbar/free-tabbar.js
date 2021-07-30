@@ -43,8 +43,10 @@ Component({
       type:String,
       value:'#FFFFFF'
     },
-    
-    
+    radius : {
+      type:String,
+      value:''
+    },
     // 底部阴影凸显
     shadow:{
       type:Boolean,

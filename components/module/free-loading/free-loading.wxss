@@ -24,7 +24,9 @@
   width: 360rpx;
   top: 18rpx;
 }
-
+.noBorder::before {
+  border-bottom: none;
+}
 .free-text {
   position: absolute;
   color: #999;
