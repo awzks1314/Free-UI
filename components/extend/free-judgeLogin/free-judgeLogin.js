@@ -17,6 +17,11 @@ Component({
       type:String,
       value:'#0081ef'
     },
+    // 登录跳转地址
+    url : {
+      type:String,
+      value:'/packageExtend/loginPage/loginPage'
+    },
     title:{
       type:String,
       value:'登录即刻开启品质生活'
@@ -47,7 +52,7 @@ Component({
         showLogin:false
       })
       wx.navigateTo({
-        url: '/packageExtend/loginPage/loginPage'              
+        url: this.data.url
       })
 		}
   }

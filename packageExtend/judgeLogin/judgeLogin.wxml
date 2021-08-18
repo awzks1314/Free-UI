@@ -6,6 +6,7 @@
   showLogin="{{showLogin}}"
   bgColor="{{bgColor}}"
   color="{{color}}"
+  url="/packageExtend/loginPage/loginPage"
   title="登录即可享受品质生活"
   ></free-judgeLogin>
 </view>

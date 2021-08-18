@@ -9,8 +9,8 @@
       </view>
     </view>
     <view class="flex ">
-      <view class="text-sm flex align-center"><free-icon name="edit" color="#ADB838" size="20"></free-icon>编辑</view>
-      <view class="text-sm flex align-center padding-left-sm"><free-icon name="deletefill" color="#aaaaaa" size="20"></free-icon>删除</view>
+      <view class="text-sm flex align-center"><free-icon name="edit" color="#ADB838" size="32"></free-icon>编辑</view>
+      <view class="text-sm flex align-center padding-left-sm"><free-icon name="deletefill" color="#aaaaaa" size="32"></free-icon>删除</view>
     </view>
   </view>
 </view>

@@ -10,12 +10,13 @@ Page({
         time:'Jult 30 2021',
         version:'v1.0.7',
         content:[
-          '1.free-input新增聚焦focus',
+          '1.free-input新增聚焦focus、max最大字数字段',
           '2.free-empty图片初始大小更改300rpx',
           '3.free-list新增noBorder，不设置底部边框',
           '4.free-backTop更改初始图标',
           '5.free-loading新增noBorder，不设置左右横线',
           '6.free-tabbar圆角限制',
+          '7.free-judgeLogin新增跳转地址自定义',
         ]
       },
       {

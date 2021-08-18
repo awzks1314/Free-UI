@@ -6,17 +6,17 @@
     </view>
     <view class="text-gray text-cut-2 text-sm padding-bottom-sm solid-bottom">{{item.address}}</view>
     <view class="margin-top-sm flex align-center justify-between ">
-      <view class="flex" bindtap="change"  data-index="{{index}}" data-type="default">
-        <free-icon name="{{item.default?'roundcheckfill':'round'}}" color="{{item.default?'red':'#aaa'}}" size="16" ></free-icon>
+      <view class="flex align-center" bindtap="change"  data-index="{{index}}" data-type="default">
+        <free-icon name="{{item.default?'roundcheckfill':'round'}}" color="{{item.default?'red':'#aaa'}}"  ></free-icon>
         <text class="text-sm padding-left-xs">默认地址</text>
       </view>
       <view class="flex align-center justify-between">
-        <view class="flex" bindtap="change"  data-index="{{index}}" data-type="edit">
-          <free-icon name="edit" size="16" ></free-icon>
+        <view class="flex align-center" bindtap="change"  data-index="{{index}}" data-type="edit">
+          <free-icon name="edit" ></free-icon>
           <text class="text-sm padding-left-xs">编辑地址</text>
         </view>
-        <view class="flex padding-left" bindtap="change"  data-index="{{index}}" data-type="dele">
-          <free-icon name="delete" size="16" ></free-icon>
+        <view class="flex align-center padding-left" bindtap="change"  data-index="{{index}}" data-type="dele">
+          <free-icon name="delete"  ></free-icon>
           <text class="text-sm padding-left-xs">删除地址</text>
         </view>
       </view>

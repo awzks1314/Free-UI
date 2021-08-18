@@ -25,6 +25,11 @@ Component({
       type:String,
       value:''
     },
+    // 最大字数
+    max:{
+      type:[String,Number],
+      value:'18'
+    },
     // 输入框背景颜色
     inputBg:{
       type:String,
