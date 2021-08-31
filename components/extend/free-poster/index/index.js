@@ -87,6 +87,7 @@ const main = {
      * 渲染图片
      */
     drawImage(data) {
+        // console.log(data)
         const { imgPath, x, y, w, h, sx, sy, sw, sh, borderRadius = 0, borderWidth = 0, borderColor } = data;
         this.ctx.save();
         if (borderRadius > 0) {
@@ -131,8 +132,8 @@ const main = {
             // pxWidth: this.toPx(w),
             //     pxHeight: this.toPx(h),
             this.setData({
-                pxWidth: w,
-                pxHeight: h,
+                pxWidth: this.toPx(w), 
+                pxHeight: this.toPx(h),
                 debug,
             }, resolve);
         });
@@ -436,12 +437,12 @@ Component({
                 heightArr.push(item.endY);
             });
             const sortRes = heightArr.sort((a, b) => b - a);
-            console.log(sortRes)
+            // console.log(sortRes)
             let canvasHeight = 0;
             if (sortRes.length > 0) {
                 canvasHeight = sortRes[0];
             }
-            console.log(config.height,canvasHeight)
+            // console.log(config.height,canvasHeight)
             if (config.height < canvasHeight || !config.height) {
                 return canvasHeight;
             } else {

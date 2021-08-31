@@ -4,7 +4,7 @@ import Poster from '../../components/extend/free-poster/free-poster/poster';
 const posterConfig = {
     jdConfig: {
         width: 750,
-        height: 1200,
+        height: 900,
         backgroundColor: '#fff',
         debug: false,
         pixelRatio: 1,
@@ -23,7 +23,7 @@ const posterConfig = {
                 height: 74,
                 x: 59,
                 y: 770,
-                backgroundColor: '#fff',
+                backgroundColor: '#0081ef',
                 opacity: 0.5,
                 zIndex: 100,
             },
@@ -33,7 +33,7 @@ const posterConfig = {
                 x: 113,
                 y: 61,
                 baseLine: 'middle',
-                text: '伟仔',
+                text: 'Creater',
                 fontSize: 32,
                 color: '#8d8d8d',
             },
@@ -124,14 +124,14 @@ const posterConfig = {
             },
         ],
         images: [
-            // {
-            //     width: 62,
-            //     height: 62,
-            //     x: 30,
-            //     y: 30,
-            //     borderRadius: 62,
-            //     url: 'https://6672-freeui-8gr0qrob21525637-1305934642.tcb.qcloud.la/dog.jpg?sign=f92353c130ed42927b8c681163eb62c8&t=1630394190',
-            // },
+            {
+                width: 62,
+                height: 62,
+                x: 30,
+                y: 30,
+                borderRadius: 62,
+                url: 'https://6672-freeui-8gr0qrob21525637-1305934642.tcb.qcloud.la/dog.jpg?sign=f92353c130ed42927b8c681163eb62c8&t=1630394190',
+            },
             {
                 width: 634,
                 height: 634,
@@ -153,13 +153,15 @@ const posterConfig = {
 Page({
     data: {
         posterConfig: posterConfig.jdConfig,
-        posterImg:''
+        posterImg:'',
+        posterShow:false
     },
     onPosterSuccess(e) {
       console.log(e)
         const { detail } = e;
         this.setData({
-          posterImg:detail
+          posterImg:detail,
+          posterShow:true
         })
         // wx.previewImage({
         //     current: detail,
@@ -169,11 +171,19 @@ Page({
     onPosterFail(err) {
         console.error(err);
     },
-
+    close() {
+      this.setData({
+        posterShow:false
+      })
+    },
+    // 生成海报
+    createPoster() {
+      Poster.create(true);
+    },
     /**
      * 异步生成海报
      */
-    onCreatePoster() {
+    asyncCreatePoster() {
     	this.setData({ posterConfig: posterConfig.jdConfig }, () => {
         	Poster.create(true);    // 入参：true为抹掉重新生成
     	});

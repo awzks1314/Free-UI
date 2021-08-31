@@ -65,7 +65,7 @@ Page({
         icon:'good'
       },
     ],
-    logShow:false,
+    logShow:true,
     logList:app.globalData.updateLog
   },
 
@@ -85,6 +85,13 @@ Page({
   },
   stop() {
 
+  },
+  goUrl(e) {
+    if (e.currentTarget.dataset.url) {
+      wx.navigateTo({
+        url: e.currentTarget.dataset.url
+      })
+    }
   },
   /**
    * 用户点击右上角分享

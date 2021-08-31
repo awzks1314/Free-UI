@@ -83,6 +83,9 @@ Component({
       }
     },
     details(e){
+      if (!e.currentTarget.dataset.url) {
+        return
+      }
       if(e.currentTarget.dataset.type == 'tab'){
         wx.switchTab({
           url: e.currentTarget.dataset.url

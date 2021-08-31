@@ -72,6 +72,7 @@
     <button class="free-button bg-purple" bindtap="show6">打开弹窗</button>
   </view>
 </view>
+
 <free-modal show="{{modal6}}" custom="{{true}}" bind:cancel="hide6" >
   <view class="flex flex-direction align-center">
       <view class="padding">我是自定内容</view>

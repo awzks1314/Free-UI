@@ -3,10 +3,30 @@
   如果要使用异步生成海报的方法，务必组件要加上 id="poster"
  -->
 
+ <view class="free-bar  bg-white solid-bottom" >
+  <view class="free-title ">
+    <text>生成海报</text>
+  </view>
+  <view class="free-title ">
+    <button class="free-button bg-blue" bindtap="createPoster" >立即生成</button>
+  </view>
+</view>
+
+<view class="free-bar  bg-white solid-bottom" >
+  <view class="free-title ">
+    <text>异步生成海报</text>
+  </view>
+  <view class="free-title ">
+    <button class="free-button bg-orange" bindtap="asyncCreatePoster" >生成海报</button>
+  </view>
+</view>
+
+
 <poster id="poster" hide-loading="{{true}}" preload="{{false}}" config="{{posterConfig}}" bind:success="onPosterSuccess" bind:fail="onPosterFail">
-    <button>生成海报</button>
 </poster>
-<!-- <image src="{{posterImg}}" sty></image> -->
-<free-image src="{{posterImg}}" width="750rpx" height="1334rpx"></free-image>
-<!-- 有些场景可能需要发起ajax请求后才能获取生成海报的数据，这里提供了异步生成海报的方式。 -->
-<button bindtap="onCreatePoster">异步生成海报一</button>
+
+<free-modal show="{{posterShow}}" padding="0" custom="{{true}}" bind:cancel="close" width="600rpx">
+    <free-image src="{{posterImg}}" width="600rpx" height="900rpx" long="true"></free-image>
+</free-modal>
+
+

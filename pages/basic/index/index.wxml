@@ -1,4 +1,11 @@
 
+<free-noticeBar 
+  notice="{{logList.content}}" 
+  isFixed="true"
+  wx:if="{{!logShow}}"
+></free-noticeBar>
+<free-gap height="80" wx:if="{{!logShow}}"></free-gap>
+
 <view class="">
   <view class="padding-lr padding-top-sm flex  align-center">
     <view class=" text-gray ">Basic Style</view>
@@ -21,8 +28,12 @@
 <view wx:if="{{logShow}}" bindtap="hideLog">
   <view class="update-box {{logShow?'free-modal-show':''}}  {{logShow?'free-modal-normal':'free-modal-scale'}}" catchtap="stop">
     <view class="box-font-box">
-      <view wx:for="{{logList}}" wx:key="index">
-        {{item}}
+      <view class=" margin-bottom-xs text-center">
+          <text>当前版本：{{logList.version}}</text>
+      </view>
+      <view wx:for="{{logList.content}}" wx:key="index" class="margin-bottom-xs">
+        {{item.text}}
+        <text class="log_item text-blue" bindtap="goUrl" data-url="{{item.url}}" wx:if="{{item.url}}">立即查看</text>
       </view>
     </view>
     <image src="../../../static/image/modal/app_update_close.png" class="close-img" bindtap="hideLog"></image>

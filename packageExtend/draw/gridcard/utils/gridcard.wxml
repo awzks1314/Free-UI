@@ -3,7 +3,7 @@
     <block wx:for = "{{card}}" wx:for-item = "item" wx:for-index="idx">
       <view class="gridcard_item {{item.isBack ? 'back' : ''}} {{item.isMove ? 'move' : ''}}" style="{{item.inlineStyle}}" bindtap = "onClick" data-idx="{{idx}}" data-award="{{item.award}}">
         <div class="gridcard_front">
-        	<image src = "/static/image/tabbarIcon/basic.png"/>
+        	<image src = "https://6672-freeui-8gr0qrob21525637-1305934642.tcb.qcloud.la/dog.jpg?sign=f92353c130ed42927b8c681163eb62c8&t=1630394190"/>
         </div>
         <div class="gridcard_back">
         	<image src = "/static/image/tabbarIcon/basics.png"/>

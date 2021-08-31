@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText":"基础",
   "usingComponents": {
-    "free-modal":"/components/module/free-modal/free-modal"
+    "free-modal":"/components/module/free-modal/free-modal",
+    "free-noticeBar":"/components/module/free-noticeBar/free-noticeBar"
   }
 }

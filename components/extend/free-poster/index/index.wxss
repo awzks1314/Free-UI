@@ -1,7 +1,7 @@
-.canvas {
+/* .canvas {
     width: 750rpx;
     height: 750rpx;
-}
+} */
 .canvas.pro {
     position: absolute;
     bottom: 0;

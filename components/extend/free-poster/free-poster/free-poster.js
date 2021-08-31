@@ -71,7 +71,7 @@ Component({
             .catch((err) => {
                 !this.data.hideLoading && wx.hideLoading();
                 wx.showToast({ icon: 'none', title: err.errMsg || '生成失败' });
-                console.error(err);
+                //console.error(err);
                 this.triggerEvent('fail', err);
             })
         },
@@ -80,7 +80,7 @@ Component({
             this.triggerEvent('success', detail);
         },
         onCreateFail(err) {
-            console.error(err);
+            //console.error(err);
             this.triggerEvent('fail', err);
         }
     }

@@ -127,15 +127,26 @@ App({
         }
       ]
     },
-    updateLog:[
-      '1.free-input新增聚焦focus、max最大字数字段',
-      '2.free-empty图片初始大小更改300rpx',
-      '3.free-list新增noBorder，不设置底部边框',
-      '4.free-backTop更改初始图标',
-      '5.free-loading新增noBorder，不设置左右横线',
-      '6.free-tabbar圆角限制',
-      '7.free-judgeLogin新增跳转地址自定义',
-    ],
+    updateLog:{
+      time:'Aug 31 2021',
+      version:'v1.0.8',
+      content:[
+        {
+          text:'1. 新增扩展之营销抽奖。包括刮刮乐、老虎机、跑马灯以及九宫格翻牌。',
+          url:'/packageExtend/draw/draw'
+        },
+        {
+          text:'2. 新增扩展之海报生成。包括同步异步生成，自定义样式。',
+          url:'/packageExtend/poster/poster'
+        },
+        {
+          text:'3. 新增更新弹窗,更新公告'        
+        },
+        {
+          text:'4. 为提升首屏加载速度，进行了分包处理。'        
+        }
+      ]
+    },
     logShow:true
   }
 })
