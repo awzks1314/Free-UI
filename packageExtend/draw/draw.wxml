@@ -1,0 +1,8 @@
+<view class="free-bar  bg-white solid-bottom" wx:for="{{list}}" wx:key="id">
+  <view class="free-title ">
+    <text>{{item.name}}</text>
+  </view>
+  <view class="free-title ">
+    <button class="free-button bg-{{item.type}}" bindtap="look" data-sub="{{item.sub}}">查看实例</button>
+  </view>
+</view>

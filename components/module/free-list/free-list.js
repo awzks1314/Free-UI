@@ -49,6 +49,10 @@ Component({
       type: Number,
       value: 28//字体大小 
     },
+    iconSize: {
+      type: Number,
+      value: 40//字体大小 
+    },
     noBorder: {
       type: Boolean,
       value: false //不要底部线条

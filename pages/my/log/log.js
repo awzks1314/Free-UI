@@ -125,9 +125,15 @@ Page({
           '15.新增步进器模块'
         ]
       },
-    ]
+    ],
+    scrollTop:0
   },
-
+  //页面滚动执行方式
+  onPageScroll(e) {
+    this.setData({
+      scrollTop: e.scrollTop
+    })
+  },
   /**
    * 用户点击右上角分享
    */

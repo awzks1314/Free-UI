@@ -19,39 +19,9 @@
           "scene": null
         },
         {
-          "name": "pages/basic/index/index",
-          "pathName": "pages/basic/index/index",
+          "name": "packageExtend/poster/poster",
+          "pathName": "packageExtend/poster/poster",
           "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/module/index/index",
-          "pathName": "pages/module/index/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "packageExtend/slideUnlock/slideUnlock",
-          "pathName": "packageExtend/slideUnlock/slideUnlock",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/basic/index/index",
-          "pathName": "pages/basic/index/index",
-          "query": "",
-          "scene": 1047
-        },
-        {
-          "name": "packageTemplate/tea/mine/mine",
-          "pathName": "packageTemplate/tea/mine/mine",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "packageTemplate/tea/address/address",
-          "pathName": "packageTemplate/tea/address/address",
-          "query": "type=takeOut",
           "scene": null
         }
       ]

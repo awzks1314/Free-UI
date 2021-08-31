@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"海报生成",
+  "usingComponents": {
+    "poster": "/components/extend/free-poster/free-poster/free-poster"
+  }
+}

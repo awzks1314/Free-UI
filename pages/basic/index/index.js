@@ -64,17 +64,28 @@ Page({
         desc:'常用的标签样式',
         icon:'good'
       },
-    ]
+    ],
+    logShow:false,
+    logList:app.globalData.updateLog
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({
+      logShow:app.globalData.logShow?app.globalData.logShow:true
+    })
+  },
+  hideLog() {
+    this.setData({
+      logShow:false
+    })
+    app.globalData.logShow = false
+  },
+  stop() {
 
   },
-
-
   /**
    * 用户点击右上角分享
    */

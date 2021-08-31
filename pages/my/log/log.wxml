@@ -18,3 +18,4 @@
     </free-timeline-item>
   </free-timeline-list>
 </view>
+<free-backTop  scrollTop="{{scrollTop}}" ></free-backTop>

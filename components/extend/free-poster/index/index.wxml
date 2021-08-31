@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+  <canvas canvas-id='canvasid' class="canvas {{debug ? 'debug' : 'pro'}}" style='width: {{pxWidth}}rpx; height: {{pxHeight}}rpx;'></canvas>
+</view>

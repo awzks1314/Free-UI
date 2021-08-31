@@ -188,7 +188,7 @@ Page({
   gotoDetail(e){
     let url = e.currentTarget.dataset.url
     wx.navigateTo({
-      url: `/pages/module/${url}/${url}`,
+      url: `/packageModule/${url}/${url}`,
     })
   },
   /**

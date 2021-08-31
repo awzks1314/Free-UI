@@ -45,6 +45,14 @@ Page({
     ],
     listComponent:[
       {
+        name:'海报生成',
+        title:'poster'
+      },
+      {
+        name:'营销抽奖',
+        title:'draw'
+      },
+      {
         name:'登录判断',
         title:'judgeLogin'
       },

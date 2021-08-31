@@ -63,8 +63,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/basic/button/button",
-          "pathName": "pages/basic/button/button",
+          "name": "packageBasic/button/button",
+          "pathName": "packageBasic/button/button",
           "scene": null
         }
       ]

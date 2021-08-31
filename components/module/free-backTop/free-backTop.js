@@ -33,7 +33,7 @@ Component({
     // 自定义图标
     icon:{
       type: String,
-      value: ''
+      value: 'fold'
     },
     //滚动距离
     scrollTop: {

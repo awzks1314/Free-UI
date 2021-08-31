@@ -1,0 +1,12 @@
+<!-- 
+  图片的域名务必添加到downloadFile合法域名中（开发设置-服务器域名-downloadFile合法域名）
+  如果要使用异步生成海报的方法，务必组件要加上 id="poster"
+ -->
+
+<poster id="poster" hide-loading="{{true}}" preload="{{false}}" config="{{posterConfig}}" bind:success="onPosterSuccess" bind:fail="onPosterFail">
+    <button>生成海报</button>
+</poster>
+<!-- <image src="{{posterImg}}" sty></image> -->
+<free-image src="{{posterImg}}" width="750rpx" height="1334rpx"></free-image>
+<!-- 有些场景可能需要发起ajax请求后才能获取生成海报的数据，这里提供了异步生成海报的方式。 -->
+<button bindtap="onCreatePoster">异步生成海报一</button>
