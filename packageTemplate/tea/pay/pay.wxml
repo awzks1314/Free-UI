@@ -9,14 +9,14 @@
           <text>1868745487</text>
         </view>
       </view>
-      <free-icon name="right" size="18"></free-icon>
+      <free-icon name="right" ></free-icon>
     </view>
     <view class="bg-white padding">
       <view class="flex align-center justify-between">
         <text>预计送达时间</text>
         <view class="flex align-center">
           <text>16:44</text>
-          <free-icon name="right" size="18"></free-icon>
+          <free-icon name="right" ></free-icon>
         </view>
       </view>
       <text class="text-tea">特殊时期减少接触，请修改下方订单备注</text>

@@ -2,7 +2,7 @@
   <free-timeline-list>
     <free-timeline-item wx:for="{{logData}}" wx:key="index">
       <view slot="icon" class="">
-        <free-icon name="calendar" size="18" color="{{index == 0 ?'#0081ef':''}}"></free-icon>
+        <free-icon name="calendar"  color="{{index == 0 ?'#0081ef':''}}"></free-icon>
       </view>
       <view slot="content" class="bg-gradual-blue  light padding-sm radius-sm  ">
         <view class="flex ">

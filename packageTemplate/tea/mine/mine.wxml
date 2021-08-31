@@ -35,7 +35,7 @@
         </view>
         <view class="vip flex align-center text-sm text-white justify-end">
           <text>会员权益</text>
-          <free-icon name="right" color="#fff" size="18"></free-icon>
+          <free-icon name="right" color="#fff" ></free-icon>
         </view>
       </view>
 
