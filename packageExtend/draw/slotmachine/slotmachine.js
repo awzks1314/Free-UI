@@ -20,19 +20,10 @@ Page({
       num4: 1,
       speed: 24,
       callback: () => {
-        wx.showModal({
-          title: '提示',
-          content: '恭喜您，中奖了',
-          showCancel: false,
-          success: (res) =>  {            
-            if (res.confirm) {
-              console.log('用户点击确定')
-              this.machine.reset()
-            } else if (res.cancel) {
-              console.log('用户点击取消')
-            }
-          }
-        })          
+        wx.showToast({
+          title: '恭喜你中奖了',
+          icon: 'none'
+        })         
       }      
     })
 

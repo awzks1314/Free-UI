@@ -23,6 +23,12 @@
           "pathName": "packageExtend/poster/poster",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "packageExtend/draw/slotmachine/slotmachine",
+          "pathName": "packageExtend/draw/slotmachine/slotmachine",
+          "query": "",
+          "scene": null
         }
       ]
     }
