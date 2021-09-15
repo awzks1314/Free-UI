@@ -1,0 +1,30 @@
+
+<view class="container" bindtouchmove='handletouchmove'>
+	<view style="height:0">
+		<free-navBar background='rgba(0,0,0,0)'  back bindback="handlerGobackClick"></free-navBar>
+	</view>
+	<view class="content content-intro">
+		
+		<view class="content content-main">
+			<view id="page">
+				<view id="card">
+					<view class="card-inner">
+						<view class="banner_img">
+							<image alt="avatar" class="userhead" src='https://q1.qlogo.cn/g?b=qq&nk=664423077&s=100' />
+						</view>
+						<view class="signature">
+							<text class="cardname" bindtap="toUserList">搞文艺的猿</text>
+							<text class="print">Code & Input & Output</text>
+						</view>
+					</view>
+					<view class='nav-list margin-top'>
+						<view bindtap="toPage" hover-class='none'  class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key="key" bindtap="gotoMini" data-appid="{{item.appid}}" data-path="{{item.path}}">
+              <view class="text-left">{{item.title}}</view>
+							<view class="nav-name">{{item.name}}</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

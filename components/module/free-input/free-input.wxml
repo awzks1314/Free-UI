@@ -1,4 +1,4 @@
-<view class='box' style="position:{{position}};background:{{bgColor}};">
+<view class='box' style="position:{{position}};background:{{bgColor}};height:{{height}}rpx;">
   <view  class="{{inputStyle == 0?'inputStyle':'inputStyles'}} {{inputStyle == 1 &&disabled?'disabled':''}}" style="border-radius:{{radius}};background:{{inputBg}};margin:{{margin}};">
     <!-- 前置图标 -->
     <view style="margin: 0 0 0 0.8em;" wx:if="{{prefixIcon}}">

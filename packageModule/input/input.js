@@ -16,13 +16,6 @@ Page({
     disabled:false,
     close:false
   },
-  extrea(){
-    wx.showToast({
-      title: '点击了额外按钮！',
-      icon:'none',
-      duration: 1000
-    })
-  },
   input(e){
     
   },

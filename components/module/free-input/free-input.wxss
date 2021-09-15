@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 100rpx;
+  /* min-height: 100rpx; */
   width: 100%;
   top: 0;
   left: 0;

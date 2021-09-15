@@ -29,6 +29,18 @@
           "pathName": "packageExtend/draw/slotmachine/slotmachine",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/my/index/index",
+          "pathName": "pages/my/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/more/more",
+          "pathName": "pages/more/more",
+          "query": "",
+          "scene": null
         }
       ]
     }

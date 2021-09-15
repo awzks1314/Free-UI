@@ -128,24 +128,24 @@ App({
       ]
     },
     updateLog:{
-      time:'Aug 31 2021',
-      version:'v1.0.8',
-      content:[
-        {
-          text:'1. 新增扩展之营销抽奖。包括刮刮乐、老虎机、跑马灯以及九宫格翻牌。',
-          url:'/packageExtend/draw/draw'
-        },
-        {
-          text:'2. 新增扩展之海报生成。包括同步异步生成，自定义样式。',
-          url:'/packageExtend/poster/poster'
-        },
-        {
-          text:'3. 新增更新弹窗,更新公告'        
-        },
-        {
-          text:'4. 为提升首屏加载速度，进行了分包处理。'        
-        }
-      ]
+      // time:'Aug 31 2021',
+      // version:'v1.0.8',
+      // content:[
+      //   {
+      //     text:'1. 新增扩展之营销抽奖。包括刮刮乐、老虎机、跑马灯以及九宫格翻牌。',
+      //     url:'/packageExtend/draw/draw'
+      //   },
+      //   {
+      //     text:'2. 新增扩展之海报生成。包括同步异步生成，自定义样式。',
+      //     url:'/packageExtend/poster/poster'
+      //   },
+      //   {
+      //     text:'3. 新增更新弹窗,更新公告'        
+      //   },
+      //   {
+      //     text:'4. 为提升首屏加载速度，进行了分包处理。'        
+      //   }
+      // ]
     },
     logShow:true
   }

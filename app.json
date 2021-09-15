@@ -7,7 +7,8 @@
     "pages/template/index/index",
     "pages/my/log/log",
     "pages/my/support/support",
-    "pages/my/about/about"
+    "pages/my/about/about",
+    "pages/more/more"
   ],
   "subPackages": [
     {

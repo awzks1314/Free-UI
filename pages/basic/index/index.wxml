@@ -25,7 +25,7 @@
 <official-account></official-account> 
 
 <!-- 更新日志弹窗 -->
-<view wx:if="{{logShow}}" bindtap="hideLog">
+<view wx:if="{{logShow && logList.conten.length > 0}}" bindtap="hideLog">
   <view class="update-box {{logShow?'free-modal-show':''}}  {{logShow?'free-modal-normal':'free-modal-scale'}}" catchtap="stop">
     <view class="box-font-box">
       <view class=" margin-bottom-xs text-center">

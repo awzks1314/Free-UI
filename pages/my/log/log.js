@@ -7,6 +7,15 @@ Page({
   data: {
     logData:[
       {
+        time:'Sep 15 2021',
+        version:'v1.0.8',
+        content:[
+          '1.free-input新增height字段',
+          '2.新增作者联系方式',
+          '3.更换布局样式',
+        ]
+      },
+      {
         time:'Aug 31 2021',
         version:'v1.0.8',
         content:[

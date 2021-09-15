@@ -1,6 +1,21 @@
+page {
+  background-color: #fff;
+}
 .header{
   padding-top:200rpx;
 }
 .tile{
   font-size: 60rpx;
+}
+.dot{
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shadow{
+	box-shadow: 0 0px 24px rgba(231, 231, 231, 0.65);
+	border-radius: 8px;
 }

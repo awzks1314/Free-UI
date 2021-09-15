@@ -12,35 +12,35 @@ Page({
         iconPath:"/static/image/tabbarIcon/basics.png",
         selectedIconPath:"/static/image/tabbarIcon/basic.png",
         number:0,
-        pagePath:"/packageModule/index/index"
+        pagePath:"/pages/module/index/index"
       },
       {
         text:"扩展",
         iconPath:"/static/image/tabbarIcon/extends.png",
         selectedIconPath:"/static/image/tabbarIcon/extend.png",
         number:0,
-        pagePath:"/packageModule/index/index"
+        pagePath:"/pages/module/index/index"
       },
       {
         text:"进行",
         iconPath:"/static/image/tabbarIcon/ings.png",
         selectedIconPath:"/static/image/tabbarIcon/ing.png",
         number:0,
-        pagePath:"/packageModule/index/index"
+        pagePath:"/pages/module/index/index"
       },
       {
         text:"扩展",
         iconPath:"/static/image/tabbarIcon/mores.png",
         selectedIconPath:"/static/image/tabbarIcon/more.png",
         number:0,
-        pagePath:"/packageModule/index/index"
+        pagePath:"/pages/module/index/index"
       },
       {
         text:"我的",
         iconPath:"/static/image/tabbarIcon/mys.png",
         selectedIconPath:"/static/image/tabbarIcon/my.png",
         number:99,//角标
-        pagePath:"/packageModule/index/index"
+        pagePath:"/pages/module/index/index"
       }
     ],
     current:0,//当前选中

@@ -100,6 +100,10 @@ Component({
       type:String,
       value:'#0081ff'
     },
+    height:{
+      type:String,
+      value:''
+    },
     // 左右边距
     margin:{
       type:String,

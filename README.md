@@ -12,7 +12,7 @@ FreeUI是一款轻量、实用的UI组件库。目前只编写了`微信小程�
 
 关注公众号【搞文艺的猿】，有好的建议、bug反馈、需求组件可以给我留言。
 
-<div align="left"><image src="https://z3.ax1x.com/2021/07/13/WAkfpR.jpg" width="200" height="200"> </image></div>
+<div align="left"><image src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-6b343a38-f8a7-451f-8e4b-99a11dc379de/3e9478ef-4cd0-4503-ab17-53c1b78115e3.jpg" width="200" height="200"> </image></div>
 
 #### 链接
 
@@ -22,7 +22,6 @@ FreeUI是一款轻量、实用的UI组件库。目前只编写了`微信小程�
 
 - gitee地址：[https://gitee.com/zkszz/free-ui](https://gitee.com/zkszz/free-ui)
 
-- uniapp市场地址：[https://ext.dcloud.net.cn/plugin?id=5152](https://ext.dcloud.net.cn/plugin?id=5152)
 
 #### 开源协议
 

@@ -11,16 +11,7 @@ Page({
       {name:'Fork',number:'999+',color:"cyan"},
     ],
     list:[
-      {
-        name:'Github源码地址',
-        icon:'rankfill',
-        iconColor:'#e54d42'
-      },
-      {
-        name:'Gitee源码地址',
-        icon:'xiazai',
-        iconColor:'#0081ff'
-      },
+      
       {
         name:'更新日志',
         icon:'news_hot_fill_light',
@@ -32,12 +23,6 @@ Page({
         icon:'likefill',
         iconColor:'#fbbd08',
         url:'/pages/my/support/support'
-      },
-      {
-        name:'意见反馈',
-        icon:'markfill',
-        iconColor:'#e54d42',
-        type:'btn'
       },
       {
         name:'关于Free UI',
@@ -70,6 +55,25 @@ Page({
   },
   support(){
     
+  },
+  goToUrl(e){
+    let dat = e.currentTarget.dataset
+    if (!dat.url) return ;
+
+    if (dat.type == 'tab') {
+      wx.switchTab({
+        url: dat.url
+      })
+    }else {
+      wx.navigateTo({
+        url: dat.url
+      })
+    }
+  },
+  keepAuth() {
+    wx.previewImage({
+      urls: ['cloud://freeui-8gr0qrob21525637.6672-freeui-8gr0qrob21525637-1305934642/auth.jpg']
+    })
   },
   /**
    * 用户点击右上角分享

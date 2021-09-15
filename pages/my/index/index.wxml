@@ -2,17 +2,45 @@
   <text class="tile ">Free UI</text>
   <text>一款轻量、开箱即用的原生微信小程序UI组件库</text>
 </view>
-<view class="free-list grid col-3 border shadow-main">
-  <view wx:for="{{dataList}}" wx:key="index" class="free-item padding bg-white flex flex-direction justify-center align-center" >
-    <text class=" text-{{item.color}} text-lg">{{item.number}}</text>
-    <text class="padding-top-xs text-gray">{{item.name}}</text>
+<view class="padding">
+  <view class="flex align-center justify-between">
+    <view class="flex-sub shadow padding flex align-center flex-direction " bindtap="detail" data-index="0">
+        <view class="dot" style="background:linear-gradient(to right , #fc5e78,#fd919a)">
+          <free-icon name="xiazai" color="#fff" size="44"></free-icon>
+        </view>
+        <text class="text-sm text-gray margin-top-xs">Github</text>
+    </view>
+    <view class="flex-sub shadow margin-lr padding flex align-center flex-direction " bindtap="detail" data-index="1" >
+        <view class="dot" style="background:linear-gradient(to right , #589cfe,#a8defe)">
+          <free-icon name="tagfill" color="#fff" size="44"></free-icon>
+        </view>
+        <text class="text-sm text-gray margin-top-xs">Gitee</text>
+    </view>
+    <view class="flex-sub shadow padding flex align-center flex-direction " bindtap="goToUrl" data-url="/pages/more/more">
+        <view class="dot" style="background:linear-gradient(to right , #ffb427,#ffd269)">
+          <free-icon name="rankfill" color="#fff" size="44"></free-icon>
+        </view>
+        <text class="text-sm text-gray margin-top-xs">更多好玩</text>
+    </view>
   </view>
 </view>
  
-<view class=" margin-top ">
-  <free-list arrow="true"  wx:for="{{list}}" wx:key="index" bind:click="detail" data-index="{{index}}" data-url="{{item.url}}" title="{{item.name}}" icon="{{item.icon}}"  iconColor="{{item.iconColor}}">
-
-    <button wx:if="{{item.type=='btn'}}" open-type="contact" class="free-button  bg-white text-grey" style="height:auto;">给点建议</button>
+<view class="padding-lr">
+  <view class="shadow">
+    <free-list arrow="true"  wx:for="{{list}}" wx:key="index" bind:click="detail" data-index="{{index + 2}}" data-url="{{item.url}}" title="{{item.name}}" icon="{{item.icon}}"  iconColor="{{item.iconColor}}">
+      <button wx:if="{{item.type=='btn'}}" open-type="contact" class="free-button  bg-white text-grey" style="height:auto;">给点建议</button>
     </free-list>
+  </view>
+
+  <view class="shadow margin-top">
+    <free-list arrow="true"  title="联系作者" icon="my"  bindtap="keepAuth">
+      <text class="text-gray"></text>
+    </free-list>
+    <free-list arrow="true"   title="意见反馈" icon="markfill"  iconColor="#e54d42">
+      <button  open-type="contact" class="free-button  bg-white text-grey" style="height:auto;padding: 0;">给点建议</button>
+    </free-list>
+
+    
+  </view>
 </view>
 <official-account></official-account> 
