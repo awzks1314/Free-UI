@@ -150,6 +150,61 @@ const posterConfig = {
 
     }
 }
+
+// const posterConfig = {
+//     jdConfig: {
+//         width: 750,
+//         height: 900,
+//         backgroundColor: '#fff',
+//         debug: false,
+//         pixelRatio: 1,
+//         texts: [
+//             {
+//                 x: 92,
+//                 y: 810,
+//                 fontSize: 38,
+//                 baseLine: 'middle',
+//                 text: '标题标题标题标题标题标题标题标题标题',
+//                 width: 570,
+//                 lineNum: 1,
+//                 color: '#fff',
+//                 zIndex: 200,
+//             },
+//             {
+//                 x: 59,
+//                 y: 900,
+//                 baseLine: 'middle',
+//                 text: [
+//                     {
+//                         text: '商家发货&售后',
+//                         fontSize: 28,
+//                         color: '#929292',
+//                     },
+//                     {
+//                         text: '七天退货',
+//                         fontSize: 28,
+//                         color: '#929292',
+//                         marginLeft: 50,
+//                     },
+//                     {
+//                         text: '运费险',
+//                         fontSize: 28,
+//                         color: '#929292',
+//                         marginLeft: 50,
+//                     },
+//                 ]
+//             }
+//         ],
+//         images: [
+//             {
+//                 width: 750,
+//                 height: 900,
+//                 url: 'https://6672-freeui-8gr0qrob21525637-1305934642.tcb.qcloud.la/dog.jpg?sign=f92353c130ed42927b8c681163eb62c8&t=1630394190',
+//             }
+//         ]
+
+//     }
+// }
 Page({
     data: {
         posterConfig: posterConfig.jdConfig,
@@ -167,6 +222,65 @@ Page({
         //     current: detail,
         //     urls: [detail]
         // })
+    },
+    save() {
+        
+        var that = this
+        wx.saveImageToPhotosAlbum({
+          filePath: that.data.posterImg,
+          success: (res) => {
+              console.log(res)
+              wx.showToast({
+                title: '保存成功~',
+                duration: 0,
+                mask: true,
+                
+              })
+              wx.hideLoading()
+          },
+          fail: (error) => {
+              console.log(error)
+              if (error.errMsg) {
+                wx.showModal({
+                    content: '无权限，请打开下载权限后再试！',
+                    showCancel: false,
+                    title: '提示',
+                    success: (result) => {
+                        if (result.confirm) {
+                            wx.openSetting({
+                                withSubscriptions: true,
+                                success: (settingdata) => {
+                                if (settingdata.authSetting[
+                                    'scope.writePhotosAlbum']) {
+                                        //用户打开了保存图片授权开关
+                                        wx.saveImageToPhotosAlbum({
+                                            filePath: that.data.posterImg,
+                                            success: function(data) {
+                                                wx.hideLoading()
+                                            }
+                                        });
+                                    } else {
+                                        //用户未打开保存图片到相册的授权开关
+                                        wx.showModal({
+                                            title: '温馨提示',
+                                            content: '授权失败，请稍后重新获取',
+                                            showCancel: false
+                                        });
+                                    }
+                                },
+                                fail: (res) => {},
+                                complete: (res) => {},
+                            })
+                        }
+                    },
+                    fail: (res) => {},
+                    complete: (res) => {},
+                })
+              }else {
+                  wx.hideLoading()
+              }
+          }
+        })
     },
     onPosterFail(err) {
         console.error(err);

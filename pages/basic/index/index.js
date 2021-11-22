@@ -65,7 +65,7 @@ Page({
         icon:'good'
       },
     ],
-    logShow:true,
+    logShow:false,
     logList:app.globalData.updateLog
   },
 
@@ -74,7 +74,7 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      logShow:app.globalData.logShow?app.globalData.logShow:true
+      logShow:app.globalData.logShow || false
     })
   },
   hideLog() {

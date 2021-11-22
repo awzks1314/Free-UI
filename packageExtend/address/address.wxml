@@ -29,7 +29,7 @@
   <button class="free-icon block bg-blue round lg flex align-center justify-center"
   bindtap="change" data-type="add"
   >
-    <free-icon name="add" color="#fff" size="20"></free-icon>
+    <free-icon name="add" color="#fff" size="40"></free-icon>
     新增收货地址
   </button>
 </view>

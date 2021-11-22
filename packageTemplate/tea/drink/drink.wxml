@@ -6,17 +6,17 @@
       <view class="left" wx:if="{{orderType == 'takeIn'}}">
         <view class="flex align-center">
           <text class="text-lg">卓悦中心ONE AVENUE店</text>
-          <free-icon name="right" size="14" color="#333333"></free-icon>
+          <free-icon name="right" size="28" color="#333333"></free-icon>
         </view>
         <view class="flex align-center text-sm text-gray margin-top-xs">
-          <free-icon name="location" size="16" color="#ADB838"></free-icon>
+          <free-icon name="location" size="32" color="#ADB838"></free-icon>
           <text class="padding-left-xs">距离您 889m</text>
         </view>
       </view> 
       <view class="left" wx:if="{{orderType == 'takeOut'}}">
         <view class="flex align-center">
           <text class="text-lg">{{address.address}}</text>
-          <free-icon name="location" size="16" color="#ADB838"></free-icon>
+          <free-icon name="location" size="32" color="#ADB838"></free-icon>
         </view>
         <view class="flex align-center text-sm text-gray margin-top-xs">
           <text>由</text>
@@ -32,7 +32,7 @@
     </view>
     <view class="notice padding-sm flex align-center justify-between teaBg">
       <text class="text-tea">"霸气mini卡"超级购券活动，赶紧去购买</text>
-      <free-icon name="right" size="14" color="#ADB838"></free-icon>
+      <free-icon name="right" size="28" color="#ADB838"></free-icon>
     </view>
   </view>
 

@@ -1,0 +1,3 @@
+<text class="link-text" style="color:{{color}};text-decoration: {{underline?'underline':''}};" catchtap="href">
+  <slot></slot>
+</text>

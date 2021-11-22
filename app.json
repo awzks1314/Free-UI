@@ -8,7 +8,8 @@
     "pages/my/log/log",
     "pages/my/support/support",
     "pages/my/about/about",
-    "pages/more/more"
+    "pages/more/more",
+    "pages/webView/webView"
   ],
   "subPackages": [
     {
@@ -62,7 +63,8 @@
         "js/rules/rules",
         "js/trim/trim",
         "js/timeFrom/timeFrom",
-        "js/timeAfter/timeAfter"
+        "js/timeAfter/timeAfter",
+        "js/hyperlink/hyperlink"
       ]
     },
     {

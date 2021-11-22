@@ -1,0 +1,35 @@
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
+<view class="text-center">
+  <view class="margin-bottom-sm  ">
+    这是
+    <free-hyperlink 
+      color="{{color}}"
+      underline="{{underline}}"
+      url="{{url}}"
+      path="{{path}}"
+      >超链接的一个</free-hyperlink>
+      示例
+  </view>
+</view>
+
+
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="文字颜色" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['#0081ef','red','orange']}}" bind:click='getMode' data-name="color"  bold="true"></free-subsection>
+</view> 
+
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="下划线" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['false','true']}}" bind:click='getMode' data-name="underline"  bold="true"></free-subsection>
+</view> 
+
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="跳转网页" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['www.baidu.com','www.hao123.com']}}" bind:click='getMode' data-name="url"  bold="true"></free-subsection>
+</view> 
+
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="跳转页面" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{['colorSwitch/colorSwitch','timeAfter/timeAfter']}}" bind:click='getMode' data-name="path"  bold="true"></free-subsection>
+</view> 

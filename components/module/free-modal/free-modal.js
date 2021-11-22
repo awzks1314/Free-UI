@@ -12,7 +12,7 @@ Component({
     },
     padding: {
       type: String,
-      value: "40rpx 64rpx"
+      value: "20px 10px"
     },
     radius: {
       type: String,

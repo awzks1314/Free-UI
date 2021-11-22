@@ -14,7 +14,7 @@
           <view class="text-cut-2 text-orange">[昆明市]云南省昆明市官渡区矣六街道正在派件请保持电话畅通请保持电话畅通请保持电话畅通</view>
           <view class="text-sm text-gray margin-top-xs">2021-05-20 16:07:55</view>
         </view>
-        <!-- <free-icon name="right" size="18"></free-icon> -->
+        <!-- <free-icon name="right" size="36"></free-icon> -->
       </view>
       <view class="flex align-center padding-tb-sm solid-top">
         <free-icon name="locationfill" color="#ff5722"></free-icon>
@@ -31,7 +31,7 @@
     <!-- 商品详情 -->
     <view class="bg-white radius padding-lr-sm margin-top-sm">
       <view class="flex align-center padding-tb-sm">
-        <free-icon name="shop" size="17" ></free-icon>
+        <free-icon name="shop" size="34" ></free-icon>
         <text class="margin-left-xs text-gray">云南省昆明市官渡区XX旗舰店</text>
       </view>
       <view wx:for="{{2}}" wx:key="index" class="margin-bottom-xs flex ">

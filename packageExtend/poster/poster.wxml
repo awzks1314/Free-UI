@@ -25,8 +25,9 @@
 <poster id="poster" hide-loading="{{true}}" preload="{{false}}" config="{{posterConfig}}" bind:success="onPosterSuccess" bind:fail="onPosterFail">
 </poster>
 
-<free-modal show="{{posterShow}}" padding="0" custom="{{true}}" bind:cancel="close" width="600rpx">
+<free-modal show="{{posterShow}}"  custom="{{true}}" padding="0" bind:cancel="close" width="600rpx">
     <free-image src="{{posterImg}}" width="600rpx" height="900rpx" long="true"></free-image>
+    <button class="free-button bg-blue round save" bindtap="save" >保存本地</button>
 </free-modal>
 
 

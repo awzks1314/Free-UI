@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"文本超链接",
+  "usingComponents": {
+    "free-hyperlink":"/components/module/free-hyperlink/free-hyperlink"
+  }
+}

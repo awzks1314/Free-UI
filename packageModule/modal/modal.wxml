@@ -6,7 +6,7 @@
     <button class="free-button bg-blue" bindtap="show">打开弹窗</button>
   </view>
 </view>
-<free-modal show="{{modal}}" bind:click="handleClick" bind:cancel="hide" title="提示" content="填写说明内容文字"></free-modal>
+<free-modal show="{{modal}}"  bind:click="handleClick" bind:cancel="hide" title="提示" content="填写说明内容文字"></free-modal>
 
 
 <view class="free-bar  bg-white solid-bottom">

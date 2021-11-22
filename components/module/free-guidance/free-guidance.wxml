@@ -2,6 +2,6 @@
   <view class="triangle" style="border-color: transparent transparent {{bgColor}} transparent;"></view>
   <view class="tips" style="background-color: {{bgColor}};color:{{color}};font-size:{{size}}rpx;">
     <text>{{tip}}</text>
-    <free-icon name="close" class="closeIcon" color="{{color}}" size="16" catchtap="closeTip" wx:if="{{close}}"></free-icon>
+    <free-icon name="close" class="closeIcon" color="{{color}}"  catchtap="closeTip" wx:if="{{close}}"></free-icon>
   </view>
 </view>

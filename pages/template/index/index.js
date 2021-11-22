@@ -12,10 +12,7 @@ Page({
       },
     ],
     jsList:[
-      {
-        name:'时间格式化',
-        title:'timeFormat'
-      },
+      
       {
         name:'多久之前',
         title:'timeFrom'
@@ -39,6 +36,14 @@ Page({
       {
         name:'去除空格',
         title:'trim'
+      },
+      {
+        name:'时间格式化',
+        title:'timeFormat'
+      },
+      {
+        name:'文本超链接',
+        title:'hyperink'
       }
     ]
   },

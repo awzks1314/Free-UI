@@ -16,7 +16,7 @@
     <view class="padding-lr bg-white">
       <view class="text-gray text-sm">定位城市</view>
       <view class="flex align-center padding-tb-xs">
-        <free-icon name="map-filling" size="20" color="#0081ff"></free-icon>
+        <free-icon name="map-filling" size="40" color="#0081ff"></free-icon>
         <text>{{localCity}}</text>
       </view>
     </view>

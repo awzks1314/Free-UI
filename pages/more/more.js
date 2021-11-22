@@ -28,8 +28,8 @@ Page({
       path:'pages/coupon/coupon'
     },
     {
-      title: '测一测性格',
-      name: 'character',
+      title: '小芒词典',
+      name: 'dictionaries',
       color: 'green',
       appid:'wx356f7586da761650',
       path:'pages/home/home'

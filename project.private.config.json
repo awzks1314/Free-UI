@@ -41,6 +41,18 @@
           "pathName": "pages/more/more",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/template/index/index",
+          "pathName": "pages/template/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "packageTemplate/js/hyperlink/hyperlink",
+          "pathName": "packageTemplate/js/hyperlink/hyperlink",
+          "query": "",
+          "scene": null
         }
       ]
     }

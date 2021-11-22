@@ -1,5 +1,5 @@
 <view >
-  <view class="free-modal-class free-modal-box {{show?'free-modal-show':''}} {{(fadein || show)?'free-modal-normal':'free-modal-scale'}}" style="width:{{width}};padding:{{padding}};border-radius:{{radius}};overflow:hidden;">
+  <view class="free-modal-class free-modal-box {{show?'free-modal-show':''}} {{(fadein || show)?'free-modal-normal':'free-modal-scale'}}" style="width:{{width}};padding:{{padding}};border-radius:{{radius}};box-sizing: content-box;">
     <view wx:if="{{!custom}}">
       <view class="free-modal-title" v-if="title">{{title}}</view>
       <view class="free-modal-content {{title?'':'free-mtop'}}" style="color:{{color}};font-size:{{size}}rpx">{{content}}</view>

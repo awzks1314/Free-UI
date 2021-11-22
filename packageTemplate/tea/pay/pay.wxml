@@ -46,14 +46,14 @@
         <text>奈雪券</text>
         <view class="flex align-center">
           <text class="text-tea">购买优惠券大礼包</text>
-          <free-icon name="right" size="16"></free-icon>
+          <free-icon name="right" size="32"></free-icon>
         </view>
       </view>
       <view class="flex align-center justify-between padding-tb-sm "> 
         <text>礼品卡</text>
         <view class="flex align-center">
           <text class="text-tea">请选择</text>
-          <free-icon name="right" size="16"></free-icon>
+          <free-icon name="right" size="32"></free-icon>
         </view>
       </view>
       <view class="flex align-center justify-end padding-top-sm solid-top"> 
@@ -84,7 +84,7 @@
         <text>备注</text>
         <view class="flex align-center">
           <text class="text-tea">点击填写备注</text>
-          <free-icon name="right" size="16"></free-icon>
+          <free-icon name="right" size="32"></free-icon>
         </view>
       </view>
   </view>

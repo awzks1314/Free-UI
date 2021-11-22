@@ -23,7 +23,7 @@
           <text class="text-bold text-lg" bindtap="login" wx:if="{{!name}}">请点击授权登录</text>
           <view class="text-bold text-lg flex align-center"  wx:else>
             <text>{{name}}</text>
-            <free-icon name="right" size="16" color="#000"></free-icon>
+            <free-icon name="right" size="32" color="#000"></free-icon>
           </view>
           <text class="text-sm text-gray">当前成长值{{name?'600':'0'}}/{{name?'1000':'0'}}</text>
           <free-progress 

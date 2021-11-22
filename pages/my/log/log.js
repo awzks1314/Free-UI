@@ -7,6 +7,14 @@ Page({
   data: {
     logData:[
       {
+        time:'Nov 22 2021',
+        version:'v1.0.10',
+        content:[
+          '1.新增文本超链接，自定义颜色、跳转地址。',
+          '2.修复全局图标异常大小问题' 
+        ]
+      },
+      {
         time:'Sep 15 2021',
         version:'v1.0.8',
         content:[

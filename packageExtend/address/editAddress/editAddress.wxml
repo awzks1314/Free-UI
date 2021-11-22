@@ -61,7 +61,7 @@
   <button class="free-icon block bg-blue round lg flex align-center justify-center"
   bindtap="sure" 
   >
-    <free-icon name="add" color="#fff" size="20"></free-icon>
+    <free-icon name="add" color="#fff" size="40"></free-icon>
     {{title}}
   </button>
 </view>

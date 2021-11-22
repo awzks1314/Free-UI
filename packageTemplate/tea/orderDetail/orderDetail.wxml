@@ -5,7 +5,7 @@
         <view  class=" padding-right flex flex-direction" style="width:60%;">
           <text>官渡万达广场店</text>
           <view class="flex align-center flex-sub">
-            <free-icon name="location" size="16" color="#ADB838"></free-icon>
+            <free-icon name="location" size="32" color="#ADB838"></free-icon>
             <view class=" text-cut text-gray text-sm">广东省深圳市宝安区深圳市宝安区福海街道宝安大道6259号 L1 层55/56号商铺</view>
           </view>
         </view>

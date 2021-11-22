@@ -11,13 +11,13 @@
   <view wx:for="{{orderList}}" wx:key="index" class="margin-top-sm bg-white padding-lr-sm radius-sm" bindtap="goToDetail" data-type="{{index}}">
     <view class="padding-tb-sm flex align-center justify-between">
       <view class="flex align-center">
-        <free-icon name="shop" size="17" ></free-icon>
+        <free-icon name="shop" size="34" ></free-icon>
         <text class="margin-left-xs">云南省昆明市官渡区XX旗舰店</text>
       </view>
       <view class="flex align-center ">
         <text class="text-blue  text-bold">代付款</text>
         <view class="padding-xs round bg-gray margin-left-sm">
-          <free-icon name="delete" size="14" color="#000"></free-icon>
+          <free-icon name="delete" size="28" color="#000"></free-icon>
         </view>
       </view>
     </view>

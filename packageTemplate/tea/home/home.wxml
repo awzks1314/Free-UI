@@ -33,11 +33,11 @@
       </view>
       <view class="flex align-center text-sm">
         <text class="text-gray">签到得积分，商城兑限量周边</text>
-        <free-icon name="right" size="13" color="#aaaaaa"></free-icon>
+        <free-icon name="right" size="26" color="#aaaaaa"></free-icon>
       </view>
     </view>
     <view class="text-center" bindtap="gotoUrl" data-url="memberCode">
-        <free-icon name="qrcode" color="#ADB838" size="20"></free-icon>
+        <free-icon name="qrcode" color="#ADB838" size="40"></free-icon>
         <view class="text-tea padding-top-xs text-sm" >会员码</view>
     </view>
   </view>

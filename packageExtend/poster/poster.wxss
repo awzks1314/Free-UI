@@ -1,1 +1,7 @@
 /* packageExtend/poster/poster.wxss */
+.save {
+  position: absolute;
+  bottom: -80rpx;
+  width: 300rpx;
+  left: calc(50% - 150rpx);
+}
