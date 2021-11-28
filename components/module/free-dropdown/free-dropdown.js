@@ -22,10 +22,10 @@ Component({
       value:[]
     },
     // // 是否展示
-    // close:{
-    //   type:Boolean,
-    //   value:false
-    // },
+    close:{
+      type:Boolean,
+      value:false
+    },
     // 标题菜单的高度，单位任意，数值默认为rpx单位
     height: {
       type: [Number, String],

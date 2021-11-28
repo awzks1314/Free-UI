@@ -69,7 +69,6 @@ Page({
     })
   },
   change0(e){
-    console.log(e.detail.index)
     wx.showToast({
       title: '点击了'+this.data.list0[e.detail.index].label,
       icon:'none'
@@ -92,7 +91,7 @@ Page({
   closeDropdown(){
     // 选择了收起下拉菜单
     this.setData({
-      close:true
+      close:false
     })
   }  
 })

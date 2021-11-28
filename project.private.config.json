@@ -53,6 +53,12 @@
           "pathName": "packageTemplate/js/hyperlink/hyperlink",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "packageModule/dropdown/dropdown",
+          "pathName": "packageModule/dropdown/dropdown",
+          "query": "",
+          "scene": null
         }
       ]
     }

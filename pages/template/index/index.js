@@ -9,7 +9,7 @@ Page({
       {
         name:'奈雪的茶',
         title:'tea'
-      },
+      }
     ],
     jsList:[
       
@@ -43,7 +43,7 @@ Page({
       },
       {
         name:'文本超链接',
-        title:'hyperink'
+        title:'hyperlink'
       }
     ]
   },
