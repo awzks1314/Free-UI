@@ -1,5 +1,5 @@
 
-<free-input value="{{value}}" position="Fixed" placeholder="请输入名字或者电话号码" extreaWord="搜索" bind:input="getInputValue" bind:close="closeInput" close="{{true}}" bgColor="#fff"></free-input>
+<free-input value="{{value}}" position="Fixed" placeholder="请输入名字或者电话号码" extreaWord="搜索" bind:input="getInputValue" height="100" bind:close="closeInput" close="{{true}}" bgColor="#fff"></free-input>
 <view style="height:100rpx;"></view>
 <view wx:if="{{value}}">
     <view class="padding-lr bg-white"

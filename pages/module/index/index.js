@@ -140,11 +140,15 @@ Page({
         icon:'home',
       },
       {
-        name:'加载',
-        title:'loading',
+        name:'分页加载',
+        title:'loadmore',
         icon:'home',
       },
-      
+      {
+        name:'全局加载',
+        title:'loading',
+        icon:'home'
+      },
       {
         name:'时间轴',
         title:'timeline',

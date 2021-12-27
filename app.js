@@ -128,15 +128,28 @@ App({
       ]
     },
     updateLog:{
-      time:'Nov 22 2021',
-      version:'v1.0.10',
+      time:'Dec 27 2021',
+      version:'v1.0.11',
       content:[
         {
-          text:'1. 新增文本超链接，自定义颜色、跳转地址。',
-          url:'/packageTemplate/js/hyperlink/hyperlink'
+          text:'1. 新增free-loading加载动画',
+          url:'/packageModule/loading/loading'
         },
         {
-          text:'2. 修复全局图标异常大小问题'        
+          text:'2. free-drawer抽屉新增背景色',
+          url:'/packageModule/drawer/drawer'
+        },
+        {
+          text:'3. 优化free-tabs，多tabs切换更流畅，新增参数传递'        
+        },
+        {
+          text:'4. 优化free-modal，新增内部关闭'        
+        },
+        {
+          text:'5. 优化free-empty，无说明不显示'        
+        },
+        {
+          text:'6. 优化free-messageTips，新增top位置'        
         }
       ]
     },

@@ -7,6 +7,18 @@ Page({
   data: {
     logData:[
       {
+        time:'Dec 27 2021',
+        version:'v1.0.10',
+        content:[
+          '1.新增free-animation，加载动画',
+          '2.free-drawer抽屉新增背景色',
+          '3.优化free-tabs，多tabs切换更流畅，新增参数传递',
+          '4.优化free-modal，新增内部关闭',
+          '5.优化free-empty，无说明不显示',
+          '6.优化free-messageTips，新增top位置'
+        ]
+      },
+      {
         time:'Nov 22 2021',
         version:'v1.0.10',
         content:[

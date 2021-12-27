@@ -1,6 +1,6 @@
 <view wx:if="{{show}}" class="emptyBox">
   <free-image src="{{image?image:'/static/image/emptyImage/'+type+'.png'}}" width="{{width}}" height="{{height}}"></free-image>
-  <view style="color:{{color}};margin:10rpx 0;">{{info}}</view>
+  <view style="color:{{color}};margin:10rpx 0;" wx:if="{{info}}">{{info}}</view>
   <view>
     <slot name="bottom"></slot>
   </view>

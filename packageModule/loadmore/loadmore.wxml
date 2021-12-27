@@ -1,0 +1,27 @@
+<free-loadmore visible="{{true}}"></free-loadmore>
+
+<free-loadmore visible="{{true}}" bgcolor="blue"></free-loadmore>
+
+<free-loadmore visible="{{true}}" index="2"></free-loadmore>
+ 
+<free-loadmore visible="{{true}}" index="3" ></free-loadmore>
+
+<free-loadmore visible="{{true}}" index="3" type="primary"></free-loadmore>
+
+<free-loadmore visible="{{true}}" index="3" type="red"></free-loadmore>
+
+<free-loadmore visible="{{true}}" index="3" type="orange"></free-loadmore>
+
+<free-loadmore visible="{{true}}" index="3" type="green"></free-loadmore>
+
+<free-loadmore visible="{{true}}" index="3" status="loading"></free-loadmore>
+
+<free-loadmore visible="{{true}}" index="3" status="loadmore"></free-loadmore>
+
+<free-loadmore visible="{{true}}" index="3" status="nomore"></free-loadmore>
+
+<free-loadmore visible="{{true}}"  status="loading" text="{{text}}"></free-loadmore>
+
+<free-loadmore visible="{{true}}"  status="loadmore" text="{{text}}"></free-loadmore>
+
+<free-loadmore visible="{{true}}"  status="nomore" text="{{text}}"></free-loadmore>

@@ -1,0 +1,103 @@
+<view wx:if="{{show}}">
+<view class="box {{mask?'loadMask':''}}" wx:if="{{index<=11}}">
+  <view class="loading{{index}}"></view>
+</view>
+
+<view class="box  {{mask?'loadMask':''}} " wx:if="{{index==12}}">
+  <view class="loading{{index}}">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+<view class="box  {{mask?'loadMask':''}} " wx:if="{{index==13}}">
+  <view class="loading{{index}}">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+<view class="box  {{mask?'loadMask':''}} " wx:if="{{index==14}}">
+  <view class="loading{{index}}">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+<view class="box  {{mask?'loadMask':''}} " wx:if="{{index==15}}">
+  <view class="loading{{index}}">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+<view class="box  {{mask?'loadMask':''}} " wx:if="{{index==16}}">
+  <view class="loading{{index}}">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+<view class="box  {{mask?'loadMask':''}} " wx:if="{{index==17}}">
+  <view class="loading{{index}}">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+<view class="box  {{mask?'loadMask':''}} " wx:if="{{index==18}}">
+  <view class="loading{{index}}">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+
+<view class="box  {{mask?'loadMask':''}} " wx:if="{{index==19}}">
+  <view class="loading{{index}}">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+</view>
+
+<view class="box  {{mask?'loadMask':''}} " wx:if="{{index==20}}">
+  <view class="loading{{index}}">
+    <view></view>
+    <view></view>
+  </view>
+</view>
+</view>

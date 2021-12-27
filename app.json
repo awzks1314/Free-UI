@@ -90,7 +90,7 @@
         "noticeBar/noticeBar",
         "steps/steps",
         "actionSheet/actionSheet",
-        "loading/loading",
+        "loadmore/loadmore",
         "progress/progress",
         "timeline/timeline",
         "footer/footer",
@@ -101,7 +101,8 @@
         "gap/gap",
         "divider/divider",
         "readMore/readMore",
-        "guidance/guidance"
+        "guidance/guidance",
+        "loading/loading"
       ]
     },
     {

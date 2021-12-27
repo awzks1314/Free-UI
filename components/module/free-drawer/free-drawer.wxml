@@ -7,10 +7,10 @@
 
     <view class="free-drawer-content safe-area-inset-bottom free-drawer-{{mode}} {{showDrawer?'free-drawer-content-visible':''}} {{mode == 'center'?'free-animation-zoo':''}}"
     catchtap="handleMaskClick"
-    style="width:{{mode == 'center'?'':(mode == 'left' || mode == 'right') && width?width:mode == 'top' || mode == 'bottom'?'100%':length}};height:{{mode == 'center'?'':(mode == 'top' || mode == 'bottom') && height?height:mode == 'left' || mode == 'right'?'100%':length}};overflow: hidden;border-radius:{{mode == 'center'?'':mode=='left'?0:mode=='right'?radius:mode=='top'?0:radius}} {{mode == 'center'?'':mode=='left'?radius:mode=='right'?0:mode=='top'?0:radius}} {{mode == 'center'?'':mode=='left'?radius:mode=='right'?0:mode=='top'?radius:0}} {{mode == 'center'?'':mode=='left'?0:mode=='right'?radius:mode=='top'?radius:0}};"
+    style="width:{{mode == 'center'?'':(mode == 'left' || mode == 'right') && width?width:mode == 'top' || mode == 'bottom'?'100%':length}};height:{{mode == 'center'?'':(mode == 'top' || mode == 'bottom') && height?height:mode == 'left' || mode == 'right'?'100%':length}};overflow: hidden;border-radius:{{mode == 'center'?'':mode=='left'?0:mode=='right'?radius:mode=='top'?0:radius}} {{mode == 'center'?'':mode=='left'?radius:mode=='right'?0:mode=='top'?0:radius}} {{mode == 'center'?'':mode=='left'?radius:mode=='right'?0:mode=='top'?radius:0}} {{mode == 'center'?'':mode=='left'?0:mode=='right'?radius:mode=='top'?radius:0}};background-color: {{backgroundColor}};"
     >
         <view wx:if="{{mode =='center'}}" class="free-drawer-center-box"
-        style="width:{{width?width:length}};height:{{height?height:'auto'}};z-idnex:10075;margin-top:0rpx;overflow: hidden;border-radius:{{radius}};"
+        style="width:{{width?width:length}};height:{{height?height:'auto'}};z-idnex:10075;margin-top:0rpx;overflow: hidden;border-radius:{{radius}};background-color: {{backgroundColor}};"
         >
             <view class="free-drawer-close close-{{closeIconPos}}" catchtap="closeClick" >
                 <free-icon name="{{closeIcon}}" color="{{closeIconColor}}" size="{{closeIconSize}}" wx:if="{{ closeable}}"></free-icon>

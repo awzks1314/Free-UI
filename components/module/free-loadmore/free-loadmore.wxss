@@ -1,5 +1,5 @@
 .free-loadmore {
-  width: 48%;
+  /* width: 52%; */
   margin: 1.5em auto;
   line-height: 1.5em;
   font-size: 24rpx;
@@ -11,11 +11,17 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 10rpx;
   padding-bottom: 44rpx;
 }
 
-.free-nomore::before {
+.free-border{
+  width: 90rpx;
+  height: 1rpx;
+  background-color: #e5e5e5;
+}
+/* .free-nomore::before {
   content: '';
   position: absolute;
   border-bottom: 1rpx solid #e5e5e5;
@@ -23,19 +29,19 @@
   transform: scaleY(0.5);
   width: 360rpx;
   top: 18rpx;
-}
-.noBorder::before {
+} */
+/* .noBorder::before {
   border-bottom: none;
-}
+} */
 .free-text {
-  position: absolute;
+  /* position: absolute; */
   color: #999;
   font-size: 24rpx;
   text-align: center;
-  padding: 0 18rpx;
+  padding: 0 10rpx;
   height: 36rpx;
-  line-height: 36rpx;
-  z-index: 1;
+  /* line-height: 36rpx; */
+  /* z-index: 1; */
 }
 
 

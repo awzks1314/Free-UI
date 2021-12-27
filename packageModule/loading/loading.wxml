@@ -1,27 +1,30 @@
-<free-loading visible="{{true}}"></free-loading>
+<free-title type="2" title="效果演示" titlecolor="#0081ef"></free-title>
 
-<free-loading visible="{{true}}" bgcolor="blue"></free-loading>
+<view class="padding flex align-center justify-center" style="height: 300rpx;">
+  <!-- 组件 -->
+  <free-animation 
+    index="{{index}}" 
+    mask="{{mask}}"
+    show="{{true}}"
+    ></free-animation>
+  <!-- 组件 --> 
+  <button class="free-button bg-blue lg"  bindtap="close" wx:if="{{mask}}" style="position: fixed;z-index: 99999;">关闭</button>
+</view>
 
-<free-loading visible="{{true}}" index="2"></free-loading>
- 
-<free-loading visible="{{true}}" index="3" ></free-loading>
+<free-title type="2" title="参数配置"  titlecolor="#0081ef"></free-title>
 
-<free-loading visible="{{true}}" index="3" type="primary"></free-loading>
+<view class="padding-right flex align-center justify-between">
+  <free-title icon='line' type='3'  bold="{{false}}" size='28' title="切换模式" height="40"></free-title>
+  <free-inputNumber 
+    value="{{index}}" 
+    max="{{20}}"
+    min="{{1}}"
+    bind:change='getValue'>
+  </free-inputNumber>
+</view>
 
-<free-loading visible="{{true}}" index="3" type="red"></free-loading>
-
-<free-loading visible="{{true}}" index="3" type="orange"></free-loading>
-
-<free-loading visible="{{true}}" index="3" type="green"></free-loading>
-
-<free-loading visible="{{true}}" index="3" status="loading"></free-loading>
-
-<free-loading visible="{{true}}" index="3" status="loadmore"></free-loading>
-
-<free-loading visible="{{true}}" index="3" status="nomore"></free-loading>
-
-<free-loading visible="{{true}}"  status="loading" text="{{text}}"></free-loading>
-
-<free-loading visible="{{true}}"  status="loadmore" text="{{text}}"></free-loading>
-
-<free-loading visible="{{true}}"  status="nomore" text="{{text}}"></free-loading>
+<view class="padding-top"></view>
+<free-title icon='line' type='3'  bold="{{false}}" size='28' title="是否显示蒙版" height="40"></free-title>
+<view class="padding">
+  <free-subsection list="{{[false,true]}}" bind:click='getMode' current="{{mask?1:0}}" data-name="mask" bold="true"></free-subsection>
+</view>

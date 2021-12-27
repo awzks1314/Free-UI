@@ -70,7 +70,7 @@
 
 <free-empty show="{{orderList.length == 0 && status=='nomore'}}"></free-empty>
 
-<free-loading visible="{{orderList.length != 0 || status !='nomore' }}"  status="{{status}}"  ></free-loading>
+<free-loadmore visible="{{orderList.length != 0 || status !='nomore' }}"  status="{{status}}"  ></free-loadmore>
 
 <free-backTop 
   scrollTop="{{scrollTop}}" 

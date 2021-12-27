@@ -1,22 +1,28 @@
-// packageModule/loading/loading.js
+// packageModule/animation/animation.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    text:{
-      loadmore: '点击或上拉加载更多',
-      loading: '正在努力加载中',
-      nomore: '没有更多啦，看看其他吧'
-    }
+    index:1,
+    mask:false,
+    color:'#fff'
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  getValue(e){
+    this.setData({
+      index:e.detail.value
+    })
+  },
+  getMode(e){
+    this.setData({
+      [e.currentTarget.dataset.name]:e.detail.value
+    })
+  },
+  close() {
+    this.setData({
+      mask:false
+    })
   },
   /**
    * 用户点击右上角分享

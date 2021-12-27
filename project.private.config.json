@@ -19,44 +19,26 @@
           "scene": null
         },
         {
-          "name": "packageExtend/poster/poster",
-          "pathName": "packageExtend/poster/poster",
+          "name": "packageModule/messageTips/messageTips",
+          "pathName": "packageModule/messageTips/messageTips",
           "query": "",
           "scene": null
         },
         {
-          "name": "packageExtend/draw/slotmachine/slotmachine",
-          "pathName": "packageExtend/draw/slotmachine/slotmachine",
+          "name": "packageExtend/indexes/ceiling/ceiling",
+          "pathName": "packageExtend/indexes/ceiling/ceiling",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/my/index/index",
-          "pathName": "pages/my/index/index",
+          "name": "packageBasic/icon/icon",
+          "pathName": "packageBasic/icon/icon",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/more/more",
-          "pathName": "pages/more/more",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/template/index/index",
-          "pathName": "pages/template/index/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "packageTemplate/js/hyperlink/hyperlink",
-          "pathName": "packageTemplate/js/hyperlink/hyperlink",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "packageModule/dropdown/dropdown",
-          "pathName": "packageModule/dropdown/dropdown",
+          "name": "pages/module/index/index",
+          "pathName": "pages/module/index/index",
           "query": "",
           "scene": null
         }

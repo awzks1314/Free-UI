@@ -1,3 +1,10 @@
+/*
+  freeUi for MP-weixin  | by 搞文艺的猿 
+  仅供学习交流，如作它用所承受的法律责任一概与作者无关
+  使用freeUi开发扩展与插件时，请注明基于freeUi开发
+  
+  （作者QQ：664423077 | 微信：creater8888）
+*/
 Component({
   properties: {
     //标签页
@@ -96,7 +103,7 @@ Component({
   },
   observers: {
     'currentTab,tabs,sliderWidth,sliderHeight': function(currentTab, tabs,sliderWidth,sliderHeight) {
-      this.checkCor();
+      this.getTabRect();
     }
   },
   lifetimes: {
@@ -175,7 +182,8 @@ Component({
         return false;
       } else {
         this.triggerEvent("change", {
-          index: index
+          index: index,
+          item
         })
       }
     }

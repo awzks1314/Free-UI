@@ -10,7 +10,8 @@ Page({
     radius:'0rpx',
     closeable:true,
     maskClosable:true,
-    closeIconPos:'top-right'
+    closeIconPos:'top-right',
+    backgroundColor:'#FFF'
   },
   getMode(e){
     console.log(e)

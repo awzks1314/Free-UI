@@ -1,6 +1,7 @@
 {
-  "navigationBarTitleText":"loading加载",
+  "navigationBarTitleText":"全局加载",
   "usingComponents": {
-    "free-loading":"/components/module/free-loading/free-loading"
+    "free-animation":"/components/module/free-animation/free-animation",
+    "free-inputNumber":"/components/module/free-inputNumber/free-inputNumber"
   }
 }

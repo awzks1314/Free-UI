@@ -3,7 +3,7 @@
   left: 50%;
   top: 50%;
   margin: auto;
-  background: #fff;
+  /* background: #fff; */
   z-index: 9999998;
   transition: all 0.3s ease-in-out;
   opacity: 0;

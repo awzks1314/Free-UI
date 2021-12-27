@@ -1,7 +1,7 @@
 {
   "navigationBarTitleText":"订单列表",
   "usingComponents": {
-    "free-loading":"/components/module/free-loading/free-loading",
+    "free-loadmore":"/components/module/free-loadmore/free-loadmore",
     "free-empty":"/components/module/free-empty/free-empty"
   }
 }

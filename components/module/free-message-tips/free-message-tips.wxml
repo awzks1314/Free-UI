@@ -1,8 +1,8 @@
 <block wx:if="{{position=='top'}}">
-  <view class='free-tips-class free-toptips {{"free-"+type}} {{show?"free-top-show":""}}'>{{msg}}</view>
+  <view class='free-tips-class free-toptips {{"free-"+type}} {{show?"free-top-show":""}}' style="top:{{top}}px">{{msg}}</view>
 </block>
 <block wx:else>
-  <view class='free-tips-class free-toast {{position=="center"?"free-centertips":"free-bottomtips"}}  {{show?"free-toast-show":""}}'>
+  <view class='free-tips-class free-toast {{position=="center"?"free-centertips":"free-bottomtips"}}  {{show?"free-toast-show":""}}' >
     <view class="free-tips-content {{'free-'+type}}">
       {{msg}}
     </view>
